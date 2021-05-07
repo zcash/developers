@@ -60,6 +60,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ZENHUB_TOKEN: ${{ secrets.ZENHUB_TOKEN }}
 
+      - name: Copy the index page
+        run: cp ./index.html ./public
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
