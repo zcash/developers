@@ -8,6 +8,7 @@ import drest
 import networkx as nx
 
 import mimetypes
+import os
 from textwrap import wrap
 from urllib.parse import urlparse
 
@@ -211,7 +212,8 @@ def main():
     # Draw the result!
     ag.graph_attr['rankdir'] = 'LR'
     ag.layout(prog='dot')
-    ag.draw('zcash-core-dag.svg')
+    os.makedirs('public', exist_ok=True)
+    ag.draw('public/zcash-core-dag.svg')
 
 
 if __name__ == '__main__':
