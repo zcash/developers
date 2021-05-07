@@ -1,0 +1,64 @@
+name: GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: "42 22 * * *"
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'
+
+      - name: Upgrade pip
+        run: |
+          # install pip=>20.1 to use "pip cache dir"
+          python3 -m pip install --upgrade pip
+
+      - name: Get pip cache dir
+        id: pip-cache
+        run: echo "::set-output name=dir::$(pip cache dir)"
+
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: ${{ steps.pip-cache.outputs.dir }}
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install dependencies
+        run: python3 -m pip install -r ./requirements.txt
+
+      - name: Fetch GitHub GraphQL schema
+        run: |
+          python3 -m sgqlc.introspection \
+            --exclude-deprecated \
+            --exclude-description \
+            -H "Authorization: bearer ${{ secrets.GITHUB_TOKEN }}" \
+            https://api.github.com/graphql \
+            github_schema.json
+
+      - name: Generate GitHub GraphQL schema module
+        run: sgqlc-codegen schema github_schema.json github_schema.py
+
+      - name: Render core DAG
+        run: python3 ./zcash-core-graph.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ZENHUB_TOKEN: ${{ secrets.ZENHUB_TOKEN }}
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
