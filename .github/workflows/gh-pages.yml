@@ -19,6 +19,9 @@ jobs:
         with:
           python-version: '3.8'
 
+      - name: Setup Graphviz
+        uses: ts-graphviz/setup-graphviz@v1
+
       - name: Upgrade pip
         run: |
           # install pip=>20.1 to use "pip cache dir"
