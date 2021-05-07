@@ -16,8 +16,8 @@ from sgqlc.endpoint.http import HTTPEndpoint
 from sgqlc.operation import Operation
 from github_schema import github_schema as schema
 
-GITHUB_TOKEN = None
-ZENHUB_TOKEN = None
+GITHUB_TOKEN = os.environ.get('GITHUB_TOKEN')
+ZENHUB_TOKEN = os.environ.get('ZENHUB_TOKEN')
 
 REPOS = {
     26987049: ('zcash', 'zcash'),
@@ -220,4 +220,4 @@ if __name__ == '__main__':
     if GITHUB_TOKEN and ZENHUB_TOKEN:
         main()
     else:
-        print('Please edit the script to add GitHub and ZenHub API tokens.')
+        print('Please set the GITHUB_TOKEN and ZENHUB_TOKEN environment variables.')
