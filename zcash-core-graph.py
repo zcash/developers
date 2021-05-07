@@ -58,9 +58,9 @@ class GitHubIssue:
     def __repr__(self):
         if self.repo_id in REPOS:
             repo = '/'.join(REPOS[self.repo_id])
+            return '%s#%d' % (repo, self.issue_number)
         else:
-            repo = self.repo_id
-        return '%s#%d' % (repo, self.issue_number)
+            return 'Unknown'
 
     def __eq__(self, other):
         return (self.repo_id, self.issue_number) == (other.repo_id, other.issue_number)
@@ -163,6 +163,11 @@ def main():
 
     # Relable the graph
     dg = nx.relabel_nodes(dg, mapping)
+
+    # Filter out unknown issues
+    unknown = [n for n in dg if n.repo_id not in REPOS]
+    if len(unknown) > 0:
+        dg.remove_nodes_from(unknown)
 
     # Apply property annotations
     for (source, sink) in dg.edges:
