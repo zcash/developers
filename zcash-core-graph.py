@@ -161,7 +161,7 @@ def main():
     # Fetch the issues within the graph.
     mapping = download_issues(gapi, dg.nodes)
 
-    # Relable the graph
+    # Relabel the graph
     dg = nx.relabel_nodes(dg, mapping)
 
     # Filter out unknown issues
