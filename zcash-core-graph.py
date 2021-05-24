@@ -42,8 +42,10 @@ class GitHubIssue:
         self.milestone = None
 
         if data is not None:
+            labels = [label['name'] for label in data['labels']['nodes']]
             self.title = data['title']
             self.is_pr = 'merged' in data
+            self.is_committed = 'S-committed' in labels
             self.url = data['url']
             self.state = 'closed' if data['state'] in ['CLOSED', 'MERGED'] else 'open'
             if 'milestone' in data and data['milestone']:
@@ -53,6 +55,7 @@ class GitHubIssue:
             self.title = ''
             self.url = None
             self.is_pr = False
+            self.is_committed = False
             self.state = 'closed'
 
     def __repr__(self):
@@ -83,6 +86,7 @@ def fetch_issues(op, issues):
             res = conn.issue_or_pull_request(number=issue, __alias__='issue%d' % issue)
             for typ in [schema.Issue, schema.PullRequest]:
                 node = res.__as__(typ)
+                node.labels(first=50).nodes().name()
                 node.state()
                 node.milestone().title()
                 node.title()
@@ -200,7 +204,12 @@ def main():
         attrs = dg.nodes[n]
         if n.title:
             attrs['label'] = '\n'.join(['%s' % n] + wrap(n.title, 25))
-        attrs['fillcolor'] = '#fad8c7' if n.state == 'closed' else '#c2e0c6'
+        if n.state == 'closed':
+            attrs['fillcolor'] = '#fad8c7'
+        elif n.is_committed:
+            attrs['fillcolor'] = '#a6cfff'
+        else:
+            attrs['fillcolor'] = '#c2e0c6'
         attrs['penwidth'] = 2 if n in do_next else 1
         attrs['shape'] = 'component' if n.is_pr else 'box'
         attrs['style'] = 'filled'
