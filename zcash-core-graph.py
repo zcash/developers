@@ -185,8 +185,13 @@ def main():
         if len(ignore) > 0:
             dg.remove_nodes_from(nx.compose_all(ignore))
 
-    # TODO:
-    # - Automatically prune edges between closed nodes, not just fully-closed subgraphs.
+    # Prune nodes that are not downstream of any open issues.
+    # - It would be nice to keep the most recently-closed issues on the DAG, but
+    #   dg.out_degree seems to be broken...
+    to_prune = [n for (n, degree) in dg.in_degree() if degree == 0 and n.state == 'closed']
+    while len(to_prune) > 0:
+        dg.remove_nodes_from(to_prune)
+        to_prune = [n for (n, degree) in dg.in_degree() if degree == 0 and n.state == 'closed']
 
     do_next = [n for (n, degree) in dg.in_degree(weight='is_open') if degree == 0 and n.state != 'closed']
 
