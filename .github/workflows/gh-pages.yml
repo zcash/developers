@@ -55,7 +55,7 @@ jobs:
         run: sgqlc-codegen schema github_schema.json github_schema.py
 
       - name: Render core DAG
-        run: python3 ./zcash-core-graph.py
+        run: python3 ./zcash-issue-dag.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ZENHUB_TOKEN: ${{ secrets.ZENHUB_TOKEN }}
