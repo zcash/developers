@@ -7,6 +7,7 @@
 import drest
 import networkx as nx
 
+from distutils.util import strtobool
 import mimetypes
 import os
 from textwrap import wrap
@@ -19,7 +20,9 @@ from github_schema import github_schema as schema
 GITHUB_TOKEN = os.environ.get('GITHUB_TOKEN')
 ZENHUB_TOKEN = os.environ.get('ZENHUB_TOKEN')
 
-REPOS = {
+DAG_VIEW = os.environ.get('DAG_VIEW', 'core')
+
+CORE_REPOS = {
     26987049: ('zcash', 'zcash'),
     47279130: ('zcash', 'zips'),
     85334928: ('zcash', 'librustzcash'),
@@ -28,11 +31,17 @@ REPOS = {
     305835578: ('zcash', 'orchard'),
 }
 
+REPO_SETS = {
+    'core': CORE_REPOS,
+}
+
+REPOS = REPO_SETS[DAG_VIEW]
+
 # Whether to include subgraphs where all issues and PRs are closed.
-INCLUDE_FINISHED = False
+INCLUDE_FINISHED = strtobool(os.environ.get('INCLUDE_FINISHED', 'false'))
 
 # Whether to group issues and PRs by milestone.
-SHOW_MILESTONES = False
+SHOW_MILESTONES = strtobool(os.environ.get('SHOW_MILESTONES', 'false'))
 
 
 class GitHubIssue:
@@ -232,7 +241,7 @@ def main():
     ag.graph_attr['rankdir'] = 'LR'
     ag.layout(prog='dot')
     os.makedirs('public', exist_ok=True)
-    ag.draw('public/zcash-core-dag.svg')
+    ag.draw('public/zcash-%s-dag.svg' % DAG_VIEW)
 
 
 if __name__ == '__main__':
