@@ -31,8 +31,17 @@ CORE_REPOS = {
     305835578: ('zcash', 'orchard'),
 }
 
+WALLET_REPOS = {
+    85334928: ('zcash', 'librustzcash'),
+    151763639: ('zcash', 'zcash-android-wallet-sdk'),
+    185480114: ('zcash', 'ZcashLightClientKit'),
+    223814143: ('zcash', 'zcash-android-wallet'),
+    225922879: ('zcash', 'zcash-ios-wallet'),
+}
+
 REPO_SETS = {
     'core': CORE_REPOS,
+    'wallet': WALLET_REPOS,
 }
 
 REPOS = REPO_SETS[DAG_VIEW]

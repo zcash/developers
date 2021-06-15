@@ -60,6 +60,13 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ZENHUB_TOKEN: ${{ secrets.ZENHUB_TOKEN }}
 
+      - name: Render wallet DAG
+        run: python3 ./zcash-issue-dag.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ZENHUB_TOKEN: ${{ secrets.ZENHUB_TOKEN }}
+          DAG_VIEW: wallet
+
       - name: Copy the index page
         run: cp ./index.html ./public
 
