@@ -39,9 +39,17 @@ WALLET_REPOS = {
     225922879: ('zcash', 'zcash-ios-wallet'),
 }
 
+ZF_REPOS = {
+    205255683: ('ZcashFoundation', 'zebra'),
+    225479018: ('ZcashFoundation', 'redjubjub'),
+    235651437: ('ZcashFoundation', 'ed25519-zebra'),
+    279422254: ('ZcashFoundation', 'zcash_script'),
+}
+
 REPO_SETS = {
     'core': CORE_REPOS,
     'wallet': WALLET_REPOS,
+    'zf': ZF_REPOS,
 }
 
 REPOS = REPO_SETS[DAG_VIEW]
