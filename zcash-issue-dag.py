@@ -25,6 +25,7 @@ DAG_VIEW = os.environ.get('DAG_VIEW', 'core')
 CORE_REPOS = {
     26987049: ('zcash', 'zcash'),
     47279130: ('zcash', 'zips'),
+    48303644: ('zcash', 'incrementalmerkletree'),
     85334928: ('zcash', 'librustzcash'),
     133857578: ('zcash-hackworks', 'zcash-test-vectors'),
     290019239: ('zcash', 'halo2'),
