@@ -30,6 +30,7 @@ CORE_REPOS = {
     133857578: ('zcash-hackworks', 'zcash-test-vectors'),
     290019239: ('zcash', 'halo2'),
     305835578: ('zcash', 'orchard'),
+    344239327: ('zcash', 'pasta_curves'),
     421088069: ('zcash', 'halo2_gadgets'),
 }
 
