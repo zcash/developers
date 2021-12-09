@@ -1,0 +1,30 @@
+@media (prefers-color-scheme: dark) {
+    svg .graph > polygon {
+        fill: #0d1117;
+    }
+    svg .node polygon {
+        stroke: #c9d1d9;
+    }
+    svg .node.open polygon {
+        fill: #057715;
+    }
+    svg .node.committed polygon {
+        fill: #1862b9;
+    }
+    svg .node.closed polygon {
+        fill: #b93b1e;
+    }
+    svg .node polyline {
+        stroke: #c9d1d9;
+    }
+    svg .edge path {
+        stroke: #c9d1d9;
+    }
+    svg .edge polygon {
+        fill: #c9d1d9;
+        stroke: #c9d1d9;
+    }
+    svg text {
+        fill: #c9d1d9;
+    }
+}

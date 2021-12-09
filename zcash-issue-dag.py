@@ -234,10 +234,13 @@ def main():
         if n.title:
             attrs['label'] = '\n'.join(['%s' % n] + wrap(n.title, 25))
         if n.state == 'closed':
+            attrs['class'] = 'closed'
             attrs['fillcolor'] = '#fad8c7'
         elif n.is_committed:
+            attrs['class'] = 'committed'
             attrs['fillcolor'] = '#a6cfff'
         else:
+            attrs['class'] = 'open'
             attrs['fillcolor'] = '#c2e0c6'
         attrs['penwidth'] = 2 if n in do_next else 1
         attrs['shape'] = 'component' if n.is_pr else 'box'
@@ -259,6 +262,7 @@ def main():
 
     # Draw the result!
     ag.graph_attr['rankdir'] = 'LR'
+    ag.graph_attr['stylesheet'] = 'zcash-dag.css'
     ag.layout(prog='dot')
     os.makedirs('public', exist_ok=True)
     ag.draw('public/zcash-%s-dag.svg' % DAG_VIEW)
