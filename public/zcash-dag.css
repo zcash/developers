@@ -1,18 +1,21 @@
 @media (prefers-color-scheme: dark) {
     svg .graph > polygon {
-        fill: #0d1117;
+        /* Material dark theme surface colour */
+        fill: #121212;
     }
     svg .node polygon {
         stroke: #c9d1d9;
     }
     svg .node.open polygon {
-        fill: #057715;
+        /* Material Green 700 */
+        fill: #388e3c;
     }
     svg .node.committed polygon {
-        fill: #1862b9;
+        /* Material Blue 700 */
+        fill: #1976d2;
     }
     svg .node.closed polygon {
-        fill: #b93b1e;
+        fill: #cf6b66;
     }
     svg .node polyline {
         stroke: #c9d1d9;
@@ -25,7 +28,6 @@
         stroke: #c9d1d9;
     }
     svg text {
-        fill: #c9d1d9;
         font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
     }
 }
