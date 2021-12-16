@@ -60,6 +60,9 @@ REPOS = REPO_SETS[DAG_VIEW]
 # Whether to include subgraphs where all issues and PRs are closed.
 INCLUDE_FINISHED = strtobool(os.environ.get('INCLUDE_FINISHED', 'false'))
 
+# Whether to remove closed issues and PRs that are not downstream of open ones.
+PRUNE_FINISHED = strtobool(os.environ.get('PRUNE_FINISHED', 'true'))
+
 # Whether to group issues and PRs by milestone.
 SHOW_MILESTONES = strtobool(os.environ.get('SHOW_MILESTONES', 'false'))
 
@@ -219,12 +222,13 @@ def main():
             dg.remove_nodes_from(nx.compose_all(ignore))
 
     # Prune nodes that are not downstream of any open issues.
-    # - It would be nice to keep the most recently-closed issues on the DAG, but
-    #   dg.out_degree seems to be broken...
-    to_prune = [n for (n, degree) in dg.in_degree() if degree == 0 and n.state == 'closed']
-    while len(to_prune) > 0:
-        dg.remove_nodes_from(to_prune)
+    if PRUNE_FINISHED:
+        # - It would be nice to keep the most recently-closed issues on the DAG, but
+        #   dg.out_degree seems to be broken...
         to_prune = [n for (n, degree) in dg.in_degree() if degree == 0 and n.state == 'closed']
+        while len(to_prune) > 0:
+            dg.remove_nodes_from(to_prune)
+            to_prune = [n for (n, degree) in dg.in_degree() if degree == 0 and n.state == 'closed']
 
     do_next = [n for (n, degree) in dg.in_degree(weight='is_open') if degree == 0 and n.state != 'closed']
 
