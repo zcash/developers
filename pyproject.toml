@@ -1,9 +1,9 @@
 [tool.poetry]
-name = "zcash-core-devtools"
+name = "zcash-developer-tools"
 version = "0.1.0"
-description = "Zcash Core Developer Tools"
+description = "Zcash Developer Tools"
 authors = [
-    "Jack Grigg <jack@z.cash>",
+    "Jack Grigg <jack@electriccoin.co>",
 ]
 license = "MIT OR Apache-2.0"
 readme = "README.md"
@@ -18,5 +18,5 @@ classifiers = [
 python = "^3.7"
 drest = "0.9.12"
 networkx = "2.6.3"
-sgqlc = "14.1"
 pygraphviz = "1.7"
+sgqlc = "14.1"

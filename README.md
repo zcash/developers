@@ -31,7 +31,7 @@ poetry run sgqlc-codegen schema github_schema.json github_schema.py
 
 ## Generating DAGs
 
-The `zcash-issue-dag.py` script also supports several configuration options,
+The `zcash-issue-dag.py` script supports several configuration options,
 also supplied as environment variables:
 
 - `DAG_VIEW=[core|wallet|zf]`: The DAG to render (default: `core`).
@@ -47,7 +47,6 @@ DAG_VIEW=core \
 SHOW_MILESTONES=false \
 GITHUB_TOKEN=<INSERT> \
 ZENHUB_TOKEN=<INSERT> \
-
 poetry run python ./zcash-issue-dag.py
 ```
 
