@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "zcash-developer-tools"
+version = "0.1.0"
+description = "Zcash Developer Tools"
+authors = [
+    "Jack Grigg <jack@electriccoin.co>",
+]
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+homepage = "https://github.com/zcash/developers/"
+repository = "https://github.com/zcash/developers/"
+documentation = "https://github.com/zcash/developers/"
+classifiers = [
+    "Private :: Do Not Upload",
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+drest = "0.9.12"
+networkx = "2.6.3"
+pygraphviz = "1.7"
+sgqlc = "14.1"
