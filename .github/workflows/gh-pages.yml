@@ -74,6 +74,13 @@ jobs:
           ZENHUB_TOKEN: ${{ secrets.ZENHUB_TOKEN }}
           DAG_VIEW: zf
 
+      - name: Render Halo2-focused DAG
+        run: python3 ./zcash-issue-dag.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ZENHUB_TOKEN: ${{ secrets.ZENHUB_TOKEN }}
+          DAG_VIEW: halo2
+
       - name: Copy the index page
         run: cp ./index.html ./public
 
