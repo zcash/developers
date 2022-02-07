@@ -33,6 +33,11 @@ CORE_REPOS = {
     344239327: ('zcash', 'pasta_curves'),
 }
 
+HALO2_REPOS = {
+    290019239: ('zcash', 'halo2'),
+    344239327: ('zcash', 'pasta_curves'),
+}
+
 WALLET_REPOS = {
     85334928: ('zcash', 'librustzcash'),
     151763639: ('zcash', 'zcash-android-wallet-sdk'),
@@ -50,6 +55,7 @@ ZF_REPOS = {
 
 REPO_SETS = {
     'core': CORE_REPOS,
+    'halo2': HALO2_REPOS,
     'wallet': WALLET_REPOS,
     'zf': ZF_REPOS,
 }
