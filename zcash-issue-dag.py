@@ -276,6 +276,42 @@ def main():
     os.makedirs('public', exist_ok=True)
     ag.draw('public/zcash-%s-dag.svg' % DAG_VIEW)
 
+    # Render the HTML version!
+    with open('public/zcash-%s-dag.svg' % DAG_VIEW) as f:
+        svg_data = f.read()
+    svg_start = svg_data.find('<svg')
+    html_data = '''<!DOCTYPE html>
+<html>
+  <head>
+    <title>Zcash %s DAG</title>
+
+    <!-- Pan/zoom SVGs -->
+    <script src="https://bumbu.me/svg-pan-zoom/dist/svg-pan-zoom.min.js"></script>
+
+    <link rel="stylesheet" href="zcash-dag.css">
+    <style>
+      @media (prefers-color-scheme: dark) {
+        body {
+          /* Material dark theme surface colour */
+          background-color: #121212;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="dag">%s</div>
+
+    <script>
+      svgPanZoom('#dag > svg', {
+        zoomScaleSensitivity: 0.4
+      });
+    </script>
+  </body>
+</html>
+''' % (DAG_VIEW, svg_data[svg_start:])
+    with open('public/zcash-%s-dag.html' % DAG_VIEW, 'w') as f:
+        f.write(html_data)
+
 
 if __name__ == '__main__':
     if GITHUB_TOKEN and ZENHUB_TOKEN:
