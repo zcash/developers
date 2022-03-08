@@ -41,9 +41,13 @@ HALO2_REPOS = {
 WALLET_REPOS = {
     85334928: ('zcash', 'librustzcash'),
     151763639: ('zcash', 'zcash-android-wallet-sdk'),
+    159714694: ('zcash', 'lightwalletd'),
     185480114: ('zcash', 'ZcashLightClientKit'),
     223814143: ('zcash', 'zcash-android-wallet'),
     225922879: ('zcash', 'zcash-ios-wallet'),
+    387551125: ('zcash', 'secant-ios-wallet'),
+    390808594: ('zcash', 'secant-android-wallet'),
+    439137887: ('zcash-hackworks', 'zcash-light-client-ffi'),
 }
 
 ZF_REPOS = {
