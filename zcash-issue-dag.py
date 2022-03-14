@@ -75,6 +75,9 @@ PRUNE_FINISHED = strtobool(os.environ.get('PRUNE_FINISHED', 'true'))
 # Whether to group issues and PRs by milestone.
 SHOW_MILESTONES = strtobool(os.environ.get('SHOW_MILESTONES', 'false'))
 
+# Whether to group issues and PRs by ZenHub epics.
+SHOW_EPICS = strtobool(os.environ.get('SHOW_EPICS', 'false'))
+
 
 class GitHubIssue:
     def __init__(self, repo_id, issue_number, data):
@@ -177,6 +180,30 @@ class ZHDepsResourceHandler(drest.resource.ResourceHandler):
             for edge in response.data['dependencies']
         ])
 
+class ZHEpicsResourceHandler(drest.resource.ResourceHandler):
+    def get(self, repo_id):
+        path = '/repositories/%d/epics' % repo_id
+
+        try:
+            response = self.api.make_request('GET', path, {})
+        except drest.exc.dRestRequestError as e:
+            msg = "%s (repo_id: %s)" % (e.msg, repo_id)
+            raise drest.exc.dRestRequestError(msg, e.response)
+
+        return [i['issue_number'] for i in response.data['epic_issues']]
+
+class ZHEpicsIssuesResourceHandler(drest.resource.ResourceHandler):
+    def get(self, repo_id, epic_id):
+        path = '/repositories/%d/epics/%d' % (repo_id, epic_id)
+
+        try:
+            response = self.api.make_request('GET', path, {})
+        except drest.exc.dRestRequestError as e:
+            msg = "%s (repo_id: %s)" % (e.msg, repo_id)
+            raise drest.exc.dRestRequestError(msg, e.response)
+
+        return [(i['repo_id'], i['issue_number']) for i in response.data['issues']]
+
 class ZenHubAPI(drest.api.API):
     class Meta:
         baseurl = 'https://api.zenhub.com/p1'
@@ -188,6 +215,8 @@ class ZenHubAPI(drest.api.API):
     def __init__(self, *args, **kw):
         super(ZenHubAPI, self).__init__(*args, **kw)
         self.add_resource('dependencies', ZHDepsResourceHandler)
+        self.add_resource('epics', ZHEpicsResourceHandler)
+        self.add_resource('epics_issues', ZHEpicsIssuesResourceHandler)
 
     def auth(self, *args, **kw):
         pass
@@ -202,6 +231,24 @@ def main():
 
     # Build the full dependency graph from ZenHub's per-repo APIs.
     dg = nx.compose_all([zapi.dependencies.get(x) for x in REPOS])
+
+    if SHOW_EPICS:
+        epics_issues = []
+        for repo_id in REPOS:
+            for epic_id in zapi.epics.get(repo_id):
+                epics_issues.append((repo_id, epic_id))
+
+        epics_mapping = download_issues(gapi, epics_issues)
+        epics_mapping = {k: v for (k, v) in epics_mapping.items() if v.state != 'closed'}
+        issues_by_epic = {}
+        for (i, ((repo_id, epic_id), epic)) in enumerate(epics_mapping.items()):
+            issues = set(zapi.epics_issues.get(repo_id, epic_id))
+            issues_by_epic[epic] = issues
+            for i in issues:
+                # zapi.dependencies only returns nodes that have some connection,
+                # but we'd like to show all issues from epics even if they are
+                # disconnected.
+                dg.add_node(i)
 
     # Fetch the issues within the graph.
     mapping = download_issues(gapi, dg.nodes)
@@ -272,6 +319,12 @@ def main():
         del milestones[None]
         for (i, (milestone, nodes)) in enumerate(milestones.items()):
             ag.add_subgraph(nodes, 'cluster_%d' % i, label=milestone, color='blue')
+
+    if SHOW_EPICS:
+        for (i, (epic, issues)) in enumerate(issues_by_epic.items()):
+            issues = [n for n in dg if (n.repo_id, n.issue_number) in issues]
+            if issues:
+                ag.add_subgraph(issues, 'cluster_%d' % i, label=epic.title, color='blue')
 
     # Draw the result!
     ag.graph_attr['rankdir'] = 'LR'

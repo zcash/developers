@@ -73,6 +73,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ZENHUB_TOKEN: ${{ secrets.ZENHUB_TOKEN }}
           DAG_VIEW: zf
+          SHOW_EPICS: true
 
       - name: Render Halo2-focused DAG
         run: python3 ./zcash-issue-dag.py
