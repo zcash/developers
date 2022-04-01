@@ -8,6 +8,8 @@ For now, this repo hosts the script used to generate ECC's development dependenc
 
 This project uses `poetry` for dependency management: https://python-poetry.org/
 
+**Note:** Once you have `poetry` on your terminal environment, run `poetry install` to install the dependencies.
+
 The scripts provided by this project require two environment variables:
 
 - `GITHUB_TOKEN`: a GitHub API token with permission to read the necessary repositories.
@@ -49,5 +51,25 @@ GITHUB_TOKEN=<INSERT> \
 ZENHUB_TOKEN=<INSERT> \
 poetry run python ./zcash-issue-dag.py
 ```
+
+
+## Troubleshooting Setup Issues
+
+### Failed to build `pygraphviz`
+
+When running `poetry install` the command fails with this error
+
+````bash
+        pygraphviz/graphviz_wrap.c:2711:10: fatal error: 'graphviz/cgraph.h' file not found
+        #include "graphviz/cgraph.h"
+                 ^~~~~~~~~~~~~~~~~~~
+        1 error generated.
+        error: command '/usr/bin/clang' failed with exit code 1
+        [end of output]
+````
+
+**Cause:** Your environment does not find `graphviz` as a transitive dependency
+**Solution:** 
+Install `graphviz` through the adecquate means for your Operating System. Example: for MacOS `brew install graphviz`
 
 
