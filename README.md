@@ -7,6 +7,10 @@ For now, this repo hosts the script used to generate ECC's development dependenc
 ## Setup
 
 This project uses `poetry` for dependency management: https://python-poetry.org/
+It also depends on the Graphviz library; for Debian-based distros, install the `graphviz-dev`
+package.
+
+After installing `poetry`, run `poetry install`.
 
 The scripts provided by this project require two environment variables:
 
@@ -36,6 +40,7 @@ also supplied as environment variables:
 
 - `DAG_VIEW=[core|wallet|zf]`: The DAG to render (default: `core`).
 - `SHOW_MILESTONES=[true|false]`: Whether or not to render GitHub milestones as boxes (default: `false`).
+- `SHOW_EPICS=[true|false]`: Whether or not to render ZenHub epics as boxes (default: `false`).
 - `INCLUDE_FINISHED=[true|false]`: Whether or not to include closed issues with no open blockers (default: `false`).
 
 Here's an example script for easily running the DAG generator:
