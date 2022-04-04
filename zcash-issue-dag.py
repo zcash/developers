@@ -49,6 +49,18 @@ WALLET_REPOS = {
     439137887: ('zcash-hackworks', 'zcash-light-client-ffi'),
 }
 
+ANDROID_REPOS = {
+    390808594: ('zcash', 'secant-android-wallet'),
+    151763639: ('zcash', 'zcash-android-wallet-sdk')
+}
+
+IOS_REPOS = {
+    387551125: ('zcash', 'secant-ios-wallet'),
+    185480114: ('zcash', 'ZcashLightClientKit'),
+    270825987: ('zcash-hackworks', 'MnemonicSwift'),
+    439137887: ('zcash-hackworks', 'zcash-light-client-ffi')
+}
+
 ZF_REPOS = {
     205255683: ('ZcashFoundation', 'zebra'),
     225479018: ('ZcashFoundation', 'redjubjub'),
@@ -60,6 +72,8 @@ REPO_SETS = {
     'core': CORE_REPOS,
     'halo2': HALO2_REPOS,
     'wallet': WALLET_REPOS,
+    'ios': IOS_REPOS,
+    'android': ANDROID_REPOS,
     'zf': ZF_REPOS,
 }
 
