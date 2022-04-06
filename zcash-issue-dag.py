@@ -72,8 +72,8 @@ REPO_SETS = {
     'core': CORE_REPOS,
     'halo2': HALO2_REPOS,
     'wallet': WALLET_REPOS,
-    'ios': IOS_REPOS,
-    'android': ANDROID_REPOS,
+    'wallet-ios': IOS_REPOS,
+    'wallet-android': ANDROID_REPOS,
     'zf': ZF_REPOS,
 }
 
