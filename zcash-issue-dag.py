@@ -68,6 +68,10 @@ ZF_REPOS = {
     279422254: ('ZcashFoundation', 'zcash_script'),
 }
 
+ZF_FROST_REPOS = {
+    437862440: ('ZcashFoundation', 'frost'),
+}
+
 REPO_SETS = {
     'core': CORE_REPOS,
     'halo2': HALO2_REPOS,
@@ -75,6 +79,7 @@ REPO_SETS = {
     'wallet-ios': IOS_REPOS,
     'wallet-android': ANDROID_REPOS,
     'zf': ZF_REPOS,
+    'zf-frost': ZF_FROST_REPOS,
 }
 
 REPOS = REPO_SETS[DAG_VIEW]
