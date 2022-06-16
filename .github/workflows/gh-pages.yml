@@ -66,6 +66,23 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ZENHUB_TOKEN: ${{ secrets.ZENHUB_TOKEN }}
           DAG_VIEW: wallet
+          SHOW_MILESTONES: true
+
+      - name: Render ECC iOS Wallet DAG
+        run: python3 ./zcash-issue-dag.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ZENHUB_TOKEN: ${{ secrets.ZENHUB_TOKEN }}
+          DAG_VIEW: wallet-ios
+          SHOW_MILESTONES: true
+
+      - name: Render ECC Android Wallet DAG
+        run: python3 ./zcash-issue-dag.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ZENHUB_TOKEN: ${{ secrets.ZENHUB_TOKEN }}
+          DAG_VIEW: wallet-android
+          SHOW_MILESTONES: true
 
       - name: Render ZF DAG
         run: python3 ./zcash-issue-dag.py
