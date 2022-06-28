@@ -55,4 +55,6 @@ ZENHUB_TOKEN=<INSERT> \
 poetry run python ./zcash-issue-dag.py
 ```
 
+You can find a series of template script files inside the folder `template_scripts`.
+
 
