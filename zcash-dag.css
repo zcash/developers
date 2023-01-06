@@ -3,6 +3,12 @@
         /* Material dark theme surface colour */
         fill: #121212;
     }
+    svg .cluster polygon {
+        stroke: #1976d2;
+    }
+    svg .cluster text {
+        fill: #c9d1d9;
+    }
     svg .node polygon {
         stroke: #c9d1d9;
     }
