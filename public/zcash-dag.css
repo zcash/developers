@@ -20,6 +20,9 @@
         /* Material Blue 700 */
         fill: #1976d2;
     }
+    svg .node.needs-review polygon {
+        fill: #d29b19;
+    }
     svg .node.closed polygon {
         fill: #cf6b66;
     }
