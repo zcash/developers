@@ -103,6 +103,7 @@ class GitHubIssue:
             self.title = data['title']
             self.is_pr = 'merged' in data
             self.is_committed = 'S-committed' in labels
+            self.waiting_on_review = 'S-waiting-on-review' in labels
             self.url = data['url']
             self.state = 'closed' if data['state'] in ['CLOSED', 'MERGED'] else 'open'
             if 'milestone' in data and data['milestone']:
@@ -309,6 +310,9 @@ def main():
         if n.state == 'closed':
             attrs['class'] = 'closed'
             attrs['fillcolor'] = '#fad8c7'
+        elif n.waiting_on_review:
+            attrs['class'] = 'needs-review'
+            attrs['fillcolor'] = '#dfc150'
         elif n.is_committed:
             attrs['class'] = 'committed'
             attrs['fillcolor'] = '#a6cfff'
