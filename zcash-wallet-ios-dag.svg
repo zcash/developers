@@ -10,14 +10,14 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 2073)">
 <polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-2073 2086,-2073 2086,4 -4,4"/>
 <g id="clust1" class="cluster">
-<title>cluster_1</title>
-<polygon fill="none" stroke="#0000ff" points="345,-1280 345,-1357 678,-1357 678,-1280 345,-1280"/>
-<text text-anchor="middle" x="511.5" y="-1341.8" font-family="Times,serif" font-size="14.00" fill="#000000">UAs in Mobile SDKs</text>
-</g>
-<g id="clust2" class="cluster">
 <title>cluster_0</title>
 <polygon fill="none" stroke="#0000ff" points="1333,0 1333,-958 1570,-958 1570,0 1333,0"/>
 <text text-anchor="middle" x="1451.5" y="-942.8" font-family="Times,serif" font-size="14.00" fill="#000000">Secant iOS v1.0.0</text>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_1</title>
+<polygon fill="none" stroke="#0000ff" points="345,-1280 345,-1357 678,-1357 678,-1280 345,-1280"/>
+<text text-anchor="middle" x="511.5" y="-1341.8" font-family="Times,serif" font-size="14.00" fill="#000000">UAs in Mobile SDKs</text>
 </g>
 <g id="clust3" class="cluster">
 <title>cluster_2</title>
@@ -29,10 +29,283 @@
 <polygon fill="none" stroke="#0000ff" points="345,-1528 345,-1621 1031,-1621 1031,-1528 345,-1528"/>
 <text text-anchor="middle" x="688" y="-1605.8" font-family="Times,serif" font-size="14.00" fill="#000000">UniFFI</text>
 </g>
-<!-- zcash&#45;hackworks/zcash&#45;light&#45;client&#45;ffi#19 -->
+<!-- zcash/secant&#45;ios&#45;wallet#136 -->
 <g id="node1" class="node open">
+<title>zcash/secant&#45;ios&#45;wallet#136</title>
+<g id="a_node1"><a xlink:href="https://github.com/zcash/secant-ios-wallet/issues/136" xlink:title="zcash/secant&#45;ios&#45;wallet#136&#10;Home Screen" target="_blank">
+<polygon fill="#c2e0c6" stroke="#000000" points="1562,-927 1341,-927 1341,-889 1562,-889 1562,-927"/>
+<text text-anchor="middle" x="1451.5" y="-911.8" font-family="Times,serif" font-size="14.00" fill="#000000">zcash/secant&#45;ios&#45;wallet#136</text>
+<text text-anchor="middle" x="1451.5" y="-896.8" font-family="Times,serif" font-size="14.00" fill="#000000">Home Screen</text>
+</a>
+</g>
+</g>
+<!-- zcash/secant&#45;ios&#45;wallet#303 -->
+<g id="node19" class="node open">
+<title>zcash/secant&#45;ios&#45;wallet#303</title>
+<g id="a_node19"><a xlink:href="https://github.com/zcash/secant-ios-wallet/issues/303" xlink:title="zcash/secant&#45;ios&#45;wallet#303&#10;Release &#45; v1.0.0" target="_blank">
+<polygon fill="#c2e0c6" stroke="#000000" points="1822,-601 1601,-601 1601,-563 1822,-563 1822,-601"/>
+<text text-anchor="middle" x="1711.5" y="-585.8" font-family="Times,serif" font-size="14.00" fill="#000000">zcash/secant&#45;ios&#45;wallet#303</text>
+<text text-anchor="middle" x="1711.5" y="-570.8" font-family="Times,serif" font-size="14.00" fill="#000000">Release &#45; v1.0.0</text>
+</a>
+</g>
+</g>
+<!-- zcash/secant&#45;ios&#45;wallet#136&#45;&gt;zcash/secant&#45;ios&#45;wallet#303 -->
+<g id="edge2" class="edge">
+<title>zcash/secant&#45;ios&#45;wallet#136&#45;&gt;zcash/secant&#45;ios&#45;wallet#303</title>
+<path fill="none" stroke="#000000" d="M1556.8,-888.86C1561.5,-886.26 1565.9,-883.32 1570,-880 1571.4,-878.83 1663.2,-684.34 1698.2,-610.23"/>
+<polygon fill="#000000" stroke="#000000" points="1701.4452,-611.5522 1702.5,-601.01 1695.1012,-608.5935 1701.4452,-611.5522"/>
+</g>
+<!-- zcash/secant&#45;ios&#45;wallet#105 -->
+<g id="node2" class="node open">
+<title>zcash/secant&#45;ios&#45;wallet#105</title>
+<g id="a_node2"><a xlink:href="https://github.com/zcash/secant-ios-wallet/issues/105" xlink:title="zcash/secant&#45;ios&#45;wallet#105&#10;Scan QR code" target="_blank">
+<polygon fill="#c2e0c6" stroke="#000000" points="1562,-785 1341,-785 1341,-747 1562,-747 1562,-785"/>
+<text text-anchor="middle" x="1451.5" y="-769.8" font-family="Times,serif" font-size="14.00" fill="#000000">zcash/secant&#45;ios&#45;wallet#105</text>
+<text text-anchor="middle" x="1451.5" y="-754.8" font-family="Times,serif" font-size="14.00" fill="#000000">Scan QR code</text>
+</a>
+</g>
+</g>
+<!-- zcash/secant&#45;ios&#45;wallet#105&#45;&gt;zcash/secant&#45;ios&#45;wallet#303 -->
+<g id="edge3" class="edge">
+<title>zcash/secant&#45;ios&#45;wallet#105&#45;&gt;zcash/secant&#45;ios&#45;wallet#303</title>
+<path fill="none" stroke="#000000" d="M1551.8,-746.97C1558.1,-744.36 1564.3,-741.38 1570,-738 1624.9,-705.62 1670.6,-645.06 1694.2,-609.67"/>
+<polygon fill="#000000" stroke="#000000" points="1697.1615,-611.5362 1699.7,-601.25 1691.301,-607.7081 1697.1615,-611.5362"/>
+</g>
+<!-- zcash/secant&#45;ios&#45;wallet#95 -->
+<g id="node3" class="node open">
+<title>zcash/secant&#45;ios&#45;wallet#95</title>
+<g id="a_node3"><a xlink:href="https://github.com/zcash/secant-ios-wallet/issues/95" xlink:title="zcash/secant&#45;ios&#45;wallet#95&#10;Wallet History / Balance&#10;Breakdown / Transaction&#10;Details" target="_blank">
+<polygon fill="#c2e0c6" stroke="#000000" points="1557.5,-871 1345.5,-871 1345.5,-803 1557.5,-803 1557.5,-871"/>
+<text text-anchor="middle" x="1451.5" y="-855.8" font-family="Times,serif" font-size="14.00" fill="#000000">zcash/secant&#45;ios&#45;wallet#95</text>
+<text text-anchor="middle" x="1451.5" y="-840.8" font-family="Times,serif" font-size="14.00" fill="#000000">Wallet History / Balance</text>
+<text text-anchor="middle" x="1451.5" y="-825.8" font-family="Times,serif" font-size="14.00" fill="#000000">Breakdown / Transaction</text>
+<text text-anchor="middle" x="1451.5" y="-810.8" font-family="Times,serif" font-size="14.00" fill="#000000">Details</text>
+</a>
+</g>
+</g>
+<!-- zcash/secant&#45;ios&#45;wallet#95&#45;&gt;zcash/secant&#45;ios&#45;wallet#303 -->
+<g id="edge4" class="edge">
+<title>zcash/secant&#45;ios&#45;wallet#95&#45;&gt;zcash/secant&#45;ios&#45;wallet#303</title>
+<path fill="none" stroke="#000000" d="M1557.2,-802.88C1561.7,-800.13 1566,-797.17 1570,-794 1634.4,-743.49 1679.6,-655.33 1699.7,-610.27"/>
+<polygon fill="#000000" stroke="#000000" points="1702.922,-611.6384 1703.8,-601.08 1696.5293,-608.7864 1702.922,-611.6384"/>
+</g>
+<!-- zcash/secant&#45;ios&#45;wallet#372 -->
+<g id="node4" class="node open">
+<title>zcash/secant&#45;ios&#45;wallet#372</title>
+<g id="a_node4"><a xlink:href="https://github.com/zcash/secant-ios-wallet/issues/372" xlink:title="zcash/secant&#45;ios&#45;wallet#372&#10;Blocking TODOs,&#10;Enhancements and Fixes" target="_blank">
+<polygon fill="#c2e0c6" stroke="#000000" points="1562,-61.5 1341,-61.5 1341,-8.5 1562,-8.5 1562,-61.5"/>
+<text text-anchor="middle" x="1451.5" y="-46.3" font-family="Times,serif" font-size="14.00" fill="#000000">zcash/secant&#45;ios&#45;wallet#372</text>
+<text text-anchor="middle" x="1451.5" y="-31.3" font-family="Times,serif" font-size="14.00" fill="#000000">Blocking TODOs,</text>
+<text text-anchor="middle" x="1451.5" y="-16.3" font-family="Times,serif" font-size="14.00" fill="#000000">Enhancements and Fixes</text>
+</a>
+</g>
+</g>
+<!-- zcash/secant&#45;ios&#45;wallet#372&#45;&gt;zcash/secant&#45;ios&#45;wallet#303 -->
+<g id="edge5" class="edge">
+<title>zcash/secant&#45;ios&#45;wallet#372&#45;&gt;zcash/secant&#45;ios&#45;wallet#303</title>
+<path fill="none" stroke="#000000" d="M1559,-61.572C1562.9,-64.405 1566.6,-67.537 1570,-71 1639.2,-141.98 1692.1,-455.35 1707.2,-552.91"/>
+<polygon fill="#000000" stroke="#000000" points="1703.7593,-553.5677 1708.7,-562.94 1710.6824,-552.5323 1703.7593,-553.5677"/>
+</g>
+<!-- zcash/secant&#45;ios&#45;wallet#322 -->
+<g id="node20" class="node open">
+<title>zcash/secant&#45;ios&#45;wallet#322</title>
+<g id="a_node20"><a xlink:href="https://github.com/zcash/secant-ios-wallet/issues/322" xlink:title="zcash/secant&#45;ios&#45;wallet#322&#10;Handle&#10;WrappedCaptureDeviceError&#10;in the ScanReducer" target="_blank">
+<polygon fill="#c2e0c6" stroke="#000000" points="1825,-69 1598,-69 1598,-1 1825,-1 1825,-69"/>
+<text text-anchor="middle" x="1711.5" y="-53.8" font-family="Times,serif" font-size="14.00" fill="#000000">zcash/secant&#45;ios&#45;wallet#322</text>
+<text text-anchor="middle" x="1711.5" y="-38.8" font-family="Times,serif" font-size="14.00" fill="#000000">Handle</text>
+<text text-anchor="middle" x="1711.5" y="-23.8" font-family="Times,serif" font-size="14.00" fill="#000000">WrappedCaptureDeviceError</text>
+<text text-anchor="middle" x="1711.5" y="-8.8" font-family="Times,serif" font-size="14.00" fill="#000000">in the ScanReducer</text>
+</a>
+</g>
+</g>
+<!-- zcash/secant&#45;ios&#45;wallet#372&#45;&gt;zcash/secant&#45;ios&#45;wallet#322 -->
+<g id="edge6" class="edge">
+<title>zcash/secant&#45;ios&#45;wallet#372&#45;&gt;zcash/secant&#45;ios&#45;wallet#322</title>
+<path fill="none" stroke="#000000" d="M1562.1,-35C1570.5,-35 1579,-35 1587.4,-35"/>
+<polygon fill="#000000" stroke="#000000" points="1587.6,-38.5001 1597.6,-35 1587.6,-31.5001 1587.6,-38.5001"/>
+</g>
+<!-- zcash/secant&#45;ios&#45;wallet#374 -->
+<g id="node5" class="node open">
+<title>zcash/secant&#45;ios&#45;wallet#374</title>
+<g id="a_node5"><a xlink:href="https://github.com/zcash/secant-ios-wallet/issues/374" xlink:title="zcash/secant&#45;ios&#45;wallet#374&#10;Sprintly Releases" target="_blank">
+<polygon fill="#c2e0c6" stroke="#000000" stroke-width="2" points="1562,-545 1341,-545 1341,-507 1562,-507 1562,-545"/>
+<text text-anchor="middle" x="1451.5" y="-529.8" font-family="Times,serif" font-size="14.00" fill="#000000">zcash/secant&#45;ios&#45;wallet#374</text>
+<text text-anchor="middle" x="1451.5" y="-514.8" font-family="Times,serif" font-size="14.00" fill="#000000">Sprintly Releases</text>
+</a>
+</g>
+</g>
+<!-- zcash/secant&#45;ios&#45;wallet#374&#45;&gt;zcash/secant&#45;ios&#45;wallet#303 -->
+<g id="edge7" class="edge">
+<title>zcash/secant&#45;ios&#45;wallet#374&#45;&gt;zcash/secant&#45;ios&#45;wallet#303</title>
+<path fill="none" stroke="#000000" d="M1539.9,-545.04C1563.4,-550.11 1589,-555.62 1613.1,-560.8"/>
+<polygon fill="#000000" stroke="#000000" points="1612.386,-564.2264 1622.9,-562.92 1613.8661,-557.3847 1612.386,-564.2264"/>
+</g>
+<!-- zcash/secant&#45;ios&#45;wallet#124 -->
+<g id="node6" class="node open">
+<title>zcash/secant&#45;ios&#45;wallet#124</title>
+<g id="a_node6"><a xlink:href="https://github.com/zcash/secant-ios-wallet/issues/124" xlink:title="zcash/secant&#45;ios&#45;wallet#124&#10;[iOS] User Viewable&#10;Device Logs" target="_blank">
+<polygon fill="#c2e0c6" stroke="#000000" points="1562,-728.5 1341,-728.5 1341,-675.5 1562,-675.5 1562,-728.5"/>
+<text text-anchor="middle" x="1451.5" y="-713.3" font-family="Times,serif" font-size="14.00" fill="#000000">zcash/secant&#45;ios&#45;wallet#124</text>
+<text text-anchor="middle" x="1451.5" y="-698.3" font-family="Times,serif" font-size="14.00" fill="#000000">[iOS] User Viewable</text>
+<text text-anchor="middle" x="1451.5" y="-683.3" font-family="Times,serif" font-size="14.00" fill="#000000">Device Logs</text>
+</a>
+</g>
+</g>
+<!-- zcash/secant&#45;ios&#45;wallet#124&#45;&gt;zcash/secant&#45;ios&#45;wallet#303 -->
+<g id="edge8" class="edge">
+<title>zcash/secant&#45;ios&#45;wallet#124&#45;&gt;zcash/secant&#45;ios&#45;wallet#303</title>
+<path fill="none" stroke="#000000" d="M1546.4,-675.43C1554.4,-672.49 1562.4,-669.34 1570,-666 1607.5,-649.46 1647.4,-625.08 1675.3,-606.84"/>
+<polygon fill="#000000" stroke="#000000" points="1677.4914,-609.5869 1683.9,-601.15 1673.6289,-603.749 1677.4914,-609.5869"/>
+</g>
+<!-- zcash/secant&#45;ios&#45;wallet#79 -->
+<g id="node7" class="node open">
+<title>zcash/secant&#45;ios&#45;wallet#79</title>
+<g id="a_node7"><a xlink:href="https://github.com/zcash/secant-ios-wallet/issues/79" xlink:title="zcash/secant&#45;ios&#45;wallet#79&#10;Send ZEC Flow" target="_blank">
+<polygon fill="#c2e0c6" stroke="#000000" points="1557.5,-657 1345.5,-657 1345.5,-619 1557.5,-619 1557.5,-657"/>
+<text text-anchor="middle" x="1451.5" y="-641.8" font-family="Times,serif" font-size="14.00" fill="#000000">zcash/secant&#45;ios&#45;wallet#79</text>
+<text text-anchor="middle" x="1451.5" y="-626.8" font-family="Times,serif" font-size="14.00" fill="#000000">Send ZEC Flow</text>
+</a>
+</g>
+</g>
+<!-- zcash/secant&#45;ios&#45;wallet#79&#45;&gt;zcash/secant&#45;ios&#45;wallet#303 -->
+<g id="edge9" class="edge">
+<title>zcash/secant&#45;ios&#45;wallet#79&#45;&gt;zcash/secant&#45;ios&#45;wallet#303</title>
+<path fill="none" stroke="#000000" d="M1539.9,-618.96C1563.4,-613.89 1589,-608.38 1613.1,-603.2"/>
+<polygon fill="#000000" stroke="#000000" points="1613.8661,-606.6153 1622.9,-601.08 1612.386,-599.7736 1613.8661,-606.6153"/>
+</g>
+<!-- zcash/secant&#45;ios&#45;wallet#235 -->
+<g id="node8" class="node open">
+<title>zcash/secant&#45;ios&#45;wallet#235</title>
+<g id="a_node8"><a xlink:href="https://github.com/zcash/secant-ios-wallet/issues/235" xlink:title="zcash/secant&#45;ios&#45;wallet#235&#10;Crash Analytics" target="_blank">
+<polygon fill="#c2e0c6" stroke="#000000" stroke-width="2" points="1562,-489 1341,-489 1341,-451 1562,-451 1562,-489"/>
+<text text-anchor="middle" x="1451.5" y="-473.8" font-family="Times,serif" font-size="14.00" fill="#000000">zcash/secant&#45;ios&#45;wallet#235</text>
+<text text-anchor="middle" x="1451.5" y="-458.8" font-family="Times,serif" font-size="14.00" fill="#000000">Crash Analytics</text>
+</a>
+</g>
+</g>
+<!-- zcash/secant&#45;ios&#45;wallet#235&#45;&gt;zcash/secant&#45;ios&#45;wallet#303 -->
+<g id="edge10" class="edge">
+<title>zcash/secant&#45;ios&#45;wallet#235&#45;&gt;zcash/secant&#45;ios&#45;wallet#303</title>
+<path fill="none" stroke="#000000" d="M1544.2,-489.02C1553,-491.69 1561.8,-494.67 1570,-498 1608.5,-513.54 1648.9,-538.5 1676.6,-557.18"/>
+<polygon fill="#000000" stroke="#000000" points="1674.8714,-560.2382 1685.1,-563 1678.8262,-554.4624 1674.8714,-560.2382"/>
+</g>
+<!-- zcash/secant&#45;ios&#45;wallet#233 -->
+<g id="node9" class="node open">
+<title>zcash/secant&#45;ios&#45;wallet#233</title>
+<g id="a_node9"><a xlink:href="https://github.com/zcash/secant-ios-wallet/issues/233" xlink:title="zcash/secant&#45;ios&#45;wallet#233&#10;Localization and&#10;Accessibility" target="_blank">
+<polygon fill="#c2e0c6" stroke="#000000" stroke-width="2" points="1562,-432.5 1341,-432.5 1341,-379.5 1562,-379.5 1562,-432.5"/>
+<text text-anchor="middle" x="1451.5" y="-417.3" font-family="Times,serif" font-size="14.00" fill="#000000">zcash/secant&#45;ios&#45;wallet#233</text>
+<text text-anchor="middle" x="1451.5" y="-402.3" font-family="Times,serif" font-size="14.00" fill="#000000">Localization and</text>
+<text text-anchor="middle" x="1451.5" y="-387.3" font-family="Times,serif" font-size="14.00" fill="#000000">Accessibility</text>
+</a>
+</g>
+</g>
+<!-- zcash/secant&#45;ios&#45;wallet#233&#45;&gt;zcash/secant&#45;ios&#45;wallet#303 -->
+<g id="edge11" class="edge">
+<title>zcash/secant&#45;ios&#45;wallet#233&#45;&gt;zcash/secant&#45;ios&#45;wallet#303</title>
+<path fill="none" stroke="#000000" d="M1551.9,-432.64C1558.2,-435.47 1564.3,-438.59 1570,-442 1620.1,-471.89 1665.7,-523.28 1690.9,-554.79"/>
+<polygon fill="#000000" stroke="#000000" points="1688.2426,-557.0718 1697.2,-562.73 1693.7261,-552.7208 1688.2426,-557.0718"/>
+</g>
+<!-- zcash/secant&#45;ios&#45;wallet#195 -->
+<g id="node10" class="node open">
+<title>zcash/secant&#45;ios&#45;wallet#195</title>
+<g id="a_node10"><a xlink:href="https://github.com/zcash/secant-ios-wallet/issues/195" xlink:title="zcash/secant&#45;ios&#45;wallet#195&#10;Functional User&#10;Onboarding" target="_blank">
+<polygon fill="#c2e0c6" stroke="#000000" stroke-width="2" points="1562,-361.5 1341,-361.5 1341,-308.5 1562,-308.5 1562,-361.5"/>
+<text text-anchor="middle" x="1451.5" y="-346.3" font-family="Times,serif" font-size="14.00" fill="#000000">zcash/secant&#45;ios&#45;wallet#195</text>
+<text text-anchor="middle" x="1451.5" y="-331.3" font-family="Times,serif" font-size="14.00" fill="#000000">Functional User</text>
+<text text-anchor="middle" x="1451.5" y="-316.3" font-family="Times,serif" font-size="14.00" fill="#000000">Onboarding</text>
+</a>
+</g>
+</g>
+<!-- zcash/secant&#45;ios&#45;wallet#195&#45;&gt;zcash/secant&#45;ios&#45;wallet#303 -->
+<g id="edge12" class="edge">
+<title>zcash/secant&#45;ios&#45;wallet#195&#45;&gt;zcash/secant&#45;ios&#45;wallet#303</title>
+<path fill="none" stroke="#000000" d="M1556.9,-361.61C1561.4,-364.16 1565.9,-366.95 1570,-370 1636.1,-418.65 1680.7,-508.02 1700.2,-553.62"/>
+<polygon fill="#000000" stroke="#000000" points="1697.005,-555.0516 1704.1,-562.92 1703.4604,-552.3445 1697.005,-555.0516"/>
+</g>
+<!-- zcash/secant&#45;ios&#45;wallet#137 -->
+<g id="node11" class="node open">
+<title>zcash/secant&#45;ios&#45;wallet#137</title>
+<g id="a_node11"><a xlink:href="https://github.com/zcash/secant-ios-wallet/issues/137" xlink:title="zcash/secant&#45;ios&#45;wallet#137&#10;[UI Enhancements]&#10;Onboarding + Recovery&#10;Phrase Backup and&#10;Validation" target="_blank">
+<polygon fill="#c2e0c6" stroke="#000000" stroke-width="2" points="1562,-290.5 1341,-290.5 1341,-207.5 1562,-207.5 1562,-290.5"/>
+<text text-anchor="middle" x="1451.5" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000">zcash/secant&#45;ios&#45;wallet#137</text>
+<text text-anchor="middle" x="1451.5" y="-260.3" font-family="Times,serif" font-size="14.00" fill="#000000">[UI Enhancements]</text>
+<text text-anchor="middle" x="1451.5" y="-245.3" font-family="Times,serif" font-size="14.00" fill="#000000">Onboarding + Recovery</text>
+<text text-anchor="middle" x="1451.5" y="-230.3" font-family="Times,serif" font-size="14.00" fill="#000000">Phrase Backup and</text>
+<text text-anchor="middle" x="1451.5" y="-215.3" font-family="Times,serif" font-size="14.00" fill="#000000">Validation</text>
+</a>
+</g>
+</g>
+<!-- zcash/secant&#45;ios&#45;wallet#137&#45;&gt;zcash/secant&#45;ios&#45;wallet#303 -->
+<g id="edge13" class="edge">
+<title>zcash/secant&#45;ios&#45;wallet#137&#45;&gt;zcash/secant&#45;ios&#45;wallet#303</title>
+<path fill="none" stroke="#000000" d="M1559.9,-290.55C1563.4,-293.21 1566.8,-296.02 1570,-299 1647.7,-371.86 1688.9,-496.74 1704.3,-553.01"/>
+<polygon fill="#000000" stroke="#000000" points="1700.9257,-553.9402 1706.9,-562.69 1707.6861,-552.1244 1700.9257,-553.9402"/>
+</g>
+<!-- zcash/secant&#45;ios&#45;wallet#72 -->
+<g id="node12" class="node open">
+<title>zcash/secant&#45;ios&#45;wallet#72</title>
+<g id="a_node12"><a xlink:href="https://github.com/zcash/secant-ios-wallet/issues/72" xlink:title="zcash/secant&#45;ios&#45;wallet#72&#10;Wallet Address and&#10;Settings" target="_blank">
+<polygon fill="#c2e0c6" stroke="#000000" points="1557.5,-189.5 1345.5,-189.5 1345.5,-136.5 1557.5,-136.5 1557.5,-189.5"/>
+<text text-anchor="middle" x="1451.5" y="-174.3" font-family="Times,serif" font-size="14.00" fill="#000000">zcash/secant&#45;ios&#45;wallet#72</text>
+<text text-anchor="middle" x="1451.5" y="-159.3" font-family="Times,serif" font-size="14.00" fill="#000000">Wallet Address and</text>
+<text text-anchor="middle" x="1451.5" y="-144.3" font-family="Times,serif" font-size="14.00" fill="#000000">Settings</text>
+</a>
+</g>
+</g>
+<!-- zcash/secant&#45;ios&#45;wallet#72&#45;&gt;zcash/secant&#45;ios&#45;wallet#303 -->
+<g id="edge14" class="edge">
+<title>zcash/secant&#45;ios&#45;wallet#72&#45;&gt;zcash/secant&#45;ios&#45;wallet#303</title>
+<path fill="none" stroke="#000000" d="M1557.5,-188.29C1562,-191.18 1566.2,-194.41 1570,-198 1675.6,-296.84 1702.7,-481.27 1709.4,-552.7"/>
+<polygon fill="#000000" stroke="#000000" points="1705.9236,-553.1213 1710.3,-562.77 1712.8958,-552.4981 1705.9236,-553.1213"/>
+</g>
+<!-- zcash/secant&#45;ios&#45;wallet#273 -->
+<g id="node13" class="node open">
+<title>zcash/secant&#45;ios&#45;wallet#273</title>
+<g id="a_node13"><a xlink:href="https://github.com/zcash/secant-ios-wallet/issues/273" xlink:title="zcash/secant&#45;ios&#45;wallet#273&#10;New App Store target" target="_blank">
+<polygon fill="#c2e0c6" stroke="#000000" stroke-width="2" points="1562,-118 1341,-118 1341,-80 1562,-80 1562,-118"/>
+<text text-anchor="middle" x="1451.5" y="-102.8" font-family="Times,serif" font-size="14.00" fill="#000000">zcash/secant&#45;ios&#45;wallet#273</text>
+<text text-anchor="middle" x="1451.5" y="-87.8" font-family="Times,serif" font-size="14.00" fill="#000000">New App Store target</text>
+</a>
+</g>
+</g>
+<!-- zcash/secant&#45;ios&#45;wallet#207 -->
+<g id="node21" class="node open">
+<title>zcash/secant&#45;ios&#45;wallet#207</title>
+<g id="a_node21"><a xlink:href="https://github.com/zcash/secant-ios-wallet/issues/207" xlink:title="zcash/secant&#45;ios&#45;wallet#207&#10;Rename &quot;Secant&#45;testnet&quot;&#10;to &quot;Secant&quot;" target="_blank">
+<polygon fill="#c2e0c6" stroke="#000000" points="1562,-1019.5 1341,-1019.5 1341,-966.5 1562,-966.5 1562,-1019.5"/>
+<text text-anchor="middle" x="1451.5" y="-1004.3" font-family="Times,serif" font-size="14.00" fill="#000000">zcash/secant&#45;ios&#45;wallet#207</text>
+<text text-anchor="middle" x="1451.5" y="-989.3" font-family="Times,serif" font-size="14.00" fill="#000000">Rename &quot;Secant&#45;testnet&quot;</text>
+<text text-anchor="middle" x="1451.5" y="-974.3" font-family="Times,serif" font-size="14.00" fill="#000000">to &quot;Secant&quot;</text>
+</a>
+</g>
+</g>
+<!-- zcash/secant&#45;ios&#45;wallet#273&#45;&gt;zcash/secant&#45;ios&#45;wallet#207 -->
+<g id="edge15" class="edge">
+<title>zcash/secant&#45;ios&#45;wallet#273&#45;&gt;zcash/secant&#45;ios&#45;wallet#207</title>
+<path fill="none" stroke="#000000" d="M1340.9,-113.38C1331.9,-118.98 1324.3,-126.36 1319,-136 1308.1,-155.92 1308.1,-933.08 1319,-953 1322.6,-959.52 1327.2,-965.05 1332.6,-969.73"/>
+<polygon fill="#000000" stroke="#000000" points="1330.8927,-972.8231 1341,-976 1335.0799,-967.2135 1330.8927,-972.8231"/>
+</g>
+<!-- zcash/secant&#45;ios&#45;wallet#44 -->
+<g id="node14" class="node open">
+<title>zcash/secant&#45;ios&#45;wallet#44</title>
+<g id="a_node14"><a xlink:href="https://github.com/zcash/secant-ios-wallet/issues/44" xlink:title="zcash/secant&#45;ios&#45;wallet#44&#10;Seed Backup Flow" target="_blank">
+<polygon fill="#c2e0c6" stroke="#000000" stroke-width="2" points="1557.5,-601 1345.5,-601 1345.5,-563 1557.5,-563 1557.5,-601"/>
+<text text-anchor="middle" x="1451.5" y="-585.8" font-family="Times,serif" font-size="14.00" fill="#000000">zcash/secant&#45;ios&#45;wallet#44</text>
+<text text-anchor="middle" x="1451.5" y="-570.8" font-family="Times,serif" font-size="14.00" fill="#000000">Seed Backup Flow</text>
+</a>
+</g>
+</g>
+<!-- zcash/secant&#45;ios&#45;wallet#44&#45;&gt;zcash/secant&#45;ios&#45;wallet#303 -->
+<g id="edge16" class="edge">
+<title>zcash/secant&#45;ios&#45;wallet#44&#45;&gt;zcash/secant&#45;ios&#45;wallet#303</title>
+<path fill="none" stroke="#000000" d="M1557.6,-582C1568.5,-582 1579.6,-582 1590.6,-582"/>
+<polygon fill="#000000" stroke="#000000" points="1590.6,-585.5001 1600.6,-582 1590.6,-578.5001 1590.6,-585.5001"/>
+</g>
+<!-- zcash&#45;hackworks/zcash&#45;light&#45;client&#45;ffi#19 -->
+<g id="node15" class="node open">
 <title>zcash&#45;hackworks/zcash&#45;light&#45;client&#45;ffi#19</title>
-<g id="a_node1"><a xlink:href="https://github.com/zcash-hackworks/zcash-light-client-ffi/issues/19" xlink:title="zcash&#45;hackworks/zcash&#45;light&#45;client&#45;ffi#19&#10;Release v0.2.0" target="_blank">
+<g id="a_node15"><a xlink:href="https://github.com/zcash-hackworks/zcash-light-client-ffi/issues/19" xlink:title="zcash&#45;hackworks/zcash&#45;light&#45;client&#45;ffi#19&#10;Release v0.2.0" target="_blank">
 <polygon fill="#c2e0c6" stroke="#000000" points="670,-1326 353,-1326 353,-1288 670,-1288 670,-1326"/>
 <text text-anchor="middle" x="511.5" y="-1310.8" font-family="Times,serif" font-size="14.00" fill="#000000">zcash&#45;hackworks/zcash&#45;light&#45;client&#45;ffi#19</text>
 <text text-anchor="middle" x="511.5" y="-1295.8" font-family="Times,serif" font-size="14.00" fill="#000000">Release v0.2.0</text>
@@ -70,279 +343,6 @@
 <title>zcash&#45;hackworks/zcash&#45;light&#45;client&#45;ffi#19&#45;&gt;zcash/ZcashLightClientKit#415</title>
 <path fill="none" stroke="#000000" d="M670.4,-1299.2C785.69,-1293.5 939.87,-1285.9 1048.7,-1280.6"/>
 <polygon fill="#000000" stroke="#000000" points="1048.9853,-1284.0903 1058.8,-1280.1 1048.6391,-1277.0988 1048.9853,-1284.0903"/>
-</g>
-<!-- zcash/secant&#45;ios&#45;wallet#136 -->
-<g id="node2" class="node open">
-<title>zcash/secant&#45;ios&#45;wallet#136</title>
-<g id="a_node2"><a xlink:href="https://github.com/zcash/secant-ios-wallet/issues/136" xlink:title="zcash/secant&#45;ios&#45;wallet#136&#10;Home Screen" target="_blank">
-<polygon fill="#c2e0c6" stroke="#000000" points="1562,-927 1341,-927 1341,-889 1562,-889 1562,-927"/>
-<text text-anchor="middle" x="1451.5" y="-911.8" font-family="Times,serif" font-size="14.00" fill="#000000">zcash/secant&#45;ios&#45;wallet#136</text>
-<text text-anchor="middle" x="1451.5" y="-896.8" font-family="Times,serif" font-size="14.00" fill="#000000">Home Screen</text>
-</a>
-</g>
-</g>
-<!-- zcash/secant&#45;ios&#45;wallet#303 -->
-<g id="node19" class="node open">
-<title>zcash/secant&#45;ios&#45;wallet#303</title>
-<g id="a_node19"><a xlink:href="https://github.com/zcash/secant-ios-wallet/issues/303" xlink:title="zcash/secant&#45;ios&#45;wallet#303&#10;Release &#45; v1.0.0" target="_blank">
-<polygon fill="#c2e0c6" stroke="#000000" points="1822,-601 1601,-601 1601,-563 1822,-563 1822,-601"/>
-<text text-anchor="middle" x="1711.5" y="-585.8" font-family="Times,serif" font-size="14.00" fill="#000000">zcash/secant&#45;ios&#45;wallet#303</text>
-<text text-anchor="middle" x="1711.5" y="-570.8" font-family="Times,serif" font-size="14.00" fill="#000000">Release &#45; v1.0.0</text>
-</a>
-</g>
-</g>
-<!-- zcash/secant&#45;ios&#45;wallet#136&#45;&gt;zcash/secant&#45;ios&#45;wallet#303 -->
-<g id="edge2" class="edge">
-<title>zcash/secant&#45;ios&#45;wallet#136&#45;&gt;zcash/secant&#45;ios&#45;wallet#303</title>
-<path fill="none" stroke="#000000" d="M1556.8,-888.86C1561.5,-886.26 1565.9,-883.32 1570,-880 1571.4,-878.83 1663.2,-684.34 1698.2,-610.23"/>
-<polygon fill="#000000" stroke="#000000" points="1701.4452,-611.5522 1702.5,-601.01 1695.1012,-608.5935 1701.4452,-611.5522"/>
-</g>
-<!-- zcash/secant&#45;ios&#45;wallet#105 -->
-<g id="node3" class="node open">
-<title>zcash/secant&#45;ios&#45;wallet#105</title>
-<g id="a_node3"><a xlink:href="https://github.com/zcash/secant-ios-wallet/issues/105" xlink:title="zcash/secant&#45;ios&#45;wallet#105&#10;Scan QR code" target="_blank">
-<polygon fill="#c2e0c6" stroke="#000000" points="1562,-785 1341,-785 1341,-747 1562,-747 1562,-785"/>
-<text text-anchor="middle" x="1451.5" y="-769.8" font-family="Times,serif" font-size="14.00" fill="#000000">zcash/secant&#45;ios&#45;wallet#105</text>
-<text text-anchor="middle" x="1451.5" y="-754.8" font-family="Times,serif" font-size="14.00" fill="#000000">Scan QR code</text>
-</a>
-</g>
-</g>
-<!-- zcash/secant&#45;ios&#45;wallet#105&#45;&gt;zcash/secant&#45;ios&#45;wallet#303 -->
-<g id="edge3" class="edge">
-<title>zcash/secant&#45;ios&#45;wallet#105&#45;&gt;zcash/secant&#45;ios&#45;wallet#303</title>
-<path fill="none" stroke="#000000" d="M1551.8,-746.97C1558.1,-744.36 1564.3,-741.38 1570,-738 1624.9,-705.62 1670.6,-645.06 1694.2,-609.67"/>
-<polygon fill="#000000" stroke="#000000" points="1697.1615,-611.5362 1699.7,-601.25 1691.301,-607.7081 1697.1615,-611.5362"/>
-</g>
-<!-- zcash/secant&#45;ios&#45;wallet#95 -->
-<g id="node4" class="node open">
-<title>zcash/secant&#45;ios&#45;wallet#95</title>
-<g id="a_node4"><a xlink:href="https://github.com/zcash/secant-ios-wallet/issues/95" xlink:title="zcash/secant&#45;ios&#45;wallet#95&#10;Wallet History / Balance&#10;Breakdown / Transaction&#10;Details" target="_blank">
-<polygon fill="#c2e0c6" stroke="#000000" points="1557.5,-871 1345.5,-871 1345.5,-803 1557.5,-803 1557.5,-871"/>
-<text text-anchor="middle" x="1451.5" y="-855.8" font-family="Times,serif" font-size="14.00" fill="#000000">zcash/secant&#45;ios&#45;wallet#95</text>
-<text text-anchor="middle" x="1451.5" y="-840.8" font-family="Times,serif" font-size="14.00" fill="#000000">Wallet History / Balance</text>
-<text text-anchor="middle" x="1451.5" y="-825.8" font-family="Times,serif" font-size="14.00" fill="#000000">Breakdown / Transaction</text>
-<text text-anchor="middle" x="1451.5" y="-810.8" font-family="Times,serif" font-size="14.00" fill="#000000">Details</text>
-</a>
-</g>
-</g>
-<!-- zcash/secant&#45;ios&#45;wallet#95&#45;&gt;zcash/secant&#45;ios&#45;wallet#303 -->
-<g id="edge4" class="edge">
-<title>zcash/secant&#45;ios&#45;wallet#95&#45;&gt;zcash/secant&#45;ios&#45;wallet#303</title>
-<path fill="none" stroke="#000000" d="M1557.2,-802.88C1561.7,-800.13 1566,-797.17 1570,-794 1634.4,-743.49 1679.6,-655.33 1699.7,-610.27"/>
-<polygon fill="#000000" stroke="#000000" points="1702.922,-611.6384 1703.8,-601.08 1696.5293,-608.7864 1702.922,-611.6384"/>
-</g>
-<!-- zcash/secant&#45;ios&#45;wallet#372 -->
-<g id="node5" class="node open">
-<title>zcash/secant&#45;ios&#45;wallet#372</title>
-<g id="a_node5"><a xlink:href="https://github.com/zcash/secant-ios-wallet/issues/372" xlink:title="zcash/secant&#45;ios&#45;wallet#372&#10;Blocking TODOs,&#10;Enhancements and Fixes" target="_blank">
-<polygon fill="#c2e0c6" stroke="#000000" points="1562,-61.5 1341,-61.5 1341,-8.5 1562,-8.5 1562,-61.5"/>
-<text text-anchor="middle" x="1451.5" y="-46.3" font-family="Times,serif" font-size="14.00" fill="#000000">zcash/secant&#45;ios&#45;wallet#372</text>
-<text text-anchor="middle" x="1451.5" y="-31.3" font-family="Times,serif" font-size="14.00" fill="#000000">Blocking TODOs,</text>
-<text text-anchor="middle" x="1451.5" y="-16.3" font-family="Times,serif" font-size="14.00" fill="#000000">Enhancements and Fixes</text>
-</a>
-</g>
-</g>
-<!-- zcash/secant&#45;ios&#45;wallet#372&#45;&gt;zcash/secant&#45;ios&#45;wallet#303 -->
-<g id="edge5" class="edge">
-<title>zcash/secant&#45;ios&#45;wallet#372&#45;&gt;zcash/secant&#45;ios&#45;wallet#303</title>
-<path fill="none" stroke="#000000" d="M1559,-61.572C1562.9,-64.405 1566.6,-67.537 1570,-71 1639.2,-141.98 1692.1,-455.35 1707.2,-552.91"/>
-<polygon fill="#000000" stroke="#000000" points="1703.7593,-553.5677 1708.7,-562.94 1710.6824,-552.5323 1703.7593,-553.5677"/>
-</g>
-<!-- zcash/secant&#45;ios&#45;wallet#322 -->
-<g id="node20" class="node open">
-<title>zcash/secant&#45;ios&#45;wallet#322</title>
-<g id="a_node20"><a xlink:href="https://github.com/zcash/secant-ios-wallet/issues/322" xlink:title="zcash/secant&#45;ios&#45;wallet#322&#10;Handle&#10;WrappedCaptureDeviceError&#10;in the ScanReducer" target="_blank">
-<polygon fill="#c2e0c6" stroke="#000000" points="1825,-69 1598,-69 1598,-1 1825,-1 1825,-69"/>
-<text text-anchor="middle" x="1711.5" y="-53.8" font-family="Times,serif" font-size="14.00" fill="#000000">zcash/secant&#45;ios&#45;wallet#322</text>
-<text text-anchor="middle" x="1711.5" y="-38.8" font-family="Times,serif" font-size="14.00" fill="#000000">Handle</text>
-<text text-anchor="middle" x="1711.5" y="-23.8" font-family="Times,serif" font-size="14.00" fill="#000000">WrappedCaptureDeviceError</text>
-<text text-anchor="middle" x="1711.5" y="-8.8" font-family="Times,serif" font-size="14.00" fill="#000000">in the ScanReducer</text>
-</a>
-</g>
-</g>
-<!-- zcash/secant&#45;ios&#45;wallet#372&#45;&gt;zcash/secant&#45;ios&#45;wallet#322 -->
-<g id="edge6" class="edge">
-<title>zcash/secant&#45;ios&#45;wallet#372&#45;&gt;zcash/secant&#45;ios&#45;wallet#322</title>
-<path fill="none" stroke="#000000" d="M1562.1,-35C1570.5,-35 1579,-35 1587.4,-35"/>
-<polygon fill="#000000" stroke="#000000" points="1587.6,-38.5001 1597.6,-35 1587.6,-31.5001 1587.6,-38.5001"/>
-</g>
-<!-- zcash/secant&#45;ios&#45;wallet#374 -->
-<g id="node6" class="node open">
-<title>zcash/secant&#45;ios&#45;wallet#374</title>
-<g id="a_node6"><a xlink:href="https://github.com/zcash/secant-ios-wallet/issues/374" xlink:title="zcash/secant&#45;ios&#45;wallet#374&#10;Sprintly Releases" target="_blank">
-<polygon fill="#c2e0c6" stroke="#000000" stroke-width="2" points="1562,-545 1341,-545 1341,-507 1562,-507 1562,-545"/>
-<text text-anchor="middle" x="1451.5" y="-529.8" font-family="Times,serif" font-size="14.00" fill="#000000">zcash/secant&#45;ios&#45;wallet#374</text>
-<text text-anchor="middle" x="1451.5" y="-514.8" font-family="Times,serif" font-size="14.00" fill="#000000">Sprintly Releases</text>
-</a>
-</g>
-</g>
-<!-- zcash/secant&#45;ios&#45;wallet#374&#45;&gt;zcash/secant&#45;ios&#45;wallet#303 -->
-<g id="edge7" class="edge">
-<title>zcash/secant&#45;ios&#45;wallet#374&#45;&gt;zcash/secant&#45;ios&#45;wallet#303</title>
-<path fill="none" stroke="#000000" d="M1539.9,-545.04C1563.4,-550.11 1589,-555.62 1613.1,-560.8"/>
-<polygon fill="#000000" stroke="#000000" points="1612.386,-564.2264 1622.9,-562.92 1613.8661,-557.3847 1612.386,-564.2264"/>
-</g>
-<!-- zcash/secant&#45;ios&#45;wallet#124 -->
-<g id="node7" class="node open">
-<title>zcash/secant&#45;ios&#45;wallet#124</title>
-<g id="a_node7"><a xlink:href="https://github.com/zcash/secant-ios-wallet/issues/124" xlink:title="zcash/secant&#45;ios&#45;wallet#124&#10;[iOS] User Viewable&#10;Device Logs" target="_blank">
-<polygon fill="#c2e0c6" stroke="#000000" points="1562,-728.5 1341,-728.5 1341,-675.5 1562,-675.5 1562,-728.5"/>
-<text text-anchor="middle" x="1451.5" y="-713.3" font-family="Times,serif" font-size="14.00" fill="#000000">zcash/secant&#45;ios&#45;wallet#124</text>
-<text text-anchor="middle" x="1451.5" y="-698.3" font-family="Times,serif" font-size="14.00" fill="#000000">[iOS] User Viewable</text>
-<text text-anchor="middle" x="1451.5" y="-683.3" font-family="Times,serif" font-size="14.00" fill="#000000">Device Logs</text>
-</a>
-</g>
-</g>
-<!-- zcash/secant&#45;ios&#45;wallet#124&#45;&gt;zcash/secant&#45;ios&#45;wallet#303 -->
-<g id="edge8" class="edge">
-<title>zcash/secant&#45;ios&#45;wallet#124&#45;&gt;zcash/secant&#45;ios&#45;wallet#303</title>
-<path fill="none" stroke="#000000" d="M1546.4,-675.43C1554.4,-672.49 1562.4,-669.34 1570,-666 1607.5,-649.46 1647.4,-625.08 1675.3,-606.84"/>
-<polygon fill="#000000" stroke="#000000" points="1677.4914,-609.5869 1683.9,-601.15 1673.6289,-603.749 1677.4914,-609.5869"/>
-</g>
-<!-- zcash/secant&#45;ios&#45;wallet#79 -->
-<g id="node8" class="node open">
-<title>zcash/secant&#45;ios&#45;wallet#79</title>
-<g id="a_node8"><a xlink:href="https://github.com/zcash/secant-ios-wallet/issues/79" xlink:title="zcash/secant&#45;ios&#45;wallet#79&#10;Send ZEC Flow" target="_blank">
-<polygon fill="#c2e0c6" stroke="#000000" points="1557.5,-657 1345.5,-657 1345.5,-619 1557.5,-619 1557.5,-657"/>
-<text text-anchor="middle" x="1451.5" y="-641.8" font-family="Times,serif" font-size="14.00" fill="#000000">zcash/secant&#45;ios&#45;wallet#79</text>
-<text text-anchor="middle" x="1451.5" y="-626.8" font-family="Times,serif" font-size="14.00" fill="#000000">Send ZEC Flow</text>
-</a>
-</g>
-</g>
-<!-- zcash/secant&#45;ios&#45;wallet#79&#45;&gt;zcash/secant&#45;ios&#45;wallet#303 -->
-<g id="edge9" class="edge">
-<title>zcash/secant&#45;ios&#45;wallet#79&#45;&gt;zcash/secant&#45;ios&#45;wallet#303</title>
-<path fill="none" stroke="#000000" d="M1539.9,-618.96C1563.4,-613.89 1589,-608.38 1613.1,-603.2"/>
-<polygon fill="#000000" stroke="#000000" points="1613.8661,-606.6153 1622.9,-601.08 1612.386,-599.7736 1613.8661,-606.6153"/>
-</g>
-<!-- zcash/secant&#45;ios&#45;wallet#235 -->
-<g id="node9" class="node open">
-<title>zcash/secant&#45;ios&#45;wallet#235</title>
-<g id="a_node9"><a xlink:href="https://github.com/zcash/secant-ios-wallet/issues/235" xlink:title="zcash/secant&#45;ios&#45;wallet#235&#10;Crash Analytics" target="_blank">
-<polygon fill="#c2e0c6" stroke="#000000" stroke-width="2" points="1562,-489 1341,-489 1341,-451 1562,-451 1562,-489"/>
-<text text-anchor="middle" x="1451.5" y="-473.8" font-family="Times,serif" font-size="14.00" fill="#000000">zcash/secant&#45;ios&#45;wallet#235</text>
-<text text-anchor="middle" x="1451.5" y="-458.8" font-family="Times,serif" font-size="14.00" fill="#000000">Crash Analytics</text>
-</a>
-</g>
-</g>
-<!-- zcash/secant&#45;ios&#45;wallet#235&#45;&gt;zcash/secant&#45;ios&#45;wallet#303 -->
-<g id="edge10" class="edge">
-<title>zcash/secant&#45;ios&#45;wallet#235&#45;&gt;zcash/secant&#45;ios&#45;wallet#303</title>
-<path fill="none" stroke="#000000" d="M1544.2,-489.02C1553,-491.69 1561.8,-494.67 1570,-498 1608.5,-513.54 1648.9,-538.5 1676.6,-557.18"/>
-<polygon fill="#000000" stroke="#000000" points="1674.8714,-560.2382 1685.1,-563 1678.8262,-554.4624 1674.8714,-560.2382"/>
-</g>
-<!-- zcash/secant&#45;ios&#45;wallet#233 -->
-<g id="node10" class="node open">
-<title>zcash/secant&#45;ios&#45;wallet#233</title>
-<g id="a_node10"><a xlink:href="https://github.com/zcash/secant-ios-wallet/issues/233" xlink:title="zcash/secant&#45;ios&#45;wallet#233&#10;Localization and&#10;Accessibility" target="_blank">
-<polygon fill="#c2e0c6" stroke="#000000" stroke-width="2" points="1562,-432.5 1341,-432.5 1341,-379.5 1562,-379.5 1562,-432.5"/>
-<text text-anchor="middle" x="1451.5" y="-417.3" font-family="Times,serif" font-size="14.00" fill="#000000">zcash/secant&#45;ios&#45;wallet#233</text>
-<text text-anchor="middle" x="1451.5" y="-402.3" font-family="Times,serif" font-size="14.00" fill="#000000">Localization and</text>
-<text text-anchor="middle" x="1451.5" y="-387.3" font-family="Times,serif" font-size="14.00" fill="#000000">Accessibility</text>
-</a>
-</g>
-</g>
-<!-- zcash/secant&#45;ios&#45;wallet#233&#45;&gt;zcash/secant&#45;ios&#45;wallet#303 -->
-<g id="edge11" class="edge">
-<title>zcash/secant&#45;ios&#45;wallet#233&#45;&gt;zcash/secant&#45;ios&#45;wallet#303</title>
-<path fill="none" stroke="#000000" d="M1551.9,-432.64C1558.2,-435.47 1564.3,-438.59 1570,-442 1620.1,-471.89 1665.7,-523.28 1690.9,-554.79"/>
-<polygon fill="#000000" stroke="#000000" points="1688.2426,-557.0718 1697.2,-562.73 1693.7261,-552.7208 1688.2426,-557.0718"/>
-</g>
-<!-- zcash/secant&#45;ios&#45;wallet#195 -->
-<g id="node11" class="node open">
-<title>zcash/secant&#45;ios&#45;wallet#195</title>
-<g id="a_node11"><a xlink:href="https://github.com/zcash/secant-ios-wallet/issues/195" xlink:title="zcash/secant&#45;ios&#45;wallet#195&#10;Functional User&#10;Onboarding" target="_blank">
-<polygon fill="#c2e0c6" stroke="#000000" stroke-width="2" points="1562,-361.5 1341,-361.5 1341,-308.5 1562,-308.5 1562,-361.5"/>
-<text text-anchor="middle" x="1451.5" y="-346.3" font-family="Times,serif" font-size="14.00" fill="#000000">zcash/secant&#45;ios&#45;wallet#195</text>
-<text text-anchor="middle" x="1451.5" y="-331.3" font-family="Times,serif" font-size="14.00" fill="#000000">Functional User</text>
-<text text-anchor="middle" x="1451.5" y="-316.3" font-family="Times,serif" font-size="14.00" fill="#000000">Onboarding</text>
-</a>
-</g>
-</g>
-<!-- zcash/secant&#45;ios&#45;wallet#195&#45;&gt;zcash/secant&#45;ios&#45;wallet#303 -->
-<g id="edge12" class="edge">
-<title>zcash/secant&#45;ios&#45;wallet#195&#45;&gt;zcash/secant&#45;ios&#45;wallet#303</title>
-<path fill="none" stroke="#000000" d="M1556.9,-361.61C1561.4,-364.16 1565.9,-366.95 1570,-370 1636.1,-418.65 1680.7,-508.02 1700.2,-553.62"/>
-<polygon fill="#000000" stroke="#000000" points="1697.005,-555.0516 1704.1,-562.92 1703.4604,-552.3445 1697.005,-555.0516"/>
-</g>
-<!-- zcash/secant&#45;ios&#45;wallet#137 -->
-<g id="node12" class="node open">
-<title>zcash/secant&#45;ios&#45;wallet#137</title>
-<g id="a_node12"><a xlink:href="https://github.com/zcash/secant-ios-wallet/issues/137" xlink:title="zcash/secant&#45;ios&#45;wallet#137&#10;[UI Enhancements]&#10;Onboarding + Recovery&#10;Phrase Backup and&#10;Validation" target="_blank">
-<polygon fill="#c2e0c6" stroke="#000000" stroke-width="2" points="1562,-290.5 1341,-290.5 1341,-207.5 1562,-207.5 1562,-290.5"/>
-<text text-anchor="middle" x="1451.5" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000">zcash/secant&#45;ios&#45;wallet#137</text>
-<text text-anchor="middle" x="1451.5" y="-260.3" font-family="Times,serif" font-size="14.00" fill="#000000">[UI Enhancements]</text>
-<text text-anchor="middle" x="1451.5" y="-245.3" font-family="Times,serif" font-size="14.00" fill="#000000">Onboarding + Recovery</text>
-<text text-anchor="middle" x="1451.5" y="-230.3" font-family="Times,serif" font-size="14.00" fill="#000000">Phrase Backup and</text>
-<text text-anchor="middle" x="1451.5" y="-215.3" font-family="Times,serif" font-size="14.00" fill="#000000">Validation</text>
-</a>
-</g>
-</g>
-<!-- zcash/secant&#45;ios&#45;wallet#137&#45;&gt;zcash/secant&#45;ios&#45;wallet#303 -->
-<g id="edge13" class="edge">
-<title>zcash/secant&#45;ios&#45;wallet#137&#45;&gt;zcash/secant&#45;ios&#45;wallet#303</title>
-<path fill="none" stroke="#000000" d="M1559.9,-290.55C1563.4,-293.21 1566.8,-296.02 1570,-299 1647.7,-371.86 1688.9,-496.74 1704.3,-553.01"/>
-<polygon fill="#000000" stroke="#000000" points="1700.9257,-553.9402 1706.9,-562.69 1707.6861,-552.1244 1700.9257,-553.9402"/>
-</g>
-<!-- zcash/secant&#45;ios&#45;wallet#72 -->
-<g id="node13" class="node open">
-<title>zcash/secant&#45;ios&#45;wallet#72</title>
-<g id="a_node13"><a xlink:href="https://github.com/zcash/secant-ios-wallet/issues/72" xlink:title="zcash/secant&#45;ios&#45;wallet#72&#10;Wallet Address and&#10;Settings" target="_blank">
-<polygon fill="#c2e0c6" stroke="#000000" points="1557.5,-189.5 1345.5,-189.5 1345.5,-136.5 1557.5,-136.5 1557.5,-189.5"/>
-<text text-anchor="middle" x="1451.5" y="-174.3" font-family="Times,serif" font-size="14.00" fill="#000000">zcash/secant&#45;ios&#45;wallet#72</text>
-<text text-anchor="middle" x="1451.5" y="-159.3" font-family="Times,serif" font-size="14.00" fill="#000000">Wallet Address and</text>
-<text text-anchor="middle" x="1451.5" y="-144.3" font-family="Times,serif" font-size="14.00" fill="#000000">Settings</text>
-</a>
-</g>
-</g>
-<!-- zcash/secant&#45;ios&#45;wallet#72&#45;&gt;zcash/secant&#45;ios&#45;wallet#303 -->
-<g id="edge14" class="edge">
-<title>zcash/secant&#45;ios&#45;wallet#72&#45;&gt;zcash/secant&#45;ios&#45;wallet#303</title>
-<path fill="none" stroke="#000000" d="M1557.5,-188.29C1562,-191.18 1566.2,-194.41 1570,-198 1675.6,-296.84 1702.7,-481.27 1709.4,-552.7"/>
-<polygon fill="#000000" stroke="#000000" points="1705.9236,-553.1213 1710.3,-562.77 1712.8958,-552.4981 1705.9236,-553.1213"/>
-</g>
-<!-- zcash/secant&#45;ios&#45;wallet#273 -->
-<g id="node14" class="node open">
-<title>zcash/secant&#45;ios&#45;wallet#273</title>
-<g id="a_node14"><a xlink:href="https://github.com/zcash/secant-ios-wallet/issues/273" xlink:title="zcash/secant&#45;ios&#45;wallet#273&#10;New App Store target" target="_blank">
-<polygon fill="#c2e0c6" stroke="#000000" stroke-width="2" points="1562,-118 1341,-118 1341,-80 1562,-80 1562,-118"/>
-<text text-anchor="middle" x="1451.5" y="-102.8" font-family="Times,serif" font-size="14.00" fill="#000000">zcash/secant&#45;ios&#45;wallet#273</text>
-<text text-anchor="middle" x="1451.5" y="-87.8" font-family="Times,serif" font-size="14.00" fill="#000000">New App Store target</text>
-</a>
-</g>
-</g>
-<!-- zcash/secant&#45;ios&#45;wallet#207 -->
-<g id="node21" class="node open">
-<title>zcash/secant&#45;ios&#45;wallet#207</title>
-<g id="a_node21"><a xlink:href="https://github.com/zcash/secant-ios-wallet/issues/207" xlink:title="zcash/secant&#45;ios&#45;wallet#207&#10;Rename &quot;Secant&#45;testnet&quot;&#10;to &quot;Secant&quot;" target="_blank">
-<polygon fill="#c2e0c6" stroke="#000000" points="1562,-1019.5 1341,-1019.5 1341,-966.5 1562,-966.5 1562,-1019.5"/>
-<text text-anchor="middle" x="1451.5" y="-1004.3" font-family="Times,serif" font-size="14.00" fill="#000000">zcash/secant&#45;ios&#45;wallet#207</text>
-<text text-anchor="middle" x="1451.5" y="-989.3" font-family="Times,serif" font-size="14.00" fill="#000000">Rename &quot;Secant&#45;testnet&quot;</text>
-<text text-anchor="middle" x="1451.5" y="-974.3" font-family="Times,serif" font-size="14.00" fill="#000000">to &quot;Secant&quot;</text>
-</a>
-</g>
-</g>
-<!-- zcash/secant&#45;ios&#45;wallet#273&#45;&gt;zcash/secant&#45;ios&#45;wallet#207 -->
-<g id="edge15" class="edge">
-<title>zcash/secant&#45;ios&#45;wallet#273&#45;&gt;zcash/secant&#45;ios&#45;wallet#207</title>
-<path fill="none" stroke="#000000" d="M1340.9,-113.38C1331.9,-118.98 1324.3,-126.36 1319,-136 1308.1,-155.92 1308.1,-933.08 1319,-953 1322.6,-959.52 1327.2,-965.05 1332.6,-969.73"/>
-<polygon fill="#000000" stroke="#000000" points="1330.8927,-972.8231 1341,-976 1335.0799,-967.2135 1330.8927,-972.8231"/>
-</g>
-<!-- zcash/secant&#45;ios&#45;wallet#44 -->
-<g id="node15" class="node open">
-<title>zcash/secant&#45;ios&#45;wallet#44</title>
-<g id="a_node15"><a xlink:href="https://github.com/zcash/secant-ios-wallet/issues/44" xlink:title="zcash/secant&#45;ios&#45;wallet#44&#10;Seed Backup Flow" target="_blank">
-<polygon fill="#c2e0c6" stroke="#000000" stroke-width="2" points="1557.5,-601 1345.5,-601 1345.5,-563 1557.5,-563 1557.5,-601"/>
-<text text-anchor="middle" x="1451.5" y="-585.8" font-family="Times,serif" font-size="14.00" fill="#000000">zcash/secant&#45;ios&#45;wallet#44</text>
-<text text-anchor="middle" x="1451.5" y="-570.8" font-family="Times,serif" font-size="14.00" fill="#000000">Seed Backup Flow</text>
-</a>
-</g>
-</g>
-<!-- zcash/secant&#45;ios&#45;wallet#44&#45;&gt;zcash/secant&#45;ios&#45;wallet#303 -->
-<g id="edge16" class="edge">
-<title>zcash/secant&#45;ios&#45;wallet#44&#45;&gt;zcash/secant&#45;ios&#45;wallet#303</title>
-<path fill="none" stroke="#000000" d="M1557.6,-582C1568.5,-582 1579.6,-582 1590.6,-582"/>
-<polygon fill="#000000" stroke="#000000" points="1590.6,-585.5001 1600.6,-582 1590.6,-578.5001 1590.6,-585.5001"/>
 </g>
 <!-- zcash&#45;hackworks/zcash&#45;light&#45;client&#45;ffi#17 -->
 <g id="node16" class="node open">
