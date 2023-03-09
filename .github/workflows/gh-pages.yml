@@ -59,6 +59,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ZENHUB_TOKEN: ${{ secrets.ZENHUB_TOKEN }}
+          SHOW_MILESTONES: true
 
       - name: Render ECC wallet DAG
         run: python3 ./zcash-issue-dag.py
