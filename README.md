@@ -17,6 +17,8 @@ The scripts provided by this project require two environment variables:
 - `GITHUB_TOKEN`: a GitHub API token with permission to read the necessary repositories.
 - `ZENHUB_TOKEN`: a ZenHub API token.
 
+You can generate a GitHub token with [this url](https://github.com/settings/tokens/new).
+
 The DAG script depends upon graphql APIs for github which can be generated
 using the following example script:
 
