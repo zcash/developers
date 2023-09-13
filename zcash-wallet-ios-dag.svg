@@ -10,14 +10,14 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 2829.5)">
 <polygon fill="white" stroke="transparent" points="-4,4 -4,-2829.5 1730,-2829.5 1730,4 -4,4"/>
 <g id="clust1" class="cluster">
-<title>cluster_0</title>
-<polygon fill="none" stroke="blue" points="54,-439 54,-603 641,-603 641,-439 54,-439"/>
-<text text-anchor="middle" x="347.5" y="-587.8" font-family="Times,serif" font-size="14.00">Secant iOS v1.0.0</text>
-</g>
-<g id="clust2" class="cluster">
 <title>cluster_2</title>
 <polygon fill="none" stroke="blue" points="37.5,-726 37.5,-905 980,-905 980,-726 37.5,-726"/>
 <text text-anchor="middle" x="508.75" y="-889.8" font-family="Times,serif" font-size="14.00">Spend&#45;before&#45;Sync</text>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_0</title>
+<polygon fill="none" stroke="blue" points="54,-439 54,-603 641,-603 641,-439 54,-439"/>
+<text text-anchor="middle" x="347.5" y="-587.8" font-family="Times,serif" font-size="14.00">Secant iOS v1.0.0</text>
 </g>
 <g id="clust3" class="cluster">
 <title>cluster_4</title>
@@ -59,10 +59,73 @@
 <polygon fill="none" stroke="blue" points="37.5,-2245 37.5,-2409 305.5,-2409 305.5,-2245 37.5,-2245"/>
 <text text-anchor="middle" x="171.5" y="-2393.8" font-family="Times,serif" font-size="14.00">Pre&#45;DAG sync</text>
 </g>
-<!-- zcash/secant&#45;ios&#45;wallet#372 -->
+<!-- zcash/ZcashLightClientKit#1164 -->
 <g id="node1" class="node open">
+<title>zcash/ZcashLightClientKit#1164</title>
+<g id="a_node1"><a xlink:href="https://github.com/zcash/ZcashLightClientKit/issues/1164" xlink:title="zcash/ZcashLightClientKit#1164&#10;ZcashLightClientKit&#10;v2.0.0&#45;rc1" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="297.5,-866.5 45.5,-866.5 45.5,-813.5 297.5,-813.5 297.5,-866.5"/>
+<text text-anchor="middle" x="171.5" y="-851.3" font-family="Times,serif" font-size="14.00">zcash/ZcashLightClientKit#1164</text>
+<text text-anchor="middle" x="171.5" y="-836.3" font-family="Times,serif" font-size="14.00">ZcashLightClientKit</text>
+<text text-anchor="middle" x="171.5" y="-821.3" font-family="Times,serif" font-size="14.00">v2.0.0&#45;rc1</text>
+</a>
+</g>
+</g>
+<!-- zcash/ZcashLightClientKit#1219 -->
+<g id="node2" class="node open">
+<title>zcash/ZcashLightClientKit#1219</title>
+<g id="a_node2"><a xlink:href="https://github.com/zcash/ZcashLightClientKit/issues/1219" xlink:title="zcash/ZcashLightClientKit#1219&#10;ZcashLightClientKit&#10;v2.0.0 zashi acceptance&#10;testing" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" points="649.5,-874 397.5,-874 397.5,-806 649.5,-806 649.5,-874"/>
+<text text-anchor="middle" x="523.5" y="-858.8" font-family="Times,serif" font-size="14.00">zcash/ZcashLightClientKit#1219</text>
+<text text-anchor="middle" x="523.5" y="-843.8" font-family="Times,serif" font-size="14.00">ZcashLightClientKit</text>
+<text text-anchor="middle" x="523.5" y="-828.8" font-family="Times,serif" font-size="14.00">v2.0.0 zashi acceptance</text>
+<text text-anchor="middle" x="523.5" y="-813.8" font-family="Times,serif" font-size="14.00">testing</text>
+</a>
+</g>
+</g>
+<!-- zcash/ZcashLightClientKit#1164&#45;&gt;zcash/ZcashLightClientKit#1219 -->
+<g id="edge1" class="edge">
+<title>zcash/ZcashLightClientKit#1164&#45;&gt;zcash/ZcashLightClientKit#1219</title>
+<path fill="none" stroke="black" d="M297.87,-840C326.82,-840 357.75,-840 387.11,-840"/>
+<polygon fill="black" stroke="black" points="387.42,-843.5 397.42,-840 387.42,-836.5 387.42,-843.5"/>
+</g>
+<!-- zcash/ZcashLightClientKit#1220 -->
+<g id="node3" class="node open">
+<title>zcash/ZcashLightClientKit#1220</title>
+<g id="a_node3"><a xlink:href="https://github.com/zcash/ZcashLightClientKit/issues/1220" xlink:title="zcash/ZcashLightClientKit#1220&#10;ZcashLightClientKit&#10;v2.0.0" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" points="972,-826.5 720,-826.5 720,-773.5 972,-773.5 972,-826.5"/>
+<text text-anchor="middle" x="846" y="-811.3" font-family="Times,serif" font-size="14.00">zcash/ZcashLightClientKit#1220</text>
+<text text-anchor="middle" x="846" y="-796.3" font-family="Times,serif" font-size="14.00">ZcashLightClientKit</text>
+<text text-anchor="middle" x="846" y="-781.3" font-family="Times,serif" font-size="14.00">v2.0.0</text>
+</a>
+</g>
+</g>
+<!-- zcash/ZcashLightClientKit#1219&#45;&gt;zcash/ZcashLightClientKit#1220 -->
+<g id="edge2" class="edge">
+<title>zcash/ZcashLightClientKit#1219&#45;&gt;zcash/ZcashLightClientKit#1220</title>
+<path fill="none" stroke="black" d="M649.79,-824.36C669.47,-821.91 689.88,-819.36 709.77,-816.88"/>
+<polygon fill="black" stroke="black" points="710.31,-820.34 719.8,-815.63 709.44,-813.39 710.31,-820.34"/>
+</g>
+<!-- zcash&#45;hackworks/zcash&#45;light&#45;client&#45;ffi#29 -->
+<g id="node4" class="node open">
+<title>zcash&#45;hackworks/zcash&#45;light&#45;client&#45;ffi#29</title>
+<g id="a_node4"><a xlink:href="https://github.com/zcash-hackworks/zcash-light-client-ffi/issues/29" xlink:title="zcash&#45;hackworks/zcash&#45;light&#45;client&#45;ffi#29&#10;zcash&#45;light&#45;client&#45;ffi&#10;v0.4.0" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="679,-787.5 368,-787.5 368,-734.5 679,-734.5 679,-787.5"/>
+<text text-anchor="middle" x="523.5" y="-772.3" font-family="Times,serif" font-size="14.00">zcash&#45;hackworks/zcash&#45;light&#45;client&#45;ffi#29</text>
+<text text-anchor="middle" x="523.5" y="-757.3" font-family="Times,serif" font-size="14.00">zcash&#45;light&#45;client&#45;ffi</text>
+<text text-anchor="middle" x="523.5" y="-742.3" font-family="Times,serif" font-size="14.00">v0.4.0</text>
+</a>
+</g>
+</g>
+<!-- zcash&#45;hackworks/zcash&#45;light&#45;client&#45;ffi#29&#45;&gt;zcash/ZcashLightClientKit#1220 -->
+<g id="edge3" class="edge">
+<title>zcash&#45;hackworks/zcash&#45;light&#45;client&#45;ffi#29&#45;&gt;zcash/ZcashLightClientKit#1220</title>
+<path fill="none" stroke="black" d="M679.12,-779.81C689.32,-781.06 699.56,-782.3 709.66,-783.53"/>
+<polygon fill="black" stroke="black" points="709.36,-787.02 719.71,-784.75 710.2,-780.07 709.36,-787.02"/>
+</g>
+<!-- zcash/secant&#45;ios&#45;wallet#372 -->
+<g id="node5" class="node open">
 <title>zcash/secant&#45;ios&#45;wallet#372</title>
-<g id="a_node1"><a xlink:href="https://github.com/zcash/secant-ios-wallet/issues/372" xlink:title="zcash/secant&#45;ios&#45;wallet#372&#10;Blocking TODOs,&#10;Enhancements and Fixes" target="_blank">
+<g id="a_node5"><a xlink:href="https://github.com/zcash/secant-ios-wallet/issues/372" xlink:title="zcash/secant&#45;ios&#45;wallet#372&#10;Blocking TODOs,&#10;Enhancements and Fixes" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="281,-500.5 62,-500.5 62,-447.5 281,-447.5 281,-500.5"/>
 <text text-anchor="middle" x="171.5" y="-485.3" font-family="Times,serif" font-size="14.00">zcash/secant&#45;ios&#45;wallet#372</text>
 <text text-anchor="middle" x="171.5" y="-470.3" font-family="Times,serif" font-size="14.00">Blocking TODOs,</text>
@@ -71,9 +134,9 @@
 </g>
 </g>
 <!-- zcash/secant&#45;ios&#45;wallet#303 -->
-<g id="node2" class="node open">
+<g id="node6" class="node open">
 <title>zcash/secant&#45;ios&#45;wallet#303</title>
-<g id="a_node2"><a xlink:href="https://github.com/zcash/secant-ios-wallet/issues/303" xlink:title="zcash/secant&#45;ios&#45;wallet#303&#10;Release &#45; v1.0.0" target="_blank">
+<g id="a_node6"><a xlink:href="https://github.com/zcash/secant-ios-wallet/issues/303" xlink:title="zcash/secant&#45;ios&#45;wallet#303&#10;Release &#45; v1.0.0" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" points="633,-528 414,-528 414,-490 633,-490 633,-528"/>
 <text text-anchor="middle" x="523.5" y="-512.8" font-family="Times,serif" font-size="14.00">zcash/secant&#45;ios&#45;wallet#303</text>
 <text text-anchor="middle" x="523.5" y="-497.8" font-family="Times,serif" font-size="14.00">Release &#45; v1.0.0</text>
@@ -81,7 +144,7 @@
 </g>
 </g>
 <!-- zcash/secant&#45;ios&#45;wallet#372&#45;&gt;zcash/secant&#45;ios&#45;wallet#303 -->
-<g id="edge1" class="edge">
+<g id="edge4" class="edge">
 <title>zcash/secant&#45;ios&#45;wallet#372&#45;&gt;zcash/secant&#45;ios&#45;wallet#303</title>
 <path fill="none" stroke="black" d="M281.32,-484.88C320.17,-488.77 364.12,-493.16 403.76,-497.13"/>
 <polygon fill="black" stroke="black" points="403.44,-500.62 413.74,-498.12 404.13,-493.65 403.44,-500.62"/>
@@ -121,9 +184,9 @@
 <polygon fill="black" stroke="black" points="726.33,-512.5 736.33,-509 726.33,-505.5 726.33,-512.5"/>
 </g>
 <!-- zcash/secant&#45;ios&#45;wallet#233 -->
-<g id="node3" class="node open">
+<g id="node7" class="node open">
 <title>zcash/secant&#45;ios&#45;wallet#233</title>
-<g id="a_node3"><a xlink:href="https://github.com/zcash/secant-ios-wallet/issues/233" xlink:title="zcash/secant&#45;ios&#45;wallet#233&#10;Localization and&#10;Accessibility" target="_blank">
+<g id="a_node7"><a xlink:href="https://github.com/zcash/secant-ios-wallet/issues/233" xlink:title="zcash/secant&#45;ios&#45;wallet#233&#10;Localization and&#10;Accessibility" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="281,-571.5 62,-571.5 62,-518.5 281,-518.5 281,-571.5"/>
 <text text-anchor="middle" x="171.5" y="-556.3" font-family="Times,serif" font-size="14.00">zcash/secant&#45;ios&#45;wallet#233</text>
 <text text-anchor="middle" x="171.5" y="-541.3" font-family="Times,serif" font-size="14.00">Localization and</text>
@@ -132,73 +195,10 @@
 </g>
 </g>
 <!-- zcash/secant&#45;ios&#45;wallet#233&#45;&gt;zcash/secant&#45;ios&#45;wallet#303 -->
-<g id="edge2" class="edge">
+<g id="edge5" class="edge">
 <title>zcash/secant&#45;ios&#45;wallet#233&#45;&gt;zcash/secant&#45;ios&#45;wallet#303</title>
 <path fill="none" stroke="black" d="M281.32,-533.81C320.17,-529.81 364.12,-525.29 403.76,-521.21"/>
 <polygon fill="black" stroke="black" points="404.15,-524.69 413.74,-520.19 403.44,-517.72 404.15,-524.69"/>
-</g>
-<!-- zcash/ZcashLightClientKit#1164 -->
-<g id="node4" class="node open">
-<title>zcash/ZcashLightClientKit#1164</title>
-<g id="a_node4"><a xlink:href="https://github.com/zcash/ZcashLightClientKit/issues/1164" xlink:title="zcash/ZcashLightClientKit#1164&#10;ZcashLightClientKit&#10;v2.0.0&#45;rc1" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="297.5,-866.5 45.5,-866.5 45.5,-813.5 297.5,-813.5 297.5,-866.5"/>
-<text text-anchor="middle" x="171.5" y="-851.3" font-family="Times,serif" font-size="14.00">zcash/ZcashLightClientKit#1164</text>
-<text text-anchor="middle" x="171.5" y="-836.3" font-family="Times,serif" font-size="14.00">ZcashLightClientKit</text>
-<text text-anchor="middle" x="171.5" y="-821.3" font-family="Times,serif" font-size="14.00">v2.0.0&#45;rc1</text>
-</a>
-</g>
-</g>
-<!-- zcash/ZcashLightClientKit#1219 -->
-<g id="node5" class="node open">
-<title>zcash/ZcashLightClientKit#1219</title>
-<g id="a_node5"><a xlink:href="https://github.com/zcash/ZcashLightClientKit/issues/1219" xlink:title="zcash/ZcashLightClientKit#1219&#10;ZcashLightClientKit&#10;v2.0.0 zashi acceptance&#10;testing" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" points="649.5,-874 397.5,-874 397.5,-806 649.5,-806 649.5,-874"/>
-<text text-anchor="middle" x="523.5" y="-858.8" font-family="Times,serif" font-size="14.00">zcash/ZcashLightClientKit#1219</text>
-<text text-anchor="middle" x="523.5" y="-843.8" font-family="Times,serif" font-size="14.00">ZcashLightClientKit</text>
-<text text-anchor="middle" x="523.5" y="-828.8" font-family="Times,serif" font-size="14.00">v2.0.0 zashi acceptance</text>
-<text text-anchor="middle" x="523.5" y="-813.8" font-family="Times,serif" font-size="14.00">testing</text>
-</a>
-</g>
-</g>
-<!-- zcash/ZcashLightClientKit#1164&#45;&gt;zcash/ZcashLightClientKit#1219 -->
-<g id="edge3" class="edge">
-<title>zcash/ZcashLightClientKit#1164&#45;&gt;zcash/ZcashLightClientKit#1219</title>
-<path fill="none" stroke="black" d="M297.87,-840C326.82,-840 357.75,-840 387.11,-840"/>
-<polygon fill="black" stroke="black" points="387.42,-843.5 397.42,-840 387.42,-836.5 387.42,-843.5"/>
-</g>
-<!-- zcash/ZcashLightClientKit#1220 -->
-<g id="node6" class="node open">
-<title>zcash/ZcashLightClientKit#1220</title>
-<g id="a_node6"><a xlink:href="https://github.com/zcash/ZcashLightClientKit/issues/1220" xlink:title="zcash/ZcashLightClientKit#1220&#10;ZcashLightClientKit&#10;v2.0.0" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" points="972,-826.5 720,-826.5 720,-773.5 972,-773.5 972,-826.5"/>
-<text text-anchor="middle" x="846" y="-811.3" font-family="Times,serif" font-size="14.00">zcash/ZcashLightClientKit#1220</text>
-<text text-anchor="middle" x="846" y="-796.3" font-family="Times,serif" font-size="14.00">ZcashLightClientKit</text>
-<text text-anchor="middle" x="846" y="-781.3" font-family="Times,serif" font-size="14.00">v2.0.0</text>
-</a>
-</g>
-</g>
-<!-- zcash/ZcashLightClientKit#1219&#45;&gt;zcash/ZcashLightClientKit#1220 -->
-<g id="edge4" class="edge">
-<title>zcash/ZcashLightClientKit#1219&#45;&gt;zcash/ZcashLightClientKit#1220</title>
-<path fill="none" stroke="black" d="M649.79,-824.36C669.47,-821.91 689.88,-819.36 709.77,-816.88"/>
-<polygon fill="black" stroke="black" points="710.31,-820.34 719.8,-815.63 709.44,-813.39 710.31,-820.34"/>
-</g>
-<!-- zcash&#45;hackworks/zcash&#45;light&#45;client&#45;ffi#29 -->
-<g id="node7" class="node open">
-<title>zcash&#45;hackworks/zcash&#45;light&#45;client&#45;ffi#29</title>
-<g id="a_node7"><a xlink:href="https://github.com/zcash-hackworks/zcash-light-client-ffi/issues/29" xlink:title="zcash&#45;hackworks/zcash&#45;light&#45;client&#45;ffi#29&#10;zcash&#45;light&#45;client&#45;ffi&#10;v0.4.0" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="679,-787.5 368,-787.5 368,-734.5 679,-734.5 679,-787.5"/>
-<text text-anchor="middle" x="523.5" y="-772.3" font-family="Times,serif" font-size="14.00">zcash&#45;hackworks/zcash&#45;light&#45;client&#45;ffi#29</text>
-<text text-anchor="middle" x="523.5" y="-757.3" font-family="Times,serif" font-size="14.00">zcash&#45;light&#45;client&#45;ffi</text>
-<text text-anchor="middle" x="523.5" y="-742.3" font-family="Times,serif" font-size="14.00">v0.4.0</text>
-</a>
-</g>
-</g>
-<!-- zcash&#45;hackworks/zcash&#45;light&#45;client&#45;ffi#29&#45;&gt;zcash/ZcashLightClientKit#1220 -->
-<g id="edge5" class="edge">
-<title>zcash&#45;hackworks/zcash&#45;light&#45;client&#45;ffi#29&#45;&gt;zcash/ZcashLightClientKit#1220</title>
-<path fill="none" stroke="black" d="M679.12,-779.81C689.32,-781.06 699.56,-782.3 709.66,-783.53"/>
-<polygon fill="black" stroke="black" points="709.36,-787.02 719.71,-784.75 710.2,-780.07 709.36,-787.02"/>
 </g>
 <!-- zcash&#45;hackworks/zcash&#45;light&#45;client&#45;ffi#17 -->
 <g id="node8" class="node open">
