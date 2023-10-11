@@ -61,6 +61,20 @@ jobs:
           ZENHUB_TOKEN: ${{ secrets.ZENHUB_TOKEN }}
           SHOW_MILESTONES: true
 
+      - name: Render Halo2-focused DAG
+        run: python3 ./zcash-issue-dag.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ZENHUB_TOKEN: ${{ secrets.ZENHUB_TOKEN }}
+          DAG_VIEW: halo2
+
+      - name: Render TFL-focused DAG
+        run: python3 ./zcash-issue-dag.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ZENHUB_TOKEN: ${{ secrets.ZENHUB_TOKEN }}
+          DAG_VIEW: tfl
+
       - name: Render ECC wallet DAG
         run: python3 ./zcash-issue-dag.py
         env:
@@ -95,13 +109,6 @@ jobs:
           ZENHUB_TOKEN: ${{ secrets.ZENHUB_TOKEN }}
           DAG_VIEW: zf
           SHOW_EPICS: true
-
-      - name: Render Halo2-focused DAG
-        run: python3 ./zcash-issue-dag.py
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          ZENHUB_TOKEN: ${{ secrets.ZENHUB_TOKEN }}
-          DAG_VIEW: halo2
 
       - name: Copy the index page
         run: cp ./index.html ./public
