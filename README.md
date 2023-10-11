@@ -7,8 +7,8 @@ For now, this repo hosts the script used to generate ECC's development dependenc
 ## Setup
 
 This project uses `poetry` for dependency management: https://python-poetry.org/
-It also depends on the Graphviz library; for Debian-based distros, install the `graphviz-dev`
-package.
+It also depends on the Graphviz library; for Debian-based distros, install the
+`libgraphviz-dev` package.
 
 After installing `poetry`, run `poetry install`.
 
@@ -21,21 +21,8 @@ You can generate a GitHub token with [this url](https://github.com/settings/toke
 token should not have any excess authority; it only needs public read access! Make sure all of
 those extra capability checkboxes are unchecked.
 
-The DAG script depends upon graphql APIs for github which can be generated
-using the following example script:
-
-```bash
-#!/usr/bin/env bash
-
-poetry run python3 -m sgqlc.introspection \
-  --exclude-deprecated \
-  --exclude-description \
-  -H "Authorization: bearer $GITHUB_TOKEN" \
-  https://api.github.com/graphql \
-  github_schema.json
-
-poetry run sgqlc-codegen schema github_schema.json github_schema.py
-```
+The DAG script depends upon GraphQL APIs for GitHub which can be generated using
+`GITHUB_TOKEN=<INSERT> ./gen-schema.sh`.
 
 ## Generating DAGs
 
@@ -60,5 +47,3 @@ poetry run python ./zcash-issue-dag.py
 ```
 
 You can find a series of template script files inside the folder `template_scripts`.
-
-
