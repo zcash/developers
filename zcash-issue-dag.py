@@ -342,7 +342,8 @@ def main():
         milestones = {n.milestone: [] for n in dg}
         for m in milestones:
             milestones[m] = [n for n in dg if n.milestone == m]
-        del milestones[None]
+        if None in milestones:
+            del milestones[None]
         for (milestone, nodes) in milestones.items():
             ag.add_subgraph(nodes, 'cluster_%d' % clusters, label=milestone, color='blue')
             clusters += 1
