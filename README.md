@@ -29,7 +29,7 @@ The DAG script depends upon GraphQL APIs for GitHub which can be generated using
 The `zcash-issue-dag.py` script supports several configuration options,
 also supplied as environment variables:
 
-- `DAG_VIEW=[core|wallet|zf]`: The DAG to render (default: `core`).
+- `DAG_VIEW=[core|halo2|tfl|wallet|wallet-ios|wallet-android|zf]`: The DAG to render (default: `core`).
 - `SHOW_MILESTONES=[true|false]`: Whether or not to render GitHub milestones as boxes (default: `false`).
 - `SHOW_EPICS=[true|false]`: Whether or not to render ZenHub epics as boxes (default: `false`).
 - `INCLUDE_FINISHED=[true|false]`: Whether or not to include closed issues with no open blockers (default: `false`).

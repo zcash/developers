@@ -22,6 +22,8 @@ ZENHUB_TOKEN = os.environ.get('ZENHUB_TOKEN')
 
 DAG_VIEW = os.environ.get('DAG_VIEW', 'core')
 
+# To get the id of a repo, see <https://stackoverflow.com/a/47223479/393146>.
+
 CORE_REPOS = {
     26987049: ('zcash', 'zcash'),
     47279130: ('zcash', 'zips'),
@@ -36,6 +38,11 @@ CORE_REPOS = {
 HALO2_REPOS = {
     290019239: ('zcash', 'halo2'),
     344239327: ('zcash', 'pasta_curves'),
+}
+
+TFL_REPOS = {
+    642135348: ('Electric-Coin-Company', 'tfl-book'),
+    695805989: ('zcash', 'simtfl'),
 }
 
 WALLET_REPOS = {
@@ -71,6 +78,7 @@ ZF_REPOS = {
 REPO_SETS = {
     'core': CORE_REPOS,
     'halo2': HALO2_REPOS,
+    'tfl': TFL_REPOS,
     'wallet': WALLET_REPOS,
     'wallet-ios': IOS_REPOS,
     'wallet-android': ANDROID_REPOS,
@@ -334,7 +342,8 @@ def main():
         milestones = {n.milestone: [] for n in dg}
         for m in milestones:
             milestones[m] = [n for n in dg if n.milestone == m]
-        del milestones[None]
+        if None in milestones:
+            del milestones[None]
         for (milestone, nodes) in milestones.items():
             ag.add_subgraph(nodes, 'cluster_%d' % clusters, label=milestone, color='blue')
             clusters += 1
