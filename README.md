@@ -32,8 +32,11 @@ The DAG script depends upon GraphQL APIs for GitHub which can be generated using
 
 ## Generating DAGs
 
-The `zcash-issue-dag.py` script supports several configuration options,
-also supplied as environment variables:
+The simplest way to generate one or more DAGs is to use `./gen-dag.sh` script. This takes
+a list of DAGs to render as arguments (default: `core wallet tfl halo2 zf`).
+
+Alternatively, the `zcash-issue-dag.py` script supports several configuration options
+supplied as environment variables:
 
 - `DAG_VIEW=[core|halo2|tfl|wallet|wallet-ios|wallet-android|zf]`: The DAG to render (default: `core`).
 - `SHOW_MILESTONES=[true|false]`: Whether or not to render GitHub milestones as boxes (default: `false`).
@@ -45,17 +48,3 @@ Example command:
 ```
 DAG_VIEW=core SHOW_MILESTONES=false poetry run python ./zcash-issue-dag.py
 ```
-
-Here's an example command for easily running the DAG generator:
-
-```bash
-#!/usr/bin/env bash
-
-DAG_VIEW=core \
-SHOW_MILESTONES=false \
-GITHUB_TOKEN=<INSERT> \
-ZENHUB_TOKEN=<INSERT> \
-poetry run python ./zcash-issue-dag.py
-```
-
-You can find a series of template script files inside the folder `template_scripts`.
