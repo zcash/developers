@@ -10,19 +10,19 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 9814)">
 <polygon fill="white" stroke="transparent" points="-4,4 -4,-9814 2010,-9814 2010,4 -4,4"/>
 <g id="clust1" class="cluster">
-<title>cluster_16</title>
-<polygon fill="none" stroke="blue" points="84,-5357.5 84,-5592.5 354,-5592.5 354,-5357.5 84,-5357.5"/>
-<text text-anchor="middle" x="219" y="-5577.3" font-family="Times,serif" font-size="14.00">Scaffold entire Android app UI</text>
+<title>cluster_13</title>
+<polygon fill="none" stroke="blue" points="0,0 0,-9810 2006,-9810 2006,0 0,0"/>
+<text text-anchor="middle" x="1003" y="-9794.8" font-family="Times,serif" font-size="14.00">Add Orchard Support</text>
 </g>
 <g id="clust2" class="cluster">
+<title>cluster_14</title>
+<polygon fill="none" stroke="blue" points="85,-5028.5 85,-5192.5 353,-5192.5 353,-5028.5 85,-5028.5"/>
+<text text-anchor="middle" x="219" y="-5177.3" font-family="Times,serif" font-size="14.00">Pre&#45;DAG sync</text>
+</g>
+<g id="clust3" class="cluster">
 <title>cluster_11</title>
 <polygon fill="none" stroke="blue" points="466.5,-3369.5 466.5,-3930.5 758.5,-3930.5 758.5,-3369.5 466.5,-3369.5"/>
 <text text-anchor="middle" x="612.5" y="-3915.3" font-family="Times,serif" font-size="14.00">Make Public API More Type Safe</text>
-</g>
-<g id="clust3" class="cluster">
-<title>cluster_12</title>
-<polygon fill="none" stroke="blue" points="73,-4841.5 73,-5020.5 758.5,-5020.5 758.5,-4841.5 73,-4841.5"/>
-<text text-anchor="middle" x="415.75" y="-5005.3" font-family="Times,serif" font-size="14.00">Consider Repackaging SDK Classes</text>
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_0</title>
@@ -30,34 +30,34 @@
 <text text-anchor="middle" x="410.75" y="-619.3" font-family="Times,serif" font-size="14.00">Extract sapling&#45;crypto</text>
 </g>
 <g id="clust5" class="cluster">
-<title>cluster_13</title>
-<polygon fill="none" stroke="blue" points="0,0 0,-9810 2006,-9810 2006,0 0,0"/>
-<text text-anchor="middle" x="1003" y="-9794.8" font-family="Times,serif" font-size="14.00">Add Orchard Support</text>
-</g>
-<g id="clust6" class="cluster">
-<title>cluster_14</title>
-<polygon fill="none" stroke="blue" points="85,-5028.5 85,-5192.5 353,-5192.5 353,-5028.5 85,-5028.5"/>
-<text text-anchor="middle" x="219" y="-5177.3" font-family="Times,serif" font-size="14.00">Pre&#45;DAG sync</text>
-</g>
-<g id="clust7" class="cluster">
 <title>cluster_15</title>
 <polygon fill="none" stroke="blue" points="101.5,-5200.5 101.5,-5349.5 336.5,-5349.5 336.5,-5200.5 101.5,-5200.5"/>
 <text text-anchor="middle" x="219" y="-5334.3" font-family="Times,serif" font-size="14.00">Core BTS UI Improvements</text>
 </g>
-<g id="clust8" class="cluster">
+<g id="clust6" class="cluster">
 <title>cluster_10</title>
 <polygon fill="none" stroke="blue" points="73,-4583.5 73,-4833.5 365,-4833.5 365,-4583.5 73,-4583.5"/>
 <text text-anchor="middle" x="219" y="-4818.3" font-family="Times,serif" font-size="14.00">Enhance error API</text>
 </g>
-<g id="clust9" class="cluster">
+<g id="clust7" class="cluster">
 <title>cluster_9</title>
 <polygon fill="none" stroke="blue" points="73,-4324.5 73,-4575.5 365,-4575.5 365,-4324.5 73,-4324.5"/>
 <text text-anchor="middle" x="219" y="-4560.3" font-family="Times,serif" font-size="14.00">Epic : SDK Transition</text>
 </g>
-<g id="clust10" class="cluster">
+<g id="clust8" class="cluster">
 <title>cluster_8</title>
 <polygon fill="none" stroke="blue" points="73,-4039.5 73,-4316.5 365,-4316.5 365,-4039.5 73,-4039.5"/>
 <text text-anchor="middle" x="219" y="-4301.3" font-family="Times,serif" font-size="14.00">Redesign Demo App</text>
+</g>
+<g id="clust9" class="cluster">
+<title>cluster_16</title>
+<polygon fill="none" stroke="blue" points="84,-5357.5 84,-5592.5 354,-5592.5 354,-5357.5 84,-5357.5"/>
+<text text-anchor="middle" x="219" y="-5577.3" font-family="Times,serif" font-size="14.00">Scaffold entire Android app UI</text>
+</g>
+<g id="clust10" class="cluster">
+<title>cluster_12</title>
+<polygon fill="none" stroke="blue" points="73,-4841.5 73,-5020.5 758.5,-5020.5 758.5,-4841.5 73,-4841.5"/>
+<text text-anchor="middle" x="415.75" y="-5005.3" font-family="Times,serif" font-size="14.00">Consider Repackaging SDK Classes</text>
 </g>
 <g id="clust11" class="cluster">
 <title>cluster_7</title>
@@ -144,43 +144,32 @@
 <polygon fill="none" stroke="blue" points="84,-7610.5 84,-7703.5 354,-7703.5 354,-7610.5 84,-7610.5"/>
 <text text-anchor="middle" x="219" y="-7688.3" font-family="Times,serif" font-size="14.00">Core BTS UI Improvements</text>
 </g>
-<!-- zcash/secant&#45;android&#45;wallet#341 -->
+<!-- zcash/ZcashLightClientKit#1143 -->
 <g id="node1" class="node open">
-<title>zcash/secant&#45;android&#45;wallet#341</title>
-<g id="a_node1"><a xlink:href="https://github.com/zcash/secant-android-wallet/issues/341" xlink:title="zcash/secant&#45;android&#45;wallet#341&#10;Scaffold: Release note&#10;screen" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="346,-5561 92,-5561 92,-5508 346,-5508 346,-5561"/>
-<text text-anchor="middle" x="219" y="-5545.8" font-family="Times,serif" font-size="14.00">zcash/secant&#45;android&#45;wallet#341</text>
-<text text-anchor="middle" x="219" y="-5530.8" font-family="Times,serif" font-size="14.00">Scaffold: Release note</text>
-<text text-anchor="middle" x="219" y="-5515.8" font-family="Times,serif" font-size="14.00">screen</text>
+<title>zcash/ZcashLightClientKit#1143</title>
+<g id="a_node1"><a xlink:href="https://github.com/zcash/ZcashLightClientKit/issues/1143" xlink:title="zcash/ZcashLightClientKit#1143&#10;Make state machine to&#10;work in a local context" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="345,-5161 93,-5161 93,-5108 345,-5108 345,-5161"/>
+<text text-anchor="middle" x="219" y="-5145.8" font-family="Times,serif" font-size="14.00">zcash/ZcashLightClientKit#1143</text>
+<text text-anchor="middle" x="219" y="-5130.8" font-family="Times,serif" font-size="14.00">Make state machine to</text>
+<text text-anchor="middle" x="219" y="-5115.8" font-family="Times,serif" font-size="14.00">work in a local context</text>
 </a>
 </g>
 </g>
-<!-- zcash/secant&#45;android&#45;wallet#315 -->
+<!-- zcash/ZcashLightClientKit#1147 -->
 <g id="node2" class="node open">
-<title>zcash/secant&#45;android&#45;wallet#315</title>
-<g id="a_node2"><a xlink:href="https://github.com/zcash/secant-android-wallet/issues/315" xlink:title="zcash/secant&#45;android&#45;wallet#315&#10;[Scaffold] Transaction&#10;Details" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="346,-5490 92,-5490 92,-5437 346,-5437 346,-5490"/>
-<text text-anchor="middle" x="219" y="-5474.8" font-family="Times,serif" font-size="14.00">zcash/secant&#45;android&#45;wallet#315</text>
-<text text-anchor="middle" x="219" y="-5459.8" font-family="Times,serif" font-size="14.00">[Scaffold] Transaction</text>
-<text text-anchor="middle" x="219" y="-5444.8" font-family="Times,serif" font-size="14.00">Details</text>
-</a>
-</g>
-</g>
-<!-- zcash/secant&#45;android&#45;wallet#307 -->
-<g id="node3" class="node open">
-<title>zcash/secant&#45;android&#45;wallet#307</title>
-<g id="a_node3"><a xlink:href="https://github.com/zcash/secant-android-wallet/issues/307" xlink:title="zcash/secant&#45;android&#45;wallet#307&#10;[Scaffold] Balance&#10;Breakdown" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="346,-5419 92,-5419 92,-5366 346,-5366 346,-5419"/>
-<text text-anchor="middle" x="219" y="-5403.8" font-family="Times,serif" font-size="14.00">zcash/secant&#45;android&#45;wallet#307</text>
-<text text-anchor="middle" x="219" y="-5388.8" font-family="Times,serif" font-size="14.00">[Scaffold] Balance</text>
-<text text-anchor="middle" x="219" y="-5373.8" font-family="Times,serif" font-size="14.00">Breakdown</text>
+<title>zcash/ZcashLightClientKit#1147</title>
+<g id="a_node2"><a xlink:href="https://github.com/zcash/ZcashLightClientKit/issues/1147" xlink:title="zcash/ZcashLightClientKit#1147&#10;Update&#10;cbp_state_machine.png" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="345,-5090 93,-5090 93,-5037 345,-5037 345,-5090"/>
+<text text-anchor="middle" x="219" y="-5074.8" font-family="Times,serif" font-size="14.00">zcash/ZcashLightClientKit#1147</text>
+<text text-anchor="middle" x="219" y="-5059.8" font-family="Times,serif" font-size="14.00">Update</text>
+<text text-anchor="middle" x="219" y="-5044.8" font-family="Times,serif" font-size="14.00">cbp_state_machine.png</text>
 </a>
 </g>
 </g>
 <!-- zcash/zcash&#45;android&#45;wallet&#45;sdk#483 -->
-<g id="node4" class="node open">
+<g id="node3" class="node open">
 <title>zcash/zcash&#45;android&#45;wallet&#45;sdk#483</title>
-<g id="a_node4"><a xlink:href="https://github.com/zcash/zcash-android-wallet-sdk/issues/483" xlink:title="zcash/zcash&#45;android&#45;wallet&#45;sdk#483&#10;Add `Address`" target="_blank">
+<g id="a_node3"><a xlink:href="https://github.com/zcash/zcash-android-wallet-sdk/issues/483" xlink:title="zcash/zcash&#45;android&#45;wallet&#45;sdk#483&#10;Add `Address`" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" points="750.5,-3899.5 474.5,-3899.5 474.5,-3861.5 750.5,-3861.5 750.5,-3899.5"/>
 <text text-anchor="middle" x="612.5" y="-3884.3" font-family="Times,serif" font-size="14.00">zcash/zcash&#45;android&#45;wallet&#45;sdk#483</text>
 <text text-anchor="middle" x="612.5" y="-3869.3" font-family="Times,serif" font-size="14.00">Add `Address`</text>
@@ -188,9 +177,9 @@
 </g>
 </g>
 <!-- zcash/zcash&#45;android&#45;wallet&#45;sdk#531 -->
-<g id="node5" class="node open">
+<g id="node4" class="node open">
 <title>zcash/zcash&#45;android&#45;wallet&#45;sdk#531</title>
-<g id="a_node5"><a xlink:href="https://github.com/zcash/zcash-android-wallet-sdk/issues/531" xlink:title="zcash/zcash&#45;android&#45;wallet&#45;sdk#531&#10;Rework&#10;`UnifiedFullViewingKey`&#10;class" target="_blank">
+<g id="a_node4"><a xlink:href="https://github.com/zcash/zcash-android-wallet-sdk/issues/531" xlink:title="zcash/zcash&#45;android&#45;wallet&#45;sdk#531&#10;Rework&#10;`UnifiedFullViewingKey`&#10;class" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="750.5,-3843.5 474.5,-3843.5 474.5,-3775.5 750.5,-3775.5 750.5,-3843.5"/>
 <text text-anchor="middle" x="612.5" y="-3828.3" font-family="Times,serif" font-size="14.00">zcash/zcash&#45;android&#45;wallet&#45;sdk#531</text>
 <text text-anchor="middle" x="612.5" y="-3813.3" font-family="Times,serif" font-size="14.00">Rework</text>
@@ -217,9 +206,9 @@
 <polygon fill="black" stroke="black" points="932.27,-3362.45 929.98,-3352.1 925.32,-3361.61 932.27,-3362.45"/>
 </g>
 <!-- zcash/zcash&#45;android&#45;wallet&#45;sdk#481 -->
-<g id="node6" class="node open">
+<g id="node5" class="node open">
 <title>zcash/zcash&#45;android&#45;wallet&#45;sdk#481</title>
-<g id="a_node6"><a xlink:href="https://github.com/zcash/zcash-android-wallet-sdk/issues/481" xlink:title="zcash/zcash&#45;android&#45;wallet&#45;sdk#481&#10;Add `Memo`" target="_blank">
+<g id="a_node5"><a xlink:href="https://github.com/zcash/zcash-android-wallet-sdk/issues/481" xlink:title="zcash/zcash&#45;android&#45;wallet&#45;sdk#481&#10;Add `Memo`" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="750.5,-3757.5 474.5,-3757.5 474.5,-3719.5 750.5,-3719.5 750.5,-3757.5"/>
 <text text-anchor="middle" x="612.5" y="-3742.3" font-family="Times,serif" font-size="14.00">zcash/zcash&#45;android&#45;wallet&#45;sdk#481</text>
 <text text-anchor="middle" x="612.5" y="-3727.3" font-family="Times,serif" font-size="14.00">Add `Memo`</text>
@@ -227,9 +216,9 @@
 </g>
 </g>
 <!-- zcash/zcash&#45;android&#45;wallet&#45;sdk#478 -->
-<g id="node7" class="node open">
+<g id="node6" class="node open">
 <title>zcash/zcash&#45;android&#45;wallet&#45;sdk#478</title>
-<g id="a_node7"><a xlink:href="https://github.com/zcash/zcash-android-wallet-sdk/issues/478" xlink:title="zcash/zcash&#45;android&#45;wallet&#45;sdk#478&#10;Remove default values&#10;from UnifiedViewingKey" target="_blank">
+<g id="a_node6"><a xlink:href="https://github.com/zcash/zcash-android-wallet-sdk/issues/478" xlink:title="zcash/zcash&#45;android&#45;wallet&#45;sdk#478&#10;Remove default values&#10;from UnifiedViewingKey" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="750.5,-3701 474.5,-3701 474.5,-3648 750.5,-3648 750.5,-3701"/>
 <text text-anchor="middle" x="612.5" y="-3685.8" font-family="Times,serif" font-size="14.00">zcash/zcash&#45;android&#45;wallet&#45;sdk#478</text>
 <text text-anchor="middle" x="612.5" y="-3670.8" font-family="Times,serif" font-size="14.00">Remove default values</text>
@@ -238,9 +227,9 @@
 </g>
 </g>
 <!-- zcash/zcash&#45;android&#45;wallet&#45;sdk#484 -->
-<g id="node8" class="node open">
+<g id="node7" class="node open">
 <title>zcash/zcash&#45;android&#45;wallet&#45;sdk#484</title>
-<g id="a_node8"><a xlink:href="https://github.com/zcash/zcash-android-wallet-sdk/issues/484" xlink:title="zcash/zcash&#45;android&#45;wallet&#45;sdk#484&#10;Add `Key` type" target="_blank">
+<g id="a_node7"><a xlink:href="https://github.com/zcash/zcash-android-wallet-sdk/issues/484" xlink:title="zcash/zcash&#45;android&#45;wallet&#45;sdk#484&#10;Add `Key` type" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="750.5,-3629.5 474.5,-3629.5 474.5,-3591.5 750.5,-3591.5 750.5,-3629.5"/>
 <text text-anchor="middle" x="612.5" y="-3614.3" font-family="Times,serif" font-size="14.00">zcash/zcash&#45;android&#45;wallet&#45;sdk#484</text>
 <text text-anchor="middle" x="612.5" y="-3599.3" font-family="Times,serif" font-size="14.00">Add `Key` type</text>
@@ -248,9 +237,9 @@
 </g>
 </g>
 <!-- zcash/zcash&#45;android&#45;wallet&#45;sdk#590 -->
-<g id="node9" class="node open">
+<g id="node8" class="node open">
 <title>zcash/zcash&#45;android&#45;wallet&#45;sdk#590</title>
-<g id="a_node9"><a xlink:href="https://github.com/zcash/zcash-android-wallet-sdk/issues/590" xlink:title="zcash/zcash&#45;android&#45;wallet&#45;sdk#590&#10;Implement progress as&#10;type safe value" target="_blank">
+<g id="a_node8"><a xlink:href="https://github.com/zcash/zcash-android-wallet-sdk/issues/590" xlink:title="zcash/zcash&#45;android&#45;wallet&#45;sdk#590&#10;Implement progress as&#10;type safe value" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="750.5,-3573 474.5,-3573 474.5,-3520 750.5,-3520 750.5,-3573"/>
 <text text-anchor="middle" x="612.5" y="-3557.8" font-family="Times,serif" font-size="14.00">zcash/zcash&#45;android&#45;wallet&#45;sdk#590</text>
 <text text-anchor="middle" x="612.5" y="-3542.8" font-family="Times,serif" font-size="14.00">Implement progress as</text>
@@ -259,9 +248,9 @@
 </g>
 </g>
 <!-- zcash/zcash&#45;android&#45;wallet&#45;sdk#592 -->
-<g id="node10" class="node open">
+<g id="node9" class="node open">
 <title>zcash/zcash&#45;android&#45;wallet&#45;sdk#592</title>
-<g id="a_node10"><a xlink:href="https://github.com/zcash/zcash-android-wallet-sdk/issues/592" xlink:title="zcash/zcash&#45;android&#45;wallet&#45;sdk#592&#10;Use Duration API for time&#10;constants" target="_blank">
+<g id="a_node9"><a xlink:href="https://github.com/zcash/zcash-android-wallet-sdk/issues/592" xlink:title="zcash/zcash&#45;android&#45;wallet&#45;sdk#592&#10;Use Duration API for time&#10;constants" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="750.5,-3502 474.5,-3502 474.5,-3449 750.5,-3449 750.5,-3502"/>
 <text text-anchor="middle" x="612.5" y="-3486.8" font-family="Times,serif" font-size="14.00">zcash/zcash&#45;android&#45;wallet&#45;sdk#592</text>
 <text text-anchor="middle" x="612.5" y="-3471.8" font-family="Times,serif" font-size="14.00">Use Duration API for time</text>
@@ -270,9 +259,9 @@
 </g>
 </g>
 <!-- zcash/zcash&#45;android&#45;wallet&#45;sdk#479 -->
-<g id="node11" class="node open">
+<g id="node10" class="node open">
 <title>zcash/zcash&#45;android&#45;wallet&#45;sdk#479</title>
-<g id="a_node11"><a xlink:href="https://github.com/zcash/zcash-android-wallet-sdk/issues/479" xlink:title="zcash/zcash&#45;android&#45;wallet&#45;sdk#479&#10;Remove default values&#10;from `WalletBirthday`" target="_blank">
+<g id="a_node10"><a xlink:href="https://github.com/zcash/zcash-android-wallet-sdk/issues/479" xlink:title="zcash/zcash&#45;android&#45;wallet&#45;sdk#479&#10;Remove default values&#10;from `WalletBirthday`" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="750.5,-3431 474.5,-3431 474.5,-3378 750.5,-3378 750.5,-3431"/>
 <text text-anchor="middle" x="612.5" y="-3415.8" font-family="Times,serif" font-size="14.00">zcash/zcash&#45;android&#45;wallet&#45;sdk#479</text>
 <text text-anchor="middle" x="612.5" y="-3400.8" font-family="Times,serif" font-size="14.00">Remove default values</text>
@@ -280,51 +269,10 @@
 </a>
 </g>
 </g>
-<!-- zcash/zcash&#45;android&#45;wallet&#45;sdk#295 -->
-<g id="node12" class="node open">
-<title>zcash/zcash&#45;android&#45;wallet&#45;sdk#295</title>
-<g id="a_node12"><a xlink:href="https://github.com/zcash/zcash-android-wallet-sdk/issues/295" xlink:title="zcash/zcash&#45;android&#45;wallet&#45;sdk#295&#10;Repackaging SDK Classes &#45;&#10;Phase 3 &#45; Minor Public&#10;API changes" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="357,-4989.5 81,-4989.5 81,-4921.5 357,-4921.5 357,-4989.5"/>
-<text text-anchor="middle" x="219" y="-4974.3" font-family="Times,serif" font-size="14.00">zcash/zcash&#45;android&#45;wallet&#45;sdk#295</text>
-<text text-anchor="middle" x="219" y="-4959.3" font-family="Times,serif" font-size="14.00">Repackaging SDK Classes &#45;</text>
-<text text-anchor="middle" x="219" y="-4944.3" font-family="Times,serif" font-size="14.00">Phase 3 &#45; Minor Public</text>
-<text text-anchor="middle" x="219" y="-4929.3" font-family="Times,serif" font-size="14.00">API changes</text>
-</a>
-</g>
-</g>
-<!-- zcash/zcash&#45;android&#45;wallet&#45;sdk#296 -->
-<g id="node13" class="node open">
-<title>zcash/zcash&#45;android&#45;wallet&#45;sdk#296</title>
-<g id="a_node13"><a xlink:href="https://github.com/zcash/zcash-android-wallet-sdk/issues/296" xlink:title="zcash/zcash&#45;android&#45;wallet&#45;sdk#296&#10;Repackaging SDK Classes &#45;&#10;Phase 4 &#45; Major Public&#10;API Changes" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" points="750.5,-4989.5 474.5,-4989.5 474.5,-4921.5 750.5,-4921.5 750.5,-4989.5"/>
-<text text-anchor="middle" x="612.5" y="-4974.3" font-family="Times,serif" font-size="14.00">zcash/zcash&#45;android&#45;wallet&#45;sdk#296</text>
-<text text-anchor="middle" x="612.5" y="-4959.3" font-family="Times,serif" font-size="14.00">Repackaging SDK Classes &#45;</text>
-<text text-anchor="middle" x="612.5" y="-4944.3" font-family="Times,serif" font-size="14.00">Phase 4 &#45; Major Public</text>
-<text text-anchor="middle" x="612.5" y="-4929.3" font-family="Times,serif" font-size="14.00">API Changes</text>
-</a>
-</g>
-</g>
-<!-- zcash/zcash&#45;android&#45;wallet&#45;sdk#295&#45;&gt;zcash/zcash&#45;android&#45;wallet&#45;sdk#296 -->
-<g id="edge1" class="edge">
-<title>zcash/zcash&#45;android&#45;wallet&#45;sdk#295&#45;&gt;zcash/zcash&#45;android&#45;wallet&#45;sdk#296</title>
-<path fill="none" stroke="black" d="M357.2,-4955.5C391.71,-4955.5 428.89,-4955.5 463.88,-4955.5"/>
-<polygon fill="black" stroke="black" points="464.17,-4959 474.17,-4955.5 464.17,-4952 464.17,-4959"/>
-</g>
-<!-- zcash/zcash&#45;android&#45;wallet&#45;sdk#534 -->
-<g id="node14" class="node open">
-<title>zcash/zcash&#45;android&#45;wallet&#45;sdk#534</title>
-<g id="a_node14"><a xlink:href="https://github.com/zcash/zcash-android-wallet-sdk/issues/534" xlink:title="zcash/zcash&#45;android&#45;wallet&#45;sdk#534&#10;Consider Using Kotlin&#10;Explicit API" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="357,-4903 81,-4903 81,-4850 357,-4850 357,-4903"/>
-<text text-anchor="middle" x="219" y="-4887.8" font-family="Times,serif" font-size="14.00">zcash/zcash&#45;android&#45;wallet&#45;sdk#534</text>
-<text text-anchor="middle" x="219" y="-4872.8" font-family="Times,serif" font-size="14.00">Consider Using Kotlin</text>
-<text text-anchor="middle" x="219" y="-4857.8" font-family="Times,serif" font-size="14.00">Explicit API</text>
-</a>
-</g>
-</g>
 <!-- zcash/librustzcash#235 -->
-<g id="node15" class="node open">
+<g id="node11" class="node open">
 <title>zcash/librustzcash#235</title>
-<g id="a_node15"><a xlink:href="https://github.com/zcash/librustzcash/issues/235" xlink:title="zcash/librustzcash#235&#10;zcash_proofs: Extract&#10;separate verifiers for&#10;proofs, spendAuthSigs,&#10;and bindingSig from Sapli&#10;ngVerificationContext" target="_blank">
+<g id="a_node11"><a xlink:href="https://github.com/zcash/librustzcash/issues/235" xlink:title="zcash/librustzcash#235&#10;zcash_proofs: Extract&#10;separate verifiers for&#10;proofs, spendAuthSigs,&#10;and bindingSig from Sapli&#10;ngVerificationContext" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="320.5,-603.5 117.5,-603.5 117.5,-505.5 320.5,-505.5 320.5,-603.5"/>
 <text text-anchor="middle" x="219" y="-588.3" font-family="Times,serif" font-size="14.00">zcash/librustzcash#235</text>
 <text text-anchor="middle" x="219" y="-573.3" font-family="Times,serif" font-size="14.00">zcash_proofs: Extract</text>
@@ -336,9 +284,9 @@
 </g>
 </g>
 <!-- zcash/librustzcash#738 -->
-<g id="node16" class="node open">
+<g id="node12" class="node open">
 <title>zcash/librustzcash#738</title>
-<g id="a_node16"><a xlink:href="https://github.com/zcash/librustzcash/issues/738" xlink:title="zcash/librustzcash#738&#10;Extract Sapling protocol&#10;into `sapling&#45;crypto`&#10;crate" target="_blank">
+<g id="a_node12"><a xlink:href="https://github.com/zcash/librustzcash/issues/738" xlink:title="zcash/librustzcash#738&#10;Extract Sapling protocol&#10;into `sapling&#45;crypto`&#10;crate" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" points="708,-370.5 517,-370.5 517,-302.5 708,-302.5 708,-370.5"/>
 <text text-anchor="middle" x="612.5" y="-355.3" font-family="Times,serif" font-size="14.00">zcash/librustzcash#738</text>
 <text text-anchor="middle" x="612.5" y="-340.3" font-family="Times,serif" font-size="14.00">Extract Sapling protocol</text>
@@ -348,7 +296,7 @@
 </g>
 </g>
 <!-- zcash/librustzcash#235&#45;&gt;zcash/librustzcash#738 -->
-<g id="edge2" class="edge">
+<g id="edge1" class="edge">
 <title>zcash/librustzcash#235&#45;&gt;zcash/librustzcash#738</title>
 <path fill="none" stroke="black" d="M320.72,-538.38C359.02,-529.56 402.05,-516.26 438,-496.5 493.15,-466.19 544.57,-414.67 576.89,-378.29"/>
 <polygon fill="black" stroke="black" points="579.52,-380.59 583.49,-370.77 574.26,-375.98 579.52,-380.59"/>
@@ -374,9 +322,9 @@
 <polygon fill="black" stroke="black" points="827.97,-236.18 835.43,-228.66 824.91,-229.89 827.97,-236.18"/>
 </g>
 <!-- zcash/librustzcash#736 -->
-<g id="node17" class="node open">
+<g id="node13" class="node open">
 <title>zcash/librustzcash#736</title>
-<g id="a_node17"><a xlink:href="https://github.com/zcash/librustzcash/issues/736" xlink:title="zcash/librustzcash#736&#10;Internally refactor&#10;Sapling tx components and&#10;builder to `zcash_primiti&#10;ves::sapling`" target="_blank">
+<g id="a_node13"><a xlink:href="https://github.com/zcash/librustzcash/issues/736" xlink:title="zcash/librustzcash#736&#10;Internally refactor&#10;Sapling tx components and&#10;builder to `zcash_primiti&#10;ves::sapling`" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="324.5,-487 113.5,-487 113.5,-404 324.5,-404 324.5,-487"/>
 <text text-anchor="middle" x="219" y="-471.8" font-family="Times,serif" font-size="14.00">zcash/librustzcash#736</text>
 <text text-anchor="middle" x="219" y="-456.8" font-family="Times,serif" font-size="14.00">Internally refactor</text>
@@ -387,15 +335,15 @@
 </g>
 </g>
 <!-- zcash/librustzcash#736&#45;&gt;zcash/librustzcash#738 -->
-<g id="edge3" class="edge">
+<g id="edge2" class="edge">
 <title>zcash/librustzcash#736&#45;&gt;zcash/librustzcash#738</title>
 <path fill="none" stroke="black" d="M324.74,-423.07C360.82,-414.8 401.35,-404.89 438,-394.5 460.59,-388.1 484.61,-380.55 507.34,-373.06"/>
 <polygon fill="black" stroke="black" points="508.6,-376.33 516.99,-369.86 506.4,-369.69 508.6,-376.33"/>
 </g>
 <!-- zcash/librustzcash#717 -->
-<g id="node18" class="node open">
+<g id="node14" class="node open">
 <title>zcash/librustzcash#717</title>
-<g id="a_node18"><a xlink:href="https://github.com/zcash/librustzcash/issues/717" xlink:title="zcash/librustzcash#717&#10;Split the operation of&#10;the transaction builder&#10;into separate&#10;preparation, proving, and&#10;signing steps." target="_blank">
+<g id="a_node14"><a xlink:href="https://github.com/zcash/librustzcash/issues/717" xlink:title="zcash/librustzcash#717&#10;Split the operation of&#10;the transaction builder&#10;into separate&#10;preparation, proving, and&#10;signing steps." target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="319,-385.5 119,-385.5 119,-287.5 319,-287.5 319,-385.5"/>
 <text text-anchor="middle" x="219" y="-370.3" font-family="Times,serif" font-size="14.00">zcash/librustzcash#717</text>
 <text text-anchor="middle" x="219" y="-355.3" font-family="Times,serif" font-size="14.00">Split the operation of</text>
@@ -407,7 +355,7 @@
 </g>
 </g>
 <!-- zcash/librustzcash#717&#45;&gt;zcash/librustzcash#738 -->
-<g id="edge4" class="edge">
+<g id="edge3" class="edge">
 <title>zcash/librustzcash#717&#45;&gt;zcash/librustzcash#738</title>
 <path fill="none" stroke="black" d="M319.04,-336.5C376.32,-336.5 448.34,-336.5 506.58,-336.5"/>
 <polygon fill="black" stroke="black" points="506.91,-340 516.91,-336.5 506.91,-333 506.91,-340"/>
@@ -450,9 +398,9 @@
 <polygon fill="black" stroke="black" points="506.33,-148.94 513.94,-141.57 503.39,-142.59 506.33,-148.94"/>
 </g>
 <!-- zcash/librustzcash#998 -->
-<g id="node19" class="node open">
+<g id="node15" class="node open">
 <title>zcash/librustzcash#998</title>
-<g id="a_node19"><a xlink:href="https://github.com/zcash/librustzcash/issues/998" xlink:title="zcash/librustzcash#998&#10;Move Sapling proving and&#10;verifying code from&#10;`zcash_proofs` to `zcash_&#10;primitives::sapling`" target="_blank">
+<g id="a_node15"><a xlink:href="https://github.com/zcash/librustzcash/issues/998" xlink:title="zcash/librustzcash#998&#10;Move Sapling proving and&#10;verifying code from&#10;`zcash_proofs` to `zcash_&#10;primitives::sapling`" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="321,-269 117,-269 117,-186 321,-186 321,-269"/>
 <text text-anchor="middle" x="219" y="-253.8" font-family="Times,serif" font-size="14.00">zcash/librustzcash#998</text>
 <text text-anchor="middle" x="219" y="-238.8" font-family="Times,serif" font-size="14.00">Move Sapling proving and</text>
@@ -463,37 +411,15 @@
 </g>
 </g>
 <!-- zcash/librustzcash#998&#45;&gt;zcash/librustzcash#738 -->
-<g id="edge5" class="edge">
+<g id="edge4" class="edge">
 <title>zcash/librustzcash#998&#45;&gt;zcash/librustzcash#738</title>
 <path fill="none" stroke="black" d="M321.16,-249.11C358.12,-257.55 400.14,-267.77 438,-278.5 460.59,-284.9 484.61,-292.45 507.34,-299.94"/>
 <polygon fill="black" stroke="black" points="506.4,-303.31 516.99,-303.14 508.6,-296.67 506.4,-303.31"/>
 </g>
-<!-- zcash/ZcashLightClientKit#1143 -->
-<g id="node20" class="node open">
-<title>zcash/ZcashLightClientKit#1143</title>
-<g id="a_node20"><a xlink:href="https://github.com/zcash/ZcashLightClientKit/issues/1143" xlink:title="zcash/ZcashLightClientKit#1143&#10;Make state machine to&#10;work in a local context" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="345,-5161 93,-5161 93,-5108 345,-5108 345,-5161"/>
-<text text-anchor="middle" x="219" y="-5145.8" font-family="Times,serif" font-size="14.00">zcash/ZcashLightClientKit#1143</text>
-<text text-anchor="middle" x="219" y="-5130.8" font-family="Times,serif" font-size="14.00">Make state machine to</text>
-<text text-anchor="middle" x="219" y="-5115.8" font-family="Times,serif" font-size="14.00">work in a local context</text>
-</a>
-</g>
-</g>
-<!-- zcash/ZcashLightClientKit#1147 -->
-<g id="node21" class="node open">
-<title>zcash/ZcashLightClientKit#1147</title>
-<g id="a_node21"><a xlink:href="https://github.com/zcash/ZcashLightClientKit/issues/1147" xlink:title="zcash/ZcashLightClientKit#1147&#10;Update&#10;cbp_state_machine.png" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="345,-5090 93,-5090 93,-5037 345,-5037 345,-5090"/>
-<text text-anchor="middle" x="219" y="-5074.8" font-family="Times,serif" font-size="14.00">zcash/ZcashLightClientKit#1147</text>
-<text text-anchor="middle" x="219" y="-5059.8" font-family="Times,serif" font-size="14.00">Update</text>
-<text text-anchor="middle" x="219" y="-5044.8" font-family="Times,serif" font-size="14.00">cbp_state_machine.png</text>
-</a>
-</g>
-</g>
 <!-- zcash/secant&#45;ios&#45;wallet#808 -->
-<g id="node22" class="node open">
+<g id="node16" class="node open">
 <title>zcash/secant&#45;ios&#45;wallet#808</title>
-<g id="a_node22"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-ios/issues/808" xlink:title="zcash/secant&#45;ios&#45;wallet#808&#10;Core BTS UI: Settings&#10;Screen" target="_blank">
+<g id="a_node16"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-ios/issues/808" xlink:title="zcash/secant&#45;ios&#45;wallet#808&#10;Core BTS UI: Settings&#10;Screen" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="328.5,-5318 109.5,-5318 109.5,-5265 328.5,-5265 328.5,-5318"/>
 <text text-anchor="middle" x="219" y="-5302.8" font-family="Times,serif" font-size="14.00">zcash/secant&#45;ios&#45;wallet#808</text>
 <text text-anchor="middle" x="219" y="-5287.8" font-family="Times,serif" font-size="14.00">Core BTS UI: Settings</text>
@@ -502,9 +428,9 @@
 </g>
 </g>
 <!-- zcash/secant&#45;ios&#45;wallet#807 -->
-<g id="node23" class="node open">
+<g id="node17" class="node open">
 <title>zcash/secant&#45;ios&#45;wallet#807</title>
-<g id="a_node23"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-ios/issues/807" xlink:title="zcash/secant&#45;ios&#45;wallet#807&#10;Core BTS UI: About Screen" target="_blank">
+<g id="a_node17"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-ios/issues/807" xlink:title="zcash/secant&#45;ios&#45;wallet#807&#10;Core BTS UI: About Screen" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="328.5,-5246.5 109.5,-5246.5 109.5,-5208.5 328.5,-5208.5 328.5,-5246.5"/>
 <text text-anchor="middle" x="219" y="-5231.3" font-family="Times,serif" font-size="14.00">zcash/secant&#45;ios&#45;wallet#807</text>
 <text text-anchor="middle" x="219" y="-5216.3" font-family="Times,serif" font-size="14.00">Core BTS UI: About Screen</text>
@@ -512,9 +438,9 @@
 </g>
 </g>
 <!-- zcash/zcash&#45;android&#45;wallet&#45;sdk#214 -->
-<g id="node24" class="node open">
+<g id="node18" class="node open">
 <title>zcash/zcash&#45;android&#45;wallet&#45;sdk#214</title>
-<g id="a_node24"><a xlink:href="https://github.com/zcash/zcash-android-wallet-sdk/issues/214" xlink:title="zcash/zcash&#45;android&#45;wallet&#45;sdk#214&#10;Gracefully handle&#10;&quot;malformed disk image&quot;&#10;error" target="_blank">
+<g id="a_node18"><a xlink:href="https://github.com/zcash/zcash-android-wallet-sdk/issues/214" xlink:title="zcash/zcash&#45;android&#45;wallet&#45;sdk#214&#10;Gracefully handle&#10;&quot;malformed disk image&quot;&#10;error" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="357,-4802.5 81,-4802.5 81,-4734.5 357,-4734.5 357,-4802.5"/>
 <text text-anchor="middle" x="219" y="-4787.3" font-family="Times,serif" font-size="14.00">zcash/zcash&#45;android&#45;wallet&#45;sdk#214</text>
 <text text-anchor="middle" x="219" y="-4772.3" font-family="Times,serif" font-size="14.00">Gracefully handle</text>
@@ -524,9 +450,9 @@
 </g>
 </g>
 <!-- zcash/secant&#45;android&#45;wallet#250 -->
-<g id="node25" class="node open">
+<g id="node19" class="node open">
 <title>zcash/secant&#45;android&#45;wallet#250</title>
-<g id="a_node25"><a xlink:href="https://github.com/zcash/secant-android-wallet/issues/250" xlink:title="zcash/secant&#45;android&#45;wallet#250&#10;Add error handling UI for&#10;ZEC send UI" target="_blank">
+<g id="a_node19"><a xlink:href="https://github.com/zcash/secant-android-wallet/issues/250" xlink:title="zcash/secant&#45;android&#45;wallet#250&#10;Add error handling UI for&#10;ZEC send UI" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="346,-4716 92,-4716 92,-4663 346,-4663 346,-4716"/>
 <text text-anchor="middle" x="219" y="-4700.8" font-family="Times,serif" font-size="14.00">zcash/secant&#45;android&#45;wallet#250</text>
 <text text-anchor="middle" x="219" y="-4685.8" font-family="Times,serif" font-size="14.00">Add error handling UI for</text>
@@ -535,9 +461,9 @@
 </g>
 </g>
 <!-- zcash/secant&#45;android&#45;wallet#215 -->
-<g id="node26" class="node open">
+<g id="node20" class="node open">
 <title>zcash/secant&#45;android&#45;wallet#215</title>
-<g id="a_node26"><a xlink:href="https://github.com/zcash/secant-android-wallet/issues/215" xlink:title="zcash/secant&#45;android&#45;wallet#215&#10;Add error handling UI for&#10;Zec Request" target="_blank">
+<g id="a_node20"><a xlink:href="https://github.com/zcash/secant-android-wallet/issues/215" xlink:title="zcash/secant&#45;android&#45;wallet#215&#10;Add error handling UI for&#10;Zec Request" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="346,-4645 92,-4645 92,-4592 346,-4592 346,-4645"/>
 <text text-anchor="middle" x="219" y="-4629.8" font-family="Times,serif" font-size="14.00">zcash/secant&#45;android&#45;wallet#215</text>
 <text text-anchor="middle" x="219" y="-4614.8" font-family="Times,serif" font-size="14.00">Add error handling UI for</text>
@@ -546,9 +472,9 @@
 </g>
 </g>
 <!-- zcash/zcash&#45;android&#45;wallet&#45;sdk#240 -->
-<g id="node27" class="node open">
+<g id="node21" class="node open">
 <title>zcash/zcash&#45;android&#45;wallet&#45;sdk#240</title>
-<g id="a_node27"><a xlink:href="https://github.com/zcash/zcash-android-wallet-sdk/issues/240" xlink:title="zcash/zcash&#45;android&#45;wallet&#45;sdk#240&#10;Make the SDK database&#10;more robust" target="_blank">
+<g id="a_node21"><a xlink:href="https://github.com/zcash/zcash-android-wallet-sdk/issues/240" xlink:title="zcash/zcash&#45;android&#45;wallet&#45;sdk#240&#10;Make the SDK database&#10;more robust" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="357,-4544 81,-4544 81,-4491 357,-4491 357,-4544"/>
 <text text-anchor="middle" x="219" y="-4528.8" font-family="Times,serif" font-size="14.00">zcash/zcash&#45;android&#45;wallet&#45;sdk#240</text>
 <text text-anchor="middle" x="219" y="-4513.8" font-family="Times,serif" font-size="14.00">Make the SDK database</text>
@@ -557,9 +483,9 @@
 </g>
 </g>
 <!-- zcash/zcash&#45;android&#45;wallet&#45;sdk#243 -->
-<g id="node28" class="node open">
+<g id="node22" class="node open">
 <title>zcash/zcash&#45;android&#45;wallet&#45;sdk#243</title>
-<g id="a_node28"><a xlink:href="https://github.com/zcash/zcash-android-wallet-sdk/issues/243" xlink:title="zcash/zcash&#45;android&#45;wallet&#45;sdk#243&#10;Add a better fix for the&#10;&quot;off by one&quot; error while&#10;autoshielding" target="_blank">
+<g id="a_node22"><a xlink:href="https://github.com/zcash/zcash-android-wallet-sdk/issues/243" xlink:title="zcash/zcash&#45;android&#45;wallet&#45;sdk#243&#10;Add a better fix for the&#10;&quot;off by one&quot; error while&#10;autoshielding" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="357,-4472.5 81,-4472.5 81,-4404.5 357,-4404.5 357,-4472.5"/>
 <text text-anchor="middle" x="219" y="-4457.3" font-family="Times,serif" font-size="14.00">zcash/zcash&#45;android&#45;wallet&#45;sdk#243</text>
 <text text-anchor="middle" x="219" y="-4442.3" font-family="Times,serif" font-size="14.00">Add a better fix for the</text>
@@ -569,9 +495,9 @@
 </g>
 </g>
 <!-- zcash/zcash&#45;android&#45;wallet&#45;sdk#245 -->
-<g id="node29" class="node open">
+<g id="node23" class="node open">
 <title>zcash/zcash&#45;android&#45;wallet&#45;sdk#245</title>
-<g id="a_node29"><a xlink:href="https://github.com/zcash/zcash-android-wallet-sdk/issues/245" xlink:title="zcash/zcash&#45;android&#45;wallet&#45;sdk#245&#10;Simplify the transaction&#10;manager and encoder" target="_blank">
+<g id="a_node23"><a xlink:href="https://github.com/zcash/zcash-android-wallet-sdk/issues/245" xlink:title="zcash/zcash&#45;android&#45;wallet&#45;sdk#245&#10;Simplify the transaction&#10;manager and encoder" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="357,-4386 81,-4386 81,-4333 357,-4333 357,-4386"/>
 <text text-anchor="middle" x="219" y="-4370.8" font-family="Times,serif" font-size="14.00">zcash/zcash&#45;android&#45;wallet&#45;sdk#245</text>
 <text text-anchor="middle" x="219" y="-4355.8" font-family="Times,serif" font-size="14.00">Simplify the transaction</text>
@@ -580,9 +506,9 @@
 </g>
 </g>
 <!-- zcash/zcash&#45;android&#45;wallet&#45;sdk#480 -->
-<g id="node30" class="node open">
+<g id="node24" class="node open">
 <title>zcash/zcash&#45;android&#45;wallet&#45;sdk#480</title>
-<g id="a_node30"><a xlink:href="https://github.com/zcash/zcash-android-wallet-sdk/issues/480" xlink:title="zcash/zcash&#45;android&#45;wallet&#45;sdk#480&#10;Consider Separate UI SDK&#10;Library" target="_blank">
+<g id="a_node24"><a xlink:href="https://github.com/zcash/zcash-android-wallet-sdk/issues/480" xlink:title="zcash/zcash&#45;android&#45;wallet&#45;sdk#480&#10;Consider Separate UI SDK&#10;Library" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="357,-4285 81,-4285 81,-4232 357,-4232 357,-4285"/>
 <text text-anchor="middle" x="219" y="-4269.8" font-family="Times,serif" font-size="14.00">zcash/zcash&#45;android&#45;wallet&#45;sdk#480</text>
 <text text-anchor="middle" x="219" y="-4254.8" font-family="Times,serif" font-size="14.00">Consider Separate UI SDK</text>
@@ -591,9 +517,9 @@
 </g>
 </g>
 <!-- zcash/zcash&#45;android&#45;wallet&#45;sdk#973 -->
-<g id="node31" class="node open">
+<g id="node25" class="node open">
 <title>zcash/zcash&#45;android&#45;wallet&#45;sdk#973</title>
-<g id="a_node31"><a xlink:href="https://github.com/zcash/zcash-android-wallet-sdk/issues/973" xlink:title="zcash/zcash&#45;android&#45;wallet&#45;sdk#973&#10;Eliminate old UI demo&#45;app" target="_blank">
+<g id="a_node25"><a xlink:href="https://github.com/zcash/zcash-android-wallet-sdk/issues/973" xlink:title="zcash/zcash&#45;android&#45;wallet&#45;sdk#973&#10;Eliminate old UI demo&#45;app" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="357,-4213.5 81,-4213.5 81,-4175.5 357,-4175.5 357,-4213.5"/>
 <text text-anchor="middle" x="219" y="-4198.3" font-family="Times,serif" font-size="14.00">zcash/zcash&#45;android&#45;wallet&#45;sdk#973</text>
 <text text-anchor="middle" x="219" y="-4183.3" font-family="Times,serif" font-size="14.00">Eliminate old UI demo&#45;app</text>
@@ -601,9 +527,9 @@
 </g>
 </g>
 <!-- zcash/zcash&#45;android&#45;wallet&#45;sdk#808 -->
-<g id="node32" class="node open">
+<g id="node26" class="node open">
 <title>zcash/zcash&#45;android&#45;wallet&#45;sdk#808</title>
-<g id="a_node32"><a xlink:href="https://github.com/zcash/zcash-android-wallet-sdk/issues/808" xlink:title="zcash/zcash&#45;android&#45;wallet&#45;sdk#808&#10;Add demo&#45;ui&#45;lib module" target="_blank">
+<g id="a_node26"><a xlink:href="https://github.com/zcash/zcash-android-wallet-sdk/issues/808" xlink:title="zcash/zcash&#45;android&#45;wallet&#45;sdk#808&#10;Add demo&#45;ui&#45;lib module" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="357,-4157.5 81,-4157.5 81,-4119.5 357,-4119.5 357,-4157.5"/>
 <text text-anchor="middle" x="219" y="-4142.3" font-family="Times,serif" font-size="14.00">zcash/zcash&#45;android&#45;wallet&#45;sdk#808</text>
 <text text-anchor="middle" x="219" y="-4127.3" font-family="Times,serif" font-size="14.00">Add demo&#45;ui&#45;lib module</text>
@@ -611,13 +537,87 @@
 </g>
 </g>
 <!-- zcash/zcash&#45;android&#45;wallet&#45;sdk#974 -->
-<g id="node33" class="node open">
+<g id="node27" class="node open">
 <title>zcash/zcash&#45;android&#45;wallet&#45;sdk#974</title>
-<g id="a_node33"><a xlink:href="https://github.com/zcash/zcash-android-wallet-sdk/issues/974" xlink:title="zcash/zcash&#45;android&#45;wallet&#45;sdk#974&#10;Move SDK benchmark away&#10;from old UI demo app" target="_blank">
+<g id="a_node27"><a xlink:href="https://github.com/zcash/zcash-android-wallet-sdk/issues/974" xlink:title="zcash/zcash&#45;android&#45;wallet&#45;sdk#974&#10;Move SDK benchmark away&#10;from old UI demo app" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="357,-4101 81,-4101 81,-4048 357,-4048 357,-4101"/>
 <text text-anchor="middle" x="219" y="-4085.8" font-family="Times,serif" font-size="14.00">zcash/zcash&#45;android&#45;wallet&#45;sdk#974</text>
 <text text-anchor="middle" x="219" y="-4070.8" font-family="Times,serif" font-size="14.00">Move SDK benchmark away</text>
 <text text-anchor="middle" x="219" y="-4055.8" font-family="Times,serif" font-size="14.00">from old UI demo app</text>
+</a>
+</g>
+</g>
+<!-- zcash/secant&#45;android&#45;wallet#341 -->
+<g id="node28" class="node open">
+<title>zcash/secant&#45;android&#45;wallet#341</title>
+<g id="a_node28"><a xlink:href="https://github.com/zcash/secant-android-wallet/issues/341" xlink:title="zcash/secant&#45;android&#45;wallet#341&#10;Scaffold: Release note&#10;screen" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="346,-5561 92,-5561 92,-5508 346,-5508 346,-5561"/>
+<text text-anchor="middle" x="219" y="-5545.8" font-family="Times,serif" font-size="14.00">zcash/secant&#45;android&#45;wallet#341</text>
+<text text-anchor="middle" x="219" y="-5530.8" font-family="Times,serif" font-size="14.00">Scaffold: Release note</text>
+<text text-anchor="middle" x="219" y="-5515.8" font-family="Times,serif" font-size="14.00">screen</text>
+</a>
+</g>
+</g>
+<!-- zcash/secant&#45;android&#45;wallet#315 -->
+<g id="node29" class="node open">
+<title>zcash/secant&#45;android&#45;wallet#315</title>
+<g id="a_node29"><a xlink:href="https://github.com/zcash/secant-android-wallet/issues/315" xlink:title="zcash/secant&#45;android&#45;wallet#315&#10;[Scaffold] Transaction&#10;Details" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="346,-5490 92,-5490 92,-5437 346,-5437 346,-5490"/>
+<text text-anchor="middle" x="219" y="-5474.8" font-family="Times,serif" font-size="14.00">zcash/secant&#45;android&#45;wallet#315</text>
+<text text-anchor="middle" x="219" y="-5459.8" font-family="Times,serif" font-size="14.00">[Scaffold] Transaction</text>
+<text text-anchor="middle" x="219" y="-5444.8" font-family="Times,serif" font-size="14.00">Details</text>
+</a>
+</g>
+</g>
+<!-- zcash/secant&#45;android&#45;wallet#307 -->
+<g id="node30" class="node open">
+<title>zcash/secant&#45;android&#45;wallet#307</title>
+<g id="a_node30"><a xlink:href="https://github.com/zcash/secant-android-wallet/issues/307" xlink:title="zcash/secant&#45;android&#45;wallet#307&#10;[Scaffold] Balance&#10;Breakdown" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="346,-5419 92,-5419 92,-5366 346,-5366 346,-5419"/>
+<text text-anchor="middle" x="219" y="-5403.8" font-family="Times,serif" font-size="14.00">zcash/secant&#45;android&#45;wallet#307</text>
+<text text-anchor="middle" x="219" y="-5388.8" font-family="Times,serif" font-size="14.00">[Scaffold] Balance</text>
+<text text-anchor="middle" x="219" y="-5373.8" font-family="Times,serif" font-size="14.00">Breakdown</text>
+</a>
+</g>
+</g>
+<!-- zcash/zcash&#45;android&#45;wallet&#45;sdk#295 -->
+<g id="node31" class="node open">
+<title>zcash/zcash&#45;android&#45;wallet&#45;sdk#295</title>
+<g id="a_node31"><a xlink:href="https://github.com/zcash/zcash-android-wallet-sdk/issues/295" xlink:title="zcash/zcash&#45;android&#45;wallet&#45;sdk#295&#10;Repackaging SDK Classes &#45;&#10;Phase 3 &#45; Minor Public&#10;API changes" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="357,-4989.5 81,-4989.5 81,-4921.5 357,-4921.5 357,-4989.5"/>
+<text text-anchor="middle" x="219" y="-4974.3" font-family="Times,serif" font-size="14.00">zcash/zcash&#45;android&#45;wallet&#45;sdk#295</text>
+<text text-anchor="middle" x="219" y="-4959.3" font-family="Times,serif" font-size="14.00">Repackaging SDK Classes &#45;</text>
+<text text-anchor="middle" x="219" y="-4944.3" font-family="Times,serif" font-size="14.00">Phase 3 &#45; Minor Public</text>
+<text text-anchor="middle" x="219" y="-4929.3" font-family="Times,serif" font-size="14.00">API changes</text>
+</a>
+</g>
+</g>
+<!-- zcash/zcash&#45;android&#45;wallet&#45;sdk#296 -->
+<g id="node32" class="node open">
+<title>zcash/zcash&#45;android&#45;wallet&#45;sdk#296</title>
+<g id="a_node32"><a xlink:href="https://github.com/zcash/zcash-android-wallet-sdk/issues/296" xlink:title="zcash/zcash&#45;android&#45;wallet&#45;sdk#296&#10;Repackaging SDK Classes &#45;&#10;Phase 4 &#45; Major Public&#10;API Changes" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" points="750.5,-4989.5 474.5,-4989.5 474.5,-4921.5 750.5,-4921.5 750.5,-4989.5"/>
+<text text-anchor="middle" x="612.5" y="-4974.3" font-family="Times,serif" font-size="14.00">zcash/zcash&#45;android&#45;wallet&#45;sdk#296</text>
+<text text-anchor="middle" x="612.5" y="-4959.3" font-family="Times,serif" font-size="14.00">Repackaging SDK Classes &#45;</text>
+<text text-anchor="middle" x="612.5" y="-4944.3" font-family="Times,serif" font-size="14.00">Phase 4 &#45; Major Public</text>
+<text text-anchor="middle" x="612.5" y="-4929.3" font-family="Times,serif" font-size="14.00">API Changes</text>
+</a>
+</g>
+</g>
+<!-- zcash/zcash&#45;android&#45;wallet&#45;sdk#295&#45;&gt;zcash/zcash&#45;android&#45;wallet&#45;sdk#296 -->
+<g id="edge5" class="edge">
+<title>zcash/zcash&#45;android&#45;wallet&#45;sdk#295&#45;&gt;zcash/zcash&#45;android&#45;wallet&#45;sdk#296</title>
+<path fill="none" stroke="black" d="M357.2,-4955.5C391.71,-4955.5 428.89,-4955.5 463.88,-4955.5"/>
+<polygon fill="black" stroke="black" points="464.17,-4959 474.17,-4955.5 464.17,-4952 464.17,-4959"/>
+</g>
+<!-- zcash/zcash&#45;android&#45;wallet&#45;sdk#534 -->
+<g id="node33" class="node open">
+<title>zcash/zcash&#45;android&#45;wallet&#45;sdk#534</title>
+<g id="a_node33"><a xlink:href="https://github.com/zcash/zcash-android-wallet-sdk/issues/534" xlink:title="zcash/zcash&#45;android&#45;wallet&#45;sdk#534&#10;Consider Using Kotlin&#10;Explicit API" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="357,-4903 81,-4903 81,-4850 357,-4850 357,-4903"/>
+<text text-anchor="middle" x="219" y="-4887.8" font-family="Times,serif" font-size="14.00">zcash/zcash&#45;android&#45;wallet&#45;sdk#534</text>
+<text text-anchor="middle" x="219" y="-4872.8" font-family="Times,serif" font-size="14.00">Consider Using Kotlin</text>
+<text text-anchor="middle" x="219" y="-4857.8" font-family="Times,serif" font-size="14.00">Explicit API</text>
 </a>
 </g>
 </g>
