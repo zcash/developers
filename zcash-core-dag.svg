@@ -20,14 +20,14 @@
 <text text-anchor="middle" x="756" y="-4752.8" font-family="Times,serif" font-size="14.00">SDK 2.0 Post&#45;Release Cleanup</text>
 </g>
 <g id="clust3" class="cluster">
-<title>cluster_7</title>
-<polygon fill="none" stroke="blue" points="387.5,-5451 387.5,-5645 1643,-5645 1643,-5451 387.5,-5451"/>
-<text text-anchor="middle" x="1015.2" y="-5629.8" font-family="Times,serif" font-size="14.00">First user&#45;facing recursion API</text>
-</g>
-<g id="clust4" class="cluster">
 <title>cluster_8</title>
 <polygon fill="none" stroke="blue" points="63.5,-5730 63.5,-5909 867.5,-5909 867.5,-5730 63.5,-5730"/>
 <text text-anchor="middle" x="465.5" y="-5893.8" font-family="Times,serif" font-size="14.00">0.3.1</text>
+</g>
+<g id="clust4" class="cluster">
+<title>cluster_7</title>
+<polygon fill="none" stroke="blue" points="387.5,-5451 387.5,-5645 1643,-5645 1643,-5451 387.5,-5451"/>
+<text text-anchor="middle" x="1015.2" y="-5629.8" font-family="Times,serif" font-size="14.00">First user&#45;facing recursion API</text>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_1</title>
@@ -953,10 +953,78 @@
 <path fill="none" stroke="black" d="M819.01,-4650.8C848.04,-4683.9 889.81,-4731.2 927,-4772 956,-4803.8 989.92,-4839.9 1012.5,-4863.7"/>
 <polygon fill="black" stroke="black" points="1009.89,-4866.03 1019.3,-4870.9 1014.98,-4861.23 1009.89,-4866.03"/>
 </g>
-<!-- zcash/halo2#247 -->
+<!-- zcash/halo2#805 -->
 <g id="node59" class="node open">
+<title>zcash/halo2#805</title>
+<g id="a_node59"><a xlink:href="https://github.com/zcash/halo2/pull/805" xlink:title="zcash/halo2#805&#10;Add `Cargo.lock` to&#10;repository" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="228.5,-5870.5 71.5,-5870.5 71.5,-5866.5 67.5,-5866.5 67.5,-5862.5 71.5,-5862.5 71.5,-5825.5 67.5,-5825.5 67.5,-5821.5 71.5,-5821.5 71.5,-5817.5 228.5,-5817.5 228.5,-5870.5"/>
+<polyline fill="none" stroke="black" stroke-width="2" points="71.5,-5866.5 75.5,-5866.5 75.5,-5862.5 71.5,-5862.5 "/>
+<polyline fill="none" stroke="black" stroke-width="2" points="71.5,-5825.5 75.5,-5825.5 75.5,-5821.5 71.5,-5821.5 "/>
+<text text-anchor="middle" x="150" y="-5855.3" font-family="Times,serif" font-size="14.00">zcash/halo2#805</text>
+<text text-anchor="middle" x="150" y="-5840.3" font-family="Times,serif" font-size="14.00">Add `Cargo.lock` to</text>
+<text text-anchor="middle" x="150" y="-5825.3" font-family="Times,serif" font-size="14.00">repository</text>
+</a>
+</g>
+</g>
+<!-- zcash/halo2#802 -->
+<g id="node60" class="node open">
+<title>zcash/halo2#802</title>
+<g id="a_node60"><a xlink:href="https://github.com/zcash/halo2/pull/802" xlink:title="zcash/halo2#802&#10;Remove obsolete book&#10;`Makefile` and&#10;`edithtml.sh`" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" points="574,-5878 398,-5878 398,-5874 394,-5874 394,-5870 398,-5870 398,-5818 394,-5818 394,-5814 398,-5814 398,-5810 574,-5810 574,-5878"/>
+<polyline fill="none" stroke="black" points="398,-5874 402,-5874 402,-5870 398,-5870 "/>
+<polyline fill="none" stroke="black" points="398,-5818 402,-5818 402,-5814 398,-5814 "/>
+<text text-anchor="middle" x="486" y="-5862.8" font-family="Times,serif" font-size="14.00">zcash/halo2#802</text>
+<text text-anchor="middle" x="486" y="-5847.8" font-family="Times,serif" font-size="14.00">Remove obsolete book</text>
+<text text-anchor="middle" x="486" y="-5832.8" font-family="Times,serif" font-size="14.00">`Makefile` and</text>
+<text text-anchor="middle" x="486" y="-5817.8" font-family="Times,serif" font-size="14.00">`edithtml.sh`</text>
+</a>
+</g>
+</g>
+<!-- zcash/halo2#805&#45;&gt;zcash/halo2#802 -->
+<g id="edge32" class="edge">
+<title>zcash/halo2#805&#45;&gt;zcash/halo2#802</title>
+<path fill="none" stroke="black" d="M228.89,-5844C276.23,-5844 337.07,-5844 387.58,-5844"/>
+<polygon fill="black" stroke="black" points="387.87,-5847.5 397.87,-5844 387.87,-5840.5 387.87,-5847.5"/>
+</g>
+<!-- zcash/halo2#756 -->
+<g id="node61" class="node open">
+<title>zcash/halo2#756</title>
+<g id="a_node61"><a xlink:href="https://github.com/zcash/halo2/issues/756" xlink:title="zcash/halo2#756&#10;Release halo2 0.3.1" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" points="859.5,-5823 703.5,-5823 703.5,-5785 859.5,-5785 859.5,-5823"/>
+<text text-anchor="middle" x="781.5" y="-5807.8" font-family="Times,serif" font-size="14.00">zcash/halo2#756</text>
+<text text-anchor="middle" x="781.5" y="-5792.8" font-family="Times,serif" font-size="14.00">Release halo2 0.3.1</text>
+</a>
+</g>
+</g>
+<!-- zcash/halo2#802&#45;&gt;zcash/halo2#756 -->
+<g id="edge33" class="edge">
+<title>zcash/halo2#802&#45;&gt;zcash/halo2#756</title>
+<path fill="none" stroke="black" d="M574.27,-5832.1C611.64,-5827 655.22,-5821.1 692.66,-5816"/>
+<polygon fill="black" stroke="black" points="693.61,-5819.4 703.05,-5814.6 692.67,-5812.47 693.61,-5819.4"/>
+</g>
+<!-- zcash/halo2#742 -->
+<g id="node62" class="node open">
+<title>zcash/halo2#742</title>
+<g id="a_node62"><a xlink:href="https://github.com/zcash/halo2/pull/742" xlink:title="zcash/halo2#742&#10;chore: Speed up random&#10;poly generation" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="581.5,-5791.5 390.5,-5791.5 390.5,-5787.5 386.5,-5787.5 386.5,-5783.5 390.5,-5783.5 390.5,-5746.5 386.5,-5746.5 386.5,-5742.5 390.5,-5742.5 390.5,-5738.5 581.5,-5738.5 581.5,-5791.5"/>
+<polyline fill="none" stroke="black" stroke-width="2" points="390.5,-5787.5 394.5,-5787.5 394.5,-5783.5 390.5,-5783.5 "/>
+<polyline fill="none" stroke="black" stroke-width="2" points="390.5,-5746.5 394.5,-5746.5 394.5,-5742.5 390.5,-5742.5 "/>
+<text text-anchor="middle" x="486" y="-5776.3" font-family="Times,serif" font-size="14.00">zcash/halo2#742</text>
+<text text-anchor="middle" x="486" y="-5761.3" font-family="Times,serif" font-size="14.00">chore: Speed up random</text>
+<text text-anchor="middle" x="486" y="-5746.3" font-family="Times,serif" font-size="14.00">poly generation</text>
+</a>
+</g>
+</g>
+<!-- zcash/halo2#742&#45;&gt;zcash/halo2#756 -->
+<g id="edge34" class="edge">
+<title>zcash/halo2#742&#45;&gt;zcash/halo2#756</title>
+<path fill="none" stroke="black" d="M581.89,-5777.6C617.56,-5782.3 657.92,-5787.7 692.89,-5792.4"/>
+<polygon fill="black" stroke="black" points="692.72,-5795.91 703.08,-5793.7 693.6,-5788.96 692.72,-5795.91"/>
+</g>
+<!-- zcash/halo2#247 -->
+<g id="node63" class="node open">
 <title>zcash/halo2#247</title>
-<g id="a_node59"><a xlink:href="https://github.com/zcash/halo2/issues/247" xlink:title="zcash/halo2#247&#10;Implement underlying&#10;scaffolding for creating&#10;the IVC proof cycle" target="_blank">
+<g id="a_node63"><a xlink:href="https://github.com/zcash/halo2/issues/247" xlink:title="zcash/halo2#247&#10;Implement underlying&#10;scaffolding for creating&#10;the IVC proof cycle" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" points="1380,-5567 1198,-5567 1198,-5499 1380,-5499 1380,-5567"/>
 <text text-anchor="middle" x="1289" y="-5551.8" font-family="Times,serif" font-size="14.00">zcash/halo2#247</text>
 <text text-anchor="middle" x="1289" y="-5536.8" font-family="Times,serif" font-size="14.00">Implement underlying</text>
@@ -966,9 +1034,9 @@
 </g>
 </g>
 <!-- zcash/halo2#251 -->
-<g id="node60" class="node open">
+<g id="node64" class="node open">
 <title>zcash/halo2#251</title>
-<g id="a_node60"><a xlink:href="https://github.com/zcash/halo2/issues/251" xlink:title="zcash/halo2#251&#10;Implement user&#45;facing API&#10;for recursive proving of&#10;IVC" target="_blank">
+<g id="a_node64"><a xlink:href="https://github.com/zcash/halo2/issues/251" xlink:title="zcash/halo2#251&#10;Implement user&#45;facing API&#10;for recursive proving of&#10;IVC" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" points="1635,-5567 1428,-5567 1428,-5499 1635,-5499 1635,-5567"/>
 <text text-anchor="middle" x="1531.5" y="-5551.8" font-family="Times,serif" font-size="14.00">zcash/halo2#251</text>
 <text text-anchor="middle" x="1531.5" y="-5536.8" font-family="Times,serif" font-size="14.00">Implement user&#45;facing API</text>
@@ -978,7 +1046,7 @@
 </g>
 </g>
 <!-- zcash/halo2#247&#45;&gt;zcash/halo2#251 -->
-<g id="edge32" class="edge">
+<g id="edge35" class="edge">
 <title>zcash/halo2#247&#45;&gt;zcash/halo2#251</title>
 <path fill="none" stroke="black" d="M1380.2,-5533C1392.4,-5533 1405.1,-5533 1417.6,-5533"/>
 <polygon fill="black" stroke="black" points="1417.6,-5536.5 1427.6,-5533 1417.6,-5529.5 1417.6,-5536.5"/>
@@ -1035,9 +1103,9 @@
 <polygon fill="black" stroke="black" points="1661.74,-5509.4 1670.8,-5503.9 1660.29,-5502.55 1661.74,-5509.4"/>
 </g>
 <!-- zcash/halo2#246 -->
-<g id="node61" class="node open">
+<g id="node65" class="node open">
 <title>zcash/halo2#246</title>
-<g id="a_node61"><a xlink:href="https://github.com/zcash/halo2/issues/246" xlink:title="zcash/halo2#246&#10;Create recursive proof&#10;structures" target="_blank">
+<g id="a_node65"><a xlink:href="https://github.com/zcash/halo2/issues/246" xlink:title="zcash/halo2#246&#10;Create recursive proof&#10;structures" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" points="870.5,-5512.5 692.5,-5512.5 692.5,-5459.5 870.5,-5459.5 870.5,-5512.5"/>
 <text text-anchor="middle" x="781.5" y="-5497.3" font-family="Times,serif" font-size="14.00">zcash/halo2#246</text>
 <text text-anchor="middle" x="781.5" y="-5482.3" font-family="Times,serif" font-size="14.00">Create recursive proof</text>
@@ -1046,9 +1114,9 @@
 </g>
 </g>
 <!-- zcash/halo2#435 -->
-<g id="node62" class="node open">
+<g id="node66" class="node open">
 <title>zcash/halo2#435</title>
-<g id="a_node62"><a xlink:href="https://github.com/zcash/halo2/issues/435" xlink:title="zcash/halo2#435&#10;Implement mock&#10;verification circuit for&#10;IVC" target="_blank">
+<g id="a_node66"><a xlink:href="https://github.com/zcash/halo2/issues/435" xlink:title="zcash/halo2#435&#10;Implement mock&#10;verification circuit for&#10;IVC" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" points="1124.5,-5567 952.5,-5567 952.5,-5499 1124.5,-5499 1124.5,-5567"/>
 <text text-anchor="middle" x="1038.5" y="-5551.8" font-family="Times,serif" font-size="14.00">zcash/halo2#435</text>
 <text text-anchor="middle" x="1038.5" y="-5536.8" font-family="Times,serif" font-size="14.00">Implement mock</text>
@@ -1058,7 +1126,7 @@
 </g>
 </g>
 <!-- zcash/halo2#246&#45;&gt;zcash/halo2#435 -->
-<g id="edge33" class="edge">
+<g id="edge36" class="edge">
 <title>zcash/halo2#246&#45;&gt;zcash/halo2#435</title>
 <path fill="none" stroke="black" d="M870.61,-5502.2C893.79,-5506.5 918.89,-5511.1 942.42,-5515.5"/>
 <polygon fill="black" stroke="black" points="941.93,-5518.97 952.39,-5517.3 943.17,-5512.08 941.93,-5518.97"/>
@@ -1082,15 +1150,15 @@
 <polygon fill="black" stroke="black" points="943.82,-5440.93 952.39,-5434.7 941.81,-5434.22 943.82,-5440.93"/>
 </g>
 <!-- zcash/halo2#435&#45;&gt;zcash/halo2#247 -->
-<g id="edge34" class="edge">
+<g id="edge37" class="edge">
 <title>zcash/halo2#435&#45;&gt;zcash/halo2#247</title>
 <path fill="none" stroke="black" d="M1124.7,-5533C1145,-5533 1166.8,-5533 1187.7,-5533"/>
 <polygon fill="black" stroke="black" points="1187.9,-5536.5 1197.9,-5533 1187.9,-5529.5 1187.9,-5536.5"/>
 </g>
 <!-- zcash/halo2#439 -->
-<g id="node63" class="node open">
+<g id="node67" class="node open">
 <title>zcash/halo2#439</title>
-<g id="a_node63"><a xlink:href="https://github.com/zcash/halo2/issues/439" xlink:title="zcash/halo2#439&#10;Support split&#10;accumulation in Halo 2" target="_blank">
+<g id="a_node67"><a xlink:href="https://github.com/zcash/halo2/issues/439" xlink:title="zcash/halo2#439&#10;Support split&#10;accumulation in Halo 2" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="576.5,-5512.5 395.5,-5512.5 395.5,-5459.5 576.5,-5459.5 576.5,-5512.5"/>
 <text text-anchor="middle" x="486" y="-5497.3" font-family="Times,serif" font-size="14.00">zcash/halo2#439</text>
 <text text-anchor="middle" x="486" y="-5482.3" font-family="Times,serif" font-size="14.00">Support split</text>
@@ -1099,7 +1167,7 @@
 </g>
 </g>
 <!-- zcash/halo2#439&#45;&gt;zcash/halo2#246 -->
-<g id="edge35" class="edge">
+<g id="edge38" class="edge">
 <title>zcash/halo2#439&#45;&gt;zcash/halo2#246</title>
 <path fill="none" stroke="black" d="M576.65,-5486C609.96,-5486 647.91,-5486 681.97,-5486"/>
 <polygon fill="black" stroke="black" points="682.4,-5489.5 692.4,-5486 682.4,-5482.5 682.4,-5489.5"/>
@@ -1122,9 +1190,9 @@
 <polygon fill="black" stroke="black" points="932.53,-5338.86 941.94,-5334 931.55,-5331.93 932.53,-5338.86"/>
 </g>
 <!-- zcash/halo2#643 -->
-<g id="node64" class="node open">
+<g id="node68" class="node open">
 <title>zcash/halo2#643</title>
-<g id="a_node64"><a xlink:href="https://github.com/zcash/halo2/issues/643" xlink:title="zcash/halo2#643&#10;Create separate&#10;`VerifyingKey` structures&#10;for pre&#45; and post&#45;&#10;optimisation circuits" target="_blank">
+<g id="a_node68"><a xlink:href="https://github.com/zcash/halo2/issues/643" xlink:title="zcash/halo2#643&#10;Create separate&#10;`VerifyingKey` structures&#10;for pre&#45; and post&#45;&#10;optimisation circuits" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="881.5,-5613.5 681.5,-5613.5 681.5,-5530.5 881.5,-5530.5 881.5,-5613.5"/>
 <text text-anchor="middle" x="781.5" y="-5598.3" font-family="Times,serif" font-size="14.00">zcash/halo2#643</text>
 <text text-anchor="middle" x="781.5" y="-5583.3" font-family="Times,serif" font-size="14.00">Create separate</text>
@@ -1135,7 +1203,7 @@
 </g>
 </g>
 <!-- zcash/halo2#643&#45;&gt;zcash/halo2#435 -->
-<g id="edge36" class="edge">
+<g id="edge39" class="edge">
 <title>zcash/halo2#643&#45;&gt;zcash/halo2#435</title>
 <path fill="none" stroke="black" d="M881.82,-5556.8C901.68,-5553.8 922.5,-5550.6 942.22,-5547.6"/>
 <polygon fill="black" stroke="black" points="942.75,-5551.06 952.11,-5546.1 941.7,-5544.14 942.75,-5551.06"/>
@@ -1163,74 +1231,6 @@
 <title>zcash/halo2#643&#45;&gt;zcash/halo2#449</title>
 <path fill="none" stroke="black" d="M855.27,-5613.7C877.89,-5625.8 903.15,-5638.6 927,-5649 930.61,-5650.6 934.31,-5652.1 938.06,-5653.6"/>
 <polygon fill="black" stroke="black" points="936.9,-5656.9 947.48,-5657.4 939.52,-5650.41 936.9,-5656.9"/>
-</g>
-<!-- zcash/halo2#805 -->
-<g id="node65" class="node open">
-<title>zcash/halo2#805</title>
-<g id="a_node65"><a xlink:href="https://github.com/zcash/halo2/pull/805" xlink:title="zcash/halo2#805&#10;Add `Cargo.lock` to&#10;repository" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="228.5,-5870.5 71.5,-5870.5 71.5,-5866.5 67.5,-5866.5 67.5,-5862.5 71.5,-5862.5 71.5,-5825.5 67.5,-5825.5 67.5,-5821.5 71.5,-5821.5 71.5,-5817.5 228.5,-5817.5 228.5,-5870.5"/>
-<polyline fill="none" stroke="black" stroke-width="2" points="71.5,-5866.5 75.5,-5866.5 75.5,-5862.5 71.5,-5862.5 "/>
-<polyline fill="none" stroke="black" stroke-width="2" points="71.5,-5825.5 75.5,-5825.5 75.5,-5821.5 71.5,-5821.5 "/>
-<text text-anchor="middle" x="150" y="-5855.3" font-family="Times,serif" font-size="14.00">zcash/halo2#805</text>
-<text text-anchor="middle" x="150" y="-5840.3" font-family="Times,serif" font-size="14.00">Add `Cargo.lock` to</text>
-<text text-anchor="middle" x="150" y="-5825.3" font-family="Times,serif" font-size="14.00">repository</text>
-</a>
-</g>
-</g>
-<!-- zcash/halo2#802 -->
-<g id="node66" class="node open">
-<title>zcash/halo2#802</title>
-<g id="a_node66"><a xlink:href="https://github.com/zcash/halo2/pull/802" xlink:title="zcash/halo2#802&#10;Remove obsolete book&#10;`Makefile` and&#10;`edithtml.sh`" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" points="574,-5878 398,-5878 398,-5874 394,-5874 394,-5870 398,-5870 398,-5818 394,-5818 394,-5814 398,-5814 398,-5810 574,-5810 574,-5878"/>
-<polyline fill="none" stroke="black" points="398,-5874 402,-5874 402,-5870 398,-5870 "/>
-<polyline fill="none" stroke="black" points="398,-5818 402,-5818 402,-5814 398,-5814 "/>
-<text text-anchor="middle" x="486" y="-5862.8" font-family="Times,serif" font-size="14.00">zcash/halo2#802</text>
-<text text-anchor="middle" x="486" y="-5847.8" font-family="Times,serif" font-size="14.00">Remove obsolete book</text>
-<text text-anchor="middle" x="486" y="-5832.8" font-family="Times,serif" font-size="14.00">`Makefile` and</text>
-<text text-anchor="middle" x="486" y="-5817.8" font-family="Times,serif" font-size="14.00">`edithtml.sh`</text>
-</a>
-</g>
-</g>
-<!-- zcash/halo2#805&#45;&gt;zcash/halo2#802 -->
-<g id="edge37" class="edge">
-<title>zcash/halo2#805&#45;&gt;zcash/halo2#802</title>
-<path fill="none" stroke="black" d="M228.89,-5844C276.23,-5844 337.07,-5844 387.58,-5844"/>
-<polygon fill="black" stroke="black" points="387.87,-5847.5 397.87,-5844 387.87,-5840.5 387.87,-5847.5"/>
-</g>
-<!-- zcash/halo2#756 -->
-<g id="node67" class="node open">
-<title>zcash/halo2#756</title>
-<g id="a_node67"><a xlink:href="https://github.com/zcash/halo2/issues/756" xlink:title="zcash/halo2#756&#10;Release halo2 0.3.1" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" points="859.5,-5823 703.5,-5823 703.5,-5785 859.5,-5785 859.5,-5823"/>
-<text text-anchor="middle" x="781.5" y="-5807.8" font-family="Times,serif" font-size="14.00">zcash/halo2#756</text>
-<text text-anchor="middle" x="781.5" y="-5792.8" font-family="Times,serif" font-size="14.00">Release halo2 0.3.1</text>
-</a>
-</g>
-</g>
-<!-- zcash/halo2#802&#45;&gt;zcash/halo2#756 -->
-<g id="edge38" class="edge">
-<title>zcash/halo2#802&#45;&gt;zcash/halo2#756</title>
-<path fill="none" stroke="black" d="M574.27,-5832.1C611.64,-5827 655.22,-5821.1 692.66,-5816"/>
-<polygon fill="black" stroke="black" points="693.61,-5819.4 703.05,-5814.6 692.67,-5812.47 693.61,-5819.4"/>
-</g>
-<!-- zcash/halo2#742 -->
-<g id="node68" class="node open">
-<title>zcash/halo2#742</title>
-<g id="a_node68"><a xlink:href="https://github.com/zcash/halo2/pull/742" xlink:title="zcash/halo2#742&#10;chore: Speed up random&#10;poly generation" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="581.5,-5791.5 390.5,-5791.5 390.5,-5787.5 386.5,-5787.5 386.5,-5783.5 390.5,-5783.5 390.5,-5746.5 386.5,-5746.5 386.5,-5742.5 390.5,-5742.5 390.5,-5738.5 581.5,-5738.5 581.5,-5791.5"/>
-<polyline fill="none" stroke="black" stroke-width="2" points="390.5,-5787.5 394.5,-5787.5 394.5,-5783.5 390.5,-5783.5 "/>
-<polyline fill="none" stroke="black" stroke-width="2" points="390.5,-5746.5 394.5,-5746.5 394.5,-5742.5 390.5,-5742.5 "/>
-<text text-anchor="middle" x="486" y="-5776.3" font-family="Times,serif" font-size="14.00">zcash/halo2#742</text>
-<text text-anchor="middle" x="486" y="-5761.3" font-family="Times,serif" font-size="14.00">chore: Speed up random</text>
-<text text-anchor="middle" x="486" y="-5746.3" font-family="Times,serif" font-size="14.00">poly generation</text>
-</a>
-</g>
-</g>
-<!-- zcash/halo2#742&#45;&gt;zcash/halo2#756 -->
-<g id="edge39" class="edge">
-<title>zcash/halo2#742&#45;&gt;zcash/halo2#756</title>
-<path fill="none" stroke="black" d="M581.89,-5777.6C617.56,-5782.3 657.92,-5787.7 692.89,-5792.4"/>
-<polygon fill="black" stroke="black" points="692.72,-5795.91 703.08,-5793.7 693.6,-5788.96 692.72,-5795.91"/>
 </g>
 <!-- zcash/zcash#5660 -->
 <g id="node69" class="node open">
