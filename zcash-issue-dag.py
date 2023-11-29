@@ -42,6 +42,7 @@ HALO2_REPOS = {
 
 TFL_REPOS = {
     642135348: ('Electric-Coin-Company', 'tfl-book'),
+    725179873: ('Electric-Coin-Company', 'zebra-tfl'),
     695805989: ('zcash', 'simtfl'),
 }
 
