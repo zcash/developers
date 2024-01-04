@@ -55,11 +55,13 @@ WALLET_REPOS = {
     390808594: ('Electric-Coin-Company', 'zashi-android'),
     270825987: ('Electric-Coin-Company', 'MnemonicSwift'),
     439137887: ('Electric-Coin-Company', 'zcash-light-client-ffi'),
+    719178328: ('Electric-Coin-Company', 'zashi'),
 }
 
 ANDROID_REPOS = {
     390808594: ('Electric-Coin-Company', 'zashi-android'),
     151763639: ('Electric-Coin-Company', 'zcash-android-wallet-sdk'),
+    719178328: ('Electric-Coin-Company', 'zashi'),
 }
 
 IOS_REPOS = {
@@ -67,6 +69,7 @@ IOS_REPOS = {
     185480114: ('Electric-Coin-Company', 'zcash-swift-wallet-sdk'),
     270825987: ('Electric-Coin-Company', 'MnemonicSwift'),
     439137887: ('Electric-Coin-Company', 'zcash-light-client-ffi'),
+    719178328: ('Electric-Coin-Company', 'zashi'),
 }
 
 ZF_REPOS = {
