@@ -48,25 +48,25 @@ TFL_REPOS = {
 
 WALLET_REPOS = {
     85334928: ('zcash', 'librustzcash'),
-    151763639: ('zcash', 'zcash-android-wallet-sdk'),
+    151763639: ('Electric-Coin-Company', 'zcash-android-wallet-sdk'),
     159714694: ('zcash', 'lightwalletd'),
-    185480114: ('zcash', 'ZcashLightClientKit'),
-    387551125: ('zcash', 'secant-ios-wallet'),
-    390808594: ('zcash', 'secant-android-wallet'),
-    270825987: ('zcash-hackworks', 'MnemonicSwift'),
-    439137887: ('zcash-hackworks', 'zcash-light-client-ffi'),
+    185480114: ('Electric-Coin-Company', 'zcash-swift-wallet-sdk'),
+    387551125: ('Electric-Coin-Company', 'zashi-ios'),
+    390808594: ('Electric-Coin-Company', 'zashi-android'),
+    270825987: ('Electric-Coin-Company', 'MnemonicSwift'),
+    439137887: ('Electric-Coin-Company', 'zcash-light-client-ffi'),
 }
 
 ANDROID_REPOS = {
-    390808594: ('zcash', 'secant-android-wallet'),
-    151763639: ('zcash', 'zcash-android-wallet-sdk')
+    390808594: ('Electric-Coin-Company', 'zashi-android'),
+    151763639: ('Electric-Coin-Company', 'zcash-android-wallet-sdk'),
 }
 
 IOS_REPOS = {
-    387551125: ('zcash', 'secant-ios-wallet'),
-    185480114: ('zcash', 'ZcashLightClientKit'),
-    270825987: ('zcash-hackworks', 'MnemonicSwift'),
-    439137887: ('zcash-hackworks', 'zcash-light-client-ffi')
+    387551125: ('Electric-Coin-Company', 'zashi-ios'),
+    185480114: ('Electric-Coin-Company', 'zcash-swift-wallet-sdk'),
+    270825987: ('Electric-Coin-Company', 'MnemonicSwift'),
+    439137887: ('Electric-Coin-Company', 'zcash-light-client-ffi'),
 }
 
 ZF_REPOS = {
