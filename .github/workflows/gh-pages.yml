@@ -111,6 +111,7 @@ jobs:
           ZENHUB_TOKEN: ${{ secrets.ZENHUB_TOKEN }}
           DAG_VIEW: zf
           SHOW_EPICS: true
+        continue-on-error: true
 
       - name: Copy the index page
         run: cp ./index.html ./public

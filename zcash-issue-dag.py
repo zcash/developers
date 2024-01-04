@@ -48,25 +48,28 @@ TFL_REPOS = {
 
 WALLET_REPOS = {
     85334928: ('zcash', 'librustzcash'),
-    151763639: ('zcash', 'zcash-android-wallet-sdk'),
+    151763639: ('Electric-Coin-Company', 'zcash-android-wallet-sdk'),
     159714694: ('zcash', 'lightwalletd'),
-    185480114: ('zcash', 'ZcashLightClientKit'),
-    387551125: ('zcash', 'secant-ios-wallet'),
-    390808594: ('zcash', 'secant-android-wallet'),
-    270825987: ('zcash-hackworks', 'MnemonicSwift'),
-    439137887: ('zcash-hackworks', 'zcash-light-client-ffi'),
+    185480114: ('Electric-Coin-Company', 'zcash-swift-wallet-sdk'),
+    387551125: ('Electric-Coin-Company', 'zashi-ios'),
+    390808594: ('Electric-Coin-Company', 'zashi-android'),
+    270825987: ('Electric-Coin-Company', 'MnemonicSwift'),
+    439137887: ('Electric-Coin-Company', 'zcash-light-client-ffi'),
+    719178328: ('Electric-Coin-Company', 'zashi'),
 }
 
 ANDROID_REPOS = {
-    390808594: ('zcash', 'secant-android-wallet'),
-    151763639: ('zcash', 'zcash-android-wallet-sdk')
+    390808594: ('Electric-Coin-Company', 'zashi-android'),
+    151763639: ('Electric-Coin-Company', 'zcash-android-wallet-sdk'),
+    719178328: ('Electric-Coin-Company', 'zashi'),
 }
 
 IOS_REPOS = {
-    387551125: ('zcash', 'secant-ios-wallet'),
-    185480114: ('zcash', 'ZcashLightClientKit'),
-    270825987: ('zcash-hackworks', 'MnemonicSwift'),
-    439137887: ('zcash-hackworks', 'zcash-light-client-ffi')
+    387551125: ('Electric-Coin-Company', 'zashi-ios'),
+    185480114: ('Electric-Coin-Company', 'zcash-swift-wallet-sdk'),
+    270825987: ('Electric-Coin-Company', 'MnemonicSwift'),
+    439137887: ('Electric-Coin-Company', 'zcash-light-client-ffi'),
+    719178328: ('Electric-Coin-Company', 'zashi'),
 }
 
 ZF_REPOS = {
@@ -127,7 +130,11 @@ class GitHubIssue:
 
     def __repr__(self):
         if self.repo_id in REPOS:
-            repo = '/'.join(REPOS[self.repo_id])
+            repo = REPOS[self.repo_id]
+            # Shorten the representation of long repo names.
+            if repo[0] == 'Electric-Coin-Company':
+                repo = ('ECC', repo[1])
+            repo = '/'.join(repo)
             return '%s#%d' % (repo, self.issue_number)
         else:
             return 'Unknown'
