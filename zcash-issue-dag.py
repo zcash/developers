@@ -127,7 +127,11 @@ class GitHubIssue:
 
     def __repr__(self):
         if self.repo_id in REPOS:
-            repo = '/'.join(REPOS[self.repo_id])
+            repo = REPOS[self.repo_id]
+            # Shorten the representation of long repo names.
+            if repo[0] == 'Electric-Coin-Company':
+                repo = ('ECC', repo[1])
+            repo = '/'.join(repo)
             return '%s#%d' % (repo, self.issue_number)
         else:
             return 'Unknown'
