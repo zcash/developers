@@ -15,14 +15,14 @@
 <text text-anchor="middle" x="1387.8" y="-673.8" font-family="Times,serif" font-size="14.00">DAG Sync</text>
 </g>
 <g id="clust2" class="cluster">
-<title>cluster_2</title>
-<polygon fill="none" stroke="blue" points="497.5,-3492 497.5,-4296 2253.5,-4296 2253.5,-3492 497.5,-3492"/>
-<text text-anchor="middle" x="1375.5" y="-4280.8" font-family="Times,serif" font-size="14.00">Zashi 1.0</text>
-</g>
-<g id="clust3" class="cluster">
 <title>cluster_0</title>
 <polygon fill="none" stroke="blue" points="104.5,-929 104.5,-1311 1376.5,-1311 1376.5,-929 104.5,-929"/>
 <text text-anchor="middle" x="740.5" y="-1295.8" font-family="Times,serif" font-size="14.00">Orchard in Mobile SDKs</text>
+</g>
+<g id="clust3" class="cluster">
+<title>cluster_2</title>
+<polygon fill="none" stroke="blue" points="497.5,-3492 497.5,-4296 2253.5,-4296 2253.5,-3492 497.5,-3492"/>
+<text text-anchor="middle" x="1375.5" y="-4280.8" font-family="Times,serif" font-size="14.00">Zashi 1.0</text>
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
@@ -120,14 +120,14 @@
 <text text-anchor="middle" x="218.5" y="-9885.8" font-family="Times,serif" font-size="14.00">Localization and Accessibility</text>
 </g>
 <g id="clust23" class="cluster">
-<title>cluster_18</title>
-<polygon fill="none" stroke="blue" points="0,0 0,-12794 2687,-12794 2687,0 0,0"/>
-<text text-anchor="middle" x="1343.5" y="-12778.8" font-family="Times,serif" font-size="14.00">Zashi rebranding + pre internal test changes </text>
-</g>
-<g id="clust24" class="cluster">
 <title>cluster_19</title>
 <polygon fill="none" stroke="blue" points="76.5,-9392 76.5,-9515 360.5,-9515 360.5,-9392 76.5,-9392"/>
 <text text-anchor="middle" x="218.5" y="-9499.8" font-family="Times,serif" font-size="14.00">Biometric Lock of App</text>
+</g>
+<g id="clust24" class="cluster">
+<title>cluster_18</title>
+<polygon fill="none" stroke="blue" points="0,0 0,-12794 2687,-12794 2687,0 0,0"/>
+<text text-anchor="middle" x="1343.5" y="-12778.8" font-family="Times,serif" font-size="14.00">Zashi rebranding + pre internal test changes </text>
 </g>
 <!-- zcash/librustzcash#722 -->
 <g id="node1" class="node open">
@@ -227,10 +227,274 @@
 <path fill="none" stroke="black" d="M1328.4,-609.83C1344.6,-605.42 1361.1,-600.44 1376.5,-595 1419.9,-579.65 1467.3,-557.4 1501,-540.59"/>
 <polygon fill="black" stroke="black" points="1502.81,-543.6 1510.2,-536 1499.69,-537.33 1502.81,-543.6"/>
 </g>
-<!-- zcash/librustzcash#1046 -->
+<!-- zcash/librustzcash#403 -->
 <g id="node7" class="node open">
+<title>zcash/librustzcash#403</title>
+<g id="a_node7"><a xlink:href="https://github.com/zcash/librustzcash/issues/403" xlink:title="zcash/librustzcash#403&#10;Add Orchard support to&#10;`zcash_client_backend`" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" points="702,-1264.5 515,-1264.5 515,-1211.5 702,-1211.5 702,-1264.5"/>
+<text text-anchor="middle" x="608.5" y="-1249.3" font-family="Times,serif" font-size="14.00">zcash/librustzcash#403</text>
+<text text-anchor="middle" x="608.5" y="-1234.3" font-family="Times,serif" font-size="14.00">Add Orchard support to</text>
+<text text-anchor="middle" x="608.5" y="-1219.3" font-family="Times,serif" font-size="14.00">`zcash_client_backend`</text>
+</a>
+</g>
+</g>
+<!-- zcash/librustzcash#404 -->
+<g id="node8" class="node open">
+<title>zcash/librustzcash#404</title>
+<g id="a_node8"><a xlink:href="https://github.com/zcash/librustzcash/issues/404" xlink:title="zcash/librustzcash#404&#10;Add Orchard support to&#10;`zcash_client_sqlite`" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" points="1015,-1193.5 828,-1193.5 828,-1140.5 1015,-1140.5 1015,-1193.5"/>
+<text text-anchor="middle" x="921.5" y="-1178.3" font-family="Times,serif" font-size="14.00">zcash/librustzcash#404</text>
+<text text-anchor="middle" x="921.5" y="-1163.3" font-family="Times,serif" font-size="14.00">Add Orchard support to</text>
+<text text-anchor="middle" x="921.5" y="-1148.3" font-family="Times,serif" font-size="14.00">`zcash_client_sqlite`</text>
+</a>
+</g>
+</g>
+<!-- zcash/librustzcash#403&#45;&gt;zcash/librustzcash#404 -->
+<g id="edge6" class="edge">
+<title>zcash/librustzcash#403&#45;&gt;zcash/librustzcash#404</title>
+<path fill="none" stroke="black" d="M702.39,-1216.8C738.78,-1208.5 780.67,-1198.9 817.95,-1190.4"/>
+<polygon fill="black" stroke="black" points="818.82,-1193.79 827.82,-1188.2 817.3,-1186.96 818.82,-1193.79"/>
+</g>
+<!-- zcash/librustzcash#617 -->
+<g id="node9" class="node open">
+<title>zcash/librustzcash#617</title>
+<g id="a_node9"><a xlink:href="https://github.com/zcash/librustzcash/issues/617" xlink:title="zcash/librustzcash#617&#10;Select the most&#45;preferred&#10;shielded receiver in `shi&#10;eld_transparent_funds`" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" points="1022,-1280 821,-1280 821,-1212 1022,-1212 1022,-1280"/>
+<text text-anchor="middle" x="921.5" y="-1264.8" font-family="Times,serif" font-size="14.00">zcash/librustzcash#617</text>
+<text text-anchor="middle" x="921.5" y="-1249.8" font-family="Times,serif" font-size="14.00">Select the most&#45;preferred</text>
+<text text-anchor="middle" x="921.5" y="-1234.8" font-family="Times,serif" font-size="14.00">shielded receiver in `shi</text>
+<text text-anchor="middle" x="921.5" y="-1219.8" font-family="Times,serif" font-size="14.00">eld_transparent_funds`</text>
+</a>
+</g>
+</g>
+<!-- zcash/librustzcash#403&#45;&gt;zcash/librustzcash#617 -->
+<g id="edge7" class="edge">
+<title>zcash/librustzcash#403&#45;&gt;zcash/librustzcash#617</title>
+<path fill="none" stroke="black" d="M702.39,-1240.4C736.35,-1241.3 775.11,-1242.3 810.43,-1243.2"/>
+<polygon fill="black" stroke="black" points="810.71,-1246.71 820.78,-1243.4 810.85,-1239.71 810.71,-1246.71"/>
+</g>
+<!-- zcash/librustzcash#962 -->
+<g id="node25" class="node open">
+<title>zcash/librustzcash#962</title>
+<g id="a_node25"><a xlink:href="https://github.com/zcash/librustzcash/issues/962" xlink:title="zcash/librustzcash#962&#10;zcash_client_backend&#10;0.11.0" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" points="1328,-3625.5 1141,-3625.5 1141,-3572.5 1328,-3572.5 1328,-3625.5"/>
+<text text-anchor="middle" x="1234.5" y="-3610.3" font-family="Times,serif" font-size="14.00">zcash/librustzcash#962</text>
+<text text-anchor="middle" x="1234.5" y="-3595.3" font-family="Times,serif" font-size="14.00">zcash_client_backend</text>
+<text text-anchor="middle" x="1234.5" y="-3580.3" font-family="Times,serif" font-size="14.00">0.11.0</text>
+</a>
+</g>
+</g>
+<!-- zcash/librustzcash#403&#45;&gt;zcash/librustzcash#962 -->
+<g id="edge136" class="edge">
+<title>zcash/librustzcash#403&#45;&gt;zcash/librustzcash#962</title>
+<path fill="none" stroke="black" d="M614.78,-1264.6C665.6,-1521 1066.6,-3540.7 1088,-3563 1099.8,-3575.2 1115,-3583.6 1131.1,-3589.2"/>
+<polygon fill="black" stroke="black" points="1130.11,-3592.56 1140.7,-3592.2 1132.2,-3585.88 1130.11,-3592.56"/>
+</g>
+<!-- ECC/zcash&#45;android&#45;wallet&#45;sdk#528 -->
+<g id="node10" class="node open">
+<title>ECC/zcash&#45;android&#45;wallet&#45;sdk#528</title>
+<g id="a_node10"><a xlink:href="https://github.com/Electric-Coin-Company/zcash-android-wallet-sdk/issues/528" xlink:title="ECC/zcash&#45;android&#45;wallet&#45;sdk#528&#10;Add Orchard support" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" points="1368.5,-1270 1100.5,-1270 1100.5,-1232 1368.5,-1232 1368.5,-1270"/>
+<text text-anchor="middle" x="1234.5" y="-1254.8" font-family="Times,serif" font-size="14.00">ECC/zcash&#45;android&#45;wallet&#45;sdk#528</text>
+<text text-anchor="middle" x="1234.5" y="-1239.8" font-family="Times,serif" font-size="14.00">Add Orchard support</text>
+</a>
+</g>
+</g>
+<!-- zcash/librustzcash#404&#45;&gt;ECC/zcash&#45;android&#45;wallet&#45;sdk#528 -->
+<g id="edge8" class="edge">
+<title>zcash/librustzcash#404&#45;&gt;ECC/zcash&#45;android&#45;wallet&#45;sdk#528</title>
+<path fill="none" stroke="black" d="M1015,-1189.3C1032.6,-1193.7 1050.9,-1198.4 1068,-1203 1098.2,-1211.1 1131.4,-1220.6 1160.1,-1229"/>
+<polygon fill="black" stroke="black" points="1159.42,-1232.45 1170,-1231.9 1161.39,-1225.73 1159.42,-1232.45"/>
+</g>
+<!-- ECC/zcash&#45;light&#45;client&#45;ffi#17 -->
+<g id="node11" class="node open">
+<title>ECC/zcash&#45;light&#45;client&#45;ffi#17</title>
+<g id="a_node11"><a xlink:href="https://github.com/Electric-Coin-Company/zcash-light-client-ffi/issues/17" xlink:title="ECC/zcash&#45;light&#45;client&#45;ffi#17&#10;Add Orchard support" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" points="1346,-1195 1123,-1195 1123,-1157 1346,-1157 1346,-1195"/>
+<text text-anchor="middle" x="1234.5" y="-1179.8" font-family="Times,serif" font-size="14.00">ECC/zcash&#45;light&#45;client&#45;ffi#17</text>
+<text text-anchor="middle" x="1234.5" y="-1164.8" font-family="Times,serif" font-size="14.00">Add Orchard support</text>
+</a>
+</g>
+</g>
+<!-- zcash/librustzcash#404&#45;&gt;ECC/zcash&#45;light&#45;client&#45;ffi#17 -->
+<g id="edge9" class="edge">
+<title>zcash/librustzcash#404&#45;&gt;ECC/zcash&#45;light&#45;client&#45;ffi#17</title>
+<path fill="none" stroke="black" d="M1015.4,-1169.7C1045.9,-1170.6 1080.3,-1171.6 1112.6,-1172.5"/>
+<polygon fill="black" stroke="black" points="1112.9,-1176.01 1123,-1172.8 1113.11,-1169.01 1112.9,-1176.01"/>
+</g>
+<!-- zcash/librustzcash#961 -->
+<g id="node19" class="node open">
+<title>zcash/librustzcash#961</title>
+<g id="a_node19"><a xlink:href="https://github.com/zcash/librustzcash/issues/961" xlink:title="zcash/librustzcash#961&#10;zcash_client_sqlite 0.9.0" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" points="1642.5,-3618 1452.5,-3618 1452.5,-3580 1642.5,-3580 1642.5,-3618"/>
+<text text-anchor="middle" x="1547.5" y="-3602.8" font-family="Times,serif" font-size="14.00">zcash/librustzcash#961</text>
+<text text-anchor="middle" x="1547.5" y="-3587.8" font-family="Times,serif" font-size="14.00">zcash_client_sqlite 0.9.0</text>
+</a>
+</g>
+</g>
+<!-- zcash/librustzcash#404&#45;&gt;zcash/librustzcash#961 -->
+<g id="edge137" class="edge">
+<title>zcash/librustzcash#404&#45;&gt;zcash/librustzcash#961</title>
+<path fill="none" stroke="black" d="M1015.2,-1171.3C1035.6,-1176.8 1054.9,-1186.5 1068,-1203 1105,-1249.8 1048.5,-3307.2 1088,-3352 1173.6,-3449 1282.6,-3301.9 1376.5,-3391 1432.9,-3444.6 1355.9,-3506.1 1409,-3563 1418.3,-3573 1430.1,-3580.4 1442.8,-3585.8"/>
+<polygon fill="black" stroke="black" points="1441.61,-3589.09 1452.2,-3589.4 1444.11,-3582.55 1441.61,-3589.09"/>
+</g>
+<!-- zcash/librustzcash#617&#45;&gt;zcash/librustzcash#962 -->
+<g id="edge138" class="edge">
+<title>zcash/librustzcash#617&#45;&gt;zcash/librustzcash#962</title>
+<path fill="none" stroke="black" d="M928.3,-1280.1C951.3,-1417 1036.4,-1941 1068,-2376 1070.4,-2408.9 1067.5,-3537.2 1088,-3563 1099,-3576.8 1114.3,-3585.8 1131,-3591.6"/>
+<polygon fill="black" stroke="black" points="1130.31,-3595.05 1140.9,-3594.6 1132.34,-3588.35 1130.31,-3595.05"/>
+</g>
+<!-- ECC/zcash&#45;android&#45;wallet&#45;sdk#1280 -->
+<g id="node20" class="node open">
+<title>ECC/zcash&#45;android&#45;wallet&#45;sdk#1280</title>
+<g id="a_node20"><a xlink:href="https://github.com/Electric-Coin-Company/zcash-android-wallet-sdk/issues/1280" xlink:title="ECC/zcash&#45;android&#45;wallet&#45;sdk#1280&#10;Release zcash&#45;android&#45;&#10;wallet&#45;sdk 2.1.0" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" points="1999,-4036.5 1722,-4036.5 1722,-3983.5 1999,-3983.5 1999,-4036.5"/>
+<text text-anchor="middle" x="1860.5" y="-4021.3" font-family="Times,serif" font-size="14.00">ECC/zcash&#45;android&#45;wallet&#45;sdk#1280</text>
+<text text-anchor="middle" x="1860.5" y="-4006.3" font-family="Times,serif" font-size="14.00">Release zcash&#45;android&#45;</text>
+<text text-anchor="middle" x="1860.5" y="-3991.3" font-family="Times,serif" font-size="14.00">wallet&#45;sdk 2.1.0</text>
+</a>
+</g>
+</g>
+<!-- ECC/zcash&#45;android&#45;wallet&#45;sdk#528&#45;&gt;ECC/zcash&#45;android&#45;wallet&#45;sdk#1280 -->
+<g id="edge139" class="edge">
+<title>ECC/zcash&#45;android&#45;wallet&#45;sdk#528&#45;&gt;ECC/zcash&#45;android&#45;wallet&#45;sdk#1280</title>
+<path fill="none" stroke="black" d="M1368.6,-1251C1488.5,-1254.2 1652.2,-1267.5 1694,-1315 1742.8,-1370.5 1676.6,-3915.8 1722,-3974 1722.5,-3974.6 1723,-3975.3 1723.5,-3975.9"/>
+<polygon fill="black" stroke="black" points="1721.29,-3978.64 1730.8,-3983.3 1726.27,-3973.72 1721.29,-3978.64"/>
+</g>
+<!-- ECC/zcash&#45;swift&#45;wallet&#45;sdk#1300 -->
+<g id="node21" class="node open">
+<title>ECC/zcash&#45;swift&#45;wallet&#45;sdk#1300</title>
+<g id="a_node21"><a xlink:href="https://github.com/Electric-Coin-Company/zcash-swift-wallet-sdk/issues/1300" xlink:title="ECC/zcash&#45;swift&#45;wallet&#45;sdk#1300&#10;Release&#10;ZcashLightClientKit 2.1.0" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" points="1989,-3624.5 1732,-3624.5 1732,-3571.5 1989,-3571.5 1989,-3624.5"/>
+<text text-anchor="middle" x="1860.5" y="-3609.3" font-family="Times,serif" font-size="14.00">ECC/zcash&#45;swift&#45;wallet&#45;sdk#1300</text>
+<text text-anchor="middle" x="1860.5" y="-3594.3" font-family="Times,serif" font-size="14.00">Release</text>
+<text text-anchor="middle" x="1860.5" y="-3579.3" font-family="Times,serif" font-size="14.00">ZcashLightClientKit 2.1.0</text>
+</a>
+</g>
+</g>
+<!-- ECC/zcash&#45;light&#45;client&#45;ffi#17&#45;&gt;ECC/zcash&#45;swift&#45;wallet&#45;sdk#1300 -->
+<g id="edge140" class="edge">
+<title>ECC/zcash&#45;light&#45;client&#45;ffi#17&#45;&gt;ECC/zcash&#45;swift&#45;wallet&#45;sdk#1300</title>
+<path fill="none" stroke="black" d="M1346,-1162.4C1453.1,-1156.1 1611.1,-1166.4 1694,-1266 1775.6,-1364 1643.4,-3461.5 1722,-3562 1722.8,-3563.1 1723.7,-3564.1 1724.6,-3565.1"/>
+<polygon fill="black" stroke="black" points="1722.32,-3567.77 1731.9,-3572.3 1727.24,-3562.79 1722.32,-3567.77"/>
+</g>
+<!-- zcash/librustzcash#1087 -->
+<g id="node12" class="node open">
+<title>zcash/librustzcash#1087</title>
+<g id="a_node12"><a xlink:href="https://github.com/zcash/librustzcash/issues/1087" xlink:title="zcash/librustzcash#1087&#10;zcash_client_sqlite:&#10;Update `InputSource`&#10;implementation for&#10;`WalletDb` to support&#10;Orchard" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="706.5,-1193 510.5,-1193 510.5,-1095 706.5,-1095 706.5,-1193"/>
+<text text-anchor="middle" x="608.5" y="-1177.8" font-family="Times,serif" font-size="14.00">zcash/librustzcash#1087</text>
+<text text-anchor="middle" x="608.5" y="-1162.8" font-family="Times,serif" font-size="14.00">zcash_client_sqlite:</text>
+<text text-anchor="middle" x="608.5" y="-1147.8" font-family="Times,serif" font-size="14.00">Update `InputSource`</text>
+<text text-anchor="middle" x="608.5" y="-1132.8" font-family="Times,serif" font-size="14.00">implementation for</text>
+<text text-anchor="middle" x="608.5" y="-1117.8" font-family="Times,serif" font-size="14.00">`WalletDb` to support</text>
+<text text-anchor="middle" x="608.5" y="-1102.8" font-family="Times,serif" font-size="14.00">Orchard</text>
+</a>
+</g>
+</g>
+<!-- zcash/librustzcash#1087&#45;&gt;zcash/librustzcash#404 -->
+<g id="edge10" class="edge">
+<title>zcash/librustzcash#1087&#45;&gt;zcash/librustzcash#404</title>
+<path fill="none" stroke="black" d="M706.62,-1151.2C741.97,-1153.8 782.03,-1156.8 817.85,-1159.4"/>
+<polygon fill="black" stroke="black" points="817.61,-1162.89 827.83,-1160.1 818.1,-1155.91 817.61,-1162.89"/>
+</g>
+<!-- zcash/librustzcash#1095 -->
+<g id="node13" class="node open">
+<title>zcash/librustzcash#1095</title>
+<g id="a_node13"><a xlink:href="https://github.com/zcash/librustzcash/issues/1095" xlink:title="zcash/librustzcash#1095&#10;zcash_client_backend:&#10;Implement Orchard change&#10;output creation." target="_blank">
+<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="324.5,-1077 112.5,-1077 112.5,-1009 324.5,-1009 324.5,-1077"/>
+<text text-anchor="middle" x="218.5" y="-1061.8" font-family="Times,serif" font-size="14.00">zcash/librustzcash#1095</text>
+<text text-anchor="middle" x="218.5" y="-1046.8" font-family="Times,serif" font-size="14.00">zcash_client_backend:</text>
+<text text-anchor="middle" x="218.5" y="-1031.8" font-family="Times,serif" font-size="14.00">Implement Orchard change</text>
+<text text-anchor="middle" x="218.5" y="-1016.8" font-family="Times,serif" font-size="14.00">output creation.</text>
+</a>
+</g>
+</g>
+<!-- zcash/librustzcash#1095&#45;&gt;zcash/librustzcash#403 -->
+<g id="edge11" class="edge">
+<title>zcash/librustzcash#1095&#45;&gt;zcash/librustzcash#403</title>
+<path fill="none" stroke="black" d="M324.7,-1040.7C364.79,-1045.2 408,-1057.4 438,-1086 476.4,-1122.7 429.13,-1164.3 466.5,-1202 477.3,-1212.9 490.9,-1220.6 505.37,-1226.1"/>
+<polygon fill="black" stroke="black" points="504.4,-1229.47 514.99,-1229.4 506.67,-1222.84 504.4,-1229.47"/>
+</g>
+<!-- zcash/librustzcash#1096 -->
+<g id="node14" class="node open">
+<title>zcash/librustzcash#1096</title>
+<g id="a_node14"><a xlink:href="https://github.com/zcash/librustzcash/issues/1096" xlink:title="zcash/librustzcash#1096&#10;zcash_client_backend:&#10;Implement Orchard spends" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="324.5,-990.5 112.5,-990.5 112.5,-937.5 324.5,-937.5 324.5,-990.5"/>
+<text text-anchor="middle" x="218.5" y="-975.3" font-family="Times,serif" font-size="14.00">zcash/librustzcash#1096</text>
+<text text-anchor="middle" x="218.5" y="-960.3" font-family="Times,serif" font-size="14.00">zcash_client_backend:</text>
+<text text-anchor="middle" x="218.5" y="-945.3" font-family="Times,serif" font-size="14.00">Implement Orchard spends</text>
+</a>
+</g>
+</g>
+<!-- zcash/librustzcash#1096&#45;&gt;zcash/librustzcash#403 -->
+<g id="edge12" class="edge">
+<title>zcash/librustzcash#1096&#45;&gt;zcash/librustzcash#403</title>
+<path fill="none" stroke="black" d="M324.77,-956.39C365.36,-959.2 408.91,-970.23 438,-1000 501.37,-1064.8 406,-1134.5 466.5,-1202 476.87,-1213.6 490.4,-1221.7 504.97,-1227.3"/>
+<polygon fill="black" stroke="black" points="504.09,-1230.7 514.68,-1230.6 506.34,-1224.07 504.09,-1230.7"/>
+</g>
+<!-- zcash/librustzcash#1099 -->
+<g id="node15" class="node open">
+<title>zcash/librustzcash#1099</title>
+<g id="a_node15"><a xlink:href="https://github.com/zcash/librustzcash/issues/1099" xlink:title="zcash/librustzcash#1099&#10;zcash_client_backend: Add&#10;Orchard receivers to&#10;unified addresses by&#10;default." target="_blank">
+<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="321.5,-1279.5 115.5,-1279.5 115.5,-1196.5 321.5,-1196.5 321.5,-1279.5"/>
+<text text-anchor="middle" x="218.5" y="-1264.3" font-family="Times,serif" font-size="14.00">zcash/librustzcash#1099</text>
+<text text-anchor="middle" x="218.5" y="-1249.3" font-family="Times,serif" font-size="14.00">zcash_client_backend: Add</text>
+<text text-anchor="middle" x="218.5" y="-1234.3" font-family="Times,serif" font-size="14.00">Orchard receivers to</text>
+<text text-anchor="middle" x="218.5" y="-1219.3" font-family="Times,serif" font-size="14.00">unified addresses by</text>
+<text text-anchor="middle" x="218.5" y="-1204.3" font-family="Times,serif" font-size="14.00">default.</text>
+</a>
+</g>
+</g>
+<!-- zcash/librustzcash#1099&#45;&gt;zcash/librustzcash#403 -->
+<g id="edge13" class="edge">
+<title>zcash/librustzcash#1099&#45;&gt;zcash/librustzcash#403</title>
+<path fill="none" stroke="black" d="M321.7,-1238C378.25,-1238 448.33,-1238 504.94,-1238"/>
+<polygon fill="black" stroke="black" points="504.98,-1241.5 514.98,-1238 504.98,-1234.5 504.98,-1241.5"/>
+</g>
+<!-- zcash/librustzcash#1101 -->
+<g id="node16" class="node open">
+<title>zcash/librustzcash#1101</title>
+<g id="a_node16"><a xlink:href="https://github.com/zcash/librustzcash/issues/1101" xlink:title="zcash/librustzcash#1101&#10;zcash_client_backend: Use&#10;Orchard for change by&#10;default once Orchard&#10;outputs are enabled." target="_blank">
+<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="321.5,-1178.5 115.5,-1178.5 115.5,-1095.5 321.5,-1095.5 321.5,-1178.5"/>
+<text text-anchor="middle" x="218.5" y="-1163.3" font-family="Times,serif" font-size="14.00">zcash/librustzcash#1101</text>
+<text text-anchor="middle" x="218.5" y="-1148.3" font-family="Times,serif" font-size="14.00">zcash_client_backend: Use</text>
+<text text-anchor="middle" x="218.5" y="-1133.3" font-family="Times,serif" font-size="14.00">Orchard for change by</text>
+<text text-anchor="middle" x="218.5" y="-1118.3" font-family="Times,serif" font-size="14.00">default once Orchard</text>
+<text text-anchor="middle" x="218.5" y="-1103.3" font-family="Times,serif" font-size="14.00">outputs are enabled.</text>
+</a>
+</g>
+</g>
+<!-- zcash/librustzcash#1101&#45;&gt;zcash/librustzcash#403 -->
+<g id="edge14" class="edge">
+<title>zcash/librustzcash#1101&#45;&gt;zcash/librustzcash#403</title>
+<path fill="none" stroke="black" d="M321.72,-1154.7C358.94,-1162.6 400.96,-1173.3 438,-1187 451.42,-1192 453.14,-1196.9 466.5,-1202 478.71,-1206.7 491.76,-1211 504.79,-1214.8"/>
+<polygon fill="black" stroke="black" points="504.18,-1218.26 514.75,-1217.6 506.07,-1211.52 504.18,-1218.26"/>
+</g>
+<!-- zcash/librustzcash#1119 -->
+<g id="node17" class="node open">
+<title>zcash/librustzcash#1119</title>
+<g id="a_node17"><a xlink:href="https://github.com/zcash/librustzcash/issues/1119" xlink:title="zcash/librustzcash#1119&#10;`zcash_client_backend`:&#10;Update `SpanningTree` and&#10;related types to track&#10;Orchard and Sapling&#10;scanning separately." target="_blank">
+<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="717.5,-1077 499.5,-1077 499.5,-979 717.5,-979 717.5,-1077"/>
+<text text-anchor="middle" x="608.5" y="-1061.8" font-family="Times,serif" font-size="14.00">zcash/librustzcash#1119</text>
+<text text-anchor="middle" x="608.5" y="-1046.8" font-family="Times,serif" font-size="14.00">`zcash_client_backend`:</text>
+<text text-anchor="middle" x="608.5" y="-1031.8" font-family="Times,serif" font-size="14.00">Update `SpanningTree` and</text>
+<text text-anchor="middle" x="608.5" y="-1016.8" font-family="Times,serif" font-size="14.00">related types to track</text>
+<text text-anchor="middle" x="608.5" y="-1001.8" font-family="Times,serif" font-size="14.00">Orchard and Sapling</text>
+<text text-anchor="middle" x="608.5" y="-986.8" font-family="Times,serif" font-size="14.00">scanning separately.</text>
+</a>
+</g>
+</g>
+<!-- zcash/librustzcash#1119&#45;&gt;zcash/librustzcash#404 -->
+<g id="edge15" class="edge">
+<title>zcash/librustzcash#1119&#45;&gt;zcash/librustzcash#404</title>
+<path fill="none" stroke="black" d="M717.53,-1071.7C728.7,-1076.5 739.85,-1081.3 750.5,-1086 786.13,-1101.8 825.45,-1120.5 857.29,-1135.9"/>
+<polygon fill="black" stroke="black" points="855.96,-1139.14 866.49,-1140.3 858.98,-1132.83 855.96,-1139.14"/>
+</g>
+<!-- zcash/librustzcash#1046 -->
+<g id="node18" class="node open">
 <title>zcash/librustzcash#1046</title>
-<g id="a_node7"><a xlink:href="https://github.com/zcash/librustzcash/issues/1046" xlink:title="zcash/librustzcash#1046&#10;zcash_client_sqlite:&#10;Identify shielding&#10;transactions in the&#10;output of the&#10;v_transactions view." target="_blank">
+<g id="a_node18"><a xlink:href="https://github.com/zcash/librustzcash/issues/1046" xlink:title="zcash/librustzcash#1046&#10;zcash_client_sqlite:&#10;Identify shielding&#10;transactions in the&#10;output of the&#10;v_transactions view." target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="1332.5,-4255 1136.5,-4255 1136.5,-4157 1332.5,-4157 1332.5,-4255"/>
 <text text-anchor="middle" x="1234.5" y="-4239.8" font-family="Times,serif" font-size="14.00">zcash/librustzcash#1046</text>
 <text text-anchor="middle" x="1234.5" y="-4224.8" font-family="Times,serif" font-size="14.00">zcash_client_sqlite:</text>
@@ -241,18 +505,8 @@
 </a>
 </g>
 </g>
-<!-- zcash/librustzcash#961 -->
-<g id="node8" class="node open">
-<title>zcash/librustzcash#961</title>
-<g id="a_node8"><a xlink:href="https://github.com/zcash/librustzcash/issues/961" xlink:title="zcash/librustzcash#961&#10;zcash_client_sqlite 0.9.0" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" points="1642.5,-3618 1452.5,-3618 1452.5,-3580 1642.5,-3580 1642.5,-3618"/>
-<text text-anchor="middle" x="1547.5" y="-3602.8" font-family="Times,serif" font-size="14.00">zcash/librustzcash#961</text>
-<text text-anchor="middle" x="1547.5" y="-3587.8" font-family="Times,serif" font-size="14.00">zcash_client_sqlite 0.9.0</text>
-</a>
-</g>
-</g>
 <!-- zcash/librustzcash#1046&#45;&gt;zcash/librustzcash#961 -->
-<g id="edge6" class="edge">
+<g id="edge16" class="edge">
 <title>zcash/librustzcash#1046&#45;&gt;zcash/librustzcash#961</title>
 <path fill="none" stroke="black" d="M1332.8,-4165.1C1349,-4154.9 1364.5,-4142.6 1376.5,-4128 1376.5,-4128 1501.7,-3738.5 1537.2,-3627.9"/>
 <polygon fill="black" stroke="black" points="1540.62,-3628.69 1540.3,-3618.1 1533.95,-3626.58 1540.62,-3628.69"/>
@@ -275,44 +529,22 @@
 <path fill="none" stroke="black" d="M1252.2,-4255C1300.6,-4388.7 1454.7,-4760.4 1722,-4923 1827.9,-4987.4 1891.1,-4894.9 1999,-4956 2056.7,-4988.7 2099.2,-5054.8 2122.5,-5098.7"/>
 <polygon fill="black" stroke="black" points="2119.5,-5100.52 2127.2,-5107.8 2125.72,-5097.31 2119.5,-5100.52"/>
 </g>
-<!-- ECC/zcash&#45;android&#45;wallet&#45;sdk#1280 -->
-<g id="node9" class="node open">
-<title>ECC/zcash&#45;android&#45;wallet&#45;sdk#1280</title>
-<g id="a_node9"><a xlink:href="https://github.com/Electric-Coin-Company/zcash-android-wallet-sdk/issues/1280" xlink:title="ECC/zcash&#45;android&#45;wallet&#45;sdk#1280&#10;Release zcash&#45;android&#45;&#10;wallet&#45;sdk 2.1.0" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" points="1999,-4036.5 1722,-4036.5 1722,-3983.5 1999,-3983.5 1999,-4036.5"/>
-<text text-anchor="middle" x="1860.5" y="-4021.3" font-family="Times,serif" font-size="14.00">ECC/zcash&#45;android&#45;wallet&#45;sdk#1280</text>
-<text text-anchor="middle" x="1860.5" y="-4006.3" font-family="Times,serif" font-size="14.00">Release zcash&#45;android&#45;</text>
-<text text-anchor="middle" x="1860.5" y="-3991.3" font-family="Times,serif" font-size="14.00">wallet&#45;sdk 2.1.0</text>
-</a>
-</g>
-</g>
 <!-- zcash/librustzcash#961&#45;&gt;ECC/zcash&#45;android&#45;wallet&#45;sdk#1280 -->
-<g id="edge7" class="edge">
+<g id="edge17" class="edge">
 <title>zcash/librustzcash#961&#45;&gt;ECC/zcash&#45;android&#45;wallet&#45;sdk#1280</title>
 <path fill="none" stroke="black" d="M1551.5,-3618C1562.1,-3679.6 1604.3,-3875.5 1722,-3974 1723.6,-3975.3 1725.2,-3976.6 1726.8,-3977.8"/>
 <polygon fill="black" stroke="black" points="1725.05,-3980.84 1735.3,-3983.5 1728.94,-3975.02 1725.05,-3980.84"/>
 </g>
-<!-- ECC/zcash&#45;swift&#45;wallet&#45;sdk#1300 -->
-<g id="node10" class="node open">
-<title>ECC/zcash&#45;swift&#45;wallet&#45;sdk#1300</title>
-<g id="a_node10"><a xlink:href="https://github.com/Electric-Coin-Company/zcash-swift-wallet-sdk/issues/1300" xlink:title="ECC/zcash&#45;swift&#45;wallet&#45;sdk#1300&#10;Release&#10;ZcashLightClientKit 2.1.0" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" points="1989,-3624.5 1732,-3624.5 1732,-3571.5 1989,-3571.5 1989,-3624.5"/>
-<text text-anchor="middle" x="1860.5" y="-3609.3" font-family="Times,serif" font-size="14.00">ECC/zcash&#45;swift&#45;wallet&#45;sdk#1300</text>
-<text text-anchor="middle" x="1860.5" y="-3594.3" font-family="Times,serif" font-size="14.00">Release</text>
-<text text-anchor="middle" x="1860.5" y="-3579.3" font-family="Times,serif" font-size="14.00">ZcashLightClientKit 2.1.0</text>
-</a>
-</g>
-</g>
 <!-- zcash/librustzcash#961&#45;&gt;ECC/zcash&#45;swift&#45;wallet&#45;sdk#1300 -->
-<g id="edge8" class="edge">
+<g id="edge18" class="edge">
 <title>zcash/librustzcash#961&#45;&gt;ECC/zcash&#45;swift&#45;wallet&#45;sdk#1300</title>
 <path fill="none" stroke="black" d="M1642.7,-3598.7C1667.5,-3598.6 1694.9,-3598.5 1721.6,-3598.4"/>
 <polygon fill="black" stroke="black" points="1721.8,-3601.9 1731.8,-3598.4 1721.8,-3594.9 1721.8,-3601.9"/>
 </g>
 <!-- ECC/zashi&#45;android#1150 -->
-<g id="node11" class="node open">
+<g id="node22" class="node open">
 <title>ECC/zashi&#45;android#1150</title>
-<g id="a_node11"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-android/issues/1150" xlink:title="ECC/zashi&#45;android#1150&#10;Release Zashi Android&#10;version 1.0" target="_blank">
+<g id="a_node22"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-android/issues/1150" xlink:title="ECC/zashi&#45;android#1150&#10;Release Zashi Android&#10;version 1.0" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" points="2242.5,-4264.5 2045.5,-4264.5 2045.5,-4211.5 2242.5,-4211.5 2242.5,-4264.5"/>
 <text text-anchor="middle" x="2144" y="-4249.3" font-family="Times,serif" font-size="14.00">ECC/zashi&#45;android#1150</text>
 <text text-anchor="middle" x="2144" y="-4234.3" font-family="Times,serif" font-size="14.00">Release Zashi Android</text>
@@ -321,15 +553,15 @@
 </g>
 </g>
 <!-- ECC/zcash&#45;android&#45;wallet&#45;sdk#1280&#45;&gt;ECC/zashi&#45;android#1150 -->
-<g id="edge9" class="edge">
+<g id="edge19" class="edge">
 <title>ECC/zcash&#45;android&#45;wallet&#45;sdk#1280&#45;&gt;ECC/zashi&#45;android#1150</title>
 <path fill="none" stroke="black" d="M1984.5,-4036.5C1989.5,-4039.1 1994.4,-4041.9 1999,-4045 2058.7,-4085 2103.2,-4158.3 2125.9,-4202.1"/>
 <polygon fill="black" stroke="black" points="2122.93,-4203.99 2130.6,-4211.3 2129.17,-4200.8 2122.93,-4203.99"/>
 </g>
 <!-- ECC/zashi&#45;ios#986 -->
-<g id="node12" class="node open">
+<g id="node23" class="node open">
 <title>ECC/zashi&#45;ios#986</title>
-<g id="a_node12"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-ios/issues/986" xlink:title="ECC/zashi&#45;ios#986&#10;Release Zashi iOS version&#10;1.0" target="_blank">
+<g id="a_node23"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-ios/issues/986" xlink:title="ECC/zashi&#45;ios#986&#10;Release Zashi iOS version&#10;1.0" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" points="2245.5,-3944.5 2042.5,-3944.5 2042.5,-3891.5 2245.5,-3891.5 2245.5,-3944.5"/>
 <text text-anchor="middle" x="2144" y="-3929.3" font-family="Times,serif" font-size="14.00">ECC/zashi&#45;ios#986</text>
 <text text-anchor="middle" x="2144" y="-3914.3" font-family="Times,serif" font-size="14.00">Release Zashi iOS version</text>
@@ -338,15 +570,15 @@
 </g>
 </g>
 <!-- ECC/zcash&#45;swift&#45;wallet&#45;sdk#1300&#45;&gt;ECC/zashi&#45;ios#986 -->
-<g id="edge10" class="edge">
+<g id="edge20" class="edge">
 <title>ECC/zcash&#45;swift&#45;wallet&#45;sdk#1300&#45;&gt;ECC/zashi&#45;ios#986</title>
 <path fill="none" stroke="black" d="M1985.2,-3624.5C1990.1,-3627.4 1994.7,-3630.5 1999,-3634 2079.5,-3699 2119.3,-3820.7 2134.8,-3881.5"/>
 <polygon fill="black" stroke="black" points="2131.48,-3882.65 2137.3,-3891.5 2138.27,-3880.95 2131.48,-3882.65"/>
 </g>
 <!-- zcash/librustzcash#950 -->
-<g id="node13" class="node open">
+<g id="node24" class="node open">
 <title>zcash/librustzcash#950</title>
-<g id="a_node13"><a xlink:href="https://github.com/zcash/librustzcash/issues/950" xlink:title="zcash/librustzcash#950&#10;zcash_client_backend:&#10;Ensure number of accounts&#10;can be obtained from Data&#10;Access API" target="_blank">
+<g id="a_node24"><a xlink:href="https://github.com/zcash/librustzcash/issues/950" xlink:title="zcash/librustzcash#950&#10;zcash_client_backend:&#10;Ensure number of accounts&#10;can be obtained from Data&#10;Access API" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="1028,-3654.5 815,-3654.5 815,-3571.5 1028,-3571.5 1028,-3654.5"/>
 <text text-anchor="middle" x="921.5" y="-3639.3" font-family="Times,serif" font-size="14.00">zcash/librustzcash#950</text>
 <text text-anchor="middle" x="921.5" y="-3624.3" font-family="Times,serif" font-size="14.00">zcash_client_backend:</text>
@@ -356,25 +588,14 @@
 </a>
 </g>
 </g>
-<!-- zcash/librustzcash#962 -->
-<g id="node14" class="node open">
-<title>zcash/librustzcash#962</title>
-<g id="a_node14"><a xlink:href="https://github.com/zcash/librustzcash/issues/962" xlink:title="zcash/librustzcash#962&#10;zcash_client_backend&#10;0.11.0" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" points="1328,-3625.5 1141,-3625.5 1141,-3572.5 1328,-3572.5 1328,-3625.5"/>
-<text text-anchor="middle" x="1234.5" y="-3610.3" font-family="Times,serif" font-size="14.00">zcash/librustzcash#962</text>
-<text text-anchor="middle" x="1234.5" y="-3595.3" font-family="Times,serif" font-size="14.00">zcash_client_backend</text>
-<text text-anchor="middle" x="1234.5" y="-3580.3" font-family="Times,serif" font-size="14.00">0.11.0</text>
-</a>
-</g>
-</g>
 <!-- zcash/librustzcash#950&#45;&gt;zcash/librustzcash#962 -->
-<g id="edge11" class="edge">
+<g id="edge21" class="edge">
 <title>zcash/librustzcash#950&#45;&gt;zcash/librustzcash#962</title>
 <path fill="none" stroke="black" d="M1028.2,-3608.2C1061.3,-3606.8 1097.8,-3605.1 1130.7,-3603.6"/>
 <polygon fill="black" stroke="black" points="1130.95,-3607.09 1140.8,-3603.2 1130.67,-3600.1 1130.95,-3607.09"/>
 </g>
 <!-- zcash/librustzcash#962&#45;&gt;zcash/librustzcash#961 -->
-<g id="edge12" class="edge">
+<g id="edge22" class="edge">
 <title>zcash/librustzcash#962&#45;&gt;zcash/librustzcash#961</title>
 <path fill="none" stroke="black" d="M1328.4,-3599C1364.2,-3599 1405.4,-3599 1442.2,-3599"/>
 <polygon fill="black" stroke="black" points="1442.5,-3602.5 1452.5,-3599 1442.5,-3595.5 1442.5,-3602.5"/>
@@ -397,9 +618,9 @@
 <polygon fill="black" stroke="black" points="1539.59,-3058.17 1538.9,-3047.6 1532.85,-3056.3 1539.59,-3058.17"/>
 </g>
 <!-- zcash/librustzcash#1034 -->
-<g id="node15" class="node open">
+<g id="node26" class="node open">
 <title>zcash/librustzcash#1034</title>
-<g id="a_node15"><a xlink:href="https://github.com/zcash/librustzcash/issues/1034" xlink:title="zcash/librustzcash#1034&#10;`zcash_primitives 0.14`,&#10;`zcash_proofs 0.14`" target="_blank">
+<g id="a_node26"><a xlink:href="https://github.com/zcash/librustzcash/issues/1034" xlink:title="zcash/librustzcash#1034&#10;`zcash_primitives 0.14`,&#10;`zcash_proofs 0.14`" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" points="1019.5,-3553.5 823.5,-3553.5 823.5,-3500.5 1019.5,-3500.5 1019.5,-3553.5"/>
 <text text-anchor="middle" x="921.5" y="-3538.3" font-family="Times,serif" font-size="14.00">zcash/librustzcash#1034</text>
 <text text-anchor="middle" x="921.5" y="-3523.3" font-family="Times,serif" font-size="14.00">`zcash_primitives 0.14`,</text>
@@ -408,15 +629,15 @@
 </g>
 </g>
 <!-- zcash/librustzcash#1034&#45;&gt;zcash/librustzcash#962 -->
-<g id="edge13" class="edge">
+<g id="edge23" class="edge">
 <title>zcash/librustzcash#1034&#45;&gt;zcash/librustzcash#962</title>
 <path fill="none" stroke="black" d="M1019.6,-3549.5C1055,-3557.7 1095,-3566.9 1130.8,-3575.2"/>
 <polygon fill="black" stroke="black" points="1130.27,-3578.67 1140.8,-3577.5 1131.84,-3571.85 1130.27,-3578.67"/>
 </g>
 <!-- zcash/librustzcash#800 -->
-<g id="node16" class="node open">
+<g id="node27" class="node open">
 <title>zcash/librustzcash#800</title>
-<g id="a_node16"><a xlink:href="https://github.com/zcash/librustzcash/issues/800" xlink:title="zcash/librustzcash#800&#10;`zcash_client_sqlite`:&#10;Figure out how to build&#10;SQLite in a way that is&#10;compatible with Rust, or&#10;require downstreams to do&#10;so" target="_blank">
+<g id="a_node27"><a xlink:href="https://github.com/zcash/librustzcash/issues/800" xlink:title="zcash/librustzcash#800&#10;`zcash_client_sqlite`:&#10;Figure out how to build&#10;SQLite in a way that is&#10;compatible with Rust, or&#10;require downstreams to do&#10;so" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="1339.5,-3899.5 1129.5,-3899.5 1129.5,-3786.5 1339.5,-3786.5 1339.5,-3899.5"/>
 <text text-anchor="middle" x="1234.5" y="-3884.3" font-family="Times,serif" font-size="14.00">zcash/librustzcash#800</text>
 <text text-anchor="middle" x="1234.5" y="-3869.3" font-family="Times,serif" font-size="14.00">`zcash_client_sqlite`:</text>
@@ -429,15 +650,15 @@
 </g>
 </g>
 <!-- zcash/librustzcash#800&#45;&gt;zcash/librustzcash#961 -->
-<g id="edge14" class="edge">
+<g id="edge24" class="edge">
 <title>zcash/librustzcash#800&#45;&gt;zcash/librustzcash#961</title>
 <path fill="none" stroke="black" d="M1339.7,-3799.7C1352.5,-3792.8 1365.1,-3785.2 1376.5,-3777 1438.3,-3732.6 1496.4,-3663.9 1526,-3626.1"/>
 <polygon fill="black" stroke="black" points="1528.84,-3628.15 1532.2,-3618.1 1523.31,-3623.86 1528.84,-3628.15"/>
 </g>
 <!-- zcash/librustzcash#692 -->
-<g id="node17" class="node open">
+<g id="node28" class="node open">
 <title>zcash/librustzcash#692</title>
-<g id="a_node17"><a xlink:href="https://github.com/zcash/librustzcash/issues/692" xlink:title="zcash/librustzcash#692&#10;Use Orchard inputs in `bi&#10;nding_sig_absent_if_no_sh&#10;ielded_spend_or_output`&#10;once Orchard is supported" target="_blank">
+<g id="a_node28"><a xlink:href="https://github.com/zcash/librustzcash/issues/692" xlink:title="zcash/librustzcash#692&#10;Use Orchard inputs in `bi&#10;nding_sig_absent_if_no_sh&#10;ielded_spend_or_output`&#10;once Orchard is supported" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="711.5,-3583.5 505.5,-3583.5 505.5,-3500.5 711.5,-3500.5 711.5,-3583.5"/>
 <text text-anchor="middle" x="608.5" y="-3568.3" font-family="Times,serif" font-size="14.00">zcash/librustzcash#692</text>
 <text text-anchor="middle" x="608.5" y="-3553.3" font-family="Times,serif" font-size="14.00">Use Orchard inputs in `bi</text>
@@ -448,15 +669,15 @@
 </g>
 </g>
 <!-- zcash/librustzcash#692&#45;&gt;zcash/librustzcash#1034 -->
-<g id="edge15" class="edge">
+<g id="edge25" class="edge">
 <title>zcash/librustzcash#692&#45;&gt;zcash/librustzcash#1034</title>
 <path fill="none" stroke="black" d="M711.76,-3537.1C744.33,-3535.5 780.45,-3533.8 813.35,-3532.2"/>
 <polygon fill="black" stroke="black" points="813.64,-3535.69 823.45,-3531.7 813.29,-3528.7 813.64,-3535.69"/>
 </g>
 <!-- zcash/librustzcash#599 -->
-<g id="node18" class="node open">
+<g id="node29" class="node open">
 <title>zcash/librustzcash#599</title>
-<g id="a_node18"><a xlink:href="https://github.com/zcash/librustzcash/issues/599" xlink:title="zcash/librustzcash#599&#10;Scan for 0&#45;indexed&#10;transparent address even&#10;when scanning with a&#10;UIVK." target="_blank">
+<g id="a_node29"><a xlink:href="https://github.com/zcash/librustzcash/issues/599" xlink:title="zcash/librustzcash#599&#10;Scan for 0&#45;indexed&#10;transparent address even&#10;when scanning with a&#10;UIVK." target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="1021.5,-3886.5 821.5,-3886.5 821.5,-3803.5 1021.5,-3803.5 1021.5,-3886.5"/>
 <text text-anchor="middle" x="921.5" y="-3871.3" font-family="Times,serif" font-size="14.00">zcash/librustzcash#599</text>
 <text text-anchor="middle" x="921.5" y="-3856.3" font-family="Times,serif" font-size="14.00">Scan for 0&#45;indexed</text>
@@ -467,15 +688,15 @@
 </g>
 </g>
 <!-- zcash/librustzcash#599&#45;&gt;zcash/librustzcash#962 -->
-<g id="edge16" class="edge">
+<g id="edge26" class="edge">
 <title>zcash/librustzcash#599&#45;&gt;zcash/librustzcash#962</title>
 <path fill="none" stroke="black" d="M1021.6,-3826.9C1039.3,-3819.4 1056,-3808.9 1068,-3794 1112.8,-3738.6 1040.7,-3688.2 1088,-3635 1099.5,-3622.1 1114.8,-3613.4 1131.2,-3607.7"/>
 <polygon fill="black" stroke="black" points="1132.46,-3610.97 1141,-3604.7 1130.41,-3604.28 1132.46,-3610.97"/>
 </g>
 <!-- zcash/librustzcash#940 -->
-<g id="node19" class="node open">
+<g id="node30" class="node open">
 <title>zcash/librustzcash#940</title>
-<g id="a_node19"><a xlink:href="https://github.com/zcash/librustzcash/issues/940" xlink:title="zcash/librustzcash#940&#10;get_wallet_summary is&#10;inconsistent about&#10;including funds from&#10;mempool txns that can&#10;still be mined when&#10;min_confirmations == 0" target="_blank">
+<g id="a_node30"><a xlink:href="https://github.com/zcash/librustzcash/issues/940" xlink:title="zcash/librustzcash#940&#10;get_wallet_summary is&#10;inconsistent about&#10;including funds from&#10;mempool txns that can&#10;still be mined when&#10;min_confirmations == 0" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="1016.5,-3785.5 826.5,-3785.5 826.5,-3672.5 1016.5,-3672.5 1016.5,-3785.5"/>
 <text text-anchor="middle" x="921.5" y="-3770.3" font-family="Times,serif" font-size="14.00">zcash/librustzcash#940</text>
 <text text-anchor="middle" x="921.5" y="-3755.3" font-family="Times,serif" font-size="14.00">get_wallet_summary is</text>
@@ -488,15 +709,15 @@
 </g>
 </g>
 <!-- zcash/librustzcash#940&#45;&gt;zcash/librustzcash#962 -->
-<g id="edge17" class="edge">
+<g id="edge27" class="edge">
 <title>zcash/librustzcash#940&#45;&gt;zcash/librustzcash#962</title>
 <path fill="none" stroke="black" d="M1016.8,-3695C1034.8,-3686.2 1052.8,-3675.5 1068,-3663 1079.8,-3653.3 1075.3,-3643.6 1088,-3635 1100.9,-3626.2 1115.7,-3619.6 1130.9,-3614.6"/>
 <polygon fill="black" stroke="black" points="1132.3,-3617.83 1140.8,-3611.5 1130.21,-3611.15 1132.3,-3617.83"/>
 </g>
 <!-- ECC/zcash&#45;android&#45;wallet&#45;sdk#1323 -->
-<g id="node20" class="node open">
+<g id="node31" class="node open">
 <title>ECC/zcash&#45;android&#45;wallet&#45;sdk#1323</title>
-<g id="a_node20"><a xlink:href="https://github.com/Electric-Coin-Company/zcash-android-wallet-sdk/issues/1323" xlink:title="ECC/zcash&#45;android&#45;wallet&#45;sdk#1323&#10;Release zcash&#45;android&#45;&#10;wallet&#45;sdk 2.0.5" target="_blank">
+<g id="a_node31"><a xlink:href="https://github.com/Electric-Coin-Company/zcash-android-wallet-sdk/issues/1323" xlink:title="ECC/zcash&#45;android&#45;wallet&#45;sdk#1323&#10;Release zcash&#45;android&#45;&#10;wallet&#45;sdk 2.0.5" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" points="1686,-3554.5 1409,-3554.5 1409,-3501.5 1686,-3501.5 1686,-3554.5"/>
 <text text-anchor="middle" x="1547.5" y="-3539.3" font-family="Times,serif" font-size="14.00">ECC/zcash&#45;android&#45;wallet&#45;sdk#1323</text>
 <text text-anchor="middle" x="1547.5" y="-3524.3" font-family="Times,serif" font-size="14.00">Release zcash&#45;android&#45;</text>
@@ -505,15 +726,15 @@
 </g>
 </g>
 <!-- ECC/zcash&#45;android&#45;wallet&#45;sdk#1323&#45;&gt;ECC/zcash&#45;android&#45;wallet&#45;sdk#1280 -->
-<g id="edge18" class="edge">
+<g id="edge28" class="edge">
 <title>ECC/zcash&#45;android&#45;wallet&#45;sdk#1323&#45;&gt;ECC/zcash&#45;android&#45;wallet&#45;sdk#1280</title>
 <path fill="none" stroke="black" d="M1676.3,-3554.5C1682.9,-3559.2 1688.9,-3564.6 1694,-3571 1750.2,-3641 1664.7,-3904.9 1722,-3974 1722.6,-3974.7 1723.3,-3975.5 1723.9,-3976.2"/>
 <polygon fill="black" stroke="black" points="1721.69,-3978.93 1731.3,-3983.4 1726.57,-3973.92 1721.69,-3978.93"/>
 </g>
 <!-- ECC/zcash&#45;android&#45;wallet&#45;sdk#1310 -->
-<g id="node21" class="node open">
+<g id="node32" class="node open">
 <title>ECC/zcash&#45;android&#45;wallet&#45;sdk#1310</title>
-<g id="a_node21"><a xlink:href="https://github.com/Electric-Coin-Company/zcash-android-wallet-sdk/issues/1310" xlink:title="ECC/zcash&#45;android&#45;wallet&#45;sdk#1310&#10;Call refresh balances&#10;before synchronization&#10;starts" target="_blank">
+<g id="a_node32"><a xlink:href="https://github.com/Electric-Coin-Company/zcash-android-wallet-sdk/issues/1310" xlink:title="ECC/zcash&#45;android&#45;wallet&#45;sdk#1310&#10;Call refresh balances&#10;before synchronization&#10;starts" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="1373,-3768 1096,-3768 1096,-3700 1373,-3700 1373,-3768"/>
 <text text-anchor="middle" x="1234.5" y="-3752.8" font-family="Times,serif" font-size="14.00">ECC/zcash&#45;android&#45;wallet&#45;sdk#1310</text>
 <text text-anchor="middle" x="1234.5" y="-3737.8" font-family="Times,serif" font-size="14.00">Call refresh balances</text>
@@ -523,15 +744,15 @@
 </g>
 </g>
 <!-- ECC/zcash&#45;android&#45;wallet&#45;sdk#1310&#45;&gt;ECC/zcash&#45;android&#45;wallet&#45;sdk#1323 -->
-<g id="edge19" class="edge">
+<g id="edge29" class="edge">
 <title>ECC/zcash&#45;android&#45;wallet&#45;sdk#1310&#45;&gt;ECC/zcash&#45;android&#45;wallet&#45;sdk#1323</title>
 <path fill="none" stroke="black" d="M1366.5,-3700C1370,-3697.2 1373.4,-3694.2 1376.5,-3691 1415,-3651.3 1370.7,-3610.8 1409,-3571 1412.8,-3567 1417.1,-3563.4 1421.5,-3560.1"/>
 <polygon fill="black" stroke="black" points="1423.52,-3562.96 1429.9,-3554.5 1419.64,-3557.13 1423.52,-3562.96"/>
 </g>
 <!-- ECC/zcash&#45;android&#45;wallet&#45;sdk#1303 -->
-<g id="node22" class="node open">
+<g id="node33" class="node open">
 <title>ECC/zcash&#45;android&#45;wallet&#45;sdk#1303</title>
-<g id="a_node22"><a xlink:href="https://github.com/Electric-Coin-Company/zcash-android-wallet-sdk/issues/1303" xlink:title="ECC/zcash&#45;android&#45;wallet&#45;sdk#1303&#10;Introduce log&#45;to&#45;file API" target="_blank">
+<g id="a_node33"><a xlink:href="https://github.com/Electric-Coin-Company/zcash-android-wallet-sdk/issues/1303" xlink:title="ECC/zcash&#45;android&#45;wallet&#45;sdk#1303&#10;Introduce log&#45;to&#45;file API" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="1373,-3682 1096,-3682 1096,-3644 1373,-3644 1373,-3682"/>
 <text text-anchor="middle" x="1234.5" y="-3666.8" font-family="Times,serif" font-size="14.00">ECC/zcash&#45;android&#45;wallet&#45;sdk#1303</text>
 <text text-anchor="middle" x="1234.5" y="-3651.8" font-family="Times,serif" font-size="14.00">Introduce log&#45;to&#45;file API</text>
@@ -539,15 +760,15 @@
 </g>
 </g>
 <!-- ECC/zcash&#45;android&#45;wallet&#45;sdk#1303&#45;&gt;ECC/zcash&#45;android&#45;wallet&#45;sdk#1323 -->
-<g id="edge20" class="edge">
+<g id="edge30" class="edge">
 <title>ECC/zcash&#45;android&#45;wallet&#45;sdk#1303&#45;&gt;ECC/zcash&#45;android&#45;wallet&#45;sdk#1323</title>
 <path fill="none" stroke="black" d="M1360.6,-3644C1366.2,-3641.1 1371.5,-3637.8 1376.5,-3634 1401.6,-3615 1384.9,-3591.3 1409,-3571 1414,-3566.8 1419.3,-3563.1 1425,-3559.7"/>
 <polygon fill="black" stroke="black" points="1427.03,-3562.58 1434,-3554.6 1423.57,-3556.49 1427.03,-3562.58"/>
 </g>
 <!-- ECC/zcash&#45;android&#45;wallet&#45;sdk#1324 -->
-<g id="node23" class="node open">
+<g id="node34" class="node open">
 <title>ECC/zcash&#45;android&#45;wallet&#45;sdk#1324</title>
-<g id="a_node23"><a xlink:href="https://github.com/Electric-Coin-Company/zcash-android-wallet-sdk/issues/1324" xlink:title="ECC/zcash&#45;android&#45;wallet&#45;sdk#1324&#10;Adopt all properties of&#10;`WalletSummary` FFI" target="_blank">
+<g id="a_node34"><a xlink:href="https://github.com/Electric-Coin-Company/zcash-android-wallet-sdk/issues/1324" xlink:title="ECC/zcash&#45;android&#45;wallet&#45;sdk#1324&#10;Adopt all properties of&#10;`WalletSummary` FFI" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="1373,-3980.5 1096,-3980.5 1096,-3927.5 1373,-3927.5 1373,-3980.5"/>
 <text text-anchor="middle" x="1234.5" y="-3965.3" font-family="Times,serif" font-size="14.00">ECC/zcash&#45;android&#45;wallet&#45;sdk#1324</text>
 <text text-anchor="middle" x="1234.5" y="-3950.3" font-family="Times,serif" font-size="14.00">Adopt all properties of</text>
@@ -556,7 +777,7 @@
 </g>
 </g>
 <!-- ECC/zcash&#45;android&#45;wallet&#45;sdk#1324&#45;&gt;ECC/zcash&#45;android&#45;wallet&#45;sdk#1323 -->
-<g id="edge21" class="edge">
+<g id="edge31" class="edge">
 <title>ECC/zcash&#45;android&#45;wallet&#45;sdk#1324&#45;&gt;ECC/zcash&#45;android&#45;wallet&#45;sdk#1323</title>
 <path fill="none" stroke="black" d="M1354.8,-3927.3C1363,-3922 1370.4,-3915.6 1376.5,-3908 1470.6,-3790.6 1314.2,-3687.8 1409,-3571 1412,-3567.4 1415.2,-3564 1418.7,-3560.9"/>
 <polygon fill="black" stroke="black" points="1420.99,-3563.56 1426.8,-3554.7 1416.73,-3558 1420.99,-3563.56"/>
@@ -578,9 +799,9 @@
 <polygon fill="black" stroke="black" points="1507.88,-5439.76 1518,-5442.9 1512.05,-5434.14 1507.88,-5439.76"/>
 </g>
 <!-- ECC/zcash&#45;android&#45;wallet&#45;sdk#1326 -->
-<g id="node24" class="node open">
+<g id="node35" class="node open">
 <title>ECC/zcash&#45;android&#45;wallet&#45;sdk#1326</title>
-<g id="a_node24"><a xlink:href="https://github.com/Electric-Coin-Company/zcash-android-wallet-sdk/issues/1326" xlink:title="ECC/zcash&#45;android&#45;wallet&#45;sdk#1326&#10;Broken authentication&#10;with Flank on CI tests" target="_blank">
+<g id="a_node35"><a xlink:href="https://github.com/Electric-Coin-Company/zcash-android-wallet-sdk/issues/1326" xlink:title="ECC/zcash&#45;android&#45;wallet&#45;sdk#1326&#10;Broken authentication&#10;with Flank on CI tests" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="1373,-3554.5 1096,-3554.5 1096,-3501.5 1373,-3501.5 1373,-3554.5"/>
 <text text-anchor="middle" x="1234.5" y="-3539.3" font-family="Times,serif" font-size="14.00">ECC/zcash&#45;android&#45;wallet&#45;sdk#1326</text>
 <text text-anchor="middle" x="1234.5" y="-3524.3" font-family="Times,serif" font-size="14.00">Broken authentication</text>
@@ -589,15 +810,15 @@
 </g>
 </g>
 <!-- ECC/zcash&#45;android&#45;wallet&#45;sdk#1326&#45;&gt;ECC/zcash&#45;android&#45;wallet&#45;sdk#1323 -->
-<g id="edge22" class="edge">
+<g id="edge32" class="edge">
 <title>ECC/zcash&#45;android&#45;wallet&#45;sdk#1326&#45;&gt;ECC/zcash&#45;android&#45;wallet&#45;sdk#1323</title>
 <path fill="none" stroke="black" d="M1373.3,-3528C1381.8,-3528 1390.4,-3528 1399,-3528"/>
 <polygon fill="black" stroke="black" points="1399,-3531.5 1409,-3528 1399,-3524.5 1399,-3531.5"/>
 </g>
 <!-- ECC/zcash&#45;light&#45;client&#45;ffi#101 -->
-<g id="node25" class="node open">
+<g id="node36" class="node open">
 <title>ECC/zcash&#45;light&#45;client&#45;ffi#101</title>
-<g id="a_node25"><a xlink:href="https://github.com/Electric-Coin-Company/zcash-light-client-ffi/issues/101" xlink:title="ECC/zcash&#45;light&#45;client&#45;ffi#101&#10;Expose `zcash_client_back&#10;end::data_api::WalletRead&#10;::get_wallet_summary` via&#10;the FFI" target="_blank">
+<g id="a_node36"><a xlink:href="https://github.com/Electric-Coin-Company/zcash-light-client-ffi/issues/101" xlink:title="ECC/zcash&#45;light&#45;client&#45;ffi#101&#10;Expose `zcash_client_back&#10;end::data_api::WalletRead&#10;::get_wallet_summary` via&#10;the FFI" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="1350.5,-4119.5 1118.5,-4119.5 1118.5,-4036.5 1350.5,-4036.5 1350.5,-4119.5"/>
 <text text-anchor="middle" x="1234.5" y="-4104.3" font-family="Times,serif" font-size="14.00">ECC/zcash&#45;light&#45;client&#45;ffi#101</text>
 <text text-anchor="middle" x="1234.5" y="-4089.3" font-family="Times,serif" font-size="14.00">Expose `zcash_client_back</text>
@@ -608,9 +829,9 @@
 </g>
 </g>
 <!-- ECC/zcash&#45;swift&#45;wallet&#45;sdk#1299 -->
-<g id="node26" class="node open">
+<g id="node37" class="node open">
 <title>ECC/zcash&#45;swift&#45;wallet&#45;sdk#1299</title>
-<g id="a_node26"><a xlink:href="https://github.com/Electric-Coin-Company/zcash-swift-wallet-sdk/issues/1299" xlink:title="ECC/zcash&#45;swift&#45;wallet&#45;sdk#1299&#10;Replace wallet balance&#10;and scan progress FFI&#10;usage with the &quot;wallet&#10;summary&quot; FFI" target="_blank">
+<g id="a_node37"><a xlink:href="https://github.com/Electric-Coin-Company/zcash-swift-wallet-sdk/issues/1299" xlink:title="ECC/zcash&#45;swift&#45;wallet&#45;sdk#1299&#10;Replace wallet balance&#10;and scan progress FFI&#10;usage with the &quot;wallet&#10;summary&quot; FFI" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" points="1676,-4119.5 1419,-4119.5 1419,-4036.5 1676,-4036.5 1676,-4119.5"/>
 <text text-anchor="middle" x="1547.5" y="-4104.3" font-family="Times,serif" font-size="14.00">ECC/zcash&#45;swift&#45;wallet&#45;sdk#1299</text>
 <text text-anchor="middle" x="1547.5" y="-4089.3" font-family="Times,serif" font-size="14.00">Replace wallet balance</text>
@@ -621,13 +842,13 @@
 </g>
 </g>
 <!-- ECC/zcash&#45;light&#45;client&#45;ffi#101&#45;&gt;ECC/zcash&#45;swift&#45;wallet&#45;sdk#1299 -->
-<g id="edge23" class="edge">
+<g id="edge33" class="edge">
 <title>ECC/zcash&#45;light&#45;client&#45;ffi#101&#45;&gt;ECC/zcash&#45;swift&#45;wallet&#45;sdk#1299</title>
 <path fill="none" stroke="black" d="M1350.9,-4078C1369.7,-4078 1389.4,-4078 1408.7,-4078"/>
 <polygon fill="black" stroke="black" points="1408.8,-4081.5 1418.8,-4078 1408.8,-4074.5 1408.8,-4081.5"/>
 </g>
 <!-- ECC/zcash&#45;swift&#45;wallet&#45;sdk#1299&#45;&gt;ECC/zcash&#45;swift&#45;wallet&#45;sdk#1300 -->
-<g id="edge24" class="edge">
+<g id="edge34" class="edge">
 <title>ECC/zcash&#45;swift&#45;wallet&#45;sdk#1299&#45;&gt;ECC/zcash&#45;swift&#45;wallet&#45;sdk#1300</title>
 <path fill="none" stroke="black" d="M1552.4,-4036.4C1562.8,-3948.4 1599.7,-3742.8 1722,-3634 1723.3,-3632.8 1724.7,-3631.7 1726.1,-3630.6"/>
 <polygon fill="black" stroke="black" points="1728.35,-3633.29 1734.4,-3624.6 1724.25,-3627.62 1728.35,-3633.29"/>
@@ -649,9 +870,9 @@
 <polygon fill="black" stroke="black" points="1773.54,-5737.49 1784,-5735.8 1774.77,-5730.6 1773.54,-5737.49"/>
 </g>
 <!-- ECC/zashi&#45;ios#940 -->
-<g id="node27" class="node open">
+<g id="node38" class="node open">
 <title>ECC/zashi&#45;ios#940</title>
-<g id="a_node27"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-ios/issues/940" xlink:title="ECC/zashi&#45;ios#940&#10;Final privacy policy URL" target="_blank">
+<g id="a_node38"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-ios/issues/940" xlink:title="ECC/zashi&#45;ios#940&#10;Final privacy policy URL" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="1956.5,-3853 1764.5,-3853 1764.5,-3815 1956.5,-3815 1956.5,-3853"/>
 <text text-anchor="middle" x="1860.5" y="-3837.8" font-family="Times,serif" font-size="14.00">ECC/zashi&#45;ios#940</text>
 <text text-anchor="middle" x="1860.5" y="-3822.8" font-family="Times,serif" font-size="14.00">Final privacy policy URL</text>
@@ -659,15 +880,15 @@
 </g>
 </g>
 <!-- ECC/zashi&#45;ios#940&#45;&gt;ECC/zashi&#45;ios#986 -->
-<g id="edge25" class="edge">
+<g id="edge35" class="edge">
 <title>ECC/zashi&#45;ios#940&#45;&gt;ECC/zashi&#45;ios#986</title>
 <path fill="none" stroke="black" d="M1956.7,-3851.2C1971,-3854.4 1985.4,-3858 1999,-3862 2023.2,-3869.1 2049.1,-3878.6 2072.1,-3887.7"/>
 <polygon fill="black" stroke="black" points="2070.81,-3890.96 2081.4,-3891.4 2073.4,-3884.45 2070.81,-3890.96"/>
 </g>
 <!-- ECC/zashi&#45;ios#943 -->
-<g id="node28" class="node open">
+<g id="node39" class="node open">
 <title>ECC/zashi&#45;ios#943</title>
-<g id="a_node28"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-ios/issues/943" xlink:title="ECC/zashi&#45;ios#943&#10;Rewrite FocusState to be&#10;testable with the latest&#10;TCA" target="_blank">
+<g id="a_node39"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-ios/issues/943" xlink:title="ECC/zashi&#45;ios#943&#10;Rewrite FocusState to be&#10;testable with the latest&#10;TCA" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="1959,-3797 1762,-3797 1762,-3729 1959,-3729 1959,-3797"/>
 <text text-anchor="middle" x="1860.5" y="-3781.8" font-family="Times,serif" font-size="14.00">ECC/zashi&#45;ios#943</text>
 <text text-anchor="middle" x="1860.5" y="-3766.8" font-family="Times,serif" font-size="14.00">Rewrite FocusState to be</text>
@@ -677,15 +898,15 @@
 </g>
 </g>
 <!-- ECC/zashi&#45;ios#943&#45;&gt;ECC/zashi&#45;ios#986 -->
-<g id="edge26" class="edge">
+<g id="edge36" class="edge">
 <title>ECC/zashi&#45;ios#943&#45;&gt;ECC/zashi&#45;ios#986</title>
 <path fill="none" stroke="black" d="M1959.1,-3788.7C1972.8,-3793.7 1986.5,-3799.4 1999,-3806 2039.4,-3827.1 2079.9,-3859.9 2107.6,-3884.6"/>
 <polygon fill="black" stroke="black" points="2105.31,-3887.25 2115.1,-3891.3 2109.97,-3882.03 2105.31,-3887.25"/>
 </g>
 <!-- ECC/zashi&#45;ios#955 -->
-<g id="node29" class="node open">
+<g id="node40" class="node open">
 <title>ECC/zashi&#45;ios#955</title>
-<g id="a_node29"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-ios/issues/955" xlink:title="ECC/zashi&#45;ios#955&#10;Ensure is possible to see&#10;the seed under any&#10;circumstance" target="_blank">
+<g id="a_node40"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-ios/issues/955" xlink:title="ECC/zashi&#45;ios#955&#10;Ensure is possible to see&#10;the seed under any&#10;circumstance" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="1957.5,-3711 1763.5,-3711 1763.5,-3643 1957.5,-3643 1957.5,-3711"/>
 <text text-anchor="middle" x="1860.5" y="-3695.8" font-family="Times,serif" font-size="14.00">ECC/zashi&#45;ios#955</text>
 <text text-anchor="middle" x="1860.5" y="-3680.8" font-family="Times,serif" font-size="14.00">Ensure is possible to see</text>
@@ -695,15 +916,15 @@
 </g>
 </g>
 <!-- ECC/zashi&#45;ios#955&#45;&gt;ECC/zashi&#45;ios#986 -->
-<g id="edge27" class="edge">
+<g id="edge37" class="edge">
 <title>ECC/zashi&#45;ios#955&#45;&gt;ECC/zashi&#45;ios#986</title>
 <path fill="none" stroke="black" d="M1957.7,-3698.4C1972.3,-3704 1986.6,-3711.1 1999,-3720 2058.6,-3762.8 2103.4,-3838 2126.1,-3882.4"/>
 <polygon fill="black" stroke="black" points="2123,-3884.02 2130.7,-3891.3 2129.22,-3880.81 2123,-3884.02"/>
 </g>
 <!-- ECC/zashi&#45;ios#906 -->
-<g id="node30" class="node open">
+<g id="node41" class="node open">
 <title>ECC/zashi&#45;ios#906</title>
-<g id="a_node30"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-ios/issues/906" xlink:title="ECC/zashi&#45;ios#906&#10;WithViewStore observation&#10;optimization" target="_blank">
+<g id="a_node41"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-ios/issues/906" xlink:title="ECC/zashi&#45;ios#906&#10;WithViewStore observation&#10;optimization" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="1966.5,-3553.5 1754.5,-3553.5 1754.5,-3500.5 1966.5,-3500.5 1966.5,-3553.5"/>
 <text text-anchor="middle" x="1860.5" y="-3538.3" font-family="Times,serif" font-size="14.00">ECC/zashi&#45;ios#906</text>
 <text text-anchor="middle" x="1860.5" y="-3523.3" font-family="Times,serif" font-size="14.00">WithViewStore observation</text>
@@ -712,15 +933,15 @@
 </g>
 </g>
 <!-- ECC/zashi&#45;ios#906&#45;&gt;ECC/zashi&#45;ios#986 -->
-<g id="edge28" class="edge">
+<g id="edge38" class="edge">
 <title>ECC/zashi&#45;ios#906&#45;&gt;ECC/zashi&#45;ios#986</title>
 <path fill="none" stroke="black" d="M1966.6,-3542.5C1978.4,-3547.4 1989.5,-3553.7 1999,-3562 2096.9,-3647.5 2129.2,-3809.2 2139,-3881.5"/>
 <polygon fill="black" stroke="black" points="2135.54,-3882.03 2140.3,-3891.5 2142.48,-3881.13 2135.54,-3882.03"/>
 </g>
 <!-- ECC/zashi&#45;ios#976 -->
-<g id="node31" class="node open">
+<g id="node42" class="node open">
 <title>ECC/zashi&#45;ios#976</title>
-<g id="a_node31"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-ios/issues/976" xlink:title="ECC/zashi&#45;ios#976&#10;Zero balance at app start" target="_blank">
+<g id="a_node42"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-ios/issues/976" xlink:title="ECC/zashi&#45;ios#976&#10;Zero balance at app start" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="1959,-3965 1762,-3965 1762,-3927 1959,-3927 1959,-3965"/>
 <text text-anchor="middle" x="1860.5" y="-3949.8" font-family="Times,serif" font-size="14.00">ECC/zashi&#45;ios#976</text>
 <text text-anchor="middle" x="1860.5" y="-3934.8" font-family="Times,serif" font-size="14.00">Zero balance at app start</text>
@@ -728,15 +949,15 @@
 </g>
 </g>
 <!-- ECC/zashi&#45;ios#976&#45;&gt;ECC/zashi&#45;ios#986 -->
-<g id="edge29" class="edge">
+<g id="edge39" class="edge">
 <title>ECC/zashi&#45;ios#976&#45;&gt;ECC/zashi&#45;ios#986</title>
 <path fill="none" stroke="black" d="M1959.2,-3936.3C1982.6,-3933.9 2007.9,-3931.4 2031.9,-3929"/>
 <polygon fill="black" stroke="black" points="2032.59,-3932.45 2042.2,-3928 2031.91,-3925.48 2032.59,-3932.45"/>
 </g>
 <!-- ECC/zashi&#45;ios#990 -->
-<g id="node32" class="node open">
+<g id="node43" class="node open">
 <title>ECC/zashi&#45;ios#990</title>
-<g id="a_node32"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-ios/issues/990" xlink:title="ECC/zashi&#45;ios#990&#10;Not enough free space UI" target="_blank">
+<g id="a_node43"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-ios/issues/990" xlink:title="ECC/zashi&#45;ios#990&#10;Not enough free space UI" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="1960.5,-3909 1760.5,-3909 1760.5,-3871 1960.5,-3871 1960.5,-3909"/>
 <text text-anchor="middle" x="1860.5" y="-3893.8" font-family="Times,serif" font-size="14.00">ECC/zashi&#45;ios#990</text>
 <text text-anchor="middle" x="1860.5" y="-3878.8" font-family="Times,serif" font-size="14.00">Not enough free space UI</text>
@@ -744,15 +965,15 @@
 </g>
 </g>
 <!-- ECC/zashi&#45;ios#990&#45;&gt;ECC/zashi&#45;ios#986 -->
-<g id="edge30" class="edge">
+<g id="edge40" class="edge">
 <title>ECC/zashi&#45;ios#990&#45;&gt;ECC/zashi&#45;ios#986</title>
 <path fill="none" stroke="black" d="M1960.7,-3899.9C1983.9,-3902.2 2008.6,-3904.6 2032.2,-3907"/>
 <polygon fill="black" stroke="black" points="2032,-3910.5 2042.3,-3908 2032.69,-3903.53 2032,-3910.5"/>
 </g>
 <!-- ECC/zashi&#45;android#1137 -->
-<g id="node33" class="node open">
+<g id="node44" class="node open">
 <title>ECC/zashi&#45;android#1137</title>
-<g id="a_node33"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-android/issues/1137" xlink:title="ECC/zashi&#45;android#1137&#10;CL: IndexOutOfBoundsExcep&#10;tion: offset(19) should&#10;be less than line&#10;limit(18)" target="_blank">
+<g id="a_node44"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-android/issues/1137" xlink:title="ECC/zashi&#45;android#1137&#10;CL: IndexOutOfBoundsExcep&#10;tion: offset(19) should&#10;be less than line&#10;limit(18)" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="1972.5,-4137.5 1748.5,-4137.5 1748.5,-4054.5 1972.5,-4054.5 1972.5,-4137.5"/>
 <text text-anchor="middle" x="1860.5" y="-4122.3" font-family="Times,serif" font-size="14.00">ECC/zashi&#45;android#1137</text>
 <text text-anchor="middle" x="1860.5" y="-4107.3" font-family="Times,serif" font-size="14.00">CL: IndexOutOfBoundsExcep</text>
@@ -763,15 +984,15 @@
 </g>
 </g>
 <!-- ECC/zashi&#45;android#1137&#45;&gt;ECC/zashi&#45;android#1150 -->
-<g id="edge31" class="edge">
+<g id="edge41" class="edge">
 <title>ECC/zashi&#45;android#1137&#45;&gt;ECC/zashi&#45;android#1150</title>
 <path fill="none" stroke="black" d="M1972.7,-4134C1981.7,-4137.8 1990.6,-4141.8 1999,-4146 2033.7,-4163.1 2070.5,-4186.7 2098.1,-4205.7"/>
 <polygon fill="black" stroke="black" points="2096.18,-4208.62 2106.4,-4211.4 2100.14,-4202.85 2096.18,-4208.62"/>
 </g>
 <!-- ECC/zashi&#45;android#1122 -->
-<g id="node34" class="node open">
+<g id="node45" class="node open">
 <title>ECC/zashi&#45;android#1122</title>
-<g id="a_node34"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-android/issues/1122" xlink:title="ECC/zashi&#45;android#1122&#10;Analyze failing send" target="_blank">
+<g id="a_node45"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-android/issues/1122" xlink:title="ECC/zashi&#45;android#1122&#10;Analyze failing send" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="1959,-4265 1762,-4265 1762,-4227 1959,-4227 1959,-4265"/>
 <text text-anchor="middle" x="1860.5" y="-4249.8" font-family="Times,serif" font-size="14.00">ECC/zashi&#45;android#1122</text>
 <text text-anchor="middle" x="1860.5" y="-4234.8" font-family="Times,serif" font-size="14.00">Analyze failing send</text>
@@ -779,15 +1000,15 @@
 </g>
 </g>
 <!-- ECC/zashi&#45;android#1122&#45;&gt;ECC/zashi&#45;android#1150 -->
-<g id="edge32" class="edge">
+<g id="edge42" class="edge">
 <title>ECC/zashi&#45;android#1122&#45;&gt;ECC/zashi&#45;android#1150</title>
 <path fill="none" stroke="black" d="M1959.2,-4243.2C1983.6,-4242.5 2009.9,-4241.8 2034.8,-4241.1"/>
 <polygon fill="black" stroke="black" points="2035.11,-4244.59 2045,-4240.8 2034.9,-4237.6 2035.11,-4244.59"/>
 </g>
 <!-- ECC/zashi&#45;android#995 -->
-<g id="node35" class="node open">
+<g id="node46" class="node open">
 <title>ECC/zashi&#45;android#995</title>
-<g id="a_node35"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-android/issues/995" xlink:title="ECC/zashi&#45;android#995&#10;New Privacy Policy for&#10;Zashi" target="_blank">
+<g id="a_node46"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-android/issues/995" xlink:title="ECC/zashi&#45;android#995&#10;New Privacy Policy for&#10;Zashi" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="1954.5,-4208.5 1766.5,-4208.5 1766.5,-4155.5 1954.5,-4155.5 1954.5,-4208.5"/>
 <text text-anchor="middle" x="1860.5" y="-4193.3" font-family="Times,serif" font-size="14.00">ECC/zashi&#45;android#995</text>
 <text text-anchor="middle" x="1860.5" y="-4178.3" font-family="Times,serif" font-size="14.00">New Privacy Policy for</text>
@@ -796,231 +1017,10 @@
 </g>
 </g>
 <!-- ECC/zashi&#45;android#995&#45;&gt;ECC/zashi&#45;android#1150 -->
-<g id="edge33" class="edge">
+<g id="edge43" class="edge">
 <title>ECC/zashi&#45;android#995&#45;&gt;ECC/zashi&#45;android#1150</title>
 <path fill="none" stroke="black" d="M1954.8,-4200.6C1980.5,-4205.7 2008.6,-4211.3 2035,-4216.5"/>
 <polygon fill="black" stroke="black" points="2034.61,-4219.99 2045.1,-4218.5 2035.97,-4213.12 2034.61,-4219.99"/>
-</g>
-<!-- zcash/librustzcash#403 -->
-<g id="node36" class="node open">
-<title>zcash/librustzcash#403</title>
-<g id="a_node36"><a xlink:href="https://github.com/zcash/librustzcash/issues/403" xlink:title="zcash/librustzcash#403&#10;Add Orchard support to&#10;`zcash_client_backend`" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" points="702,-1264.5 515,-1264.5 515,-1211.5 702,-1211.5 702,-1264.5"/>
-<text text-anchor="middle" x="608.5" y="-1249.3" font-family="Times,serif" font-size="14.00">zcash/librustzcash#403</text>
-<text text-anchor="middle" x="608.5" y="-1234.3" font-family="Times,serif" font-size="14.00">Add Orchard support to</text>
-<text text-anchor="middle" x="608.5" y="-1219.3" font-family="Times,serif" font-size="14.00">`zcash_client_backend`</text>
-</a>
-</g>
-</g>
-<!-- zcash/librustzcash#403&#45;&gt;zcash/librustzcash#962 -->
-<g id="edge136" class="edge">
-<title>zcash/librustzcash#403&#45;&gt;zcash/librustzcash#962</title>
-<path fill="none" stroke="black" d="M614.78,-1264.6C665.6,-1521 1066.6,-3540.7 1088,-3563 1099.8,-3575.2 1115,-3583.6 1131.1,-3589.2"/>
-<polygon fill="black" stroke="black" points="1130.11,-3592.56 1140.7,-3592.2 1132.2,-3585.88 1130.11,-3592.56"/>
-</g>
-<!-- zcash/librustzcash#404 -->
-<g id="node37" class="node open">
-<title>zcash/librustzcash#404</title>
-<g id="a_node37"><a xlink:href="https://github.com/zcash/librustzcash/issues/404" xlink:title="zcash/librustzcash#404&#10;Add Orchard support to&#10;`zcash_client_sqlite`" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" points="1015,-1193.5 828,-1193.5 828,-1140.5 1015,-1140.5 1015,-1193.5"/>
-<text text-anchor="middle" x="921.5" y="-1178.3" font-family="Times,serif" font-size="14.00">zcash/librustzcash#404</text>
-<text text-anchor="middle" x="921.5" y="-1163.3" font-family="Times,serif" font-size="14.00">Add Orchard support to</text>
-<text text-anchor="middle" x="921.5" y="-1148.3" font-family="Times,serif" font-size="14.00">`zcash_client_sqlite`</text>
-</a>
-</g>
-</g>
-<!-- zcash/librustzcash#403&#45;&gt;zcash/librustzcash#404 -->
-<g id="edge34" class="edge">
-<title>zcash/librustzcash#403&#45;&gt;zcash/librustzcash#404</title>
-<path fill="none" stroke="black" d="M702.39,-1216.8C738.78,-1208.5 780.67,-1198.9 817.95,-1190.4"/>
-<polygon fill="black" stroke="black" points="818.82,-1193.79 827.82,-1188.2 817.3,-1186.96 818.82,-1193.79"/>
-</g>
-<!-- zcash/librustzcash#617 -->
-<g id="node38" class="node open">
-<title>zcash/librustzcash#617</title>
-<g id="a_node38"><a xlink:href="https://github.com/zcash/librustzcash/issues/617" xlink:title="zcash/librustzcash#617&#10;Select the most&#45;preferred&#10;shielded receiver in `shi&#10;eld_transparent_funds`" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" points="1022,-1280 821,-1280 821,-1212 1022,-1212 1022,-1280"/>
-<text text-anchor="middle" x="921.5" y="-1264.8" font-family="Times,serif" font-size="14.00">zcash/librustzcash#617</text>
-<text text-anchor="middle" x="921.5" y="-1249.8" font-family="Times,serif" font-size="14.00">Select the most&#45;preferred</text>
-<text text-anchor="middle" x="921.5" y="-1234.8" font-family="Times,serif" font-size="14.00">shielded receiver in `shi</text>
-<text text-anchor="middle" x="921.5" y="-1219.8" font-family="Times,serif" font-size="14.00">eld_transparent_funds`</text>
-</a>
-</g>
-</g>
-<!-- zcash/librustzcash#403&#45;&gt;zcash/librustzcash#617 -->
-<g id="edge35" class="edge">
-<title>zcash/librustzcash#403&#45;&gt;zcash/librustzcash#617</title>
-<path fill="none" stroke="black" d="M702.39,-1240.4C736.35,-1241.3 775.11,-1242.3 810.43,-1243.2"/>
-<polygon fill="black" stroke="black" points="810.71,-1246.71 820.78,-1243.4 810.85,-1239.71 810.71,-1246.71"/>
-</g>
-<!-- zcash/librustzcash#404&#45;&gt;zcash/librustzcash#961 -->
-<g id="edge137" class="edge">
-<title>zcash/librustzcash#404&#45;&gt;zcash/librustzcash#961</title>
-<path fill="none" stroke="black" d="M1015.2,-1171.3C1035.6,-1176.8 1054.9,-1186.5 1068,-1203 1105,-1249.8 1048.5,-3307.2 1088,-3352 1173.6,-3449 1282.6,-3301.9 1376.5,-3391 1432.9,-3444.6 1355.9,-3506.1 1409,-3563 1418.3,-3573 1430.1,-3580.4 1442.8,-3585.8"/>
-<polygon fill="black" stroke="black" points="1441.61,-3589.09 1452.2,-3589.4 1444.11,-3582.55 1441.61,-3589.09"/>
-</g>
-<!-- ECC/zcash&#45;android&#45;wallet&#45;sdk#528 -->
-<g id="node39" class="node open">
-<title>ECC/zcash&#45;android&#45;wallet&#45;sdk#528</title>
-<g id="a_node39"><a xlink:href="https://github.com/Electric-Coin-Company/zcash-android-wallet-sdk/issues/528" xlink:title="ECC/zcash&#45;android&#45;wallet&#45;sdk#528&#10;Add Orchard support" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" points="1368.5,-1270 1100.5,-1270 1100.5,-1232 1368.5,-1232 1368.5,-1270"/>
-<text text-anchor="middle" x="1234.5" y="-1254.8" font-family="Times,serif" font-size="14.00">ECC/zcash&#45;android&#45;wallet&#45;sdk#528</text>
-<text text-anchor="middle" x="1234.5" y="-1239.8" font-family="Times,serif" font-size="14.00">Add Orchard support</text>
-</a>
-</g>
-</g>
-<!-- zcash/librustzcash#404&#45;&gt;ECC/zcash&#45;android&#45;wallet&#45;sdk#528 -->
-<g id="edge36" class="edge">
-<title>zcash/librustzcash#404&#45;&gt;ECC/zcash&#45;android&#45;wallet&#45;sdk#528</title>
-<path fill="none" stroke="black" d="M1015,-1189.3C1032.6,-1193.7 1050.9,-1198.4 1068,-1203 1098.2,-1211.1 1131.4,-1220.6 1160.1,-1229"/>
-<polygon fill="black" stroke="black" points="1159.42,-1232.45 1170,-1231.9 1161.39,-1225.73 1159.42,-1232.45"/>
-</g>
-<!-- ECC/zcash&#45;light&#45;client&#45;ffi#17 -->
-<g id="node40" class="node open">
-<title>ECC/zcash&#45;light&#45;client&#45;ffi#17</title>
-<g id="a_node40"><a xlink:href="https://github.com/Electric-Coin-Company/zcash-light-client-ffi/issues/17" xlink:title="ECC/zcash&#45;light&#45;client&#45;ffi#17&#10;Add Orchard support" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" points="1346,-1195 1123,-1195 1123,-1157 1346,-1157 1346,-1195"/>
-<text text-anchor="middle" x="1234.5" y="-1179.8" font-family="Times,serif" font-size="14.00">ECC/zcash&#45;light&#45;client&#45;ffi#17</text>
-<text text-anchor="middle" x="1234.5" y="-1164.8" font-family="Times,serif" font-size="14.00">Add Orchard support</text>
-</a>
-</g>
-</g>
-<!-- zcash/librustzcash#404&#45;&gt;ECC/zcash&#45;light&#45;client&#45;ffi#17 -->
-<g id="edge37" class="edge">
-<title>zcash/librustzcash#404&#45;&gt;ECC/zcash&#45;light&#45;client&#45;ffi#17</title>
-<path fill="none" stroke="black" d="M1015.4,-1169.7C1045.9,-1170.6 1080.3,-1171.6 1112.6,-1172.5"/>
-<polygon fill="black" stroke="black" points="1112.9,-1176.01 1123,-1172.8 1113.11,-1169.01 1112.9,-1176.01"/>
-</g>
-<!-- zcash/librustzcash#617&#45;&gt;zcash/librustzcash#962 -->
-<g id="edge138" class="edge">
-<title>zcash/librustzcash#617&#45;&gt;zcash/librustzcash#962</title>
-<path fill="none" stroke="black" d="M928.3,-1280.1C951.3,-1417 1036.4,-1941 1068,-2376 1070.4,-2408.9 1067.5,-3537.2 1088,-3563 1099,-3576.8 1114.3,-3585.8 1131,-3591.6"/>
-<polygon fill="black" stroke="black" points="1130.31,-3595.05 1140.9,-3594.6 1132.34,-3588.35 1130.31,-3595.05"/>
-</g>
-<!-- ECC/zcash&#45;android&#45;wallet&#45;sdk#528&#45;&gt;ECC/zcash&#45;android&#45;wallet&#45;sdk#1280 -->
-<g id="edge139" class="edge">
-<title>ECC/zcash&#45;android&#45;wallet&#45;sdk#528&#45;&gt;ECC/zcash&#45;android&#45;wallet&#45;sdk#1280</title>
-<path fill="none" stroke="black" d="M1368.6,-1251C1488.5,-1254.2 1652.2,-1267.5 1694,-1315 1742.8,-1370.5 1676.6,-3915.8 1722,-3974 1722.5,-3974.6 1723,-3975.3 1723.5,-3975.9"/>
-<polygon fill="black" stroke="black" points="1721.29,-3978.64 1730.8,-3983.3 1726.27,-3973.72 1721.29,-3978.64"/>
-</g>
-<!-- ECC/zcash&#45;light&#45;client&#45;ffi#17&#45;&gt;ECC/zcash&#45;swift&#45;wallet&#45;sdk#1300 -->
-<g id="edge140" class="edge">
-<title>ECC/zcash&#45;light&#45;client&#45;ffi#17&#45;&gt;ECC/zcash&#45;swift&#45;wallet&#45;sdk#1300</title>
-<path fill="none" stroke="black" d="M1346,-1162.4C1453.1,-1156.1 1611.1,-1166.4 1694,-1266 1775.6,-1364 1643.4,-3461.5 1722,-3562 1722.8,-3563.1 1723.7,-3564.1 1724.6,-3565.1"/>
-<polygon fill="black" stroke="black" points="1722.32,-3567.77 1731.9,-3572.3 1727.24,-3562.79 1722.32,-3567.77"/>
-</g>
-<!-- zcash/librustzcash#1087 -->
-<g id="node41" class="node open">
-<title>zcash/librustzcash#1087</title>
-<g id="a_node41"><a xlink:href="https://github.com/zcash/librustzcash/issues/1087" xlink:title="zcash/librustzcash#1087&#10;zcash_client_sqlite:&#10;Update `InputSource`&#10;implementation for&#10;`WalletDb` to support&#10;Orchard" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="706.5,-1193 510.5,-1193 510.5,-1095 706.5,-1095 706.5,-1193"/>
-<text text-anchor="middle" x="608.5" y="-1177.8" font-family="Times,serif" font-size="14.00">zcash/librustzcash#1087</text>
-<text text-anchor="middle" x="608.5" y="-1162.8" font-family="Times,serif" font-size="14.00">zcash_client_sqlite:</text>
-<text text-anchor="middle" x="608.5" y="-1147.8" font-family="Times,serif" font-size="14.00">Update `InputSource`</text>
-<text text-anchor="middle" x="608.5" y="-1132.8" font-family="Times,serif" font-size="14.00">implementation for</text>
-<text text-anchor="middle" x="608.5" y="-1117.8" font-family="Times,serif" font-size="14.00">`WalletDb` to support</text>
-<text text-anchor="middle" x="608.5" y="-1102.8" font-family="Times,serif" font-size="14.00">Orchard</text>
-</a>
-</g>
-</g>
-<!-- zcash/librustzcash#1087&#45;&gt;zcash/librustzcash#404 -->
-<g id="edge38" class="edge">
-<title>zcash/librustzcash#1087&#45;&gt;zcash/librustzcash#404</title>
-<path fill="none" stroke="black" d="M706.62,-1151.2C741.97,-1153.8 782.03,-1156.8 817.85,-1159.4"/>
-<polygon fill="black" stroke="black" points="817.61,-1162.89 827.83,-1160.1 818.1,-1155.91 817.61,-1162.89"/>
-</g>
-<!-- zcash/librustzcash#1095 -->
-<g id="node42" class="node open">
-<title>zcash/librustzcash#1095</title>
-<g id="a_node42"><a xlink:href="https://github.com/zcash/librustzcash/issues/1095" xlink:title="zcash/librustzcash#1095&#10;zcash_client_backend:&#10;Implement Orchard change&#10;output creation." target="_blank">
-<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="324.5,-1077 112.5,-1077 112.5,-1009 324.5,-1009 324.5,-1077"/>
-<text text-anchor="middle" x="218.5" y="-1061.8" font-family="Times,serif" font-size="14.00">zcash/librustzcash#1095</text>
-<text text-anchor="middle" x="218.5" y="-1046.8" font-family="Times,serif" font-size="14.00">zcash_client_backend:</text>
-<text text-anchor="middle" x="218.5" y="-1031.8" font-family="Times,serif" font-size="14.00">Implement Orchard change</text>
-<text text-anchor="middle" x="218.5" y="-1016.8" font-family="Times,serif" font-size="14.00">output creation.</text>
-</a>
-</g>
-</g>
-<!-- zcash/librustzcash#1095&#45;&gt;zcash/librustzcash#403 -->
-<g id="edge39" class="edge">
-<title>zcash/librustzcash#1095&#45;&gt;zcash/librustzcash#403</title>
-<path fill="none" stroke="black" d="M324.7,-1040.7C364.79,-1045.2 408,-1057.4 438,-1086 476.4,-1122.7 429.13,-1164.3 466.5,-1202 477.3,-1212.9 490.9,-1220.6 505.37,-1226.1"/>
-<polygon fill="black" stroke="black" points="504.4,-1229.47 514.99,-1229.4 506.67,-1222.84 504.4,-1229.47"/>
-</g>
-<!-- zcash/librustzcash#1096 -->
-<g id="node43" class="node open">
-<title>zcash/librustzcash#1096</title>
-<g id="a_node43"><a xlink:href="https://github.com/zcash/librustzcash/issues/1096" xlink:title="zcash/librustzcash#1096&#10;zcash_client_backend:&#10;Implement Orchard spends" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="324.5,-990.5 112.5,-990.5 112.5,-937.5 324.5,-937.5 324.5,-990.5"/>
-<text text-anchor="middle" x="218.5" y="-975.3" font-family="Times,serif" font-size="14.00">zcash/librustzcash#1096</text>
-<text text-anchor="middle" x="218.5" y="-960.3" font-family="Times,serif" font-size="14.00">zcash_client_backend:</text>
-<text text-anchor="middle" x="218.5" y="-945.3" font-family="Times,serif" font-size="14.00">Implement Orchard spends</text>
-</a>
-</g>
-</g>
-<!-- zcash/librustzcash#1096&#45;&gt;zcash/librustzcash#403 -->
-<g id="edge40" class="edge">
-<title>zcash/librustzcash#1096&#45;&gt;zcash/librustzcash#403</title>
-<path fill="none" stroke="black" d="M324.77,-956.39C365.36,-959.2 408.91,-970.23 438,-1000 501.37,-1064.8 406,-1134.5 466.5,-1202 476.87,-1213.6 490.4,-1221.7 504.97,-1227.3"/>
-<polygon fill="black" stroke="black" points="504.09,-1230.7 514.68,-1230.6 506.34,-1224.07 504.09,-1230.7"/>
-</g>
-<!-- zcash/librustzcash#1099 -->
-<g id="node44" class="node open">
-<title>zcash/librustzcash#1099</title>
-<g id="a_node44"><a xlink:href="https://github.com/zcash/librustzcash/issues/1099" xlink:title="zcash/librustzcash#1099&#10;zcash_client_backend: Add&#10;Orchard receivers to&#10;unified addresses by&#10;default." target="_blank">
-<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="321.5,-1279.5 115.5,-1279.5 115.5,-1196.5 321.5,-1196.5 321.5,-1279.5"/>
-<text text-anchor="middle" x="218.5" y="-1264.3" font-family="Times,serif" font-size="14.00">zcash/librustzcash#1099</text>
-<text text-anchor="middle" x="218.5" y="-1249.3" font-family="Times,serif" font-size="14.00">zcash_client_backend: Add</text>
-<text text-anchor="middle" x="218.5" y="-1234.3" font-family="Times,serif" font-size="14.00">Orchard receivers to</text>
-<text text-anchor="middle" x="218.5" y="-1219.3" font-family="Times,serif" font-size="14.00">unified addresses by</text>
-<text text-anchor="middle" x="218.5" y="-1204.3" font-family="Times,serif" font-size="14.00">default.</text>
-</a>
-</g>
-</g>
-<!-- zcash/librustzcash#1099&#45;&gt;zcash/librustzcash#403 -->
-<g id="edge41" class="edge">
-<title>zcash/librustzcash#1099&#45;&gt;zcash/librustzcash#403</title>
-<path fill="none" stroke="black" d="M321.7,-1238C378.25,-1238 448.33,-1238 504.94,-1238"/>
-<polygon fill="black" stroke="black" points="504.98,-1241.5 514.98,-1238 504.98,-1234.5 504.98,-1241.5"/>
-</g>
-<!-- zcash/librustzcash#1101 -->
-<g id="node45" class="node open">
-<title>zcash/librustzcash#1101</title>
-<g id="a_node45"><a xlink:href="https://github.com/zcash/librustzcash/issues/1101" xlink:title="zcash/librustzcash#1101&#10;zcash_client_backend: Use&#10;Orchard for change by&#10;default once Orchard&#10;outputs are enabled." target="_blank">
-<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="321.5,-1178.5 115.5,-1178.5 115.5,-1095.5 321.5,-1095.5 321.5,-1178.5"/>
-<text text-anchor="middle" x="218.5" y="-1163.3" font-family="Times,serif" font-size="14.00">zcash/librustzcash#1101</text>
-<text text-anchor="middle" x="218.5" y="-1148.3" font-family="Times,serif" font-size="14.00">zcash_client_backend: Use</text>
-<text text-anchor="middle" x="218.5" y="-1133.3" font-family="Times,serif" font-size="14.00">Orchard for change by</text>
-<text text-anchor="middle" x="218.5" y="-1118.3" font-family="Times,serif" font-size="14.00">default once Orchard</text>
-<text text-anchor="middle" x="218.5" y="-1103.3" font-family="Times,serif" font-size="14.00">outputs are enabled.</text>
-</a>
-</g>
-</g>
-<!-- zcash/librustzcash#1101&#45;&gt;zcash/librustzcash#403 -->
-<g id="edge42" class="edge">
-<title>zcash/librustzcash#1101&#45;&gt;zcash/librustzcash#403</title>
-<path fill="none" stroke="black" d="M321.72,-1154.7C358.94,-1162.6 400.96,-1173.3 438,-1187 451.42,-1192 453.14,-1196.9 466.5,-1202 478.71,-1206.7 491.76,-1211 504.79,-1214.8"/>
-<polygon fill="black" stroke="black" points="504.18,-1218.26 514.75,-1217.6 506.07,-1211.52 504.18,-1218.26"/>
-</g>
-<!-- zcash/librustzcash#1119 -->
-<g id="node46" class="node open">
-<title>zcash/librustzcash#1119</title>
-<g id="a_node46"><a xlink:href="https://github.com/zcash/librustzcash/issues/1119" xlink:title="zcash/librustzcash#1119&#10;`zcash_client_backend`:&#10;Update `SpanningTree` and&#10;related types to track&#10;Orchard and Sapling&#10;scanning separately." target="_blank">
-<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="717.5,-1077 499.5,-1077 499.5,-979 717.5,-979 717.5,-1077"/>
-<text text-anchor="middle" x="608.5" y="-1061.8" font-family="Times,serif" font-size="14.00">zcash/librustzcash#1119</text>
-<text text-anchor="middle" x="608.5" y="-1046.8" font-family="Times,serif" font-size="14.00">`zcash_client_backend`:</text>
-<text text-anchor="middle" x="608.5" y="-1031.8" font-family="Times,serif" font-size="14.00">Update `SpanningTree` and</text>
-<text text-anchor="middle" x="608.5" y="-1016.8" font-family="Times,serif" font-size="14.00">related types to track</text>
-<text text-anchor="middle" x="608.5" y="-1001.8" font-family="Times,serif" font-size="14.00">Orchard and Sapling</text>
-<text text-anchor="middle" x="608.5" y="-986.8" font-family="Times,serif" font-size="14.00">scanning separately.</text>
-</a>
-</g>
-</g>
-<!-- zcash/librustzcash#1119&#45;&gt;zcash/librustzcash#404 -->
-<g id="edge43" class="edge">
-<title>zcash/librustzcash#1119&#45;&gt;zcash/librustzcash#404</title>
-<path fill="none" stroke="black" d="M717.53,-1071.7C728.7,-1076.5 739.85,-1081.3 750.5,-1086 786.13,-1101.8 825.45,-1120.5 857.29,-1135.9"/>
-<polygon fill="black" stroke="black" points="855.96,-1139.14 866.49,-1140.3 858.98,-1132.83 855.96,-1139.14"/>
 </g>
 <!-- ECC/zashi#4 -->
 <g id="node48" class="node open">
