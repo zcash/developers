@@ -95,7 +95,9 @@ REPOS = REPO_SETS[DAG_VIEW]
 INCLUDE_FINISHED = strtobool(os.environ.get('INCLUDE_FINISHED', 'false'))
 
 # Whether to remove closed issues and PRs that are not downstream of open ones.
-PRUNE_FINISHED = strtobool(os.environ.get('PRUNE_FINISHED', 'true'))
+# When set to 'targets', only issues upstream of a closed target issue will be
+# removed.
+PRUNE_FINISHED = os.environ.get('PRUNE_FINISHED', 'true')
 
 # Whether to group issues and PRs by milestone.
 SHOW_MILESTONES = strtobool(os.environ.get('SHOW_MILESTONES', 'false'))
@@ -113,6 +115,7 @@ class GitHubIssue:
         if data is not None:
             labels = [label['name'] for label in data['labels']['nodes']]
             self.title = data['title']
+            self.is_target = 'C-target' in labels
             self.is_pr = 'merged' in data
             self.is_committed = 'S-committed' in labels
             self.waiting_on_review = 'S-waiting-on-review' in labels
@@ -124,6 +127,7 @@ class GitHubIssue:
             # If we can't fetch issue data, assume we don't care.
             self.title = ''
             self.url = None
+            self.is_target = False
             self.is_pr = False
             self.is_committed = False
             self.state = 'closed'
@@ -308,7 +312,18 @@ def main():
             dg.remove_nodes_from(nx.compose_all(ignore))
 
     # Prune nodes that are not downstream of any open issues.
-    if PRUNE_FINISHED:
+    if PRUNE_FINISHED == 'targets':
+        closed_targets = [n for n in dg.nodes if n.is_target and n.state == 'closed']
+        for target in closed_targets:
+            # Check that the target (and by extension its ancestors) wasn't already
+            # removed for being the ancestor of another closed target.
+            if target in dg:
+                ancestors = nx.ancestors(dg, target)
+                if all(n.state == 'closed' for n in ancestors):
+                    # Only prune ancestors, not the closed target node, so that
+                    # we see the most recently-closed target nodes in the DAG.
+                    dg.remove_nodes_from(ancestors)
+    elif strtobool(PRUNE_FINISHED):
         # - It would be nice to keep the most recently-closed issues on the DAG, but
         #   dg.out_degree seems to be broken...
         to_prune = [n for (n, degree) in dg.in_degree() if degree == 0 and n.state == 'closed']
@@ -336,7 +351,12 @@ def main():
             attrs['class'] = 'open'
             attrs['fillcolor'] = '#c2e0c6'
         attrs['penwidth'] = 2 if n in do_next else 1
-        attrs['shape'] = 'component' if n.is_pr else 'box'
+        if n.is_target:
+            attrs['shape'] = 'folder'
+        elif n.is_pr:
+            attrs['shape'] = 'component'
+        else:
+            attrs['shape'] = 'box'
         attrs['style'] = 'filled'
         if n.url:
             attrs['URL'] = n.url
