@@ -92,6 +92,9 @@ REPO_SETS = {
 
 REPOS = REPO_SETS[DAG_VIEW]
 
+# Whether to remove issues and PRs that are not target issues.
+ONLY_TARGETS = strtobool(os.environ.get('ONLY_TARGETS', 'false'))
+
 # Whether to include subgraphs where all issues and PRs are closed.
 INCLUDE_FINISHED = strtobool(os.environ.get('INCLUDE_FINISHED', 'false'))
 
@@ -300,6 +303,20 @@ def main():
     for (source, sink) in dg.edges:
         attrs = dg.edges[source, sink]
         attrs['is_open'] = 0 if source.state == 'closed' else 1
+
+    if ONLY_TARGETS:
+        # Insert direct edges for all transitive paths in the graph. This creates edges
+        # between target issues that were not previously directly connected, but were
+        # "reachable".
+        tc = nx.transitive_closure_dag(dg)
+
+        # Remove non-target issues. This also removes their involved edges, leaving behind
+        # the transitive closure of the target issues.
+        tc.remove_nodes_from([n for n in dg.nodes if not n.is_target])
+
+        # Reduce to the minimum number of edges representing the same transitive paths.
+        # This is unique for a DAG.
+        dg = nx.transitive_reduction(tc)
 
     if not INCLUDE_FINISHED:
         # Identify the disconnected subgraphs.
