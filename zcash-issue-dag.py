@@ -92,15 +92,19 @@ REPO_SETS = {
 
 REPOS = REPO_SETS[DAG_VIEW]
 
-# Whether to remove issues and PRs that are not target issues.
-ONLY_TARGETS = strtobool(os.environ.get('ONLY_TARGETS', 'false'))
+SUPPORTED_CATEGORIES = set(['releases', 'targets'])
+def cats(s):
+    return set(s.split(','))
+
+# Whether to remove issues and PRs that are not target or release issues.
+ONLY_INCLUDE = cats(os.environ.get('ONLY_INCLUDE', ''))
 
 # Whether to include subgraphs where all issues and PRs are closed.
 INCLUDE_FINISHED = strtobool(os.environ.get('INCLUDE_FINISHED', 'false'))
 
 # Whether to remove closed issues and PRs that are not downstream of open ones.
-# When set to 'targets', only issues upstream of a closed target issue will be
-# removed.
+# When set to 'targets' or 'releases', only issues upstream of a closed target
+# or release issue will be removed.
 PRUNE_FINISHED = os.environ.get('PRUNE_FINISHED', 'true')
 
 # Whether to group issues and PRs by milestone.
@@ -119,6 +123,7 @@ class GitHubIssue:
         if data is not None:
             labels = [label['name'] for label in data['labels']['nodes']]
             self.title = data['title']
+            self.is_release = 'C-release' in labels
             self.is_target = 'C-target' in labels
             self.is_pr = 'merged' in data
             self.is_committed = 'S-committed' in labels
@@ -131,6 +136,7 @@ class GitHubIssue:
             # If we can't fetch issue data, assume we don't care.
             self.title = ''
             self.url = None
+            self.is_release = False
             self.is_target = False
             self.is_pr = False
             self.is_committed = False
@@ -152,6 +158,11 @@ class GitHubIssue:
 
     def __hash__(self):
         return hash((self.repo_id, self.issue_number))
+
+    def any_cat(self, categories):
+        release_cat = self.is_release if 'releases' in categories else False
+        targets_cat = self.is_target if 'targets' in categories else False
+        return release_cat or targets_cat
 
 def fetch_issues(op, issues):
     repos = set([repo for (repo, _) in issues])
@@ -312,7 +323,7 @@ def main():
         attrs = dg.edges[source, sink]
         attrs['is_open'] = 0 if source.state == 'closed' else 1
 
-    if ONLY_TARGETS:
+    if ONLY_INCLUDE.issubset(SUPPORTED_CATEGORIES):
         # Insert direct edges for all transitive paths in the graph. This creates edges
         # between target issues that were not previously directly connected, but were
         # "reachable".
@@ -320,7 +331,7 @@ def main():
 
         # Remove non-target issues. This also removes their involved edges, leaving behind
         # the transitive closure of the target issues.
-        tc.remove_nodes_from([n for n in dg.nodes if not n.is_target])
+        tc.remove_nodes_from([n for n in dg.nodes if not n.any_cat(ONLY_INCLUDE)])
 
         # Reduce to the minimum number of edges representing the same transitive paths.
         # This is unique for a DAG.
@@ -338,8 +349,8 @@ def main():
             dg.remove_nodes_from(nx.compose_all(ignore))
 
     # Prune nodes that are not downstream of any open issues.
-    if PRUNE_FINISHED == 'targets':
-        closed_targets = [n for n in dg.nodes if n.is_target and n.state == 'closed']
+    if cats(PRUNE_FINISHED).issubset(SUPPORTED_CATEGORIES):
+        closed_targets = [n for n in dg.nodes if n.any_cat(cats(PRUNE_FINISHED)) and n.state == 'closed']
         for target in closed_targets:
             # Check that the target (and by extension its ancestors) wasn't already
             # removed for being the ancestor of another closed target.
@@ -349,7 +360,8 @@ def main():
                     # Only prune ancestors, not the closed target node, so that
                     # we see the most recently-closed target nodes in the DAG.
                     dg.remove_nodes_from(ancestors)
-    elif strtobool(PRUNE_FINISHED):
+
+    elif PRUNE_FINISHED in ['true', 'all']:
         # - It would be nice to keep the most recently-closed issues on the DAG, but
         #   dg.out_degree seems to be broken...
         to_prune = [n for (n, degree) in dg.in_degree() if degree == 0 and n.state == 'closed']
