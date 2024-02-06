@@ -24,38 +24,25 @@ DAG_VIEW = os.environ.get('DAG_VIEW', 'core')
 
 # To get the id of a repo, see <https://stackoverflow.com/a/47223479/393146>.
 
+HALO2_REPOS = {
+    290019239: ('zcash', 'halo2'),
+    344239327: ('zcash', 'pasta_curves'),
+}
+
 CORE_REPOS = {
     26987049: ('zcash', 'zcash'),
     47279130: ('zcash', 'zips'),
     48303644: ('zcash', 'incrementalmerkletree'),
     85334928: ('zcash', 'librustzcash'),
     133857578: ('zcash-hackworks', 'zcash-test-vectors'),
-    290019239: ('zcash', 'halo2'),
+    **HALO2_REPOS,
     305835578: ('zcash', 'orchard'),
-    344239327: ('zcash', 'pasta_curves'),
-}
-
-HALO2_REPOS = {
-    290019239: ('zcash', 'halo2'),
-    344239327: ('zcash', 'pasta_curves'),
 }
 
 TFL_REPOS = {
     642135348: ('Electric-Coin-Company', 'tfl-book'),
     725179873: ('Electric-Coin-Company', 'zebra-tfl'),
     695805989: ('zcash', 'simtfl'),
-}
-
-WALLET_REPOS = {
-    85334928: ('zcash', 'librustzcash'),
-    151763639: ('Electric-Coin-Company', 'zcash-android-wallet-sdk'),
-    159714694: ('zcash', 'lightwalletd'),
-    185480114: ('Electric-Coin-Company', 'zcash-swift-wallet-sdk'),
-    387551125: ('Electric-Coin-Company', 'zashi-ios'),
-    390808594: ('Electric-Coin-Company', 'zashi-android'),
-    270825987: ('Electric-Coin-Company', 'MnemonicSwift'),
-    439137887: ('Electric-Coin-Company', 'zcash-light-client-ffi'),
-    719178328: ('Electric-Coin-Company', 'zashi'),
 }
 
 ANDROID_REPOS = {
@@ -72,6 +59,19 @@ IOS_REPOS = {
     719178328: ('Electric-Coin-Company', 'zashi'),
 }
 
+WALLET_REPOS = {
+    85334928: ('zcash', 'librustzcash'),
+    159714694: ('zcash', 'lightwalletd'),
+    **ANDROID_REPOS,
+    **IOS_REPOS,
+}
+
+ECC_REPOS = {
+    **CORE_REPOS,
+    **TFL_REPOS,
+    **WALLET_REPOS,
+}
+
 ZF_REPOS = {
     205255683: ('ZcashFoundation', 'zebra'),
     225479018: ('ZcashFoundation', 'redjubjub'),
@@ -86,16 +86,22 @@ REPO_SETS = {
     'wallet': WALLET_REPOS,
     'wallet-ios': IOS_REPOS,
     'wallet-android': ANDROID_REPOS,
+    'ecc': ECC_REPOS,
     'zf': ZF_REPOS,
 }
 
 REPOS = REPO_SETS[DAG_VIEW]
 
+# Whether to remove issues and PRs that are not target issues.
+ONLY_TARGETS = strtobool(os.environ.get('ONLY_TARGETS', 'false'))
+
 # Whether to include subgraphs where all issues and PRs are closed.
 INCLUDE_FINISHED = strtobool(os.environ.get('INCLUDE_FINISHED', 'false'))
 
 # Whether to remove closed issues and PRs that are not downstream of open ones.
-PRUNE_FINISHED = strtobool(os.environ.get('PRUNE_FINISHED', 'true'))
+# When set to 'targets', only issues upstream of a closed target issue will be
+# removed.
+PRUNE_FINISHED = os.environ.get('PRUNE_FINISHED', 'true')
 
 # Whether to group issues and PRs by milestone.
 SHOW_MILESTONES = strtobool(os.environ.get('SHOW_MILESTONES', 'false'))
@@ -113,6 +119,7 @@ class GitHubIssue:
         if data is not None:
             labels = [label['name'] for label in data['labels']['nodes']]
             self.title = data['title']
+            self.is_target = 'C-target' in labels
             self.is_pr = 'merged' in data
             self.is_committed = 'S-committed' in labels
             self.waiting_on_review = 'S-waiting-on-review' in labels
@@ -124,6 +131,7 @@ class GitHubIssue:
             # If we can't fetch issue data, assume we don't care.
             self.title = ''
             self.url = None
+            self.is_target = False
             self.is_pr = False
             self.is_committed = False
             self.state = 'closed'
@@ -304,6 +312,20 @@ def main():
         attrs = dg.edges[source, sink]
         attrs['is_open'] = 0 if source.state == 'closed' else 1
 
+    if ONLY_TARGETS:
+        # Insert direct edges for all transitive paths in the graph. This creates edges
+        # between target issues that were not previously directly connected, but were
+        # "reachable".
+        tc = nx.transitive_closure_dag(dg)
+
+        # Remove non-target issues. This also removes their involved edges, leaving behind
+        # the transitive closure of the target issues.
+        tc.remove_nodes_from([n for n in dg.nodes if not n.is_target])
+
+        # Reduce to the minimum number of edges representing the same transitive paths.
+        # This is unique for a DAG.
+        dg = nx.transitive_reduction(tc)
+
     if not INCLUDE_FINISHED:
         # Identify the disconnected subgraphs.
         subgraphs = [dg.subgraph(c) for c in nx.connected_components(dg.to_undirected())]
@@ -316,7 +338,18 @@ def main():
             dg.remove_nodes_from(nx.compose_all(ignore))
 
     # Prune nodes that are not downstream of any open issues.
-    if PRUNE_FINISHED:
+    if PRUNE_FINISHED == 'targets':
+        closed_targets = [n for n in dg.nodes if n.is_target and n.state == 'closed']
+        for target in closed_targets:
+            # Check that the target (and by extension its ancestors) wasn't already
+            # removed for being the ancestor of another closed target.
+            if target in dg:
+                ancestors = nx.ancestors(dg, target)
+                if all(n.state == 'closed' for n in ancestors):
+                    # Only prune ancestors, not the closed target node, so that
+                    # we see the most recently-closed target nodes in the DAG.
+                    dg.remove_nodes_from(ancestors)
+    elif strtobool(PRUNE_FINISHED):
         # - It would be nice to keep the most recently-closed issues on the DAG, but
         #   dg.out_degree seems to be broken...
         to_prune = [n for (n, degree) in dg.in_degree() if degree == 0 and n.state == 'closed']
@@ -344,7 +377,12 @@ def main():
             attrs['class'] = 'open'
             attrs['fillcolor'] = '#c2e0c6'
         attrs['penwidth'] = 2 if n in do_next else 1
-        attrs['shape'] = 'component' if n.is_pr else 'box'
+        if n.is_target:
+            attrs['shape'] = 'folder'
+        elif n.is_pr:
+            attrs['shape'] = 'component'
+        else:
+            attrs['shape'] = 'box'
         attrs['style'] = 'filled'
         if n.url:
             attrs['URL'] = n.url
