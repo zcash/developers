@@ -172,6 +172,9 @@ def download_issues(endpoint, nodes):
     issues = [(repo, issue) for (repo, issue) in nodes if repo in REPOS]
 
     ret = {}
+
+    # Ensure that any graph nodes from ZenHub that are not in the repos we care about have
+    # default entries, to simplify subsequent graph manipulation code.
     for (repo, issue) in [(repo, issue) for (repo, issue) in nodes if repo not in REPOS]:
         ret[(repo, issue)] = GitHubIssue(repo, issue, None)
 
@@ -187,7 +190,12 @@ def download_issues(endpoint, nodes):
         data = (op + d)
 
         for (repo, issue) in issues:
-            ret[(repo, issue)] = GitHubIssue(repo, issue, data['repo%d' % repo]['issue%d' % issue])
+            repo_data = data['repo%d' % repo]
+            issue_key = 'issue%d' % issue
+            # If GITHUB_TOKEN doesn't have permission to read from a particular private
+            # repository in REPOS, GitHub returns an empty repo_data section.
+            issue_data = repo_data[issue_key] if issue_key in repo_data else None
+            ret[(repo, issue)] = GitHubIssue(repo, issue, issue_data)
 
     return ret
 
