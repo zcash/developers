@@ -96,6 +96,12 @@ SUPPORTED_CATEGORIES = set(['releases', 'targets'])
 def cats(s):
     return set([x.strip() for x in s.split(',')]) - set([''])
 
+# If set, removes all issues and PRs that are not ancestors of the given issues.
+# This can be used to render a sub-graph focused on one area.
+#
+# Format is ORG/REPO#ISSUE[,ORG/REPO#ISSUE[, ..]]
+TERMINATE_AT = cats(os.environ.get('TERMINATE_AT', ''))
+
 # Whether to remove issues and PRs that are not target or release issues.
 ONLY_INCLUDE = cats(os.environ.get('ONLY_INCLUDE', ''))
 
@@ -309,6 +315,17 @@ def main():
                 # but we'd like to show all issues from epics even if they are
                 # disconnected.
                 dg.add_node(i)
+
+    if len(TERMINATE_AT) > 0:
+        # Look up the repo IDs for the given terminating issues.
+        reverse_repos = {v:k for k,v in REPOS.items()}
+        terminate_at = [x.split('#') for x in TERMINATE_AT]
+        terminate_at = set([(reverse_repos[tuple(r.split('/', 1))], int(i)) for (r, i) in terminate_at])
+
+        # Replace the graph with the subgraph that only includes the terminating
+        # issues and their ancestors.
+        ancestors = [nx.ancestors(dg, n) for n in terminate_at]
+        dg = nx.subgraph(dg, terminate_at.union(*ancestors))
 
     # Fetch the issues within the graph.
     mapping = download_issues(gapi, dg.nodes)
