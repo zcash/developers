@@ -94,7 +94,7 @@ REPOS = REPO_SETS[DAG_VIEW]
 
 SUPPORTED_CATEGORIES = set(['releases', 'targets'])
 def cats(s):
-    return set(s.split(','))
+    return set([x.strip() for x in s.split(',')]) - set([''])
 
 # Whether to remove issues and PRs that are not target or release issues.
 ONLY_INCLUDE = cats(os.environ.get('ONLY_INCLUDE', ''))
@@ -323,7 +323,7 @@ def main():
         attrs = dg.edges[source, sink]
         attrs['is_open'] = 0 if source.state == 'closed' else 1
 
-    if ONLY_INCLUDE.issubset(SUPPORTED_CATEGORIES):
+    if len(ONLY_INCLUDE) > 0 and ONLY_INCLUDE.issubset(SUPPORTED_CATEGORIES):
         # Insert direct edges for all transitive paths in the graph. This creates edges
         # between target issues that were not previously directly connected, but were
         # "reachable".
