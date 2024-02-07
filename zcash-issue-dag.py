@@ -127,6 +127,7 @@ class GitHubIssue:
             self.is_target = 'C-target' in labels
             self.is_pr = 'merged' in data
             self.is_committed = 'S-committed' in labels
+            self.is_in_progress = 'S-in-progress' in labels
             self.waiting_on_review = 'S-waiting-on-review' in labels
             self.url = data['url']
             self.state = 'closed' if data['state'] in ['CLOSED', 'MERGED'] else 'open'
@@ -140,6 +141,8 @@ class GitHubIssue:
             self.is_target = False
             self.is_pr = False
             self.is_committed = False
+            self.is_in_progress = False
+            self.waiting_on_review = False
             self.state = 'closed'
 
     def __repr__(self):
@@ -382,7 +385,7 @@ def main():
         elif n.waiting_on_review:
             attrs['class'] = 'needs-review'
             attrs['fillcolor'] = '#dfc150'
-        elif n.is_committed:
+        elif n.is_committed or n.is_in_progress:
             attrs['class'] = 'committed'
             attrs['fillcolor'] = '#a6cfff'
         else:
