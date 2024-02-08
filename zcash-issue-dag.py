@@ -94,7 +94,13 @@ REPOS = REPO_SETS[DAG_VIEW]
 
 SUPPORTED_CATEGORIES = set(['releases', 'targets'])
 def cats(s):
-    return set(s.split(','))
+    return set([x.strip() for x in s.split(',')]) - set([''])
+
+# If set, removes all issues and PRs that are not ancestors of the given issues.
+# This can be used to render a sub-graph focused on one area.
+#
+# Format is ORG/REPO#ISSUE[,ORG/REPO#ISSUE[, ..]]
+TERMINATE_AT = cats(os.environ.get('TERMINATE_AT', ''))
 
 # Whether to remove issues and PRs that are not target or release issues.
 ONLY_INCLUDE = cats(os.environ.get('ONLY_INCLUDE', ''))
@@ -127,6 +133,7 @@ class GitHubIssue:
             self.is_target = 'C-target' in labels
             self.is_pr = 'merged' in data
             self.is_committed = 'S-committed' in labels
+            self.is_in_progress = 'S-in-progress' in labels
             self.waiting_on_review = 'S-waiting-on-review' in labels
             self.url = data['url']
             self.state = 'closed' if data['state'] in ['CLOSED', 'MERGED'] else 'open'
@@ -140,6 +147,8 @@ class GitHubIssue:
             self.is_target = False
             self.is_pr = False
             self.is_committed = False
+            self.is_in_progress = False
+            self.waiting_on_review = False
             self.state = 'closed'
 
     def __repr__(self):
@@ -307,6 +316,17 @@ def main():
                 # disconnected.
                 dg.add_node(i)
 
+    if len(TERMINATE_AT) > 0:
+        # Look up the repo IDs for the given terminating issues.
+        reverse_repos = {v:k for k,v in REPOS.items()}
+        terminate_at = [x.split('#') for x in TERMINATE_AT]
+        terminate_at = set([(reverse_repos[tuple(r.split('/', 1))], int(i)) for (r, i) in terminate_at])
+
+        # Replace the graph with the subgraph that only includes the terminating
+        # issues and their ancestors.
+        ancestors = [nx.ancestors(dg, n) for n in terminate_at]
+        dg = nx.subgraph(dg, terminate_at.union(*ancestors))
+
     # Fetch the issues within the graph.
     mapping = download_issues(gapi, dg.nodes)
 
@@ -323,7 +343,7 @@ def main():
         attrs = dg.edges[source, sink]
         attrs['is_open'] = 0 if source.state == 'closed' else 1
 
-    if ONLY_INCLUDE.issubset(SUPPORTED_CATEGORIES):
+    if len(ONLY_INCLUDE) > 0 and ONLY_INCLUDE.issubset(SUPPORTED_CATEGORIES):
         # Insert direct edges for all transitive paths in the graph. This creates edges
         # between target issues that were not previously directly connected, but were
         # "reachable".
@@ -382,7 +402,7 @@ def main():
         elif n.waiting_on_review:
             attrs['class'] = 'needs-review'
             attrs['fillcolor'] = '#dfc150'
-        elif n.is_committed:
+        elif n.is_committed or n.is_in_progress:
             attrs['class'] = 'committed'
             attrs['fillcolor'] = '#a6cfff'
         else:
