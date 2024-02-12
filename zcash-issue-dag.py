@@ -71,6 +71,7 @@ ECC_REPOS = {
     **CORE_REPOS,
     **TFL_REPOS,
     **WALLET_REPOS,
+    65419597: ('Electric-Coin-Company', 'infrastructure'),
 }
 
 ZF_REPOS = {
