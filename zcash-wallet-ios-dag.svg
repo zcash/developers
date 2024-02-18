@@ -10,24 +10,24 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 4832.5)">
 <polygon fill="white" stroke="transparent" points="-4,4 -4,-4832.5 1846,-4832.5 1846,4 -4,4"/>
 <g id="clust1" class="cluster">
-<title>cluster_4</title>
-<polygon fill="none" stroke="blue" points="0,-3329.5 0,-4051.5 566,-4051.5 566,-3329.5 0,-3329.5"/>
-<text text-anchor="middle" x="283" y="-4036.3" font-family="Times,serif" font-size="14.00">SDK 2.0 Post&#45;Release Cleanup</text>
-</g>
-<g id="clust2" class="cluster">
 <title>cluster_0</title>
 <polygon fill="none" stroke="blue" points="31.5,-91.5 31.5,-571.5 492.5,-571.5 492.5,-91.5 31.5,-91.5"/>
 <text text-anchor="middle" x="262" y="-556.3" font-family="Times,serif" font-size="14.00">Zashi 1.0 UI</text>
 </g>
-<g id="clust3" class="cluster">
+<g id="clust2" class="cluster">
 <title>cluster_1</title>
 <polygon fill="none" stroke="blue" points="4.5,-3214.5 4.5,-3321.5 1650.5,-3321.5 1650.5,-3214.5 4.5,-3214.5"/>
 <text text-anchor="middle" x="827.5" y="-3306.3" font-family="Times,serif" font-size="14.00">Request ZEC Flow</text>
 </g>
-<g id="clust4" class="cluster">
+<g id="clust3" class="cluster">
 <title>cluster_3</title>
 <polygon fill="none" stroke="blue" points="623.5,-179.5 623.5,-571.5 821.5,-571.5 821.5,-179.5 623.5,-179.5"/>
 <text text-anchor="middle" x="722.5" y="-556.3" font-family="Times,serif" font-size="14.00">Zashi 1.0</text>
+</g>
+<g id="clust4" class="cluster">
+<title>cluster_4</title>
+<polygon fill="none" stroke="blue" points="0,-3329.5 0,-4051.5 566,-4051.5 566,-3329.5 0,-3329.5"/>
+<text text-anchor="middle" x="283" y="-4036.3" font-family="Times,serif" font-size="14.00">SDK 2.0 Post&#45;Release Cleanup</text>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_6</title>
@@ -49,178 +49,10 @@
 <polygon fill="none" stroke="blue" points="17,-4059.5 17,-4152.5 256,-4152.5 256,-4059.5 17,-4059.5"/>
 <text text-anchor="middle" x="136.5" y="-4137.3" font-family="Times,serif" font-size="14.00">UniFFI</text>
 </g>
-<!-- ECC/zcash&#45;swift&#45;wallet&#45;sdk#1286 -->
-<g id="node1" class="node open">
-<title>ECC/zcash&#45;swift&#45;wallet&#45;sdk#1286</title>
-<g id="a_node1"><a xlink:href="https://github.com/Electric-Coin-Company/zcash-swift-wallet-sdk/issues/1286" xlink:title="ECC/zcash&#45;swift&#45;wallet&#45;sdk#1286&#10;Add structured error&#10;types for errors received&#10;across the FFI boundary." target="_blank">
-<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="265,-4020.5 8,-4020.5 8,-3952.5 265,-3952.5 265,-4020.5"/>
-<text text-anchor="middle" x="136.5" y="-4005.3" font-family="Times,serif" font-size="14.00">ECC/zcash&#45;swift&#45;wallet&#45;sdk#1286</text>
-<text text-anchor="middle" x="136.5" y="-3990.3" font-family="Times,serif" font-size="14.00">Add structured error</text>
-<text text-anchor="middle" x="136.5" y="-3975.3" font-family="Times,serif" font-size="14.00">types for errors received</text>
-<text text-anchor="middle" x="136.5" y="-3960.3" font-family="Times,serif" font-size="14.00">across the FFI boundary.</text>
-</a>
-</g>
-</g>
-<!-- ECC/zcash&#45;swift&#45;wallet&#45;sdk#1218 -->
-<g id="node2" class="node open">
-<title>ECC/zcash&#45;swift&#45;wallet&#45;sdk#1218</title>
-<g id="a_node2"><a xlink:href="https://github.com/Electric-Coin-Company/zcash-swift-wallet-sdk/issues/1218" xlink:title="ECC/zcash&#45;swift&#45;wallet&#45;sdk#1218&#10;Post&#45;Spend&#45;before&#45;Sync&#10;cleanups (Swift SDK)" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" points="558,-3706 301,-3706 301,-3653 558,-3653 558,-3706"/>
-<text text-anchor="middle" x="429.5" y="-3690.8" font-family="Times,serif" font-size="14.00">ECC/zcash&#45;swift&#45;wallet&#45;sdk#1218</text>
-<text text-anchor="middle" x="429.5" y="-3675.8" font-family="Times,serif" font-size="14.00">Post&#45;Spend&#45;before&#45;Sync</text>
-<text text-anchor="middle" x="429.5" y="-3660.8" font-family="Times,serif" font-size="14.00">cleanups (Swift SDK)</text>
-</a>
-</g>
-</g>
-<!-- ECC/zcash&#45;swift&#45;wallet&#45;sdk#1286&#45;&gt;ECC/zcash&#45;swift&#45;wallet&#45;sdk#1218 -->
-<g id="edge1" class="edge">
-<title>ECC/zcash&#45;swift&#45;wallet&#45;sdk#1286&#45;&gt;ECC/zcash&#45;swift&#45;wallet&#45;sdk#1218</title>
-<path fill="none" stroke="black" d="M252.25,-3952.4C256.7,-3949.7 260.97,-3946.7 265,-3943.5 342.69,-3881.9 393.15,-3772.5 415.4,-3715.8"/>
-<polygon fill="black" stroke="black" points="418.77,-3716.79 419.1,-3706.2 412.24,-3714.27 418.77,-3716.79"/>
-</g>
-<!-- ECC/zcash&#45;swift&#45;wallet&#45;sdk#298 -->
-<g id="node3" class="node open">
-<title>ECC/zcash&#45;swift&#45;wallet&#45;sdk#298</title>
-<g id="a_node3"><a xlink:href="https://github.com/Electric-Coin-Company/zcash-swift-wallet-sdk/issues/298" xlink:title="ECC/zcash&#45;swift&#45;wallet&#45;sdk#298&#10;Make BalanceTests pass" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="260.5,-3934.5 12.5,-3934.5 12.5,-3896.5 260.5,-3896.5 260.5,-3934.5"/>
-<text text-anchor="middle" x="136.5" y="-3919.3" font-family="Times,serif" font-size="14.00">ECC/zcash&#45;swift&#45;wallet&#45;sdk#298</text>
-<text text-anchor="middle" x="136.5" y="-3904.3" font-family="Times,serif" font-size="14.00">Make BalanceTests pass</text>
-</a>
-</g>
-</g>
-<!-- ECC/zcash&#45;swift&#45;wallet&#45;sdk#298&#45;&gt;ECC/zcash&#45;swift&#45;wallet&#45;sdk#1218 -->
-<g id="edge2" class="edge">
-<title>ECC/zcash&#45;swift&#45;wallet&#45;sdk#298&#45;&gt;ECC/zcash&#45;swift&#45;wallet&#45;sdk#1218</title>
-<path fill="none" stroke="black" d="M247.97,-3896.5C253.9,-3893.8 259.62,-3890.9 265,-3887.5 333.57,-3844.5 385.22,-3762.1 410.75,-3715"/>
-<polygon fill="black" stroke="black" points="413.93,-3716.48 415.5,-3706 407.74,-3713.21 413.93,-3716.48"/>
-</g>
-<!-- ECC/zcash&#45;swift&#45;wallet&#45;sdk#1260 -->
-<g id="node4" class="node open">
-<title>ECC/zcash&#45;swift&#45;wallet&#45;sdk#1260</title>
-<g id="a_node4"><a xlink:href="https://github.com/Electric-Coin-Company/zcash-swift-wallet-sdk/issues/1260" xlink:title="ECC/zcash&#45;swift&#45;wallet&#45;sdk#1260&#10;Restore&#10;allPendingTransactions&#10;with use of&#10;v_transactions" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="265,-3878 8,-3878 8,-3795 265,-3795 265,-3878"/>
-<text text-anchor="middle" x="136.5" y="-3862.8" font-family="Times,serif" font-size="14.00">ECC/zcash&#45;swift&#45;wallet&#45;sdk#1260</text>
-<text text-anchor="middle" x="136.5" y="-3847.8" font-family="Times,serif" font-size="14.00">Restore</text>
-<text text-anchor="middle" x="136.5" y="-3832.8" font-family="Times,serif" font-size="14.00">allPendingTransactions</text>
-<text text-anchor="middle" x="136.5" y="-3817.8" font-family="Times,serif" font-size="14.00">with use of</text>
-<text text-anchor="middle" x="136.5" y="-3802.8" font-family="Times,serif" font-size="14.00">v_transactions</text>
-</a>
-</g>
-</g>
-<!-- ECC/zcash&#45;swift&#45;wallet&#45;sdk#1260&#45;&gt;ECC/zcash&#45;swift&#45;wallet&#45;sdk#1218 -->
-<g id="edge3" class="edge">
-<title>ECC/zcash&#45;swift&#45;wallet&#45;sdk#1260&#45;&gt;ECC/zcash&#45;swift&#45;wallet&#45;sdk#1218</title>
-<path fill="none" stroke="black" d="M247.69,-3795C253.6,-3792.2 259.4,-3789.4 265,-3786.5 307.2,-3764.7 352.14,-3734.8 384.2,-3712.1"/>
-<polygon fill="black" stroke="black" points="386.37,-3714.85 392.48,-3706.2 382.3,-3709.15 386.37,-3714.85"/>
-</g>
-<!-- ECC/zcash&#45;swift&#45;wallet&#45;sdk#1261 -->
-<g id="node5" class="node open">
-<title>ECC/zcash&#45;swift&#45;wallet&#45;sdk#1261</title>
-<g id="a_node5"><a xlink:href="https://github.com/Electric-Coin-Company/zcash-swift-wallet-sdk/issues/1261" xlink:title="ECC/zcash&#45;swift&#45;wallet&#45;sdk#1261&#10;Mark generated files in&#10;`.gitattributes`" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="265,-3777 8,-3777 8,-3724 265,-3724 265,-3777"/>
-<text text-anchor="middle" x="136.5" y="-3761.8" font-family="Times,serif" font-size="14.00">ECC/zcash&#45;swift&#45;wallet&#45;sdk#1261</text>
-<text text-anchor="middle" x="136.5" y="-3746.8" font-family="Times,serif" font-size="14.00">Mark generated files in</text>
-<text text-anchor="middle" x="136.5" y="-3731.8" font-family="Times,serif" font-size="14.00">`.gitattributes`</text>
-</a>
-</g>
-</g>
-<!-- ECC/zcash&#45;swift&#45;wallet&#45;sdk#1261&#45;&gt;ECC/zcash&#45;swift&#45;wallet&#45;sdk#1218 -->
-<g id="edge4" class="edge">
-<title>ECC/zcash&#45;swift&#45;wallet&#45;sdk#1261&#45;&gt;ECC/zcash&#45;swift&#45;wallet&#45;sdk#1218</title>
-<path fill="none" stroke="black" d="M246.27,-3724C267.04,-3718.9 288.87,-3713.6 309.92,-3708.4"/>
-<polygon fill="black" stroke="black" points="310.96,-3711.75 319.86,-3706 309.32,-3704.94 310.96,-3711.75"/>
-</g>
-<!-- ECC/zcash&#45;swift&#45;wallet&#45;sdk#1225 -->
-<g id="node6" class="node open">
-<title>ECC/zcash&#45;swift&#45;wallet&#45;sdk#1225</title>
-<g id="a_node6"><a xlink:href="https://github.com/Electric-Coin-Company/zcash-swift-wallet-sdk/issues/1225" xlink:title="ECC/zcash&#45;swift&#45;wallet&#45;sdk#1225&#10;Add more tests to the&#10;ScanActionTests" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="265,-3706 8,-3706 8,-3653 265,-3653 265,-3706"/>
-<text text-anchor="middle" x="136.5" y="-3690.8" font-family="Times,serif" font-size="14.00">ECC/zcash&#45;swift&#45;wallet&#45;sdk#1225</text>
-<text text-anchor="middle" x="136.5" y="-3675.8" font-family="Times,serif" font-size="14.00">Add more tests to the</text>
-<text text-anchor="middle" x="136.5" y="-3660.8" font-family="Times,serif" font-size="14.00">ScanActionTests</text>
-</a>
-</g>
-</g>
-<!-- ECC/zcash&#45;swift&#45;wallet&#45;sdk#1225&#45;&gt;ECC/zcash&#45;swift&#45;wallet&#45;sdk#1218 -->
-<g id="edge5" class="edge">
-<title>ECC/zcash&#45;swift&#45;wallet&#45;sdk#1225&#45;&gt;ECC/zcash&#45;swift&#45;wallet&#45;sdk#1218</title>
-<path fill="none" stroke="black" d="M265.14,-3679.5C273.5,-3679.5 281.94,-3679.5 290.34,-3679.5"/>
-<polygon fill="black" stroke="black" points="290.57,-3683 300.57,-3679.5 290.57,-3676 290.57,-3683"/>
-</g>
-<!-- ECC/zcash&#45;swift&#45;wallet&#45;sdk#1247 -->
-<g id="node7" class="node open">
-<title>ECC/zcash&#45;swift&#45;wallet&#45;sdk#1247</title>
-<g id="a_node7"><a xlink:href="https://github.com/Electric-Coin-Company/zcash-swift-wallet-sdk/issues/1247" xlink:title="ECC/zcash&#45;swift&#45;wallet&#45;sdk#1247&#10;[SBS] DarkSideTests&#10;checks and fixes" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="265,-3635 8,-3635 8,-3582 265,-3582 265,-3635"/>
-<text text-anchor="middle" x="136.5" y="-3619.8" font-family="Times,serif" font-size="14.00">ECC/zcash&#45;swift&#45;wallet&#45;sdk#1247</text>
-<text text-anchor="middle" x="136.5" y="-3604.8" font-family="Times,serif" font-size="14.00">[SBS] DarkSideTests</text>
-<text text-anchor="middle" x="136.5" y="-3589.8" font-family="Times,serif" font-size="14.00">checks and fixes</text>
-</a>
-</g>
-</g>
-<!-- ECC/zcash&#45;swift&#45;wallet&#45;sdk#1247&#45;&gt;ECC/zcash&#45;swift&#45;wallet&#45;sdk#1218 -->
-<g id="edge6" class="edge">
-<title>ECC/zcash&#45;swift&#45;wallet&#45;sdk#1247&#45;&gt;ECC/zcash&#45;swift&#45;wallet&#45;sdk#1218</title>
-<path fill="none" stroke="black" d="M246.27,-3635C267.04,-3640.1 288.87,-3645.4 309.92,-3650.6"/>
-<polygon fill="black" stroke="black" points="309.32,-3654.06 319.86,-3653 310.96,-3647.25 309.32,-3654.06"/>
-</g>
-<!-- ECC/zcash&#45;swift&#45;wallet&#45;sdk#1250 -->
-<g id="node8" class="node open">
-<title>ECC/zcash&#45;swift&#45;wallet&#45;sdk#1250</title>
-<g id="a_node8"><a xlink:href="https://github.com/Electric-Coin-Company/zcash-swift-wallet-sdk/issues/1250" xlink:title="ECC/zcash&#45;swift&#45;wallet&#45;sdk#1250&#10;[TODO] treeState.height&#10;in testInitWithShortSeedA&#10;ndFail" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="265,-3563.5 8,-3563.5 8,-3495.5 265,-3495.5 265,-3563.5"/>
-<text text-anchor="middle" x="136.5" y="-3548.3" font-family="Times,serif" font-size="14.00">ECC/zcash&#45;swift&#45;wallet&#45;sdk#1250</text>
-<text text-anchor="middle" x="136.5" y="-3533.3" font-family="Times,serif" font-size="14.00">[TODO] treeState.height</text>
-<text text-anchor="middle" x="136.5" y="-3518.3" font-family="Times,serif" font-size="14.00">in testInitWithShortSeedA</text>
-<text text-anchor="middle" x="136.5" y="-3503.3" font-family="Times,serif" font-size="14.00">ndFail</text>
-</a>
-</g>
-</g>
-<!-- ECC/zcash&#45;swift&#45;wallet&#45;sdk#1250&#45;&gt;ECC/zcash&#45;swift&#45;wallet&#45;sdk#1218 -->
-<g id="edge7" class="edge">
-<title>ECC/zcash&#45;swift&#45;wallet&#45;sdk#1250&#45;&gt;ECC/zcash&#45;swift&#45;wallet&#45;sdk#1218</title>
-<path fill="none" stroke="black" d="M242.71,-3563.5C250.34,-3566.7 257.84,-3570 265,-3573.5 307.7,-3594.3 352.76,-3624.2 384.74,-3646.9"/>
-<polygon fill="black" stroke="black" points="382.82,-3649.83 392.99,-3652.8 386.89,-3644.14 382.82,-3649.83"/>
-</g>
-<!-- ECC/zcash&#45;swift&#45;wallet&#45;sdk#1284 -->
-<g id="node9" class="node open">
-<title>ECC/zcash&#45;swift&#45;wallet&#45;sdk#1284</title>
-<g id="a_node9"><a xlink:href="https://github.com/Electric-Coin-Company/zcash-swift-wallet-sdk/issues/1284" xlink:title="ECC/zcash&#45;swift&#45;wallet&#45;sdk#1284&#10;Remove `UnspentTransactio&#10;nOutputsDao`" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="265,-3477 8,-3477 8,-3424 265,-3424 265,-3477"/>
-<text text-anchor="middle" x="136.5" y="-3461.8" font-family="Times,serif" font-size="14.00">ECC/zcash&#45;swift&#45;wallet&#45;sdk#1284</text>
-<text text-anchor="middle" x="136.5" y="-3446.8" font-family="Times,serif" font-size="14.00">Remove `UnspentTransactio</text>
-<text text-anchor="middle" x="136.5" y="-3431.8" font-family="Times,serif" font-size="14.00">nOutputsDao`</text>
-</a>
-</g>
-</g>
-<!-- ECC/zcash&#45;swift&#45;wallet&#45;sdk#1284&#45;&gt;ECC/zcash&#45;swift&#45;wallet&#45;sdk#1218 -->
-<g id="edge8" class="edge">
-<title>ECC/zcash&#45;swift&#45;wallet&#45;sdk#1284&#45;&gt;ECC/zcash&#45;swift&#45;wallet&#45;sdk#1218</title>
-<path fill="none" stroke="black" d="M247.87,-3477C253.83,-3479.9 259.58,-3483 265,-3486.5 328.58,-3527.4 380.58,-3600.6 407.83,-3644.1"/>
-<polygon fill="black" stroke="black" points="404.89,-3646 413.1,-3652.7 410.86,-3642.34 404.89,-3646"/>
-</g>
-<!-- ECC/zcash&#45;swift&#45;wallet&#45;sdk#1285 -->
-<g id="node10" class="node open">
-<title>ECC/zcash&#45;swift&#45;wallet&#45;sdk#1285</title>
-<g id="a_node10"><a xlink:href="https://github.com/Electric-Coin-Company/zcash-swift-wallet-sdk/issues/1285" xlink:title="ECC/zcash&#45;swift&#45;wallet&#45;sdk#1285&#10;Remove `AccountSQLDAO`&#10;from&#10;`AccountEntity.swift`" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="265,-3405.5 8,-3405.5 8,-3337.5 265,-3337.5 265,-3405.5"/>
-<text text-anchor="middle" x="136.5" y="-3390.3" font-family="Times,serif" font-size="14.00">ECC/zcash&#45;swift&#45;wallet&#45;sdk#1285</text>
-<text text-anchor="middle" x="136.5" y="-3375.3" font-family="Times,serif" font-size="14.00">Remove `AccountSQLDAO`</text>
-<text text-anchor="middle" x="136.5" y="-3360.3" font-family="Times,serif" font-size="14.00">from</text>
-<text text-anchor="middle" x="136.5" y="-3345.3" font-family="Times,serif" font-size="14.00">`AccountEntity.swift`</text>
-</a>
-</g>
-</g>
-<!-- ECC/zcash&#45;swift&#45;wallet&#45;sdk#1285&#45;&gt;ECC/zcash&#45;swift&#45;wallet&#45;sdk#1218 -->
-<g id="edge9" class="edge">
-<title>ECC/zcash&#45;swift&#45;wallet&#45;sdk#1285&#45;&gt;ECC/zcash&#45;swift&#45;wallet&#45;sdk#1218</title>
-<path fill="none" stroke="black" d="M250.73,-3405.6C255.73,-3408.6 260.52,-3411.9 265,-3415.5 342.47,-3477.4 393.03,-3586.7 415.35,-3643.3"/>
-<polygon fill="black" stroke="black" points="412.19,-3644.83 419.06,-3652.9 418.72,-3642.31 412.19,-3644.83"/>
-</g>
 <!-- ECC/zashi#4 -->
-<g id="node11" class="node open">
+<g id="node1" class="node open">
 <title>ECC/zashi#4</title>
-<g id="a_node11"><a xlink:href="https://github.com/Electric-Coin-Company/zashi/issues/4" xlink:title="ECC/zashi#4&#10;Zashi 1.0 UI" target="_blank">
+<g id="a_node1"><a xlink:href="https://github.com/Electric-Coin-Company/zashi/issues/4" xlink:title="ECC/zashi#4&#10;Zashi 1.0 UI" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" points="484.5,-216.5 374.5,-216.5 374.5,-178.5 484.5,-178.5 484.5,-216.5"/>
 <text text-anchor="middle" x="429.5" y="-201.3" font-family="Times,serif" font-size="14.00">ECC/zashi#4</text>
 <text text-anchor="middle" x="429.5" y="-186.3" font-family="Times,serif" font-size="14.00">Zashi 1.0 UI</text>
@@ -228,9 +60,9 @@
 </g>
 </g>
 <!-- ECC/zashi#21 -->
-<g id="node24" class="node open">
+<g id="node14" class="node open">
 <title>ECC/zashi#21</title>
-<g id="a_node24"><a xlink:href="https://github.com/Electric-Coin-Company/zashi/issues/21" xlink:title="ECC/zashi#21&#10;Release Zashi 1.0" target="_blank">
+<g id="a_node14"><a xlink:href="https://github.com/Electric-Coin-Company/zashi/issues/21" xlink:title="ECC/zashi#21&#10;Release Zashi 1.0" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" points="794,-311.5 791,-315.5 770,-315.5 767,-311.5 651,-311.5 651,-273.5 794,-273.5 794,-311.5"/>
 <text text-anchor="middle" x="722.5" y="-296.3" font-family="Times,serif" font-size="14.00">ECC/zashi#21</text>
 <text text-anchor="middle" x="722.5" y="-281.3" font-family="Times,serif" font-size="14.00">Release Zashi 1.0</text>
@@ -244,9 +76,9 @@
 <polygon fill="black" stroke="black" points="640.25,-280.45 650.78,-279.25 641.8,-273.63 640.25,-280.45"/>
 </g>
 <!-- ECC/zashi#18 -->
-<g id="node12" class="node open">
+<g id="node2" class="node open">
 <title>ECC/zashi#18</title>
-<g id="a_node12"><a xlink:href="https://github.com/Electric-Coin-Company/zashi/issues/18" xlink:title="ECC/zashi#18&#10;Finish design of the QR&#10;code scan UI and flow" target="_blank">
+<g id="a_node2"><a xlink:href="https://github.com/Electric-Coin-Company/zashi/issues/18" xlink:title="ECC/zashi#18&#10;Finish design of the QR&#10;code scan UI and flow" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="229,-540 44,-540 44,-487 229,-487 229,-540"/>
 <text text-anchor="middle" x="136.5" y="-524.8" font-family="Times,serif" font-size="14.00">ECC/zashi#18</text>
 <text text-anchor="middle" x="136.5" y="-509.8" font-family="Times,serif" font-size="14.00">Finish design of the QR</text>
@@ -255,10 +87,10 @@
 </g>
 </g>
 <!-- ECC/zashi&#45;ios#988 -->
-<g id="node40" class="node open">
+<g id="node40" class="node committed">
 <title>ECC/zashi&#45;ios#988</title>
 <g id="a_node40"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-ios/issues/988" xlink:title="ECC/zashi&#45;ios#988&#10;Scan UI" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" points="1092,-1750.5 939,-1750.5 939,-1712.5 1092,-1712.5 1092,-1750.5"/>
+<polygon fill="#a6cfff" stroke="black" points="1092,-1750.5 939,-1750.5 939,-1712.5 1092,-1712.5 1092,-1750.5"/>
 <text text-anchor="middle" x="1015.5" y="-1735.3" font-family="Times,serif" font-size="14.00">ECC/zashi&#45;ios#988</text>
 <text text-anchor="middle" x="1015.5" y="-1720.3" font-family="Times,serif" font-size="14.00">Scan UI</text>
 </a>
@@ -271,9 +103,9 @@
 <polygon fill="black" stroke="black" points="928.37,-1733.75 938.87,-1732.3 929.76,-1726.89 928.37,-1733.75"/>
 </g>
 <!-- ECC/zashi#19 -->
-<g id="node13" class="node open">
+<g id="node3" class="node open">
 <title>ECC/zashi#19</title>
-<g id="a_node13"><a xlink:href="https://github.com/Electric-Coin-Company/zashi/issues/19" xlink:title="ECC/zashi#19&#10;FInalize design of the&#10;sync status progress bar&#10;and text" target="_blank">
+<g id="a_node3"><a xlink:href="https://github.com/Electric-Coin-Company/zashi/issues/19" xlink:title="ECC/zashi#19&#10;FInalize design of the&#10;sync status progress bar&#10;and text" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="233.5,-468.5 39.5,-468.5 39.5,-400.5 233.5,-400.5 233.5,-468.5"/>
 <text text-anchor="middle" x="136.5" y="-453.3" font-family="Times,serif" font-size="14.00">ECC/zashi#19</text>
 <text text-anchor="middle" x="136.5" y="-438.3" font-family="Times,serif" font-size="14.00">FInalize design of the</text>
@@ -300,9 +132,9 @@
 <polygon fill="black" stroke="black" points="924.3,-1084.74 934.88,-1084.1 926.22,-1078 924.3,-1084.74"/>
 </g>
 <!-- ECC/zashi#15 -->
-<g id="node14" class="node open">
+<g id="node4" class="node open">
 <title>ECC/zashi#15</title>
-<g id="a_node14"><a xlink:href="https://github.com/Electric-Coin-Company/zashi/issues/15" xlink:title="ECC/zashi#15&#10;Permit configurability of&#10;the lightwalletd server." target="_blank">
+<g id="a_node4"><a xlink:href="https://github.com/Electric-Coin-Company/zashi/issues/15" xlink:title="ECC/zashi#15&#10;Permit configurability of&#10;the lightwalletd server." target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="232,-382 41,-382 41,-329 232,-329 232,-382"/>
 <text text-anchor="middle" x="136.5" y="-366.8" font-family="Times,serif" font-size="14.00">ECC/zashi#15</text>
 <text text-anchor="middle" x="136.5" y="-351.8" font-family="Times,serif" font-size="14.00">Permit configurability of</text>
@@ -347,9 +179,9 @@
 <polygon fill="black" stroke="black" points="332.56,-66.9 340,-59.36 329.48,-60.61 332.56,-66.9"/>
 </g>
 <!-- ECC/zashi#3 -->
-<g id="node15" class="node open">
+<g id="node5" class="node open">
 <title>ECC/zashi#3</title>
-<g id="a_node15"><a xlink:href="https://github.com/Electric-Coin-Company/zashi/issues/3" xlink:title="ECC/zashi#3&#10;Identify shielding&#10;transactions in the&#10;wallet UI" target="_blank">
+<g id="a_node5"><a xlink:href="https://github.com/Electric-Coin-Company/zashi/issues/3" xlink:title="ECC/zashi#3&#10;Identify shielding&#10;transactions in the&#10;wallet UI" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="212,-310.5 61,-310.5 61,-242.5 212,-242.5 212,-310.5"/>
 <text text-anchor="middle" x="136.5" y="-295.3" font-family="Times,serif" font-size="14.00">ECC/zashi#3</text>
 <text text-anchor="middle" x="136.5" y="-280.3" font-family="Times,serif" font-size="14.00">Identify shielding</text>
@@ -359,9 +191,9 @@
 </g>
 </g>
 <!-- ECC/zashi#5 -->
-<g id="node16" class="node open">
+<g id="node6" class="node open">
 <title>ECC/zashi#5</title>
-<g id="a_node16"><a xlink:href="https://github.com/Electric-Coin-Company/zashi/issues/5" xlink:title="ECC/zashi#5&#10;Link to release notes&#10;from the About page." target="_blank">
+<g id="a_node6"><a xlink:href="https://github.com/Electric-Coin-Company/zashi/issues/5" xlink:title="ECC/zashi#5&#10;Link to release notes&#10;from the About page." target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="220.5,-224 52.5,-224 52.5,-171 220.5,-171 220.5,-224"/>
 <text text-anchor="middle" x="136.5" y="-208.8" font-family="Times,serif" font-size="14.00">ECC/zashi#5</text>
 <text text-anchor="middle" x="136.5" y="-193.8" font-family="Times,serif" font-size="14.00">Link to release notes</text>
@@ -370,15 +202,15 @@
 </g>
 </g>
 <!-- ECC/zashi#5&#45;&gt;ECC/zashi#4 -->
-<g id="edge10" class="edge">
+<g id="edge1" class="edge">
 <title>ECC/zashi#5&#45;&gt;ECC/zashi#4</title>
 <path fill="none" stroke="black" d="M220.89,-197.5C266.5,-197.5 322.15,-197.5 364.34,-197.5"/>
 <polygon fill="black" stroke="black" points="364.49,-201 374.49,-197.5 364.49,-194 364.49,-201"/>
 </g>
 <!-- ECC/zashi#6 -->
-<g id="node17" class="node open">
+<g id="node7" class="node open">
 <title>ECC/zashi#6</title>
-<g id="a_node17"><a xlink:href="https://github.com/Electric-Coin-Company/zashi/issues/6" xlink:title="ECC/zashi#6&#10;Add open source license&#10;attributions" target="_blank">
+<g id="a_node7"><a xlink:href="https://github.com/Electric-Coin-Company/zashi/issues/6" xlink:title="ECC/zashi#6&#10;Add open source license&#10;attributions" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="231,-153 42,-153 42,-100 231,-100 231,-153"/>
 <text text-anchor="middle" x="136.5" y="-137.8" font-family="Times,serif" font-size="14.00">ECC/zashi#6</text>
 <text text-anchor="middle" x="136.5" y="-122.8" font-family="Times,serif" font-size="14.00">Add open source license</text>
@@ -387,15 +219,15 @@
 </g>
 </g>
 <!-- ECC/zashi#6&#45;&gt;ECC/zashi#4 -->
-<g id="edge11" class="edge">
+<g id="edge2" class="edge">
 <title>ECC/zashi#6&#45;&gt;ECC/zashi#4</title>
 <path fill="none" stroke="black" d="M231.18,-149.36C274.64,-159.96 325.21,-172.3 364.27,-181.83"/>
 <polygon fill="black" stroke="black" points="363.92,-185.35 374.46,-184.31 365.57,-178.54 363.92,-185.35"/>
 </g>
 <!-- ECC/zashi&#45;ios#93 -->
-<g id="node18" class="node open">
+<g id="node8" class="node open">
 <title>ECC/zashi&#45;ios#93</title>
-<g id="a_node18"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-ios/issues/93" xlink:title="ECC/zashi&#45;ios#93&#10;[Functional] Request ZEC&#10;Screen" target="_blank">
+<g id="a_node8"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-ios/issues/93" xlink:title="ECC/zashi&#45;ios#93&#10;[Functional] Request ZEC&#10;Screen" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" points="1116,-3283 915,-3283 915,-3230 1116,-3230 1116,-3283"/>
 <text text-anchor="middle" x="1015.5" y="-3267.8" font-family="Times,serif" font-size="14.00">ECC/zashi&#45;ios#93</text>
 <text text-anchor="middle" x="1015.5" y="-3252.8" font-family="Times,serif" font-size="14.00">[Functional] Request ZEC</text>
@@ -404,9 +236,9 @@
 </g>
 </g>
 <!-- ECC/zashi&#45;ios#94 -->
-<g id="node19" class="node open">
+<g id="node9" class="node open">
 <title>ECC/zashi&#45;ios#94</title>
-<g id="a_node19"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-ios/issues/94" xlink:title="ECC/zashi&#45;ios#94&#10;[Functional] Share ZEC&#10;Request Screen" target="_blank">
+<g id="a_node9"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-ios/issues/94" xlink:title="ECC/zashi&#45;ios#94&#10;[Functional] Share ZEC&#10;Request Screen" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" points="1401,-3283 1216,-3283 1216,-3230 1401,-3230 1401,-3283"/>
 <text text-anchor="middle" x="1308.5" y="-3267.8" font-family="Times,serif" font-size="14.00">ECC/zashi&#45;ios#94</text>
 <text text-anchor="middle" x="1308.5" y="-3252.8" font-family="Times,serif" font-size="14.00">[Functional] Share ZEC</text>
@@ -415,15 +247,15 @@
 </g>
 </g>
 <!-- ECC/zashi&#45;ios#93&#45;&gt;ECC/zashi&#45;ios#94 -->
-<g id="edge12" class="edge">
+<g id="edge3" class="edge">
 <title>ECC/zashi&#45;ios#93&#45;&gt;ECC/zashi&#45;ios#94</title>
 <path fill="none" stroke="black" d="M1116.2,-3256.5C1145.1,-3256.5 1176.6,-3256.5 1205.6,-3256.5"/>
 <polygon fill="black" stroke="black" points="1205.7,-3260 1215.7,-3256.5 1205.7,-3253 1205.7,-3260"/>
 </g>
 <!-- ECC/zashi&#45;ios#90 -->
-<g id="node20" class="node open">
+<g id="node10" class="node open">
 <title>ECC/zashi&#45;ios#90</title>
-<g id="a_node20"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-ios/issues/90" xlink:title="ECC/zashi&#45;ios#90&#10;Request ZEC Flow" target="_blank">
+<g id="a_node10"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-ios/issues/90" xlink:title="ECC/zashi&#45;ios#90&#10;Request ZEC Flow" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" points="1642.5,-3275.5 1493.5,-3275.5 1493.5,-3237.5 1642.5,-3237.5 1642.5,-3275.5"/>
 <text text-anchor="middle" x="1568" y="-3260.3" font-family="Times,serif" font-size="14.00">ECC/zashi&#45;ios#90</text>
 <text text-anchor="middle" x="1568" y="-3245.3" font-family="Times,serif" font-size="14.00">Request ZEC Flow</text>
@@ -431,15 +263,15 @@
 </g>
 </g>
 <!-- ECC/zashi&#45;ios#94&#45;&gt;ECC/zashi&#45;ios#90 -->
-<g id="edge13" class="edge">
+<g id="edge4" class="edge">
 <title>ECC/zashi&#45;ios#94&#45;&gt;ECC/zashi&#45;ios#90</title>
 <path fill="none" stroke="black" d="M1401,-3256.5C1427.7,-3256.5 1456.7,-3256.5 1482.9,-3256.5"/>
 <polygon fill="black" stroke="black" points="1483.1,-3260 1493.1,-3256.5 1483.1,-3253 1483.1,-3260"/>
 </g>
 <!-- ECC/zashi&#45;ios#109 -->
-<g id="node21" class="node open">
+<g id="node11" class="node open">
 <title>ECC/zashi&#45;ios#109</title>
-<g id="a_node21"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-ios/issues/109" xlink:title="ECC/zashi&#45;ios#109&#10;[Research Spike] ZIP&#45;321&#10;Payment URIs and&#10;deeplinking" target="_blank">
+<g id="a_node11"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-ios/issues/109" xlink:title="ECC/zashi&#45;ios#109&#10;[Research Spike] ZIP&#45;321&#10;Payment URIs and&#10;deeplinking" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" points="528,-3290.5 331,-3290.5 331,-3222.5 528,-3222.5 528,-3290.5"/>
 <text text-anchor="middle" x="429.5" y="-3275.3" font-family="Times,serif" font-size="14.00">ECC/zashi&#45;ios#109</text>
 <text text-anchor="middle" x="429.5" y="-3260.3" font-family="Times,serif" font-size="14.00">[Research Spike] ZIP&#45;321</text>
@@ -449,9 +281,9 @@
 </g>
 </g>
 <!-- ECC/zashi&#45;ios#141 -->
-<g id="node22" class="node open">
+<g id="node12" class="node open">
 <title>ECC/zashi&#45;ios#141</title>
-<g id="a_node22"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-ios/issues/141" xlink:title="ECC/zashi&#45;ios#141&#10;Encode URI in QR Code" target="_blank">
+<g id="a_node12"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-ios/issues/141" xlink:title="ECC/zashi&#45;ios#141&#10;Encode URI in QR Code" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" points="815.5,-3275.5 629.5,-3275.5 629.5,-3237.5 815.5,-3237.5 815.5,-3275.5"/>
 <text text-anchor="middle" x="722.5" y="-3260.3" font-family="Times,serif" font-size="14.00">ECC/zashi&#45;ios#141</text>
 <text text-anchor="middle" x="722.5" y="-3245.3" font-family="Times,serif" font-size="14.00">Encode URI in QR Code</text>
@@ -459,21 +291,21 @@
 </g>
 </g>
 <!-- ECC/zashi&#45;ios#109&#45;&gt;ECC/zashi&#45;ios#141 -->
-<g id="edge14" class="edge">
+<g id="edge5" class="edge">
 <title>ECC/zashi&#45;ios#109&#45;&gt;ECC/zashi&#45;ios#141</title>
 <path fill="none" stroke="black" d="M528.21,-3256.5C557.45,-3256.5 589.6,-3256.5 619.13,-3256.5"/>
 <polygon fill="black" stroke="black" points="619.46,-3260 629.46,-3256.5 619.46,-3253 619.46,-3260"/>
 </g>
 <!-- ECC/zashi&#45;ios#141&#45;&gt;ECC/zashi&#45;ios#93 -->
-<g id="edge15" class="edge">
+<g id="edge6" class="edge">
 <title>ECC/zashi&#45;ios#141&#45;&gt;ECC/zashi&#45;ios#93</title>
 <path fill="none" stroke="black" d="M815.57,-3256.5C843.87,-3256.5 875.31,-3256.5 904.67,-3256.5"/>
 <polygon fill="black" stroke="black" points="904.96,-3260 914.96,-3256.5 904.96,-3253 904.96,-3260"/>
 </g>
 <!-- ECC/zcash&#45;swift&#45;wallet&#45;sdk#319 -->
-<g id="node23" class="node open">
+<g id="node13" class="node open">
 <title>ECC/zcash&#45;swift&#45;wallet&#45;sdk#319</title>
-<g id="a_node23"><a xlink:href="https://github.com/Electric-Coin-Company/zcash-swift-wallet-sdk/issues/319" xlink:title="ECC/zcash&#45;swift&#45;wallet&#45;sdk#319&#10;ZIP&#45;321 Request&#10;Generation API" target="_blank">
+<g id="a_node13"><a xlink:href="https://github.com/Electric-Coin-Company/zcash-swift-wallet-sdk/issues/319" xlink:title="ECC/zcash&#45;swift&#45;wallet&#45;sdk#319&#10;ZIP&#45;321 Request&#10;Generation API" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="260.5,-3283 12.5,-3283 12.5,-3230 260.5,-3230 260.5,-3283"/>
 <text text-anchor="middle" x="136.5" y="-3267.8" font-family="Times,serif" font-size="14.00">ECC/zcash&#45;swift&#45;wallet&#45;sdk#319</text>
 <text text-anchor="middle" x="136.5" y="-3252.8" font-family="Times,serif" font-size="14.00">ZIP&#45;321 Request</text>
@@ -482,7 +314,7 @@
 </g>
 </g>
 <!-- ECC/zcash&#45;swift&#45;wallet&#45;sdk#319&#45;&gt;ECC/zashi&#45;ios#109 -->
-<g id="edge16" class="edge">
+<g id="edge7" class="edge">
 <title>ECC/zcash&#45;swift&#45;wallet&#45;sdk#319&#45;&gt;ECC/zashi&#45;ios#109</title>
 <path fill="none" stroke="black" d="M260.91,-3256.5C280.83,-3256.5 301.31,-3256.5 320.82,-3256.5"/>
 <polygon fill="black" stroke="black" points="320.93,-3260 330.93,-3256.5 320.93,-3253 320.93,-3260"/>
@@ -504,9 +336,9 @@
 <polygon fill="black" stroke="black" points="1764.43,-1632.62 1768.5,-1642.4 1771.42,-1632.21 1764.43,-1632.62"/>
 </g>
 <!-- ECC/zashi#23 -->
-<g id="node25" class="node needs&#45;review">
+<g id="node15" class="node needs&#45;review">
 <title>ECC/zashi#23</title>
-<g id="a_node25"><a xlink:href="https://github.com/Electric-Coin-Company/zashi/issues/23" xlink:title="ECC/zashi#23&#10;Write licensing text for&#10;Zashi" target="_blank">
+<g id="a_node15"><a xlink:href="https://github.com/Electric-Coin-Company/zashi/issues/23" xlink:title="ECC/zashi#23&#10;Write licensing text for&#10;Zashi" target="_blank">
 <polygon fill="#dfc150" stroke="black" stroke-width="2" points="813.5,-540 631.5,-540 631.5,-487 813.5,-487 813.5,-540"/>
 <text text-anchor="middle" x="722.5" y="-524.8" font-family="Times,serif" font-size="14.00">ECC/zashi#23</text>
 <text text-anchor="middle" x="722.5" y="-509.8" font-family="Times,serif" font-size="14.00">Write licensing text for</text>
@@ -532,9 +364,9 @@
 <polygon fill="black" stroke="black" points="918.14,-1021.29 928.73,-1021 920.27,-1014.62 918.14,-1021.29"/>
 </g>
 <!-- ECC/zashi#24 -->
-<g id="node26" class="node open">
+<g id="node16" class="node open">
 <title>ECC/zashi#24</title>
-<g id="a_node26"><a xlink:href="https://github.com/Electric-Coin-Company/zashi/issues/24" xlink:title="ECC/zashi#24&#10;Extend ECC&#39;s privacy&#10;policy to cover Zashi" target="_blank">
+<g id="a_node16"><a xlink:href="https://github.com/Electric-Coin-Company/zashi/issues/24" xlink:title="ECC/zashi#24&#10;Extend ECC&#39;s privacy&#10;policy to cover Zashi" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="808.5,-469 636.5,-469 636.5,-416 808.5,-416 808.5,-469"/>
 <text text-anchor="middle" x="722.5" y="-453.8" font-family="Times,serif" font-size="14.00">ECC/zashi#24</text>
 <text text-anchor="middle" x="722.5" y="-438.8" font-family="Times,serif" font-size="14.00">Extend ECC&#39;s privacy</text>
@@ -560,9 +392,9 @@
 <polygon fill="black" stroke="black" points="915.26,-678.09 925.85,-678.05 917.54,-671.48 915.26,-678.09"/>
 </g>
 <!-- ECC/zashi#7 -->
-<g id="node27" class="node open">
+<g id="node17" class="node open">
 <title>ECC/zashi#7</title>
-<g id="a_node27"><a xlink:href="https://github.com/Electric-Coin-Company/zashi/issues/7" xlink:title="ECC/zashi#7&#10;Consider in&#45;app&#10;authentication&#10;requirements" target="_blank">
+<g id="a_node17"><a xlink:href="https://github.com/Electric-Coin-Company/zashi/issues/7" xlink:title="ECC/zashi#7&#10;Consider in&#45;app&#10;authentication&#10;requirements" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="787,-397.5 784,-401.5 763,-401.5 760,-397.5 658,-397.5 658,-329.5 787,-329.5 787,-397.5"/>
 <text text-anchor="middle" x="722.5" y="-382.3" font-family="Times,serif" font-size="14.00">ECC/zashi#7</text>
 <text text-anchor="middle" x="722.5" y="-367.3" font-family="Times,serif" font-size="14.00">Consider in&#45;app</text>
@@ -589,9 +421,9 @@
 <polygon fill="black" stroke="black" points="1301.41,-1307.07 1305.6,-1316.8 1308.39,-1306.58 1301.41,-1307.07"/>
 </g>
 <!-- ECC/zashi&#45;ios#1062 -->
-<g id="node28" class="node open">
+<g id="node18" class="node open">
 <title>ECC/zashi&#45;ios#1062</title>
-<g id="a_node28"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-ios/issues/1062" xlink:title="ECC/zashi&#45;ios#1062&#10;Check iOS resource&#10;strings (in localization&#10;files) for correctness" target="_blank">
+<g id="a_node18"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-ios/issues/1062" xlink:title="ECC/zashi&#45;ios#1062&#10;Check iOS resource&#10;strings (in localization&#10;files) for correctness" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="810.5,-255.5 634.5,-255.5 634.5,-187.5 810.5,-187.5 810.5,-255.5"/>
 <text text-anchor="middle" x="722.5" y="-240.3" font-family="Times,serif" font-size="14.00">ECC/zashi&#45;ios#1062</text>
 <text text-anchor="middle" x="722.5" y="-225.3" font-family="Times,serif" font-size="14.00">Check iOS resource</text>
@@ -605,6 +437,174 @@
 <title>ECC/zashi&#45;ios#1062&#45;&gt;ECC/zashi&#45;ios#986</title>
 <path fill="none" stroke="black" d="M810.77,-231.24C910.02,-247.26 1069,-288.9 1152,-395.5 1266,-542 1299.3,-1150.7 1306.1,-1306.9"/>
 <polygon fill="black" stroke="black" points="1302.6,-1307.05 1306.5,-1316.9 1309.6,-1306.77 1302.6,-1307.05"/>
+</g>
+<!-- ECC/zcash&#45;swift&#45;wallet&#45;sdk#1286 -->
+<g id="node19" class="node open">
+<title>ECC/zcash&#45;swift&#45;wallet&#45;sdk#1286</title>
+<g id="a_node19"><a xlink:href="https://github.com/Electric-Coin-Company/zcash-swift-wallet-sdk/issues/1286" xlink:title="ECC/zcash&#45;swift&#45;wallet&#45;sdk#1286&#10;Add structured error&#10;types for errors received&#10;across the FFI boundary." target="_blank">
+<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="265,-4020.5 8,-4020.5 8,-3952.5 265,-3952.5 265,-4020.5"/>
+<text text-anchor="middle" x="136.5" y="-4005.3" font-family="Times,serif" font-size="14.00">ECC/zcash&#45;swift&#45;wallet&#45;sdk#1286</text>
+<text text-anchor="middle" x="136.5" y="-3990.3" font-family="Times,serif" font-size="14.00">Add structured error</text>
+<text text-anchor="middle" x="136.5" y="-3975.3" font-family="Times,serif" font-size="14.00">types for errors received</text>
+<text text-anchor="middle" x="136.5" y="-3960.3" font-family="Times,serif" font-size="14.00">across the FFI boundary.</text>
+</a>
+</g>
+</g>
+<!-- ECC/zcash&#45;swift&#45;wallet&#45;sdk#1218 -->
+<g id="node20" class="node open">
+<title>ECC/zcash&#45;swift&#45;wallet&#45;sdk#1218</title>
+<g id="a_node20"><a xlink:href="https://github.com/Electric-Coin-Company/zcash-swift-wallet-sdk/issues/1218" xlink:title="ECC/zcash&#45;swift&#45;wallet&#45;sdk#1218&#10;Post&#45;Spend&#45;before&#45;Sync&#10;cleanups (Swift SDK)" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" points="558,-3706 301,-3706 301,-3653 558,-3653 558,-3706"/>
+<text text-anchor="middle" x="429.5" y="-3690.8" font-family="Times,serif" font-size="14.00">ECC/zcash&#45;swift&#45;wallet&#45;sdk#1218</text>
+<text text-anchor="middle" x="429.5" y="-3675.8" font-family="Times,serif" font-size="14.00">Post&#45;Spend&#45;before&#45;Sync</text>
+<text text-anchor="middle" x="429.5" y="-3660.8" font-family="Times,serif" font-size="14.00">cleanups (Swift SDK)</text>
+</a>
+</g>
+</g>
+<!-- ECC/zcash&#45;swift&#45;wallet&#45;sdk#1286&#45;&gt;ECC/zcash&#45;swift&#45;wallet&#45;sdk#1218 -->
+<g id="edge8" class="edge">
+<title>ECC/zcash&#45;swift&#45;wallet&#45;sdk#1286&#45;&gt;ECC/zcash&#45;swift&#45;wallet&#45;sdk#1218</title>
+<path fill="none" stroke="black" d="M252.25,-3952.4C256.7,-3949.7 260.97,-3946.7 265,-3943.5 342.69,-3881.9 393.15,-3772.5 415.4,-3715.8"/>
+<polygon fill="black" stroke="black" points="418.77,-3716.79 419.1,-3706.2 412.24,-3714.27 418.77,-3716.79"/>
+</g>
+<!-- ECC/zcash&#45;swift&#45;wallet&#45;sdk#298 -->
+<g id="node21" class="node open">
+<title>ECC/zcash&#45;swift&#45;wallet&#45;sdk#298</title>
+<g id="a_node21"><a xlink:href="https://github.com/Electric-Coin-Company/zcash-swift-wallet-sdk/issues/298" xlink:title="ECC/zcash&#45;swift&#45;wallet&#45;sdk#298&#10;Make BalanceTests pass" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="260.5,-3934.5 12.5,-3934.5 12.5,-3896.5 260.5,-3896.5 260.5,-3934.5"/>
+<text text-anchor="middle" x="136.5" y="-3919.3" font-family="Times,serif" font-size="14.00">ECC/zcash&#45;swift&#45;wallet&#45;sdk#298</text>
+<text text-anchor="middle" x="136.5" y="-3904.3" font-family="Times,serif" font-size="14.00">Make BalanceTests pass</text>
+</a>
+</g>
+</g>
+<!-- ECC/zcash&#45;swift&#45;wallet&#45;sdk#298&#45;&gt;ECC/zcash&#45;swift&#45;wallet&#45;sdk#1218 -->
+<g id="edge9" class="edge">
+<title>ECC/zcash&#45;swift&#45;wallet&#45;sdk#298&#45;&gt;ECC/zcash&#45;swift&#45;wallet&#45;sdk#1218</title>
+<path fill="none" stroke="black" d="M247.97,-3896.5C253.9,-3893.8 259.62,-3890.9 265,-3887.5 333.57,-3844.5 385.22,-3762.1 410.75,-3715"/>
+<polygon fill="black" stroke="black" points="413.93,-3716.48 415.5,-3706 407.74,-3713.21 413.93,-3716.48"/>
+</g>
+<!-- ECC/zcash&#45;swift&#45;wallet&#45;sdk#1260 -->
+<g id="node22" class="node open">
+<title>ECC/zcash&#45;swift&#45;wallet&#45;sdk#1260</title>
+<g id="a_node22"><a xlink:href="https://github.com/Electric-Coin-Company/zcash-swift-wallet-sdk/issues/1260" xlink:title="ECC/zcash&#45;swift&#45;wallet&#45;sdk#1260&#10;Restore&#10;allPendingTransactions&#10;with use of&#10;v_transactions" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="265,-3878 8,-3878 8,-3795 265,-3795 265,-3878"/>
+<text text-anchor="middle" x="136.5" y="-3862.8" font-family="Times,serif" font-size="14.00">ECC/zcash&#45;swift&#45;wallet&#45;sdk#1260</text>
+<text text-anchor="middle" x="136.5" y="-3847.8" font-family="Times,serif" font-size="14.00">Restore</text>
+<text text-anchor="middle" x="136.5" y="-3832.8" font-family="Times,serif" font-size="14.00">allPendingTransactions</text>
+<text text-anchor="middle" x="136.5" y="-3817.8" font-family="Times,serif" font-size="14.00">with use of</text>
+<text text-anchor="middle" x="136.5" y="-3802.8" font-family="Times,serif" font-size="14.00">v_transactions</text>
+</a>
+</g>
+</g>
+<!-- ECC/zcash&#45;swift&#45;wallet&#45;sdk#1260&#45;&gt;ECC/zcash&#45;swift&#45;wallet&#45;sdk#1218 -->
+<g id="edge10" class="edge">
+<title>ECC/zcash&#45;swift&#45;wallet&#45;sdk#1260&#45;&gt;ECC/zcash&#45;swift&#45;wallet&#45;sdk#1218</title>
+<path fill="none" stroke="black" d="M247.69,-3795C253.6,-3792.2 259.4,-3789.4 265,-3786.5 307.2,-3764.7 352.14,-3734.8 384.2,-3712.1"/>
+<polygon fill="black" stroke="black" points="386.37,-3714.85 392.48,-3706.2 382.3,-3709.15 386.37,-3714.85"/>
+</g>
+<!-- ECC/zcash&#45;swift&#45;wallet&#45;sdk#1261 -->
+<g id="node23" class="node open">
+<title>ECC/zcash&#45;swift&#45;wallet&#45;sdk#1261</title>
+<g id="a_node23"><a xlink:href="https://github.com/Electric-Coin-Company/zcash-swift-wallet-sdk/issues/1261" xlink:title="ECC/zcash&#45;swift&#45;wallet&#45;sdk#1261&#10;Mark generated files in&#10;`.gitattributes`" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="265,-3777 8,-3777 8,-3724 265,-3724 265,-3777"/>
+<text text-anchor="middle" x="136.5" y="-3761.8" font-family="Times,serif" font-size="14.00">ECC/zcash&#45;swift&#45;wallet&#45;sdk#1261</text>
+<text text-anchor="middle" x="136.5" y="-3746.8" font-family="Times,serif" font-size="14.00">Mark generated files in</text>
+<text text-anchor="middle" x="136.5" y="-3731.8" font-family="Times,serif" font-size="14.00">`.gitattributes`</text>
+</a>
+</g>
+</g>
+<!-- ECC/zcash&#45;swift&#45;wallet&#45;sdk#1261&#45;&gt;ECC/zcash&#45;swift&#45;wallet&#45;sdk#1218 -->
+<g id="edge11" class="edge">
+<title>ECC/zcash&#45;swift&#45;wallet&#45;sdk#1261&#45;&gt;ECC/zcash&#45;swift&#45;wallet&#45;sdk#1218</title>
+<path fill="none" stroke="black" d="M246.27,-3724C267.04,-3718.9 288.87,-3713.6 309.92,-3708.4"/>
+<polygon fill="black" stroke="black" points="310.96,-3711.75 319.86,-3706 309.32,-3704.94 310.96,-3711.75"/>
+</g>
+<!-- ECC/zcash&#45;swift&#45;wallet&#45;sdk#1225 -->
+<g id="node24" class="node open">
+<title>ECC/zcash&#45;swift&#45;wallet&#45;sdk#1225</title>
+<g id="a_node24"><a xlink:href="https://github.com/Electric-Coin-Company/zcash-swift-wallet-sdk/issues/1225" xlink:title="ECC/zcash&#45;swift&#45;wallet&#45;sdk#1225&#10;Add more tests to the&#10;ScanActionTests" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="265,-3706 8,-3706 8,-3653 265,-3653 265,-3706"/>
+<text text-anchor="middle" x="136.5" y="-3690.8" font-family="Times,serif" font-size="14.00">ECC/zcash&#45;swift&#45;wallet&#45;sdk#1225</text>
+<text text-anchor="middle" x="136.5" y="-3675.8" font-family="Times,serif" font-size="14.00">Add more tests to the</text>
+<text text-anchor="middle" x="136.5" y="-3660.8" font-family="Times,serif" font-size="14.00">ScanActionTests</text>
+</a>
+</g>
+</g>
+<!-- ECC/zcash&#45;swift&#45;wallet&#45;sdk#1225&#45;&gt;ECC/zcash&#45;swift&#45;wallet&#45;sdk#1218 -->
+<g id="edge12" class="edge">
+<title>ECC/zcash&#45;swift&#45;wallet&#45;sdk#1225&#45;&gt;ECC/zcash&#45;swift&#45;wallet&#45;sdk#1218</title>
+<path fill="none" stroke="black" d="M265.14,-3679.5C273.5,-3679.5 281.94,-3679.5 290.34,-3679.5"/>
+<polygon fill="black" stroke="black" points="290.57,-3683 300.57,-3679.5 290.57,-3676 290.57,-3683"/>
+</g>
+<!-- ECC/zcash&#45;swift&#45;wallet&#45;sdk#1247 -->
+<g id="node25" class="node open">
+<title>ECC/zcash&#45;swift&#45;wallet&#45;sdk#1247</title>
+<g id="a_node25"><a xlink:href="https://github.com/Electric-Coin-Company/zcash-swift-wallet-sdk/issues/1247" xlink:title="ECC/zcash&#45;swift&#45;wallet&#45;sdk#1247&#10;[SBS] DarkSideTests&#10;checks and fixes" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="265,-3635 8,-3635 8,-3582 265,-3582 265,-3635"/>
+<text text-anchor="middle" x="136.5" y="-3619.8" font-family="Times,serif" font-size="14.00">ECC/zcash&#45;swift&#45;wallet&#45;sdk#1247</text>
+<text text-anchor="middle" x="136.5" y="-3604.8" font-family="Times,serif" font-size="14.00">[SBS] DarkSideTests</text>
+<text text-anchor="middle" x="136.5" y="-3589.8" font-family="Times,serif" font-size="14.00">checks and fixes</text>
+</a>
+</g>
+</g>
+<!-- ECC/zcash&#45;swift&#45;wallet&#45;sdk#1247&#45;&gt;ECC/zcash&#45;swift&#45;wallet&#45;sdk#1218 -->
+<g id="edge13" class="edge">
+<title>ECC/zcash&#45;swift&#45;wallet&#45;sdk#1247&#45;&gt;ECC/zcash&#45;swift&#45;wallet&#45;sdk#1218</title>
+<path fill="none" stroke="black" d="M246.27,-3635C267.04,-3640.1 288.87,-3645.4 309.92,-3650.6"/>
+<polygon fill="black" stroke="black" points="309.32,-3654.06 319.86,-3653 310.96,-3647.25 309.32,-3654.06"/>
+</g>
+<!-- ECC/zcash&#45;swift&#45;wallet&#45;sdk#1250 -->
+<g id="node26" class="node open">
+<title>ECC/zcash&#45;swift&#45;wallet&#45;sdk#1250</title>
+<g id="a_node26"><a xlink:href="https://github.com/Electric-Coin-Company/zcash-swift-wallet-sdk/issues/1250" xlink:title="ECC/zcash&#45;swift&#45;wallet&#45;sdk#1250&#10;[TODO] treeState.height&#10;in testInitWithShortSeedA&#10;ndFail" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="265,-3563.5 8,-3563.5 8,-3495.5 265,-3495.5 265,-3563.5"/>
+<text text-anchor="middle" x="136.5" y="-3548.3" font-family="Times,serif" font-size="14.00">ECC/zcash&#45;swift&#45;wallet&#45;sdk#1250</text>
+<text text-anchor="middle" x="136.5" y="-3533.3" font-family="Times,serif" font-size="14.00">[TODO] treeState.height</text>
+<text text-anchor="middle" x="136.5" y="-3518.3" font-family="Times,serif" font-size="14.00">in testInitWithShortSeedA</text>
+<text text-anchor="middle" x="136.5" y="-3503.3" font-family="Times,serif" font-size="14.00">ndFail</text>
+</a>
+</g>
+</g>
+<!-- ECC/zcash&#45;swift&#45;wallet&#45;sdk#1250&#45;&gt;ECC/zcash&#45;swift&#45;wallet&#45;sdk#1218 -->
+<g id="edge14" class="edge">
+<title>ECC/zcash&#45;swift&#45;wallet&#45;sdk#1250&#45;&gt;ECC/zcash&#45;swift&#45;wallet&#45;sdk#1218</title>
+<path fill="none" stroke="black" d="M242.71,-3563.5C250.34,-3566.7 257.84,-3570 265,-3573.5 307.7,-3594.3 352.76,-3624.2 384.74,-3646.9"/>
+<polygon fill="black" stroke="black" points="382.82,-3649.83 392.99,-3652.8 386.89,-3644.14 382.82,-3649.83"/>
+</g>
+<!-- ECC/zcash&#45;swift&#45;wallet&#45;sdk#1284 -->
+<g id="node27" class="node open">
+<title>ECC/zcash&#45;swift&#45;wallet&#45;sdk#1284</title>
+<g id="a_node27"><a xlink:href="https://github.com/Electric-Coin-Company/zcash-swift-wallet-sdk/issues/1284" xlink:title="ECC/zcash&#45;swift&#45;wallet&#45;sdk#1284&#10;Remove `UnspentTransactio&#10;nOutputsDao`" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="265,-3477 8,-3477 8,-3424 265,-3424 265,-3477"/>
+<text text-anchor="middle" x="136.5" y="-3461.8" font-family="Times,serif" font-size="14.00">ECC/zcash&#45;swift&#45;wallet&#45;sdk#1284</text>
+<text text-anchor="middle" x="136.5" y="-3446.8" font-family="Times,serif" font-size="14.00">Remove `UnspentTransactio</text>
+<text text-anchor="middle" x="136.5" y="-3431.8" font-family="Times,serif" font-size="14.00">nOutputsDao`</text>
+</a>
+</g>
+</g>
+<!-- ECC/zcash&#45;swift&#45;wallet&#45;sdk#1284&#45;&gt;ECC/zcash&#45;swift&#45;wallet&#45;sdk#1218 -->
+<g id="edge15" class="edge">
+<title>ECC/zcash&#45;swift&#45;wallet&#45;sdk#1284&#45;&gt;ECC/zcash&#45;swift&#45;wallet&#45;sdk#1218</title>
+<path fill="none" stroke="black" d="M247.87,-3477C253.83,-3479.9 259.58,-3483 265,-3486.5 328.58,-3527.4 380.58,-3600.6 407.83,-3644.1"/>
+<polygon fill="black" stroke="black" points="404.89,-3646 413.1,-3652.7 410.86,-3642.34 404.89,-3646"/>
+</g>
+<!-- ECC/zcash&#45;swift&#45;wallet&#45;sdk#1285 -->
+<g id="node28" class="node open">
+<title>ECC/zcash&#45;swift&#45;wallet&#45;sdk#1285</title>
+<g id="a_node28"><a xlink:href="https://github.com/Electric-Coin-Company/zcash-swift-wallet-sdk/issues/1285" xlink:title="ECC/zcash&#45;swift&#45;wallet&#45;sdk#1285&#10;Remove `AccountSQLDAO`&#10;from&#10;`AccountEntity.swift`" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="265,-3405.5 8,-3405.5 8,-3337.5 265,-3337.5 265,-3405.5"/>
+<text text-anchor="middle" x="136.5" y="-3390.3" font-family="Times,serif" font-size="14.00">ECC/zcash&#45;swift&#45;wallet&#45;sdk#1285</text>
+<text text-anchor="middle" x="136.5" y="-3375.3" font-family="Times,serif" font-size="14.00">Remove `AccountSQLDAO`</text>
+<text text-anchor="middle" x="136.5" y="-3360.3" font-family="Times,serif" font-size="14.00">from</text>
+<text text-anchor="middle" x="136.5" y="-3345.3" font-family="Times,serif" font-size="14.00">`AccountEntity.swift`</text>
+</a>
+</g>
+</g>
+<!-- ECC/zcash&#45;swift&#45;wallet&#45;sdk#1285&#45;&gt;ECC/zcash&#45;swift&#45;wallet&#45;sdk#1218 -->
+<g id="edge16" class="edge">
+<title>ECC/zcash&#45;swift&#45;wallet&#45;sdk#1285&#45;&gt;ECC/zcash&#45;swift&#45;wallet&#45;sdk#1218</title>
+<path fill="none" stroke="black" d="M250.73,-3405.6C255.73,-3408.6 260.52,-3411.9 265,-3415.5 342.47,-3477.4 393.03,-3586.7 415.35,-3643.3"/>
+<polygon fill="black" stroke="black" points="412.19,-3644.83 419.06,-3652.9 418.72,-3642.31 412.19,-3644.83"/>
 </g>
 <!-- ECC/zashi&#45;ios#1012 -->
 <g id="node29" class="node open">
