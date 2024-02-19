@@ -35,6 +35,7 @@ CORE_REPOS = {
     48303644: ('zcash', 'incrementalmerkletree'),
     85334928: ('zcash', 'librustzcash'),
     133857578: ('zcash-hackworks', 'zcash-test-vectors'),
+    111058300: ('zcash', 'sapling-crypto'),
     **HALO2_REPOS,
     305835578: ('zcash', 'orchard'),
 }
@@ -70,6 +71,7 @@ ECC_REPOS = {
     **CORE_REPOS,
     **TFL_REPOS,
     **WALLET_REPOS,
+    65419597: ('Electric-Coin-Company', 'infrastructure'),
 }
 
 ZF_REPOS = {
