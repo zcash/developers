@@ -81,6 +81,12 @@ ZF_REPOS = {
     279422254: ('ZcashFoundation', 'zcash_script'),
 }
 
+ZCASHD_DEPRECATION_REPOS = {
+    26987049: ('zcash', 'zcash'),
+    47279130: ('zcash', 'zips'),
+    85334928: ('zcash', 'librustzcash'),
+}
+
 REPO_SETS = {
     'core': CORE_REPOS,
     'halo2': HALO2_REPOS,
@@ -90,6 +96,7 @@ REPO_SETS = {
     'wallet-android': ANDROID_REPOS,
     'ecc': ECC_REPOS,
     'zf': ZF_REPOS,
+    'zcashd-deprecation': ZCASHD_DEPRECATION_REPOS,
 }
 
 REPOS = REPO_SETS[DAG_VIEW]
