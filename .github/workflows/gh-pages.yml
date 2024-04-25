@@ -113,6 +113,14 @@ jobs:
           SHOW_EPICS: true
         continue-on-error: true
 
+      - name: Render zcashd deprecation DAG
+        run: python3 ./zcash-issue-dag.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ZENHUB_TOKEN: ${{ secrets.ZENHUB_TOKEN }}
+          DAG_VIEW: zcashd-deprecation
+          TERMINATE_AT: "zcash/librustzcash#1349,zcash/zcash#5796,zcash/zcash#6453"
+
       - name: Copy the index page
         run: cp ./index.html ./public
 
