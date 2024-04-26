@@ -87,6 +87,11 @@ ZCASHD_DEPRECATION_REPOS = {
     85334928: ('zcash', 'librustzcash'),
 }
 
+POOL_DEPRECATION_REPOS = {
+    **CORE_REPOS,
+    **WALLET_REPOS,
+}
+
 REPO_SETS = {
     'core': CORE_REPOS,
     'halo2': HALO2_REPOS,
@@ -97,6 +102,8 @@ REPO_SETS = {
     'ecc': ECC_REPOS,
     'zf': ZF_REPOS,
     'zcashd-deprecation': ZCASHD_DEPRECATION_REPOS,
+    'sprout-deprecation': POOL_DEPRECATION_REPOS,
+    'transparent-deprecation': POOL_DEPRECATION_REPOS,
 }
 
 REPOS = REPO_SETS[DAG_VIEW]
