@@ -20,14 +20,14 @@
 <text text-anchor="middle" x="1307.5" y="-1278.8" font-family="Times,serif" font-size="14.00">Design and Implementation Phase 3</text>
 </g>
 <g id="clust3" class="cluster">
-<title>cluster_3</title>
-<polygon fill="none" stroke="blue" points="0,-656 0,-961 955,-961 955,-656 0,-656"/>
-<text text-anchor="middle" x="477.5" y="-945.8" font-family="Times,serif" font-size="14.00">Implementation Phase 1: Simulation Codebase</text>
-</g>
-<g id="clust4" class="cluster">
 <title>cluster_2</title>
 <polygon fill="none" stroke="blue" points="756,-197 756,-304 1177,-304 1177,-197 756,-197"/>
 <text text-anchor="middle" x="966.5" y="-288.8" font-family="Times,serif" font-size="14.00">Prototype Phase 2</text>
+</g>
+<g id="clust4" class="cluster">
+<title>cluster_3</title>
+<polygon fill="none" stroke="blue" points="0,-656 0,-961 955,-961 955,-656 0,-656"/>
+<text text-anchor="middle" x="477.5" y="-945.8" font-family="Times,serif" font-size="14.00">Implementation Phase 1: Simulation Codebase</text>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_1</title>
@@ -523,10 +523,45 @@
 <path fill="none" stroke="black" d="M948.09,-1097C956.58,-1097 965.2,-1097 973.77,-1097"/>
 <polygon fill="black" stroke="black" points="973.79,-1100.5 983.79,-1097 973.79,-1093.5 973.79,-1100.5"/>
 </g>
-<!-- zcash/simtfl#14 -->
+<!-- ECC/zebra&#45;tfl#4 -->
 <g id="node24" class="node open">
+<title>ECC/zebra&#45;tfl#4</title>
+<g id="a_node24"><a xlink:href="https://github.com/Electric-Coin-Company/zebra-tfl/issues/4" xlink:title="ECC/zebra&#45;tfl#4&#10;Prototype release 0.x&#10;(for phase 2)" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" points="1169,-268.5 999,-268.5 999,-215.5 1169,-215.5 1169,-268.5"/>
+<text text-anchor="middle" x="1084" y="-253.3" font-family="Times,serif" font-size="14.00">ECC/zebra&#45;tfl#4</text>
+<text text-anchor="middle" x="1084" y="-238.3" font-family="Times,serif" font-size="14.00">Prototype release 0.x</text>
+<text text-anchor="middle" x="1084" y="-223.3" font-family="Times,serif" font-size="14.00">(for phase 2)</text>
+</a>
+</g>
+</g>
+<!-- ECC/zebra&#45;tfl#4&#45;&gt;ECC/tfl&#45;book#70 -->
+<g id="edge51" class="edge">
+<title>ECC/zebra&#45;tfl#4&#45;&gt;ECC/tfl&#45;book#70</title>
+<path fill="none" stroke="black" d="M1111.1,-268.65C1176.8,-332.88 1357.3,-491 1541.5,-491 1541.5,-491 1541.5,-491 2010,-491 2233.8,-491 2185.2,-716.78 2370,-843 2374,-845.72 2378.1,-848.35 2382.4,-850.88"/>
+<polygon fill="black" stroke="black" points="2380.88,-854.04 2391.3,-855.93 2384.33,-847.95 2380.88,-854.04"/>
+</g>
+<!-- ECC/zebra&#45;tfl#11 -->
+<g id="node25" class="node open">
+<title>ECC/zebra&#45;tfl#11</title>
+<g id="a_node25"><a xlink:href="https://github.com/Electric-Coin-Company/zebra-tfl/issues/11" xlink:title="ECC/zebra&#45;tfl#11&#10;Consider putting bft&#45;&#10;proposals in bc&#45;block&#45;&#10;headers" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="935,-273 764,-273 764,-205 935,-205 935,-273"/>
+<text text-anchor="middle" x="849.5" y="-257.8" font-family="Times,serif" font-size="14.00">ECC/zebra&#45;tfl#11</text>
+<text text-anchor="middle" x="849.5" y="-242.8" font-family="Times,serif" font-size="14.00">Consider putting bft&#45;</text>
+<text text-anchor="middle" x="849.5" y="-227.8" font-family="Times,serif" font-size="14.00">proposals in bc&#45;block&#45;</text>
+<text text-anchor="middle" x="849.5" y="-212.8" font-family="Times,serif" font-size="14.00">headers</text>
+</a>
+</g>
+</g>
+<!-- ECC/zebra&#45;tfl#11&#45;&gt;ECC/zebra&#45;tfl#4 -->
+<g id="edge26" class="edge">
+<title>ECC/zebra&#45;tfl#11&#45;&gt;ECC/zebra&#45;tfl#4</title>
+<path fill="none" stroke="black" d="M935.1,-240.09C952.46,-240.32 970.85,-240.55 988.54,-240.78"/>
+<polygon fill="black" stroke="black" points="988.86,-244.28 998.9,-240.91 988.94,-237.28 988.86,-244.28"/>
+</g>
+<!-- zcash/simtfl#14 -->
+<g id="node26" class="node open">
 <title>zcash/simtfl#14</title>
-<g id="a_node24"><a xlink:href="https://github.com/Electric-Coin-Company/simtfl/issues/14" xlink:title="zcash/simtfl#14&#10;simtfl 0.2.0&#10;(corresponding to&#10;Implementation Phase 1:&#10;Simulation Codebase)" target="_blank">
+<g id="a_node26"><a xlink:href="https://github.com/Electric-Coin-Company/simtfl/issues/14" xlink:title="zcash/simtfl#14&#10;simtfl 0.2.0&#10;(corresponding to&#10;Implementation Phase 1:&#10;Simulation Codebase)" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" points="947,-898.5 944,-902.5 923,-902.5 920,-898.5 752,-898.5 752,-815.5 947,-815.5 947,-898.5"/>
 <text text-anchor="middle" x="849.5" y="-883.3" font-family="Times,serif" font-size="14.00">zcash/simtfl#14</text>
 <text text-anchor="middle" x="849.5" y="-868.3" font-family="Times,serif" font-size="14.00">simtfl 0.2.0</text>
@@ -549,9 +584,9 @@
 <polygon fill="black" stroke="black" points="983.72,-1058.81 993.5,-1062.9 988.41,-1053.61 983.72,-1058.81"/>
 </g>
 <!-- zcash/simtfl#10 -->
-<g id="node25" class="node open">
+<g id="node27" class="node open">
 <title>zcash/simtfl#10</title>
-<g id="a_node25"><a xlink:href="https://github.com/Electric-Coin-Company/simtfl/issues/10" xlink:title="zcash/simtfl#10&#10;Implement some known BFT&#10;and/or PoS attacks" target="_blank">
+<g id="a_node27"><a xlink:href="https://github.com/Electric-Coin-Company/simtfl/issues/10" xlink:title="zcash/simtfl#10&#10;Implement some known BFT&#10;and/or PoS attacks" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" points="714,-741.5 493,-741.5 493,-688.5 714,-688.5 714,-741.5"/>
 <text text-anchor="middle" x="603.5" y="-726.3" font-family="Times,serif" font-size="14.00">zcash/simtfl#10</text>
 <text text-anchor="middle" x="603.5" y="-711.3" font-family="Times,serif" font-size="14.00">Implement some known BFT</text>
@@ -560,15 +595,15 @@
 </g>
 </g>
 <!-- zcash/simtfl#10&#45;&gt;zcash/simtfl#14 -->
-<g id="edge26" class="edge">
+<g id="edge27" class="edge">
 <title>zcash/simtfl#10&#45;&gt;zcash/simtfl#14</title>
 <path fill="none" stroke="black" d="M695.17,-741.57C702.01,-744.47 708.69,-747.61 715,-751 744.04,-766.6 773.09,-788.7 796.64,-808.69"/>
 <polygon fill="black" stroke="black" points="794.55,-811.5 804.41,-815.37 799.11,-806.2 794.55,-811.5"/>
 </g>
 <!-- zcash/simtfl#7 -->
-<g id="node26" class="node open">
+<g id="node28" class="node open">
 <title>zcash/simtfl#7</title>
-<g id="a_node26"><a xlink:href="https://github.com/Electric-Coin-Company/simtfl/issues/7" xlink:title="zcash/simtfl#7&#10;Define BC abstractions&#10;and PoW (honest behaviour&#10;only)" target="_blank">
+<g id="a_node28"><a xlink:href="https://github.com/Electric-Coin-Company/simtfl/issues/7" xlink:title="zcash/simtfl#7&#10;Define BC abstractions&#10;and PoW (honest behaviour&#10;only)" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="456,-844 244,-844 244,-776 456,-776 456,-844"/>
 <text text-anchor="middle" x="350" y="-828.8" font-family="Times,serif" font-size="14.00">zcash/simtfl#7</text>
 <text text-anchor="middle" x="350" y="-813.8" font-family="Times,serif" font-size="14.00">Define BC abstractions</text>
@@ -578,9 +613,9 @@
 </g>
 </g>
 <!-- zcash/simtfl#8 -->
-<g id="node27" class="node open">
+<g id="node29" class="node open">
 <title>zcash/simtfl#8</title>
-<g id="a_node27"><a xlink:href="https://github.com/Electric-Coin-Company/simtfl/issues/8" xlink:title="zcash/simtfl#8&#10;Define Crosslink (honest&#10;behaviour only)" target="_blank">
+<g id="a_node29"><a xlink:href="https://github.com/Electric-Coin-Company/simtfl/issues/8" xlink:title="zcash/simtfl#8&#10;Define Crosslink (honest&#10;behaviour only)" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" points="699,-812.5 508,-812.5 508,-759.5 699,-759.5 699,-812.5"/>
 <text text-anchor="middle" x="603.5" y="-797.3" font-family="Times,serif" font-size="14.00">zcash/simtfl#8</text>
 <text text-anchor="middle" x="603.5" y="-782.3" font-family="Times,serif" font-size="14.00">Define Crosslink (honest</text>
@@ -589,15 +624,15 @@
 </g>
 </g>
 <!-- zcash/simtfl#7&#45;&gt;zcash/simtfl#8 -->
-<g id="edge27" class="edge">
+<g id="edge28" class="edge">
 <title>zcash/simtfl#7&#45;&gt;zcash/simtfl#8</title>
 <path fill="none" stroke="black" d="M456.2,-799.96C469.82,-798.66 483.78,-797.33 497.4,-796.03"/>
 <polygon fill="black" stroke="black" points="498.12,-799.48 507.74,-795.04 497.45,-792.51 498.12,-799.48"/>
 </g>
 <!-- zcash/simtfl#9 -->
-<g id="node28" class="node open">
+<g id="node30" class="node open">
 <title>zcash/simtfl#9</title>
-<g id="a_node28"><a xlink:href="https://github.com/Electric-Coin-Company/simtfl/issues/9" xlink:title="zcash/simtfl#9&#10;Implement some known PoW&#10;attacks" target="_blank">
+<g id="a_node30"><a xlink:href="https://github.com/Electric-Coin-Company/simtfl/issues/9" xlink:title="zcash/simtfl#9&#10;Implement some known PoW&#10;attacks" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" points="715,-883.5 492,-883.5 492,-830.5 715,-830.5 715,-883.5"/>
 <text text-anchor="middle" x="603.5" y="-868.3" font-family="Times,serif" font-size="14.00">zcash/simtfl#9</text>
 <text text-anchor="middle" x="603.5" y="-853.3" font-family="Times,serif" font-size="14.00">Implement some known PoW</text>
@@ -606,27 +641,27 @@
 </g>
 </g>
 <!-- zcash/simtfl#7&#45;&gt;zcash/simtfl#9 -->
-<g id="edge28" class="edge">
+<g id="edge29" class="edge">
 <title>zcash/simtfl#7&#45;&gt;zcash/simtfl#9</title>
 <path fill="none" stroke="black" d="M456.2,-829.66C464.62,-831.23 473.16,-832.83 481.67,-834.42"/>
 <polygon fill="black" stroke="black" points="481.18,-837.89 491.65,-836.28 482.46,-831.01 481.18,-837.89"/>
 </g>
 <!-- zcash/simtfl#8&#45;&gt;zcash/simtfl#14 -->
-<g id="edge29" class="edge">
+<g id="edge30" class="edge">
 <title>zcash/simtfl#8&#45;&gt;zcash/simtfl#14</title>
 <path fill="none" stroke="black" d="M695.7,-812.54C710.69,-816.9 726.35,-821.46 741.68,-825.92"/>
 <polygon fill="black" stroke="black" points="741.11,-829.4 751.69,-828.83 743.06,-822.68 741.11,-829.4"/>
 </g>
 <!-- zcash/simtfl#9&#45;&gt;zcash/simtfl#14 -->
-<g id="edge30" class="edge">
+<g id="edge31" class="edge">
 <title>zcash/simtfl#9&#45;&gt;zcash/simtfl#14</title>
 <path fill="none" stroke="black" d="M715.08,-857C723.87,-857 732.74,-857 741.51,-857"/>
 <polygon fill="black" stroke="black" points="741.74,-860.5 751.74,-857 741.74,-853.5 741.74,-860.5"/>
 </g>
 <!-- zcash/simtfl#20 -->
-<g id="node29" class="node open">
+<g id="node31" class="node open">
 <title>zcash/simtfl#20</title>
-<g id="a_node29"><a xlink:href="https://github.com/Electric-Coin-Company/simtfl/issues/20" xlink:title="zcash/simtfl#20&#10;Add test coverage that&#10;ensures edge cases lead&#10;to invalid blocks" target="_blank">
+<g id="a_node31"><a xlink:href="https://github.com/Electric-Coin-Company/simtfl/issues/20" xlink:title="zcash/simtfl#20&#10;Add test coverage that&#10;ensures edge cases lead&#10;to invalid blocks" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="445,-930 255,-930 255,-862 445,-862 445,-930"/>
 <text text-anchor="middle" x="350" y="-914.8" font-family="Times,serif" font-size="14.00">zcash/simtfl#20</text>
 <text text-anchor="middle" x="350" y="-899.8" font-family="Times,serif" font-size="14.00">Add test coverage that</text>
@@ -636,15 +671,15 @@
 </g>
 </g>
 <!-- zcash/simtfl#20&#45;&gt;zcash/simtfl#9 -->
-<g id="edge31" class="edge">
+<g id="edge32" class="edge">
 <title>zcash/simtfl#20&#45;&gt;zcash/simtfl#9</title>
 <path fill="none" stroke="black" d="M445.01,-881.42C456.89,-879.58 469.17,-877.67 481.4,-875.78"/>
 <polygon fill="black" stroke="black" points="482.3,-879.18 491.65,-874.19 481.23,-872.26 482.3,-879.18"/>
 </g>
 <!-- zcash/simtfl#15 -->
-<g id="node30" class="node open">
+<g id="node32" class="node open">
 <title>zcash/simtfl#15</title>
-<g id="a_node30"><a xlink:href="https://github.com/Electric-Coin-Company/simtfl/issues/15" xlink:title="zcash/simtfl#15&#10;Design/document the&#10;network layer used in the&#10;simulation" target="_blank">
+<g id="a_node32"><a xlink:href="https://github.com/Electric-Coin-Company/simtfl/issues/15" xlink:title="zcash/simtfl#15&#10;Design/document the&#10;network layer used in the&#10;simulation" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="208,-773 8,-773 8,-705 208,-705 208,-773"/>
 <text text-anchor="middle" x="108" y="-757.8" font-family="Times,serif" font-size="14.00">zcash/simtfl#15</text>
 <text text-anchor="middle" x="108" y="-742.8" font-family="Times,serif" font-size="14.00">Design/document the</text>
@@ -654,9 +689,9 @@
 </g>
 </g>
 <!-- zcash/simtfl#16 -->
-<g id="node31" class="node open">
+<g id="node33" class="node open">
 <title>zcash/simtfl#16</title>
-<g id="a_node31"><a xlink:href="https://github.com/Electric-Coin-Company/simtfl/issues/16" xlink:title="zcash/simtfl#16&#10;Implement network layer" target="_blank">
+<g id="a_node33"><a xlink:href="https://github.com/Electric-Coin-Company/simtfl/issues/16" xlink:title="zcash/simtfl#16&#10;Implement network layer" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" points="448.5,-758 251.5,-758 251.5,-720 448.5,-720 448.5,-758"/>
 <text text-anchor="middle" x="350" y="-742.8" font-family="Times,serif" font-size="14.00">zcash/simtfl#16</text>
 <text text-anchor="middle" x="350" y="-727.8" font-family="Times,serif" font-size="14.00">Implement network layer</text>
@@ -664,33 +699,33 @@
 </g>
 </g>
 <!-- zcash/simtfl#15&#45;&gt;zcash/simtfl#16 -->
-<g id="edge32" class="edge">
+<g id="edge33" class="edge">
 <title>zcash/simtfl#15&#45;&gt;zcash/simtfl#16</title>
 <path fill="none" stroke="black" d="M208,-739C218.98,-739 230.19,-739 241.27,-739"/>
 <polygon fill="black" stroke="black" points="241.39,-742.5 251.39,-739 241.39,-735.5 241.39,-742.5"/>
 </g>
 <!-- zcash/simtfl#16&#45;&gt;zcash/simtfl#10 -->
-<g id="edge33" class="edge">
+<g id="edge34" class="edge">
 <title>zcash/simtfl#16&#45;&gt;zcash/simtfl#10</title>
 <path fill="none" stroke="black" d="M448.6,-729.69C459.81,-728.62 471.34,-727.52 482.8,-726.42"/>
 <polygon fill="black" stroke="black" points="483.22,-729.9 492.84,-725.46 482.55,-722.93 483.22,-729.9"/>
 </g>
 <!-- zcash/simtfl#16&#45;&gt;zcash/simtfl#8 -->
-<g id="edge34" class="edge">
+<g id="edge35" class="edge">
 <title>zcash/simtfl#16&#45;&gt;zcash/simtfl#8</title>
 <path fill="none" stroke="black" d="M448.6,-757.24C464.72,-760.25 481.49,-763.39 497.78,-766.43"/>
 <polygon fill="black" stroke="black" points="497.38,-769.92 507.85,-768.31 498.66,-763.03 497.38,-769.92"/>
 </g>
 <!-- zcash/simtfl#16&#45;&gt;zcash/simtfl#9 -->
-<g id="edge35" class="edge">
+<g id="edge36" class="edge">
 <title>zcash/simtfl#16&#45;&gt;zcash/simtfl#9</title>
 <path fill="none" stroke="black" d="M441.03,-758.06C446.29,-760.66 451.34,-763.63 456,-767 479.68,-784.12 468.72,-804.34 492,-822 493.38,-823.05 494.79,-824.06 496.23,-825.04"/>
 <polygon fill="black" stroke="black" points="494.41,-828.03 504.75,-830.36 498.12,-822.09 494.41,-828.03"/>
 </g>
 <!-- zcash/simtfl#25 -->
-<g id="node32" class="node open">
+<g id="node34" class="node open">
 <title>zcash/simtfl#25</title>
-<g id="a_node32"><a xlink:href="https://github.com/Electric-Coin-Company/simtfl/issues/25" xlink:title="zcash/simtfl#25&#10;Finish Streamlet" target="_blank">
+<g id="a_node34"><a xlink:href="https://github.com/Electric-Coin-Company/simtfl/issues/25" xlink:title="zcash/simtfl#25&#10;Finish Streamlet" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="418.5,-702 281.5,-702 281.5,-664 418.5,-664 418.5,-702"/>
 <text text-anchor="middle" x="350" y="-686.8" font-family="Times,serif" font-size="14.00">zcash/simtfl#25</text>
 <text text-anchor="middle" x="350" y="-671.8" font-family="Times,serif" font-size="14.00">Finish Streamlet</text>
@@ -698,51 +733,16 @@
 </g>
 </g>
 <!-- zcash/simtfl#25&#45;&gt;zcash/simtfl#10 -->
-<g id="edge36" class="edge">
+<g id="edge37" class="edge">
 <title>zcash/simtfl#25&#45;&gt;zcash/simtfl#10</title>
 <path fill="none" stroke="black" d="M418.73,-691.62C438.54,-694.14 460.8,-696.97 482.82,-699.77"/>
 <polygon fill="black" stroke="black" points="482.55,-703.26 492.91,-701.06 483.43,-696.32 482.55,-703.26"/>
 </g>
 <!-- zcash/simtfl#25&#45;&gt;zcash/simtfl#8 -->
-<g id="edge37" class="edge">
+<g id="edge38" class="edge">
 <title>zcash/simtfl#25&#45;&gt;zcash/simtfl#8</title>
 <path fill="none" stroke="black" d="M418.63,-694.86C431.6,-698.81 444.66,-704.06 456,-711 476.4,-723.49 471.89,-738.05 492,-751 494.18,-752.41 496.43,-753.76 498.72,-755.06"/>
 <polygon fill="black" stroke="black" points="497.3,-758.27 507.78,-759.84 500.57,-752.08 497.3,-758.27"/>
-</g>
-<!-- ECC/zebra&#45;tfl#4 -->
-<g id="node33" class="node open">
-<title>ECC/zebra&#45;tfl#4</title>
-<g id="a_node33"><a xlink:href="https://github.com/Electric-Coin-Company/zebra-tfl/issues/4" xlink:title="ECC/zebra&#45;tfl#4&#10;Prototype release 0.x&#10;(for phase 2)" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" points="1169,-268.5 999,-268.5 999,-215.5 1169,-215.5 1169,-268.5"/>
-<text text-anchor="middle" x="1084" y="-253.3" font-family="Times,serif" font-size="14.00">ECC/zebra&#45;tfl#4</text>
-<text text-anchor="middle" x="1084" y="-238.3" font-family="Times,serif" font-size="14.00">Prototype release 0.x</text>
-<text text-anchor="middle" x="1084" y="-223.3" font-family="Times,serif" font-size="14.00">(for phase 2)</text>
-</a>
-</g>
-</g>
-<!-- ECC/zebra&#45;tfl#4&#45;&gt;ECC/tfl&#45;book#70 -->
-<g id="edge51" class="edge">
-<title>ECC/zebra&#45;tfl#4&#45;&gt;ECC/tfl&#45;book#70</title>
-<path fill="none" stroke="black" d="M1111.1,-268.65C1176.8,-332.88 1357.3,-491 1541.5,-491 1541.5,-491 1541.5,-491 2010,-491 2233.8,-491 2185.2,-716.78 2370,-843 2374,-845.72 2378.1,-848.35 2382.4,-850.88"/>
-<polygon fill="black" stroke="black" points="2380.88,-854.04 2391.3,-855.93 2384.33,-847.95 2380.88,-854.04"/>
-</g>
-<!-- ECC/zebra&#45;tfl#11 -->
-<g id="node34" class="node open">
-<title>ECC/zebra&#45;tfl#11</title>
-<g id="a_node34"><a xlink:href="https://github.com/Electric-Coin-Company/zebra-tfl/issues/11" xlink:title="ECC/zebra&#45;tfl#11&#10;Consider putting bft&#45;&#10;proposals in bc&#45;block&#45;&#10;headers" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="935,-273 764,-273 764,-205 935,-205 935,-273"/>
-<text text-anchor="middle" x="849.5" y="-257.8" font-family="Times,serif" font-size="14.00">ECC/zebra&#45;tfl#11</text>
-<text text-anchor="middle" x="849.5" y="-242.8" font-family="Times,serif" font-size="14.00">Consider putting bft&#45;</text>
-<text text-anchor="middle" x="849.5" y="-227.8" font-family="Times,serif" font-size="14.00">proposals in bc&#45;block&#45;</text>
-<text text-anchor="middle" x="849.5" y="-212.8" font-family="Times,serif" font-size="14.00">headers</text>
-</a>
-</g>
-</g>
-<!-- ECC/zebra&#45;tfl#11&#45;&gt;ECC/zebra&#45;tfl#4 -->
-<g id="edge38" class="edge">
-<title>ECC/zebra&#45;tfl#11&#45;&gt;ECC/zebra&#45;tfl#4</title>
-<path fill="none" stroke="black" d="M935.1,-240.09C952.46,-240.32 970.85,-240.55 988.54,-240.78"/>
-<polygon fill="black" stroke="black" points="988.86,-244.28 998.9,-240.91 988.94,-237.28 988.86,-244.28"/>
 </g>
 <!-- ECC/tfl&#45;book#86 -->
 <g id="node35" class="node open">
