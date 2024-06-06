@@ -4,7 +4,6 @@
 # Author: jack@electriccoin.co
 # Last updated: 2021-05-07
 
-import drest
 import networkx as nx
 
 from str2bool import str2bool as strtobool
@@ -16,6 +15,7 @@ from urllib.parse import urlparse
 from sgqlc.endpoint.http import HTTPEndpoint
 from sgqlc.operation import Operation
 from github_schema import github_schema as schema
+from zenhub_schema import zenhub_schema
 
 GITHUB_TOKEN = os.environ.get('GITHUB_TOKEN')
 ZENHUB_TOKEN = os.environ.get('ZENHUB_TOKEN')
@@ -109,6 +109,20 @@ REPO_SETS = {
 }
 
 REPOS = REPO_SETS[DAG_VIEW]
+
+WORKSPACE_SETS = {
+    # ecc-core
+    '5dc1fd615862290001229f21': CORE_REPOS.keys(),
+    # ecc-wallet
+    '5db8aa0244512d0001e0968e': WALLET_REPOS.keys(),
+    # zf
+    '5fb24d9264a3e8000e666a9e': ZF_REPOS.keys(),
+}
+
+WORKSPACES = {
+    workspace_id: [repo_id for repo_id in repos if repo_id in REPOS]
+    for (workspace_id, repos) in WORKSPACE_SETS.items()
+}
 
 SUPPORTED_CATEGORIES = set(['releases', 'targets'])
 def cats(s):
@@ -245,88 +259,168 @@ def download_issues(endpoint, nodes):
 
     return ret
 
+def fetch_workspace_graph(op, workspace_id, repos, cursor):
+    dependencies = op.workspace(id=workspace_id).issue_dependencies(
+        # TODO: This causes a 500 Internal Server Error. We need the ZenHub repo IDs here,
+        # not the GitHub repo IDs (which the previous REST API used).
+        # repository_ids=repos,
+        first=100,
+        after=cursor,
+    )
+    dependencies.nodes.id()
+    dependencies.nodes.blocked_issue.number()
+    dependencies.nodes.blocked_issue.repository.gh_id()
+    dependencies.nodes.blocking_issue.number()
+    dependencies.nodes.blocking_issue.repository.gh_id()
+    dependencies.page_info.has_next_page()
+    dependencies.page_info.end_cursor()
 
-class ZHDepsResourceHandler(drest.resource.ResourceHandler):
-    def get(self, repo_id):
-        path = '/repositories/%d/dependencies' % repo_id
+def get_dependency_graph(endpoint, workspace_id, repos):
+    edges = []
+    cursor = None
 
-        try:
-            response = self.api.make_request('GET', path, {})
-        except drest.exc.dRestRequestError as e:
-            msg = "%s (repo_id: %s)" % (e.msg, repo_id)
-            raise drest.exc.dRestRequestError(msg, e.response)
+    while True:
+        op = Operation(zenhub_schema.Query)
+        fetch_workspace_graph(op, workspace_id, repos, cursor)
 
-        def issue(json):
-            return (int(json['repo_id']), int(json['issue_number']))
+        d = endpoint(op)
+        data = (op + d)
 
-        return nx.DiGraph([
-            (issue(edge['blocking']), issue(edge['blocked']))
-            for edge in response.data['dependencies']
-        ])
+        dependencies = data.workspace.issue_dependencies
+        edges += [
+            (
+                (node.blocking_issue.repository.gh_id, node.blocking_issue.number),
+                (node.blocked_issue.repository.gh_id, node.blocked_issue.number),
+            ) for node in dependencies.nodes
+        ]
 
-class ZHEpicsResourceHandler(drest.resource.ResourceHandler):
-    def get(self, repo_id):
-        path = '/repositories/%d/epics' % repo_id
+        if dependencies.page_info.has_next_page:
+            cursor = dependencies.page_info.end_cursor
+            print('.', end='', flush=True)
+        else:
+            print()
+            break
 
-        try:
-            response = self.api.make_request('GET', path, {})
-        except drest.exc.dRestRequestError as e:
-            msg = "%s (repo_id: %s)" % (e.msg, repo_id)
-            raise drest.exc.dRestRequestError(msg, e.response)
+    return nx.DiGraph(edges)
 
-        return [i['issue_number'] for i in response.data['epic_issues']]
+def fetch_epics(op, workspace_id, repos, cursor):
+    epics = op.workspace(id=workspace_id).epics(
+        # TODO: This causes a 500 Internal Server Error. We need the ZenHub repo IDs here,
+        # not the GitHub repo IDs (which the previous REST API used).
+        # repository_ids=repos,
+        first=100,
+        after=cursor,
+    )
+    epics.nodes.id()
+    epics.nodes.issue.number()
+    epics.nodes.issue.repository.gh_id()
+    epics.page_info.has_next_page()
+    epics.page_info.end_cursor()
 
-class ZHEpicsIssuesResourceHandler(drest.resource.ResourceHandler):
-    def get(self, repo_id, epic_id):
-        path = '/repositories/%d/epics/%d' % (repo_id, epic_id)
+def get_epics(endpoint, workspace_id, repos):
+    epics = []
+    cursor = None
 
-        try:
-            response = self.api.make_request('GET', path, {})
-        except drest.exc.dRestRequestError as e:
-            msg = "%s (repo_id: %s)" % (e.msg, repo_id)
-            raise drest.exc.dRestRequestError(msg, e.response)
+    while True:
+        op = Operation(zenhub_schema.Query)
+        fetch_epics(op, workspace_id, repos, cursor)
 
-        return [(i['repo_id'], i['issue_number']) for i in response.data['issues']]
+        d = endpoint(op)
+        data = (op + d)
 
-class ZenHubAPI(drest.api.API):
-    class Meta:
-        baseurl = 'https://api.zenhub.com/p1'
-        extra_headers = {
-            'X-Authentication-Token': ZENHUB_TOKEN,
-            'Content-Type': 'application/json',
-        }
+        epics_page = data.workspace.epics
+        epics += [
+            (node.id, (node.issue.repository.gh_id, node.issue.number))
+            for node in epics_page.nodes
+        ]
 
-    def __init__(self, *args, **kw):
-        super(ZenHubAPI, self).__init__(*args, **kw)
-        self.add_resource('dependencies', ZHDepsResourceHandler)
-        self.add_resource('epics', ZHEpicsResourceHandler)
-        self.add_resource('epics_issues', ZHEpicsIssuesResourceHandler)
+        if epics_page.page_info.has_next_page:
+            cursor = epics_page.page_info.end_cursor
+            print('.', end='', flush=True)
+        else:
+            print()
+            break
 
-    def auth(self, *args, **kw):
-        pass
+    return epics
 
+def fetch_epic_issues(op, workspace_id, epic_id, cursor):
+    epic = op.workspace(id=workspace_id).epics(ids=[epic_id])
+    child_issues = epic.nodes.child_issues(
+        first=100,
+        after=cursor,
+    )
+    child_issues.nodes.number()
+    child_issues.nodes.repository.gh_id()
+    child_issues.page_info.has_next_page()
+    child_issues.page_info.end_cursor()
+
+def get_epic_issues(endpoint, workspace_id, epic_id):
+    epic_issues = []
+    cursor = None
+
+    while True:
+        op = Operation(zenhub_schema.Query)
+        fetch_epic_issues(op, workspace_id, epic_id, cursor)
+
+        d = endpoint(op)
+        data = (op + d)
+
+        epic = data.workspace.epics.nodes[0]
+        epic_issues += [
+            (node.repository.gh_id, node.number)
+            for node in epic.child_issues.nodes
+        ]
+
+        if epic.child_issues.page_info.has_next_page:
+            cursor = epic.child_issues.page_info.end_cursor
+            print('.', end='', flush=True)
+        else:
+            print()
+            break
+
+    return epic_issues
 
 def main():
     gapi = HTTPEndpoint(
         'https://api.github.com/graphql',
         {'Authorization': 'bearer %s' % GITHUB_TOKEN},
     )
-    zapi = ZenHubAPI()
+    zapi = HTTPEndpoint(
+        'https://api.zenhub.com/public/graphql',
+        {'Authorization': 'Bearer %s' % ZENHUB_TOKEN},
+    )
 
-    # Build the full dependency graph from ZenHub's per-repo APIs.
-    dg = nx.compose_all([zapi.dependencies.get(x) for x in REPOS])
+    # Build the full dependency graph from ZenHub's per-workspace API.
+    print('Fetching graph')
+    dg = nx.compose_all([
+        get_dependency_graph(zapi, workspace_id, repos)
+        for (workspace_id, repos) in WORKSPACES.items()
+        if len(repos) > 0
+    ])
+
+    print('Rendering DAG')
 
     if SHOW_EPICS:
         epics_issues = []
-        for repo_id in REPOS:
-            for epic_id in zapi.epics.get(repo_id):
-                epics_issues.append((repo_id, epic_id))
+        for (workspace_id, repos) in WORKSPACES.items():
+            if len(repos) > 0:
+                epics_issues += get_epics(zapi, workspace_id, repos)
+        epics_issues = set(epics_issues)
 
-        epics_mapping = download_issues(gapi, epics_issues)
+        epics_mapping = download_issues(gapi, [gh_ref for (_, gh_ref) in epics_issues])
         epics_mapping = {k: v for (k, v) in epics_mapping.items() if v.state != 'closed'}
         issues_by_epic = {}
         for (i, ((repo_id, epic_id), epic)) in enumerate(epics_mapping.items()):
-            issues = set(zapi.epics_issues.get(repo_id, epic_id))
+            workspace_id = [
+                workspace_id
+                for (workspace_id, repos) in WORKSPACES.items()
+                if repo_id in repos
+            ][0]
+            epic_id = [
+                id for (id, gh_ref) in epics_issues
+                if gh_ref == (repo_id, epic_id)
+            ][0]
+            issues = set(get_epic_issues(zapi, workspace_id, epic_id))
             issues_by_epic[epic] = issues
             for i in issues:
                 # zapi.dependencies only returns nodes that have some connection,
