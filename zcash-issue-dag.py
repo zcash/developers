@@ -81,6 +81,10 @@ ZF_REPOS = {
     279422254: ('ZcashFoundation', 'zcash_script'),
 }
 
+ZF_FROST_REPOS = {
+    437862440: ('ZcashFoundation', 'frost'),
+}
+
 ZCASHD_DEPRECATION_REPOS = {
     26987049: ('zcash', 'zcash'),
     47279130: ('zcash', 'zips'),
@@ -103,6 +107,8 @@ REPO_SETS = {
     'wallet-android': ANDROID_REPOS,
     'ecc': ECC_REPOS,
     'zf': ZF_REPOS,
+    'zf-frost': ZF_FROST_REPOS,
+    'zf-devops': {**ZF_REPOS, **ZF_FROST_REPOS},
     'zcashd-deprecation': ZCASHD_DEPRECATION_REPOS,
     'sprout-deprecation': POOL_DEPRECATION_REPOS,
     'transparent-deprecation': POOL_DEPRECATION_REPOS,
@@ -117,6 +123,8 @@ WORKSPACE_SETS = {
     '5db8aa0244512d0001e0968e': WALLET_REPOS.keys(),
     # zf
     '5fb24d9264a3e8000e666a9e': ZF_REPOS.keys(),
+    # zf-frost
+    '607d75e0169bd50011d5410f': ZF_FROST_REPOS.keys(),
 }
 
 WORKSPACES = {
