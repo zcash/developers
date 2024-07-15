@@ -45,24 +45,24 @@
 <text text-anchor="middle" x="218.5" y="-5958.8" font-family="Times,serif" font-size="14.00">Zashi Android Tech Debt</text>
 </g>
 <g id="clust8" class="cluster">
-<title>cluster_5</title>
-<polygon fill="none" stroke="blue" points="105.5,-4923 105.5,-5046 331.5,-5046 331.5,-4923 105.5,-4923"/>
-<text text-anchor="middle" x="218.5" y="-5030.8" font-family="Times,serif" font-size="14.00">Multiplatform</text>
-</g>
-<g id="clust9" class="cluster">
 <title>cluster_6</title>
 <polygon fill="none" stroke="blue" points="0,-5054 0,-5487 438,-5487 438,-5054 0,-5054"/>
 <text text-anchor="middle" x="219" y="-5471.8" font-family="Times,serif" font-size="14.00">Save/restore seed phrase from Google Credential Manager</text>
 </g>
-<g id="clust10" class="cluster">
-<title>cluster_4</title>
-<polygon fill="none" stroke="blue" points="819.5,-3041 819.5,-3276 1023.5,-3276 1023.5,-3041 819.5,-3041"/>
-<text text-anchor="middle" x="921.5" y="-3260.8" font-family="Times,serif" font-size="14.00">Zashi 1.2</text>
-</g>
-<g id="clust11" class="cluster">
+<g id="clust9" class="cluster">
 <title>cluster_7</title>
 <polygon fill="none" stroke="blue" points="69.5,-5495 69.5,-5802 367.5,-5802 367.5,-5495 69.5,-5495"/>
 <text text-anchor="middle" x="218.5" y="-5786.8" font-family="Times,serif" font-size="14.00">Localization and Accessibility (Android)</text>
+</g>
+<g id="clust10" class="cluster">
+<title>cluster_5</title>
+<polygon fill="none" stroke="blue" points="105.5,-4923 105.5,-5046 331.5,-5046 331.5,-4923 105.5,-4923"/>
+<text text-anchor="middle" x="218.5" y="-5030.8" font-family="Times,serif" font-size="14.00">Multiplatform</text>
+</g>
+<g id="clust11" class="cluster">
+<title>cluster_4</title>
+<polygon fill="none" stroke="blue" points="819.5,-3041 819.5,-3276 1023.5,-3276 1023.5,-3041 819.5,-3041"/>
+<text text-anchor="middle" x="921.5" y="-3260.8" font-family="Times,serif" font-size="14.00">Zashi 1.2</text>
 </g>
 <g id="clust12" class="cluster">
 <title>cluster_3</title>
@@ -709,9 +709,9 @@
 <polygon fill="black" stroke="black" points="500.6,-4009.29 509.84,-4004.1 499.38,-4002.4 500.6,-4009.29"/>
 </g>
 <!-- ECC/zashi#66 -->
-<g id="node64" class="node open">
+<g id="node68" class="node open">
 <title>ECC/zashi#66</title>
-<g id="a_node64"><a xlink:href="https://github.com/Electric-Coin-Company/zashi/issues/66" xlink:title="ECC/zashi#66&#10;Release Zashi 1.2" target="_blank">
+<g id="a_node68"><a xlink:href="https://github.com/Electric-Coin-Company/zashi/issues/66" xlink:title="ECC/zashi#66&#10;Release Zashi 1.2" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" points="993,-3159 850,-3159 850,-3121 993,-3121 993,-3159"/>
 <text text-anchor="middle" x="921.5" y="-3143.8" font-family="Times,serif" font-size="14.00">ECC/zashi#66</text>
 <text text-anchor="middle" x="921.5" y="-3128.8" font-family="Times,serif" font-size="14.00">Release Zashi 1.2</text>
@@ -1132,23 +1132,10 @@
 <path fill="none" stroke="black" d="M312.93,-5853.4C370.59,-5858.6 444.62,-5865.3 504.05,-5870.7"/>
 <polygon fill="black" stroke="black" points="503.94,-5874.2 514.21,-5871.6 504.56,-5867.23 503.94,-5874.2"/>
 </g>
-<!-- ECC/zashi&#45;android#164 -->
-<g id="node57" class="node open">
-<title>ECC/zashi&#45;android#164</title>
-<g id="a_node57"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-android/issues/164" xlink:title="ECC/zashi&#45;android#164&#10;Add multiplatform&#10;alternative for @Volatile&#10;and `AtomicInt`/`AtomicRe&#10;ference` in tests" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="323.5,-5014.5 113.5,-5014.5 113.5,-4931.5 323.5,-4931.5 323.5,-5014.5"/>
-<text text-anchor="middle" x="218.5" y="-4999.3" font-family="Times,serif" font-size="14.00">ECC/zashi&#45;android#164</text>
-<text text-anchor="middle" x="218.5" y="-4984.3" font-family="Times,serif" font-size="14.00">Add multiplatform</text>
-<text text-anchor="middle" x="218.5" y="-4969.3" font-family="Times,serif" font-size="14.00">alternative for @Volatile</text>
-<text text-anchor="middle" x="218.5" y="-4954.3" font-family="Times,serif" font-size="14.00">and `AtomicInt`/`AtomicRe</text>
-<text text-anchor="middle" x="218.5" y="-4939.3" font-family="Times,serif" font-size="14.00">ference` in tests</text>
-</a>
-</g>
-</g>
 <!-- ECC/zashi&#45;android#639 -->
-<g id="node58" class="node open">
+<g id="node57" class="node open">
 <title>ECC/zashi&#45;android#639</title>
-<g id="a_node58"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-android/issues/639" xlink:title="ECC/zashi&#45;android#639&#10;[GCM] Save values from&#10;Create new wallet flow" target="_blank">
+<g id="a_node57"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-android/issues/639" xlink:title="ECC/zashi&#45;android#639&#10;[GCM] Save values from&#10;Create new wallet flow" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="314,-5455.5 123,-5455.5 123,-5402.5 314,-5402.5 314,-5455.5"/>
 <text text-anchor="middle" x="218.5" y="-5440.3" font-family="Times,serif" font-size="14.00">ECC/zashi&#45;android#639</text>
 <text text-anchor="middle" x="218.5" y="-5425.3" font-family="Times,serif" font-size="14.00">[GCM] Save values from</text>
@@ -1157,9 +1144,9 @@
 </g>
 </g>
 <!-- ECC/zashi&#45;android#637 -->
-<g id="node59" class="node open">
+<g id="node58" class="node open">
 <title>ECC/zashi&#45;android#637</title>
-<g id="a_node59"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-android/issues/637" xlink:title="ECC/zashi&#45;android#637&#10;[GCM] Settings new&#10;permission detail screen" target="_blank">
+<g id="a_node58"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-android/issues/637" xlink:title="ECC/zashi&#45;android#637&#10;[GCM] Settings new&#10;permission detail screen" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="314.5,-5384.5 122.5,-5384.5 122.5,-5331.5 314.5,-5331.5 314.5,-5384.5"/>
 <text text-anchor="middle" x="218.5" y="-5369.3" font-family="Times,serif" font-size="14.00">ECC/zashi&#45;android#637</text>
 <text text-anchor="middle" x="218.5" y="-5354.3" font-family="Times,serif" font-size="14.00">[GCM] Settings new</text>
@@ -1168,9 +1155,9 @@
 </g>
 </g>
 <!-- ECC/zashi&#45;android#640 -->
-<g id="node60" class="node open">
+<g id="node59" class="node open">
 <title>ECC/zashi&#45;android#640</title>
-<g id="a_node60"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-android/issues/640" xlink:title="ECC/zashi&#45;android#640&#10;[GCM] Remove values from&#10;cloud backup" target="_blank">
+<g id="a_node59"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-android/issues/640" xlink:title="ECC/zashi&#45;android#640&#10;[GCM] Remove values from&#10;cloud backup" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="325,-5313.5 112,-5313.5 112,-5260.5 325,-5260.5 325,-5313.5"/>
 <text text-anchor="middle" x="218.5" y="-5298.3" font-family="Times,serif" font-size="14.00">ECC/zashi&#45;android#640</text>
 <text text-anchor="middle" x="218.5" y="-5283.3" font-family="Times,serif" font-size="14.00">[GCM] Remove values from</text>
@@ -1179,9 +1166,9 @@
 </g>
 </g>
 <!-- ECC/zashi&#45;android#636 -->
-<g id="node61" class="node open">
+<g id="node60" class="node open">
 <title>ECC/zashi&#45;android#636</title>
-<g id="a_node61"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-android/issues/636" xlink:title="ECC/zashi&#45;android#636&#10;[GCM] Settings new&#10;permissions section" target="_blank">
+<g id="a_node60"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-android/issues/636" xlink:title="ECC/zashi&#45;android#636&#10;[GCM] Settings new&#10;permissions section" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="312.5,-5242.5 124.5,-5242.5 124.5,-5189.5 312.5,-5189.5 312.5,-5242.5"/>
 <text text-anchor="middle" x="218.5" y="-5227.3" font-family="Times,serif" font-size="14.00">ECC/zashi&#45;android#636</text>
 <text text-anchor="middle" x="218.5" y="-5212.3" font-family="Times,serif" font-size="14.00">[GCM] Settings new</text>
@@ -1190,9 +1177,9 @@
 </g>
 </g>
 <!-- ECC/zashi&#45;android#638 -->
-<g id="node62" class="node open">
+<g id="node61" class="node open">
 <title>ECC/zashi&#45;android#638</title>
-<g id="a_node62"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-android/issues/638" xlink:title="ECC/zashi&#45;android#638&#10;[GCM] Read values for&#10;Restore wallet flow" target="_blank">
+<g id="a_node61"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-android/issues/638" xlink:title="ECC/zashi&#45;android#638&#10;[GCM] Read values for&#10;Restore wallet flow" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="312.5,-5171.5 124.5,-5171.5 124.5,-5118.5 312.5,-5118.5 312.5,-5171.5"/>
 <text text-anchor="middle" x="218.5" y="-5156.3" font-family="Times,serif" font-size="14.00">ECC/zashi&#45;android#638</text>
 <text text-anchor="middle" x="218.5" y="-5141.3" font-family="Times,serif" font-size="14.00">[GCM] Read values for</text>
@@ -1201,12 +1188,69 @@
 </g>
 </g>
 <!-- ECC/zashi&#45;android#635 -->
-<g id="node63" class="node open">
+<g id="node62" class="node open">
 <title>ECC/zashi&#45;android#635</title>
-<g id="a_node63"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-android/issues/635" xlink:title="ECC/zashi&#45;android#635&#10;[GCM] Consent dialog" target="_blank">
+<g id="a_node62"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-android/issues/635" xlink:title="ECC/zashi&#45;android#635&#10;[GCM] Consent dialog" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="312.5,-5100 124.5,-5100 124.5,-5062 312.5,-5062 312.5,-5100"/>
 <text text-anchor="middle" x="218.5" y="-5084.8" font-family="Times,serif" font-size="14.00">ECC/zashi&#45;android#635</text>
 <text text-anchor="middle" x="218.5" y="-5069.8" font-family="Times,serif" font-size="14.00">[GCM] Consent dialog</text>
+</a>
+</g>
+</g>
+<!-- ECC/zashi&#45;android#1171 -->
+<g id="node63" class="node open">
+<title>ECC/zashi&#45;android#1171</title>
+<g id="a_node63"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-android/issues/1171" xlink:title="ECC/zashi&#45;android#1171&#10;Remove default&#10;MonetarySeparators locale" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="323.5,-5770.5 113.5,-5770.5 113.5,-5717.5 323.5,-5717.5 323.5,-5770.5"/>
+<text text-anchor="middle" x="218.5" y="-5755.3" font-family="Times,serif" font-size="14.00">ECC/zashi&#45;android#1171</text>
+<text text-anchor="middle" x="218.5" y="-5740.3" font-family="Times,serif" font-size="14.00">Remove default</text>
+<text text-anchor="middle" x="218.5" y="-5725.3" font-family="Times,serif" font-size="14.00">MonetarySeparators locale</text>
+</a>
+</g>
+</g>
+<!-- ECC/zashi&#45;android#248 -->
+<g id="node64" class="node open">
+<title>ECC/zashi&#45;android#248</title>
+<g id="a_node64"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-android/issues/248" xlink:title="ECC/zashi&#45;android#248&#10;RTL Localization Issues" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="312.5,-5699 124.5,-5699 124.5,-5661 312.5,-5661 312.5,-5699"/>
+<text text-anchor="middle" x="218.5" y="-5683.8" font-family="Times,serif" font-size="14.00">ECC/zashi&#45;android#248</text>
+<text text-anchor="middle" x="218.5" y="-5668.8" font-family="Times,serif" font-size="14.00">RTL Localization Issues</text>
+</a>
+</g>
+</g>
+<!-- ECC/zcash&#45;android&#45;wallet&#45;sdk#259 -->
+<g id="node65" class="node open">
+<title>ECC/zcash&#45;android&#45;wallet&#45;sdk#259</title>
+<g id="a_node65"><a xlink:href="https://github.com/Electric-Coin-Company/zcash-android-wallet-sdk/issues/259" xlink:title="ECC/zcash&#45;android&#45;wallet&#45;sdk#259&#10;Don&#39;t use Default Locale" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="352.5,-5643 84.5,-5643 84.5,-5605 352.5,-5605 352.5,-5643"/>
+<text text-anchor="middle" x="218.5" y="-5627.8" font-family="Times,serif" font-size="14.00">ECC/zcash&#45;android&#45;wallet&#45;sdk#259</text>
+<text text-anchor="middle" x="218.5" y="-5612.8" font-family="Times,serif" font-size="14.00">Don&#39;t use Default Locale</text>
+</a>
+</g>
+</g>
+<!-- ECC/zcash&#45;android&#45;wallet&#45;sdk#412 -->
+<g id="node66" class="node open">
+<title>ECC/zcash&#45;android&#45;wallet&#45;sdk#412</title>
+<g id="a_node66"><a xlink:href="https://github.com/Electric-Coin-Company/zcash-android-wallet-sdk/issues/412" xlink:title="ECC/zcash&#45;android&#45;wallet&#45;sdk#412&#10;Currency Formatter&#10;Doesn&#39;t Use Monetary&#10;Decimal Separator&#10;Default" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="352.5,-5586.5 84.5,-5586.5 84.5,-5503.5 352.5,-5503.5 352.5,-5586.5"/>
+<text text-anchor="middle" x="218.5" y="-5571.3" font-family="Times,serif" font-size="14.00">ECC/zcash&#45;android&#45;wallet&#45;sdk#412</text>
+<text text-anchor="middle" x="218.5" y="-5556.3" font-family="Times,serif" font-size="14.00">Currency Formatter</text>
+<text text-anchor="middle" x="218.5" y="-5541.3" font-family="Times,serif" font-size="14.00">Doesn&#39;t Use Monetary</text>
+<text text-anchor="middle" x="218.5" y="-5526.3" font-family="Times,serif" font-size="14.00">Decimal Separator</text>
+<text text-anchor="middle" x="218.5" y="-5511.3" font-family="Times,serif" font-size="14.00">Default</text>
+</a>
+</g>
+</g>
+<!-- ECC/zashi&#45;android#164 -->
+<g id="node67" class="node open">
+<title>ECC/zashi&#45;android#164</title>
+<g id="a_node67"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-android/issues/164" xlink:title="ECC/zashi&#45;android#164&#10;Add multiplatform&#10;alternative for @Volatile&#10;and `AtomicInt`/`AtomicRe&#10;ference` in tests" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="323.5,-5014.5 113.5,-5014.5 113.5,-4931.5 323.5,-4931.5 323.5,-5014.5"/>
+<text text-anchor="middle" x="218.5" y="-4999.3" font-family="Times,serif" font-size="14.00">ECC/zashi&#45;android#164</text>
+<text text-anchor="middle" x="218.5" y="-4984.3" font-family="Times,serif" font-size="14.00">Add multiplatform</text>
+<text text-anchor="middle" x="218.5" y="-4969.3" font-family="Times,serif" font-size="14.00">alternative for @Volatile</text>
+<text text-anchor="middle" x="218.5" y="-4954.3" font-family="Times,serif" font-size="14.00">and `AtomicInt`/`AtomicRe</text>
+<text text-anchor="middle" x="218.5" y="-4939.3" font-family="Times,serif" font-size="14.00">ference` in tests</text>
 </a>
 </g>
 </g>
@@ -1227,9 +1271,9 @@
 <polygon fill="black" stroke="black" points="841.03,-2998.66 849.65,-2992.5 839.07,-2991.94 841.03,-2998.66"/>
 </g>
 <!-- ECC/zashi#38 -->
-<g id="node65" class="node open">
+<g id="node69" class="node open">
 <title>ECC/zashi#38</title>
-<g id="a_node65"><a xlink:href="https://github.com/Electric-Coin-Company/zashi/issues/38" xlink:title="ECC/zashi#38&#10;Enable address rotation&#10;for Zashi" target="_blank">
+<g id="a_node69"><a xlink:href="https://github.com/Electric-Coin-Company/zashi/issues/38" xlink:title="ECC/zashi#38&#10;Enable address rotation&#10;for Zashi" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="1015.5,-3102.5 827.5,-3102.5 827.5,-3049.5 1015.5,-3049.5 1015.5,-3102.5"/>
 <text text-anchor="middle" x="921.5" y="-3087.3" font-family="Times,serif" font-size="14.00">ECC/zashi#38</text>
 <text text-anchor="middle" x="921.5" y="-3072.3" font-family="Times,serif" font-size="14.00">Enable address rotation</text>
@@ -1244,9 +1288,9 @@
 <polygon fill="black" stroke="black" points="1195.25,-3455.19 1199.7,-3464.8 1202.22,-3454.51 1195.25,-3455.19"/>
 </g>
 <!-- ECC/zashi#40 -->
-<g id="node66" class="node open">
+<g id="node70" class="node open">
 <title>ECC/zashi#40</title>
-<g id="a_node66"><a xlink:href="https://github.com/Electric-Coin-Company/zashi/issues/40" xlink:title="ECC/zashi#40&#10;Add &quot;Send entire wallet&#10;balance&quot; option to the&#10;send workflow." target="_blank">
+<g id="a_node70"><a xlink:href="https://github.com/Electric-Coin-Company/zashi/issues/40" xlink:title="ECC/zashi#40&#10;Add &quot;Send entire wallet&#10;balance&quot; option to the&#10;send workflow." target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="1015,-3245 828,-3245 828,-3177 1015,-3177 1015,-3245"/>
 <text text-anchor="middle" x="921.5" y="-3229.8" font-family="Times,serif" font-size="14.00">ECC/zashi#40</text>
 <text text-anchor="middle" x="921.5" y="-3214.8" font-family="Times,serif" font-size="14.00">Add &quot;Send entire wallet</text>
@@ -1260,50 +1304,6 @@
 <title>ECC/zashi#40&#45;&gt;ECC/zashi#27</title>
 <path fill="none" stroke="black" d="M1007,-3245.1C1025.6,-3254.7 1044.4,-3266.4 1060,-3280 1119.2,-3331.5 1165.6,-3413 1187.4,-3455.8"/>
 <polygon fill="black" stroke="black" points="1184.3,-3457.42 1191.9,-3464.8 1190.56,-3454.29 1184.3,-3457.42"/>
-</g>
-<!-- ECC/zashi&#45;android#1171 -->
-<g id="node67" class="node open">
-<title>ECC/zashi&#45;android#1171</title>
-<g id="a_node67"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-android/issues/1171" xlink:title="ECC/zashi&#45;android#1171&#10;Remove default&#10;MonetarySeparators locale" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="323.5,-5770.5 113.5,-5770.5 113.5,-5717.5 323.5,-5717.5 323.5,-5770.5"/>
-<text text-anchor="middle" x="218.5" y="-5755.3" font-family="Times,serif" font-size="14.00">ECC/zashi&#45;android#1171</text>
-<text text-anchor="middle" x="218.5" y="-5740.3" font-family="Times,serif" font-size="14.00">Remove default</text>
-<text text-anchor="middle" x="218.5" y="-5725.3" font-family="Times,serif" font-size="14.00">MonetarySeparators locale</text>
-</a>
-</g>
-</g>
-<!-- ECC/zashi&#45;android#248 -->
-<g id="node68" class="node open">
-<title>ECC/zashi&#45;android#248</title>
-<g id="a_node68"><a xlink:href="https://github.com/Electric-Coin-Company/zashi-android/issues/248" xlink:title="ECC/zashi&#45;android#248&#10;RTL Localization Issues" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="312.5,-5699 124.5,-5699 124.5,-5661 312.5,-5661 312.5,-5699"/>
-<text text-anchor="middle" x="218.5" y="-5683.8" font-family="Times,serif" font-size="14.00">ECC/zashi&#45;android#248</text>
-<text text-anchor="middle" x="218.5" y="-5668.8" font-family="Times,serif" font-size="14.00">RTL Localization Issues</text>
-</a>
-</g>
-</g>
-<!-- ECC/zcash&#45;android&#45;wallet&#45;sdk#259 -->
-<g id="node69" class="node open">
-<title>ECC/zcash&#45;android&#45;wallet&#45;sdk#259</title>
-<g id="a_node69"><a xlink:href="https://github.com/Electric-Coin-Company/zcash-android-wallet-sdk/issues/259" xlink:title="ECC/zcash&#45;android&#45;wallet&#45;sdk#259&#10;Don&#39;t use Default Locale" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="352.5,-5643 84.5,-5643 84.5,-5605 352.5,-5605 352.5,-5643"/>
-<text text-anchor="middle" x="218.5" y="-5627.8" font-family="Times,serif" font-size="14.00">ECC/zcash&#45;android&#45;wallet&#45;sdk#259</text>
-<text text-anchor="middle" x="218.5" y="-5612.8" font-family="Times,serif" font-size="14.00">Don&#39;t use Default Locale</text>
-</a>
-</g>
-</g>
-<!-- ECC/zcash&#45;android&#45;wallet&#45;sdk#412 -->
-<g id="node70" class="node open">
-<title>ECC/zcash&#45;android&#45;wallet&#45;sdk#412</title>
-<g id="a_node70"><a xlink:href="https://github.com/Electric-Coin-Company/zcash-android-wallet-sdk/issues/412" xlink:title="ECC/zcash&#45;android&#45;wallet&#45;sdk#412&#10;Currency Formatter&#10;Doesn&#39;t Use Monetary&#10;Decimal Separator&#10;Default" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="352.5,-5586.5 84.5,-5586.5 84.5,-5503.5 352.5,-5503.5 352.5,-5586.5"/>
-<text text-anchor="middle" x="218.5" y="-5571.3" font-family="Times,serif" font-size="14.00">ECC/zcash&#45;android&#45;wallet&#45;sdk#412</text>
-<text text-anchor="middle" x="218.5" y="-5556.3" font-family="Times,serif" font-size="14.00">Currency Formatter</text>
-<text text-anchor="middle" x="218.5" y="-5541.3" font-family="Times,serif" font-size="14.00">Doesn&#39;t Use Monetary</text>
-<text text-anchor="middle" x="218.5" y="-5526.3" font-family="Times,serif" font-size="14.00">Decimal Separator</text>
-<text text-anchor="middle" x="218.5" y="-5511.3" font-family="Times,serif" font-size="14.00">Default</text>
-</a>
-</g>
 </g>
 <!-- ECC/zashi#33 -->
 <g id="node71" class="node open">
