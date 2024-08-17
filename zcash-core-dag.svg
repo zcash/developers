@@ -10,34 +10,34 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 18516.5)">
 <polygon fill="white" stroke="transparent" points="-4,4 -4,-18516.5 3104,-18516.5 3104,4 -4,4"/>
 <g id="clust1" class="cluster">
-<title>cluster_0</title>
-<polygon fill="none" stroke="blue" points="1166.5,-2636.5 1166.5,-3827.5 1874,-3827.5 1874,-2636.5 1166.5,-2636.5"/>
-<text text-anchor="middle" x="1520.2" y="-3812.3" font-family="Times,serif" font-size="14.00">Release 5.10.0</text>
-</g>
-<g id="clust2" class="cluster">
 <title>cluster_12</title>
 <polygon fill="none" stroke="blue" points="42,-12112 42,-12566 587.5,-12566 587.5,-12112 42,-12112"/>
 <text text-anchor="middle" x="314.75" y="-12550.3" font-family="Times,serif" font-size="14.00">DAG Sync</text>
 </g>
-<g id="clust3" class="cluster">
-<title>cluster_8</title>
-<polygon fill="none" stroke="blue" points="1163.5,-12206 1163.5,-12730 3100,-12730 3100,-12206 1163.5,-12206"/>
-<text text-anchor="middle" x="2131.8" y="-12714.3" font-family="Times,serif" font-size="14.00">NU7</text>
+<g id="clust2" class="cluster">
+<title>cluster_0</title>
+<polygon fill="none" stroke="blue" points="1166.5,-2636.5 1166.5,-3827.5 1874,-3827.5 1874,-2636.5 1166.5,-2636.5"/>
+<text text-anchor="middle" x="1520.2" y="-3812.3" font-family="Times,serif" font-size="14.00">Release 5.10.0</text>
 </g>
-<g id="clust4" class="cluster">
+<g id="clust3" class="cluster">
 <title>cluster_11</title>
 <polygon fill="none" stroke="blue" points="1421,-61.5 1421,-503.5 2165,-503.5 2165,-61.5 1421,-61.5"/>
 <text text-anchor="middle" x="1793" y="-488.3" font-family="Times,serif" font-size="14.00">ZIP 320 and related changes</text>
 </g>
-<g id="clust5" class="cluster">
+<g id="clust4" class="cluster">
 <title>cluster_10</title>
 <polygon fill="none" stroke="blue" points="40.5,-11742 40.5,-11820 259.5,-11820 259.5,-11742 40.5,-11742"/>
 <text text-anchor="middle" x="150" y="-11804.3" font-family="Times,serif" font-size="14.00">Zashi 1.2</text>
 </g>
-<g id="clust6" class="cluster">
+<g id="clust5" class="cluster">
 <title>cluster_9</title>
 <polygon fill="none" stroke="blue" points="2449,-11632 2449,-11708 2656,-11708 2656,-11632 2449,-11632"/>
 <text text-anchor="middle" x="2552.5" y="-11693.3" font-family="Times,serif" font-size="14.00">Documentation Q4 2024</text>
+</g>
+<g id="clust6" class="cluster">
+<title>cluster_8</title>
+<polygon fill="none" stroke="blue" points="1163.5,-12206 1163.5,-12730 3100,-12730 3100,-12206 1163.5,-12206"/>
+<text text-anchor="middle" x="2131.8" y="-12714.3" font-family="Times,serif" font-size="14.00">NU7</text>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_7</title>
@@ -94,10 +94,110 @@
 <polygon fill="none" stroke="blue" points="1174.5,-7433.5 1174.5,-11114 2413.5,-11114 2413.5,-7433.5 1174.5,-7433.5"/>
 <text text-anchor="middle" x="1794" y="-11099.3" font-family="Times,serif" font-size="14.00">Documentation Q2 2024</text>
 </g>
-<!-- zcash/zcash#6926 -->
+<!-- zcash/librustzcash#722 -->
 <g id="node1" class="node open">
+<title>zcash/librustzcash#722</title>
+<g id="a_node1"><a xlink:href="https://github.com/zcash/librustzcash/issues/722" xlink:title="zcash/librustzcash#722&#10;Create a `tower::Service`&#10;for nullifier lookup" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="249.5,-12534.5 50.5,-12534.5 50.5,-12481.5 249.5,-12481.5 249.5,-12534.5"/>
+<text text-anchor="middle" x="150" y="-12519.3" font-family="Times,serif" font-size="14.00">zcash/librustzcash#722</text>
+<text text-anchor="middle" x="150" y="-12504.3" font-family="Times,serif" font-size="14.00">Create a `tower::Service`</text>
+<text text-anchor="middle" x="150" y="-12489.3" font-family="Times,serif" font-size="14.00">for nullifier lookup</text>
+</a>
+</g>
+</g>
+<!-- zcash/librustzcash#720 -->
+<g id="node2" class="node open">
+<title>zcash/librustzcash#720</title>
+<g id="a_node2"><a xlink:href="https://github.com/zcash/librustzcash/issues/720" xlink:title="zcash/librustzcash#720&#10;Implement DAGSync" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" points="579.5,-12307 576.5,-12311 555.5,-12311 552.5,-12307 392.5,-12307 392.5,-12269 579.5,-12269 579.5,-12307"/>
+<text text-anchor="middle" x="486" y="-12291.8" font-family="Times,serif" font-size="14.00">zcash/librustzcash#720</text>
+<text text-anchor="middle" x="486" y="-12276.8" font-family="Times,serif" font-size="14.00">Implement DAGSync</text>
+</a>
+</g>
+</g>
+<!-- zcash/librustzcash#722&#45;&gt;zcash/librustzcash#720 -->
+<g id="edge1" class="edge">
+<title>zcash/librustzcash#722&#45;&gt;zcash/librustzcash#720</title>
+<path fill="none" stroke="black" d="M249.68,-12492C267.09,-12488 284.56,-12481 300,-12472 372.25,-12432 435.3,-12356 465.69,-12315"/>
+<polygon fill="black" stroke="black" points="468.49,-12317.1 471.68,-12307 462.88,-12312.91 468.49,-12317.1"/>
+</g>
+<!-- zcash/librustzcash#723 -->
+<g id="node3" class="node open">
+<title>zcash/librustzcash#723</title>
+<g id="a_node3"><a xlink:href="https://github.com/zcash/librustzcash/issues/723" xlink:title="zcash/librustzcash#723&#10;Create a `tower::Service`&#10;for fetching a&#10;transaction given a&#10;`(block, tx_index)`" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="249.5,-12463.5 50.5,-12463.5 50.5,-12380.5 249.5,-12380.5 249.5,-12463.5"/>
+<text text-anchor="middle" x="150" y="-12448.3" font-family="Times,serif" font-size="14.00">zcash/librustzcash#723</text>
+<text text-anchor="middle" x="150" y="-12433.3" font-family="Times,serif" font-size="14.00">Create a `tower::Service`</text>
+<text text-anchor="middle" x="150" y="-12418.3" font-family="Times,serif" font-size="14.00">for fetching a</text>
+<text text-anchor="middle" x="150" y="-12403.3" font-family="Times,serif" font-size="14.00">transaction given a</text>
+<text text-anchor="middle" x="150" y="-12388.3" font-family="Times,serif" font-size="14.00">`(block, tx_index)`</text>
+</a>
+</g>
+</g>
+<!-- zcash/librustzcash#723&#45;&gt;zcash/librustzcash#720 -->
+<g id="edge2" class="edge">
+<title>zcash/librustzcash#723&#45;&gt;zcash/librustzcash#720</title>
+<path fill="none" stroke="black" d="M249.65,-12389C266.54,-12383 283.85,-12377 300,-12370 346.94,-12352 399.32,-12328 436.33,-12311"/>
+<polygon fill="black" stroke="black" points="437.66,-12314.24 445.39,-12307 434.83,-12307.84 437.66,-12314.24"/>
+</g>
+<!-- zcash/librustzcash#712 -->
+<g id="node4" class="node open">
+<title>zcash/librustzcash#712</title>
+<g id="a_node4"><a xlink:href="https://github.com/zcash/librustzcash/issues/712" xlink:title="zcash/librustzcash#712&#10;Refactor the Data Access&#10;API to support non&#45;block&#10;updates" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="248,-12362 52,-12362 52,-12294 248,-12294 248,-12362"/>
+<text text-anchor="middle" x="150" y="-12346.8" font-family="Times,serif" font-size="14.00">zcash/librustzcash#712</text>
+<text text-anchor="middle" x="150" y="-12331.8" font-family="Times,serif" font-size="14.00">Refactor the Data Access</text>
+<text text-anchor="middle" x="150" y="-12316.8" font-family="Times,serif" font-size="14.00">API to support non&#45;block</text>
+<text text-anchor="middle" x="150" y="-12301.8" font-family="Times,serif" font-size="14.00">updates</text>
+</a>
+</g>
+</g>
+<!-- zcash/librustzcash#712&#45;&gt;zcash/librustzcash#720 -->
+<g id="edge3" class="edge">
+<title>zcash/librustzcash#712&#45;&gt;zcash/librustzcash#720</title>
+<path fill="none" stroke="black" d="M248.06,-12316C290.14,-12311 339.45,-12305 382.16,-12300"/>
+<polygon fill="black" stroke="black" points="382.69,-12303.46 392.3,-12299 382,-12296.5 382.69,-12303.46"/>
+</g>
+<!-- zcash/librustzcash#718 -->
+<g id="node5" class="node open">
+<title>zcash/librustzcash#718</title>
+<g id="a_node5"><a xlink:href="https://github.com/zcash/librustzcash/issues/718" xlink:title="zcash/librustzcash#718&#10;Create `tower::Service`&#10;wrapping an `FsBlockDb`" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="250,-12274.5 50,-12274.5 50,-12221.5 250,-12221.5 250,-12274.5"/>
+<text text-anchor="middle" x="150" y="-12259.3" font-family="Times,serif" font-size="14.00">zcash/librustzcash#718</text>
+<text text-anchor="middle" x="150" y="-12244.3" font-family="Times,serif" font-size="14.00">Create `tower::Service`</text>
+<text text-anchor="middle" x="150" y="-12229.3" font-family="Times,serif" font-size="14.00">wrapping an `FsBlockDb`</text>
+</a>
+</g>
+</g>
+<!-- zcash/librustzcash#718&#45;&gt;zcash/librustzcash#720 -->
+<g id="edge4" class="edge">
+<title>zcash/librustzcash#718&#45;&gt;zcash/librustzcash#720</title>
+<path fill="none" stroke="black" d="M250.31,-12260C291.96,-12265 340.39,-12271 382.39,-12276"/>
+<polygon fill="black" stroke="black" points="382.06,-12279.48 392.36,-12277 382.76,-12272.52 382.06,-12279.48"/>
+</g>
+<!-- zcash/librustzcash#776 -->
+<g id="node6" class="node open">
+<title>zcash/librustzcash#776</title>
+<g id="a_node6"><a xlink:href="https://github.com/zcash/librustzcash/issues/776" xlink:title="zcash/librustzcash#776&#10;DAG Sync: Use a&#10;downloaded nullifier set&#10;to allow instant&#10;spentness checks." target="_blank">
+<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="244,-12203.5 56,-12203.5 56,-12120.5 244,-12120.5 244,-12203.5"/>
+<text text-anchor="middle" x="150" y="-12188.3" font-family="Times,serif" font-size="14.00">zcash/librustzcash#776</text>
+<text text-anchor="middle" x="150" y="-12173.3" font-family="Times,serif" font-size="14.00">DAG Sync: Use a</text>
+<text text-anchor="middle" x="150" y="-12158.3" font-family="Times,serif" font-size="14.00">downloaded nullifier set</text>
+<text text-anchor="middle" x="150" y="-12143.3" font-family="Times,serif" font-size="14.00">to allow instant</text>
+<text text-anchor="middle" x="150" y="-12128.3" font-family="Times,serif" font-size="14.00">spentness checks.</text>
+</a>
+</g>
+</g>
+<!-- zcash/librustzcash#776&#45;&gt;zcash/librustzcash#720 -->
+<g id="edge5" class="edge">
+<title>zcash/librustzcash#776&#45;&gt;zcash/librustzcash#720</title>
+<path fill="none" stroke="black" d="M244.25,-12194C262.78,-12200 282.06,-12207 300,-12214 343.92,-12230 393.13,-12250 429.75,-12265"/>
+<polygon fill="black" stroke="black" points="428.66,-12268.33 439.25,-12268 430.77,-12261.65 428.66,-12268.33"/>
+</g>
+<!-- zcash/zcash#6926 -->
+<g id="node7" class="node open">
 <title>zcash/zcash#6926</title>
-<g id="a_node1"><a xlink:href="https://github.com/zcash/zcash/pull/6926" xlink:title="zcash/zcash#6926&#10;Ensure out&#45;reference&#10;parameters of `CWallet::C&#10;reateTransaction` are&#10;initialized" target="_blank">
+<g id="a_node7"><a xlink:href="https://github.com/zcash/zcash/pull/6926" xlink:title="zcash/zcash#6926&#10;Ensure out&#45;reference&#10;parameters of `CWallet::C&#10;reateTransaction` are&#10;initialized" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="1628.5,-3279 1425.5,-3279 1425.5,-3275 1421.5,-3275 1421.5,-3271 1425.5,-3271 1425.5,-3204 1421.5,-3204 1421.5,-3200 1425.5,-3200 1425.5,-3196 1628.5,-3196 1628.5,-3279"/>
 <polyline fill="none" stroke="black" stroke-width="2" points="1425.5,-3275 1429.5,-3275 1429.5,-3271 1425.5,-3271 "/>
 <polyline fill="none" stroke="black" stroke-width="2" points="1425.5,-3204 1429.5,-3204 1429.5,-3200 1425.5,-3200 "/>
@@ -110,9 +210,9 @@
 </g>
 </g>
 <!-- zcash/zcash#6856 -->
-<g id="node2" class="node open">
+<g id="node8" class="node open">
 <title>zcash/zcash#6856</title>
-<g id="a_node2"><a xlink:href="https://github.com/zcash/zcash/issues/6856" xlink:title="zcash/zcash#6856&#10;Release 5.10.0" target="_blank">
+<g id="a_node8"><a xlink:href="https://github.com/zcash/zcash/issues/6856" xlink:title="zcash/zcash#6856&#10;Release 5.10.0" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" points="1866,-3213.5 1717,-3213.5 1717,-3175.5 1866,-3175.5 1866,-3213.5"/>
 <text text-anchor="middle" x="1791.5" y="-3198.3" font-family="Times,serif" font-size="14.00">zcash/zcash#6856</text>
 <text text-anchor="middle" x="1791.5" y="-3183.3" font-family="Times,serif" font-size="14.00">Release 5.10.0</text>
@@ -120,15 +220,15 @@
 </g>
 </g>
 <!-- zcash/zcash#6926&#45;&gt;zcash/zcash#6856 -->
-<g id="edge1" class="edge">
+<g id="edge6" class="edge">
 <title>zcash/zcash#6926&#45;&gt;zcash/zcash#6856</title>
 <path fill="none" stroke="black" d="M1628.7,-3221C1654.5,-3216.8 1682,-3212.3 1706.8,-3208.2"/>
 <polygon fill="black" stroke="black" points="1707.57,-3211.62 1716.9,-3206.6 1706.48,-3204.71 1707.57,-3211.62"/>
 </g>
 <!-- zcash/zcash#6927 -->
-<g id="node3" class="node open">
+<g id="node9" class="node open">
 <title>zcash/zcash#6927</title>
-<g id="a_node3"><a xlink:href="https://github.com/zcash/zcash/pull/6927" xlink:title="zcash/zcash#6927&#10;Backport fix for INV&#10;buffer blowup" target="_blank">
+<g id="a_node9"><a xlink:href="https://github.com/zcash/zcash/pull/6927" xlink:title="zcash/zcash#6927&#10;Backport fix for INV&#10;buffer blowup" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="1606.5,-3178 1447.5,-3178 1447.5,-3174 1443.5,-3174 1443.5,-3170 1447.5,-3170 1447.5,-3133 1443.5,-3133 1443.5,-3129 1447.5,-3129 1447.5,-3125 1606.5,-3125 1606.5,-3178"/>
 <polyline fill="none" stroke="black" stroke-width="2" points="1447.5,-3174 1451.5,-3174 1451.5,-3170 1447.5,-3170 "/>
 <polyline fill="none" stroke="black" stroke-width="2" points="1447.5,-3133 1451.5,-3133 1451.5,-3129 1447.5,-3129 "/>
@@ -139,15 +239,15 @@
 </g>
 </g>
 <!-- zcash/zcash#6927&#45;&gt;zcash/zcash#6856 -->
-<g id="edge2" class="edge">
+<g id="edge7" class="edge">
 <title>zcash/zcash#6927&#45;&gt;zcash/zcash#6856</title>
 <path fill="none" stroke="black" d="M1606.8,-3164.4C1638.2,-3169.6 1674.5,-3175.5 1706.5,-3180.7"/>
 <polygon fill="black" stroke="black" points="1706.26,-3184.21 1716.7,-3182.4 1707.41,-3177.3 1706.26,-3184.21"/>
 </g>
 <!-- zcash/zcash#6928 -->
-<g id="node4" class="node open">
+<g id="node10" class="node open">
 <title>zcash/zcash#6928</title>
-<g id="a_node4"><a xlink:href="https://github.com/zcash/zcash/pull/6928" xlink:title="zcash/zcash#6928&#10;Backport fix for orphan&#10;handling" target="_blank">
+<g id="a_node10"><a xlink:href="https://github.com/zcash/zcash/pull/6928" xlink:title="zcash/zcash#6928&#10;Backport fix for orphan&#10;handling" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="1618,-3107 1436,-3107 1436,-3103 1432,-3103 1432,-3099 1436,-3099 1436,-3062 1432,-3062 1432,-3058 1436,-3058 1436,-3054 1618,-3054 1618,-3107"/>
 <polyline fill="none" stroke="black" stroke-width="2" points="1436,-3103 1440,-3103 1440,-3099 1436,-3099 "/>
 <polyline fill="none" stroke="black" stroke-width="2" points="1436,-3062 1440,-3062 1440,-3058 1436,-3058 "/>
@@ -158,15 +258,15 @@
 </g>
 </g>
 <!-- zcash/zcash#6928&#45;&gt;zcash/zcash#6856 -->
-<g id="edge3" class="edge">
+<g id="edge8" class="edge">
 <title>zcash/zcash#6928&#45;&gt;zcash/zcash#6856</title>
 <path fill="none" stroke="black" d="M1614.2,-3107.1C1622.4,-3110.1 1630.7,-3113.2 1638.5,-3116.5 1676.6,-3132.4 1718.2,-3154 1748.2,-3170.5"/>
 <polygon fill="black" stroke="black" points="1746.65,-3173.64 1757.1,-3175.4 1750.03,-3167.51 1746.65,-3173.64"/>
 </g>
 <!-- zcash/zcash#6329 -->
-<g id="node5" class="node open">
+<g id="node11" class="node open">
 <title>zcash/zcash#6329</title>
-<g id="a_node5"><a xlink:href="https://github.com/zcash/zcash/issues/6329" xlink:title="zcash/zcash#6329&#10;Remove `z_listaddresses`&#10;usage from RPC tests" target="_blank">
+<g id="a_node11"><a xlink:href="https://github.com/zcash/zcash/issues/6329" xlink:title="zcash/zcash#6329&#10;Remove `z_listaddresses`&#10;usage from RPC tests" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="1374.5,-3036 1174.5,-3036 1174.5,-2983 1374.5,-2983 1374.5,-3036"/>
 <text text-anchor="middle" x="1274.5" y="-3020.8" font-family="Times,serif" font-size="14.00">zcash/zcash#6329</text>
 <text text-anchor="middle" x="1274.5" y="-3005.8" font-family="Times,serif" font-size="14.00">Remove `z_listaddresses`</text>
@@ -175,9 +275,9 @@
 </g>
 </g>
 <!-- zcash/zcash#6330 -->
-<g id="node6" class="node open">
+<g id="node12" class="node open">
 <title>zcash/zcash#6330</title>
-<g id="a_node6"><a xlink:href="https://github.com/zcash/zcash/issues/6330" xlink:title="zcash/zcash#6330&#10;Remove `z_listaddresses`&#10;RPC method" target="_blank">
+<g id="a_node12"><a xlink:href="https://github.com/zcash/zcash/issues/6330" xlink:title="zcash/zcash#6330&#10;Remove `z_listaddresses`&#10;RPC method" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" points="1627,-3036 1427,-3036 1427,-2983 1627,-2983 1627,-3036"/>
 <text text-anchor="middle" x="1527" y="-3020.8" font-family="Times,serif" font-size="14.00">zcash/zcash#6330</text>
 <text text-anchor="middle" x="1527" y="-3005.8" font-family="Times,serif" font-size="14.00">Remove `z_listaddresses`</text>
@@ -186,21 +286,21 @@
 </g>
 </g>
 <!-- zcash/zcash#6329&#45;&gt;zcash/zcash#6330 -->
-<g id="edge4" class="edge">
+<g id="edge9" class="edge">
 <title>zcash/zcash#6329&#45;&gt;zcash/zcash#6330</title>
 <path fill="none" stroke="black" d="M1374.5,-3009.5C1388.4,-3009.5 1402.7,-3009.5 1416.7,-3009.5"/>
 <polygon fill="black" stroke="black" points="1416.9,-3013 1426.9,-3009.5 1416.9,-3006 1416.9,-3013"/>
 </g>
 <!-- zcash/zcash#6330&#45;&gt;zcash/zcash#6856 -->
-<g id="edge5" class="edge">
+<g id="edge10" class="edge">
 <title>zcash/zcash#6330&#45;&gt;zcash/zcash#6856</title>
 <path fill="none" stroke="black" d="M1620.8,-3036.1C1626.9,-3039 1632.9,-3042.1 1638.5,-3045.5 1692.8,-3078.4 1742.7,-3134.3 1769.7,-3167.5"/>
 <polygon fill="black" stroke="black" points="1767.03,-3169.76 1776,-3175.4 1772.5,-3165.4 1767.03,-3169.76"/>
 </g>
 <!-- zcash/zcash#5583 -->
-<g id="node7" class="node open">
+<g id="node13" class="node open">
 <title>zcash/zcash#5583</title>
-<g id="a_node7"><a xlink:href="https://github.com/zcash/zcash/issues/5583" xlink:title="zcash/zcash#5583&#10;Clean up null pointer&#10;handling in Rust FFI" target="_blank">
+<g id="a_node13"><a xlink:href="https://github.com/zcash/zcash/issues/5583" xlink:title="zcash/zcash#5583&#10;Clean up null pointer&#10;handling in Rust FFI" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="1610.5,-3725 1443.5,-3725 1443.5,-3672 1610.5,-3672 1610.5,-3725"/>
 <text text-anchor="middle" x="1527" y="-3709.8" font-family="Times,serif" font-size="14.00">zcash/zcash#5583</text>
 <text text-anchor="middle" x="1527" y="-3694.8" font-family="Times,serif" font-size="14.00">Clean up null pointer</text>
@@ -209,7 +309,7 @@
 </g>
 </g>
 <!-- zcash/zcash#5583&#45;&gt;zcash/zcash#6856 -->
-<g id="edge6" class="edge">
+<g id="edge11" class="edge">
 <title>zcash/zcash#5583&#45;&gt;zcash/zcash#6856</title>
 <path fill="none" stroke="black" d="M1610.6,-3682.2C1620.9,-3677.5 1630.6,-3671.4 1638.5,-3663.5 1765.2,-3537.6 1786.3,-3305.4 1789.8,-3223.8"/>
 <polygon fill="black" stroke="black" points="1793.3,-3223.83 1790.2,-3213.7 1786.31,-3223.55 1793.3,-3223.83"/>
@@ -233,9 +333,9 @@
 <polygon fill="black" stroke="black" points="1948.81,-3843.56 1959.4,-3843.5 1951.08,-3836.94 1948.81,-3843.56"/>
 </g>
 <!-- zcash/zcash#6923 -->
-<g id="node8" class="node open">
+<g id="node14" class="node open">
 <title>zcash/zcash#6923</title>
-<g id="a_node8"><a xlink:href="https://github.com/zcash/zcash/pull/6923" xlink:title="zcash/zcash#6923&#10;depends: Show the URLs&#10;from which dependencies&#10;are being downloaded" target="_blank">
+<g id="a_node14"><a xlink:href="https://github.com/zcash/zcash/pull/6923" xlink:title="zcash/zcash#6923&#10;depends: Show the URLs&#10;from which dependencies&#10;are being downloaded" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="1626.5,-2964.5 1427.5,-2964.5 1427.5,-2960.5 1423.5,-2960.5 1423.5,-2956.5 1427.5,-2956.5 1427.5,-2904.5 1423.5,-2904.5 1423.5,-2900.5 1427.5,-2900.5 1427.5,-2896.5 1626.5,-2896.5 1626.5,-2964.5"/>
 <polyline fill="none" stroke="black" stroke-width="2" points="1427.5,-2960.5 1431.5,-2960.5 1431.5,-2956.5 1427.5,-2956.5 "/>
 <polyline fill="none" stroke="black" stroke-width="2" points="1427.5,-2904.5 1431.5,-2904.5 1431.5,-2900.5 1427.5,-2900.5 "/>
@@ -247,15 +347,15 @@
 </g>
 </g>
 <!-- zcash/zcash#6923&#45;&gt;zcash/zcash#6856 -->
-<g id="edge7" class="edge">
+<g id="edge12" class="edge">
 <title>zcash/zcash#6923&#45;&gt;zcash/zcash#6856</title>
 <path fill="none" stroke="black" d="M1624.3,-2964.6C1629.3,-2967.7 1634.1,-2971 1638.5,-2974.5 1706,-3028.2 1755.6,-3119.8 1777.7,-3166.1"/>
 <polygon fill="black" stroke="black" points="1774.56,-3167.65 1782,-3175.2 1780.89,-3164.66 1774.56,-3167.65"/>
 </g>
 <!-- zcash/zcash#6657 -->
-<g id="node9" class="node open">
+<g id="node15" class="node open">
 <title>zcash/zcash#6657</title>
-<g id="a_node9"><a xlink:href="https://github.com/zcash/zcash/issues/6657" xlink:title="zcash/zcash#6657&#10;Availability of parameter&#10;and depends&#45;sources&#10;downloads is dependent on&#10;availability of&#10;download.z.cash" target="_blank">
+<g id="a_node15"><a xlink:href="https://github.com/zcash/zcash/issues/6657" xlink:title="zcash/zcash#6657&#10;Availability of parameter&#10;and depends&#45;sources&#10;downloads is dependent on&#10;availability of&#10;download.z.cash" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="1632.5,-2878.5 1421.5,-2878.5 1421.5,-2780.5 1632.5,-2780.5 1632.5,-2878.5"/>
 <text text-anchor="middle" x="1527" y="-2863.3" font-family="Times,serif" font-size="14.00">zcash/zcash#6657</text>
 <text text-anchor="middle" x="1527" y="-2848.3" font-family="Times,serif" font-size="14.00">Availability of parameter</text>
@@ -267,15 +367,15 @@
 </g>
 </g>
 <!-- zcash/zcash#6657&#45;&gt;zcash/zcash#6856 -->
-<g id="edge8" class="edge">
+<g id="edge13" class="edge">
 <title>zcash/zcash#6657&#45;&gt;zcash/zcash#6856</title>
 <path fill="none" stroke="black" d="M1628.9,-2878.6C1632.2,-2881.4 1635.5,-2884.4 1638.5,-2887.5 1719.8,-2970.8 1765.7,-3106.2 1782.7,-3165.3"/>
 <polygon fill="black" stroke="black" points="1779.39,-3166.45 1785.5,-3175.1 1786.12,-3164.52 1779.39,-3166.45"/>
 </g>
 <!-- zcash/zcash#6867 -->
-<g id="node10" class="node open">
+<g id="node16" class="node open">
 <title>zcash/zcash#6867</title>
-<g id="a_node10"><a xlink:href="https://github.com/zcash/zcash/issues/6867" xlink:title="zcash/zcash#6867&#10;Drop Intel macOS to Tier&#10;3" target="_blank">
+<g id="a_node16"><a xlink:href="https://github.com/zcash/zcash/issues/6867" xlink:title="zcash/zcash#6867&#10;Drop Intel macOS to Tier&#10;3" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="1372.5,-2754 1176.5,-2754 1176.5,-2701 1372.5,-2701 1372.5,-2754"/>
 <text text-anchor="middle" x="1274.5" y="-2738.8" font-family="Times,serif" font-size="14.00">zcash/zcash#6867</text>
 <text text-anchor="middle" x="1274.5" y="-2723.8" font-family="Times,serif" font-size="14.00">Drop Intel macOS to Tier</text>
@@ -284,15 +384,15 @@
 </g>
 </g>
 <!-- zcash/zcash#6867&#45;&gt;zcash/zcash#6856 -->
-<g id="edge9" class="edge">
+<g id="edge14" class="edge">
 <title>zcash/zcash#6867&#45;&gt;zcash/zcash#6856</title>
 <path fill="none" stroke="black" d="M1372.7,-2744.9C1387.8,-2747.3 1403.3,-2749.6 1418,-2751.5 1466.8,-2757.8 1599.6,-2741.4 1638.5,-2771.5 1766.4,-2870.4 1786.9,-3086.4 1790,-3165.1"/>
 <polygon fill="black" stroke="black" points="1786.51,-3165.41 1790.3,-3175.3 1793.5,-3165.2 1786.51,-3165.41"/>
 </g>
 <!-- zcash/zcash#6861 -->
-<g id="node11" class="node open">
+<g id="node17" class="node open">
 <title>zcash/zcash#6861</title>
-<g id="a_node11"><a xlink:href="https://github.com/zcash/zcash/issues/6861" xlink:title="zcash/zcash#6861&#10;`cargo&#45;deny` has MSRV&#10;1.74, which is&#10;inconvenient since zcashd&#10;has 1.69.0 in `rust&#45;&#10;toolchain.toml`" target="_blank">
+<g id="a_node17"><a xlink:href="https://github.com/zcash/zcash/issues/6861" xlink:title="zcash/zcash#6861&#10;`cargo&#45;deny` has MSRV&#10;1.74, which is&#10;inconvenient since zcashd&#10;has 1.69.0 in `rust&#45;&#10;toolchain.toml`" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" points="1628.5,-2742.5 1425.5,-2742.5 1425.5,-2644.5 1628.5,-2644.5 1628.5,-2742.5"/>
 <text text-anchor="middle" x="1527" y="-2727.3" font-family="Times,serif" font-size="14.00">zcash/zcash#6861</text>
 <text text-anchor="middle" x="1527" y="-2712.3" font-family="Times,serif" font-size="14.00">`cargo&#45;deny` has MSRV</text>
@@ -304,21 +404,21 @@
 </g>
 </g>
 <!-- zcash/zcash#6867&#45;&gt;zcash/zcash#6861 -->
-<g id="edge10" class="edge">
+<g id="edge15" class="edge">
 <title>zcash/zcash#6867&#45;&gt;zcash/zcash#6861</title>
 <path fill="none" stroke="black" d="M1372.7,-2714.3C1386.5,-2712.4 1400.9,-2710.5 1414.9,-2708.6"/>
 <polygon fill="black" stroke="black" points="1415.67,-2712.03 1425.1,-2707.2 1414.72,-2705.09 1415.67,-2712.03"/>
 </g>
 <!-- zcash/zcash#6861&#45;&gt;zcash/zcash#6856 -->
-<g id="edge11" class="edge">
+<g id="edge16" class="edge">
 <title>zcash/zcash#6861&#45;&gt;zcash/zcash#6856</title>
 <path fill="none" stroke="black" d="M1624.9,-2742.6C1629.8,-2747 1634.4,-2751.6 1638.5,-2756.5 1744.2,-2883.7 1778.1,-3088.7 1787.4,-3164.8"/>
 <polygon fill="black" stroke="black" points="1783.97,-3165.57 1788.6,-3175.1 1790.92,-3164.76 1783.97,-3165.57"/>
 </g>
 <!-- zcash/zcash#6389 -->
-<g id="node12" class="node needs&#45;review">
+<g id="node18" class="node needs&#45;review">
 <title>zcash/zcash#6389</title>
-<g id="a_node12"><a xlink:href="https://github.com/zcash/zcash/pull/6389" xlink:title="zcash/zcash#6389&#10;Add `z_getbalances` RPC&#10;method" target="_blank">
+<g id="a_node18"><a xlink:href="https://github.com/zcash/zcash/pull/6389" xlink:title="zcash/zcash#6389&#10;Add `z_getbalances` RPC&#10;method" target="_blank">
 <polygon fill="#dfc150" stroke="black" stroke-width="2" points="1625.5,-3796 1428.5,-3796 1428.5,-3792 1424.5,-3792 1424.5,-3788 1428.5,-3788 1428.5,-3751 1424.5,-3751 1424.5,-3747 1428.5,-3747 1428.5,-3743 1625.5,-3743 1625.5,-3796"/>
 <polyline fill="none" stroke="black" stroke-width="2" points="1428.5,-3792 1432.5,-3792 1432.5,-3788 1428.5,-3788 "/>
 <polyline fill="none" stroke="black" stroke-width="2" points="1428.5,-3751 1432.5,-3751 1432.5,-3747 1428.5,-3747 "/>
@@ -329,7 +429,7 @@
 </g>
 </g>
 <!-- zcash/zcash#6389&#45;&gt;zcash/zcash#6856 -->
-<g id="edge12" class="edge">
+<g id="edge17" class="edge">
 <title>zcash/zcash#6389&#45;&gt;zcash/zcash#6856</title>
 <path fill="none" stroke="black" d="M1626,-3745C1630.5,-3741.9 1634.7,-3738.4 1638.5,-3734.5 1782.1,-3586.2 1792.1,-3313.4 1791.3,-3223.8"/>
 <polygon fill="black" stroke="black" points="1794.8,-3223.57 1791.2,-3213.6 1787.8,-3223.63 1794.8,-3223.57"/>
@@ -387,9 +487,9 @@
 <polygon fill="black" stroke="black" points="1682.14,-5029.87 1692.4,-5032.5 1686.02,-5024.04 1682.14,-5029.87"/>
 </g>
 <!-- zcash/zcash#6899 -->
-<g id="node13" class="node open">
+<g id="node19" class="node open">
 <title>zcash/zcash#6899</title>
-<g id="a_node13"><a xlink:href="https://github.com/zcash/zcash/issues/6899" xlink:title="zcash/zcash#6899&#10;Remove the default unpaid&#10;action limit" target="_blank">
+<g id="a_node19"><a xlink:href="https://github.com/zcash/zcash/issues/6899" xlink:title="zcash/zcash#6899&#10;Remove the default unpaid&#10;action limit" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="1631.5,-3654 1422.5,-3654 1422.5,-3601 1631.5,-3601 1631.5,-3654"/>
 <text text-anchor="middle" x="1527" y="-3638.8" font-family="Times,serif" font-size="14.00">zcash/zcash#6899</text>
 <text text-anchor="middle" x="1527" y="-3623.8" font-family="Times,serif" font-size="14.00">Remove the default unpaid</text>
@@ -398,15 +498,15 @@
 </g>
 </g>
 <!-- zcash/zcash#6899&#45;&gt;zcash/zcash#6856 -->
-<g id="edge13" class="edge">
+<g id="edge18" class="edge">
 <title>zcash/zcash#6899&#45;&gt;zcash/zcash#6856</title>
 <path fill="none" stroke="black" d="M1628.1,-3600.8C1631.8,-3598.3 1635.3,-3595.5 1638.5,-3592.5 1748.3,-3488.9 1779.6,-3297.6 1787.8,-3224.2"/>
 <polygon fill="black" stroke="black" points="1791.32,-3224.22 1788.9,-3213.9 1784.36,-3223.47 1791.32,-3224.22"/>
 </g>
 <!-- zcash/zcash#5941 -->
-<g id="node14" class="node needs&#45;review">
+<g id="node20" class="node needs&#45;review">
 <title>zcash/zcash#5941</title>
-<g id="a_node14"><a xlink:href="https://github.com/zcash/zcash/issues/5941" xlink:title="zcash/zcash#5941&#10;Make `getbalance` only&#10;return balance&#10;information for the&#10;legacy account." target="_blank">
+<g id="a_node20"><a xlink:href="https://github.com/zcash/zcash/issues/5941" xlink:title="zcash/zcash#5941&#10;Make `getbalance` only&#10;return balance&#10;information for the&#10;legacy account." target="_blank">
 <polygon fill="#dfc150" stroke="black" stroke-width="2" points="1620,-3583 1434,-3583 1434,-3500 1620,-3500 1620,-3583"/>
 <text text-anchor="middle" x="1527" y="-3567.8" font-family="Times,serif" font-size="14.00">zcash/zcash#5941</text>
 <text text-anchor="middle" x="1527" y="-3552.8" font-family="Times,serif" font-size="14.00">Make `getbalance` only</text>
@@ -417,15 +517,15 @@
 </g>
 </g>
 <!-- zcash/zcash#5941&#45;&gt;zcash/zcash#6856 -->
-<g id="edge14" class="edge">
+<g id="edge19" class="edge">
 <title>zcash/zcash#5941&#45;&gt;zcash/zcash#6856</title>
 <path fill="none" stroke="black" d="M1620.1,-3505.1C1626.7,-3500.7 1632.9,-3495.8 1638.5,-3490.5 1719.8,-3412.6 1765.4,-3281.8 1782.5,-3223.7"/>
 <polygon fill="black" stroke="black" points="1785.95,-3224.38 1785.4,-3213.8 1779.23,-3222.41 1785.95,-3224.38"/>
 </g>
 <!-- zcash/zcash#4859 -->
-<g id="node15" class="node open">
+<g id="node21" class="node open">
 <title>zcash/zcash#4859</title>
-<g id="a_node15"><a xlink:href="https://github.com/zcash/zcash/pull/4859" xlink:title="zcash/zcash#4859&#10;control&#45;C stops zcashd&#10;more quickly during&#10;startup" target="_blank">
+<g id="a_node21"><a xlink:href="https://github.com/zcash/zcash/pull/4859" xlink:title="zcash/zcash#4859&#10;control&#45;C stops zcashd&#10;more quickly during&#10;startup" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="1616,-3481.5 1438,-3481.5 1438,-3477.5 1434,-3477.5 1434,-3473.5 1438,-3473.5 1438,-3421.5 1434,-3421.5 1434,-3417.5 1438,-3417.5 1438,-3413.5 1616,-3413.5 1616,-3481.5"/>
 <polyline fill="none" stroke="black" stroke-width="2" points="1438,-3477.5 1442,-3477.5 1442,-3473.5 1438,-3473.5 "/>
 <polyline fill="none" stroke="black" stroke-width="2" points="1438,-3421.5 1442,-3421.5 1442,-3417.5 1438,-3417.5 "/>
@@ -437,15 +537,15 @@
 </g>
 </g>
 <!-- zcash/zcash#4859&#45;&gt;zcash/zcash#6856 -->
-<g id="edge15" class="edge">
+<g id="edge20" class="edge">
 <title>zcash/zcash#4859&#45;&gt;zcash/zcash#6856</title>
 <path fill="none" stroke="black" d="M1616.2,-3418.7C1624.1,-3414.5 1631.7,-3409.8 1638.5,-3404.5 1704.2,-3353.8 1754.1,-3267.1 1776.9,-3222.6"/>
 <polygon fill="black" stroke="black" points="1780.07,-3224.1 1781.5,-3213.6 1773.83,-3220.91 1780.07,-3224.1"/>
 </g>
 <!-- zcash/zcash#6821 -->
-<g id="node16" class="node open">
+<g id="node22" class="node open">
 <title>zcash/zcash#6821</title>
-<g id="a_node16"><a xlink:href="https://github.com/zcash/zcash/issues/6821" xlink:title="zcash/zcash#6821&#10;`gettransaction` reports&#10;incorrect fee when&#10;`z_sendmany` has a mix of&#10;Sapling and Orchard&#10;outputs." target="_blank">
+<g id="a_node22"><a xlink:href="https://github.com/zcash/zcash/issues/6821" xlink:title="zcash/zcash#6821&#10;`gettransaction` reports&#10;incorrect fee when&#10;`z_sendmany` has a mix of&#10;Sapling and Orchard&#10;outputs." target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="1631,-3395.5 1423,-3395.5 1423,-3297.5 1631,-3297.5 1631,-3395.5"/>
 <text text-anchor="middle" x="1527" y="-3380.3" font-family="Times,serif" font-size="14.00">zcash/zcash#6821</text>
 <text text-anchor="middle" x="1527" y="-3365.3" font-family="Times,serif" font-size="14.00">`gettransaction` reports</text>
@@ -457,115 +557,191 @@
 </g>
 </g>
 <!-- zcash/zcash#6821&#45;&gt;zcash/zcash#6856 -->
-<g id="edge16" class="edge">
+<g id="edge21" class="edge">
 <title>zcash/zcash#6821&#45;&gt;zcash/zcash#6856</title>
 <path fill="none" stroke="black" d="M1622.6,-3297.4C1628,-3294.4 1633.3,-3291.5 1638.5,-3288.5 1677.9,-3266 1721.8,-3238.6 1752.3,-3219.2"/>
 <polygon fill="black" stroke="black" points="1754.36,-3222.04 1760.9,-3213.7 1750.59,-3216.14 1754.36,-3222.04"/>
 </g>
-<!-- zcash/librustzcash#722 -->
-<g id="node17" class="node open">
-<title>zcash/librustzcash#722</title>
-<g id="a_node17"><a xlink:href="https://github.com/zcash/librustzcash/issues/722" xlink:title="zcash/librustzcash#722&#10;Create a `tower::Service`&#10;for nullifier lookup" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="249.5,-12534.5 50.5,-12534.5 50.5,-12481.5 249.5,-12481.5 249.5,-12534.5"/>
-<text text-anchor="middle" x="150" y="-12519.3" font-family="Times,serif" font-size="14.00">zcash/librustzcash#722</text>
-<text text-anchor="middle" x="150" y="-12504.3" font-family="Times,serif" font-size="14.00">Create a `tower::Service`</text>
-<text text-anchor="middle" x="150" y="-12489.3" font-family="Times,serif" font-size="14.00">for nullifier lookup</text>
+<!-- zcash/librustzcash#1338 -->
+<g id="node23" class="node open">
+<title>zcash/librustzcash#1338</title>
+<g id="a_node23"><a xlink:href="https://github.com/zcash/librustzcash/issues/1338" xlink:title="zcash/librustzcash#1338&#10;zcash_client_backend&#10;0.13.0" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" points="1889.5,-472 1693.5,-472 1693.5,-419 1889.5,-419 1889.5,-472"/>
+<text text-anchor="middle" x="1791.5" y="-456.8" font-family="Times,serif" font-size="14.00">zcash/librustzcash#1338</text>
+<text text-anchor="middle" x="1791.5" y="-441.8" font-family="Times,serif" font-size="14.00">zcash_client_backend</text>
+<text text-anchor="middle" x="1791.5" y="-426.8" font-family="Times,serif" font-size="14.00">0.13.0</text>
 </a>
 </g>
 </g>
-<!-- zcash/librustzcash#720 -->
-<g id="node18" class="node open">
-<title>zcash/librustzcash#720</title>
-<g id="a_node18"><a xlink:href="https://github.com/zcash/librustzcash/issues/720" xlink:title="zcash/librustzcash#720&#10;Implement DAGSync" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" points="579.5,-12307 576.5,-12311 555.5,-12311 552.5,-12307 392.5,-12307 392.5,-12269 579.5,-12269 579.5,-12307"/>
-<text text-anchor="middle" x="486" y="-12291.8" font-family="Times,serif" font-size="14.00">zcash/librustzcash#720</text>
-<text text-anchor="middle" x="486" y="-12276.8" font-family="Times,serif" font-size="14.00">Implement DAGSync</text>
+<!-- zcash/librustzcash#1231 -->
+<g id="node24" class="node open">
+<title>zcash/librustzcash#1231</title>
+<g id="a_node24"><a xlink:href="https://github.com/zcash/librustzcash/issues/1231" xlink:title="zcash/librustzcash#1231&#10;zcash_client_sqlite&#10;0.11.0" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" points="2157,-378 1961,-378 1961,-325 2157,-325 2157,-378"/>
+<text text-anchor="middle" x="2059" y="-362.8" font-family="Times,serif" font-size="14.00">zcash/librustzcash#1231</text>
+<text text-anchor="middle" x="2059" y="-347.8" font-family="Times,serif" font-size="14.00">zcash_client_sqlite</text>
+<text text-anchor="middle" x="2059" y="-332.8" font-family="Times,serif" font-size="14.00">0.11.0</text>
 </a>
 </g>
 </g>
-<!-- zcash/librustzcash#722&#45;&gt;zcash/librustzcash#720 -->
-<g id="edge17" class="edge">
-<title>zcash/librustzcash#722&#45;&gt;zcash/librustzcash#720</title>
-<path fill="none" stroke="black" d="M249.68,-12492C267.09,-12488 284.56,-12481 300,-12472 372.25,-12432 435.3,-12356 465.69,-12315"/>
-<polygon fill="black" stroke="black" points="468.49,-12317.1 471.68,-12307 462.88,-12312.91 468.49,-12317.1"/>
+<!-- zcash/librustzcash#1338&#45;&gt;zcash/librustzcash#1231 -->
+<g id="edge22" class="edge">
+<title>zcash/librustzcash#1338&#45;&gt;zcash/librustzcash#1231</title>
+<path fill="none" stroke="black" d="M1882.7,-418.94C1892.3,-415.86 1901.9,-412.68 1911,-409.5 1935.1,-401.09 1961.2,-391.12 1984.5,-381.84"/>
+<polygon fill="black" stroke="black" points="1986.02,-385 1994,-378.04 1983.42,-378.5 1986.02,-385"/>
 </g>
-<!-- zcash/librustzcash#723 -->
-<g id="node19" class="node open">
-<title>zcash/librustzcash#723</title>
-<g id="a_node19"><a xlink:href="https://github.com/zcash/librustzcash/issues/723" xlink:title="zcash/librustzcash#723&#10;Create a `tower::Service`&#10;for fetching a&#10;transaction given a&#10;`(block, tx_index)`" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="249.5,-12463.5 50.5,-12463.5 50.5,-12380.5 249.5,-12380.5 249.5,-12463.5"/>
-<text text-anchor="middle" x="150" y="-12448.3" font-family="Times,serif" font-size="14.00">zcash/librustzcash#723</text>
-<text text-anchor="middle" x="150" y="-12433.3" font-family="Times,serif" font-size="14.00">Create a `tower::Service`</text>
-<text text-anchor="middle" x="150" y="-12418.3" font-family="Times,serif" font-size="14.00">for fetching a</text>
-<text text-anchor="middle" x="150" y="-12403.3" font-family="Times,serif" font-size="14.00">transaction given a</text>
-<text text-anchor="middle" x="150" y="-12388.3" font-family="Times,serif" font-size="14.00">`(block, tx_index)`</text>
+<!-- zcash/librustzcash#1178 -->
+<g id="node246" class="node open">
+<title>zcash/librustzcash#1178</title>
+<g id="a_node246"><a xlink:href="https://github.com/zcash/librustzcash/issues/1178" xlink:title="zcash/librustzcash#1178&#10;zcash_client_backend&#10;0.13.1" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" points="2157,-2111 1961,-2111 1961,-2058 2157,-2058 2157,-2111"/>
+<text text-anchor="middle" x="2059" y="-2095.8" font-family="Times,serif" font-size="14.00">zcash/librustzcash#1178</text>
+<text text-anchor="middle" x="2059" y="-2080.8" font-family="Times,serif" font-size="14.00">zcash_client_backend</text>
+<text text-anchor="middle" x="2059" y="-2065.8" font-family="Times,serif" font-size="14.00">0.13.1</text>
 </a>
 </g>
 </g>
-<!-- zcash/librustzcash#723&#45;&gt;zcash/librustzcash#720 -->
-<g id="edge18" class="edge">
-<title>zcash/librustzcash#723&#45;&gt;zcash/librustzcash#720</title>
-<path fill="none" stroke="black" d="M249.65,-12389C266.54,-12383 283.85,-12377 300,-12370 346.94,-12352 399.32,-12328 436.33,-12311"/>
-<polygon fill="black" stroke="black" points="437.66,-12314.24 445.39,-12307 434.83,-12307.84 437.66,-12314.24"/>
+<!-- zcash/librustzcash#1338&#45;&gt;zcash/librustzcash#1178 -->
+<g id="edge256" class="edge">
+<title>zcash/librustzcash#1338&#45;&gt;zcash/librustzcash#1178</title>
+<path fill="none" stroke="black" d="M1803.2,-472.36C1827.8,-535.62 1887.9,-699.41 1911,-842.5 1921.7,-908.73 1906.5,-1996 1947,-2049.5 1948.8,-2051.9 1950.8,-2054.2 1953,-2056.3"/>
+<polygon fill="black" stroke="black" points="1950.8,-2059.02 1960.7,-2062.8 1955.32,-2053.67 1950.8,-2059.02"/>
 </g>
-<!-- zcash/librustzcash#712 -->
-<g id="node20" class="node open">
-<title>zcash/librustzcash#712</title>
-<g id="a_node20"><a xlink:href="https://github.com/zcash/librustzcash/issues/712" xlink:title="zcash/librustzcash#712&#10;Refactor the Data Access&#10;API to support non&#45;block&#10;updates" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="248,-12362 52,-12362 52,-12294 248,-12294 248,-12362"/>
-<text text-anchor="middle" x="150" y="-12346.8" font-family="Times,serif" font-size="14.00">zcash/librustzcash#712</text>
-<text text-anchor="middle" x="150" y="-12331.8" font-family="Times,serif" font-size="14.00">Refactor the Data Access</text>
-<text text-anchor="middle" x="150" y="-12316.8" font-family="Times,serif" font-size="14.00">API to support non&#45;block</text>
-<text text-anchor="middle" x="150" y="-12301.8" font-family="Times,serif" font-size="14.00">updates</text>
+<!-- zcash/librustzcash#1418 -->
+<g id="node247" class="node open">
+<title>zcash/librustzcash#1418</title>
+<g id="a_node247"><a xlink:href="https://github.com/zcash/librustzcash/issues/1418" xlink:title="zcash/librustzcash#1418&#10;zcash_client_sqlite&#10;0.12.0" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" points="2650.5,-1254 2454.5,-1254 2454.5,-1201 2650.5,-1201 2650.5,-1254"/>
+<text text-anchor="middle" x="2552.5" y="-1238.8" font-family="Times,serif" font-size="14.00">zcash/librustzcash#1418</text>
+<text text-anchor="middle" x="2552.5" y="-1223.8" font-family="Times,serif" font-size="14.00">zcash_client_sqlite</text>
+<text text-anchor="middle" x="2552.5" y="-1208.8" font-family="Times,serif" font-size="14.00">0.12.0</text>
 </a>
 </g>
 </g>
-<!-- zcash/librustzcash#712&#45;&gt;zcash/librustzcash#720 -->
-<g id="edge19" class="edge">
-<title>zcash/librustzcash#712&#45;&gt;zcash/librustzcash#720</title>
-<path fill="none" stroke="black" d="M248.06,-12316C290.14,-12311 339.45,-12305 382.16,-12300"/>
-<polygon fill="black" stroke="black" points="382.69,-12303.46 392.3,-12299 382,-12296.5 382.69,-12303.46"/>
+<!-- zcash/librustzcash#1231&#45;&gt;zcash/librustzcash#1418 -->
+<g id="edge257" class="edge">
+<title>zcash/librustzcash#1231&#45;&gt;zcash/librustzcash#1418</title>
+<path fill="none" stroke="black" d="M2086.8,-378.07C2113.5,-406.38 2153,-453.9 2171,-503.5 2187.2,-547.98 2167.4,-893.29 2199,-928.5 2264.4,-1001.4 2337,-908.61 2416,-966.5 2492.1,-1022.3 2529,-1133.7 2543.6,-1191.2"/>
+<polygon fill="black" stroke="black" points="2540.22,-1192.12 2546,-1201 2547.02,-1190.45 2540.22,-1192.12"/>
 </g>
-<!-- zcash/librustzcash#718 -->
-<g id="node21" class="node open">
-<title>zcash/librustzcash#718</title>
-<g id="a_node21"><a xlink:href="https://github.com/zcash/librustzcash/issues/718" xlink:title="zcash/librustzcash#718&#10;Create `tower::Service`&#10;wrapping an `FsBlockDb`" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="250,-12274.5 50,-12274.5 50,-12221.5 250,-12221.5 250,-12274.5"/>
-<text text-anchor="middle" x="150" y="-12259.3" font-family="Times,serif" font-size="14.00">zcash/librustzcash#718</text>
-<text text-anchor="middle" x="150" y="-12244.3" font-family="Times,serif" font-size="14.00">Create `tower::Service`</text>
-<text text-anchor="middle" x="150" y="-12229.3" font-family="Times,serif" font-size="14.00">wrapping an `FsBlockDb`</text>
+<!-- zcash/librustzcash#1179 -->
+<g id="node25" class="node open">
+<title>zcash/librustzcash#1179</title>
+<g id="a_node25"><a xlink:href="https://github.com/zcash/librustzcash/issues/1179" xlink:title="zcash/librustzcash#1179&#10;zcash_primitives 0.16.0,&#10;zcash_proofs 0.16.0" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="1625,-472 1429,-472 1429,-419 1625,-419 1625,-472"/>
+<text text-anchor="middle" x="1527" y="-456.8" font-family="Times,serif" font-size="14.00">zcash/librustzcash#1179</text>
+<text text-anchor="middle" x="1527" y="-441.8" font-family="Times,serif" font-size="14.00">zcash_primitives 0.16.0,</text>
+<text text-anchor="middle" x="1527" y="-426.8" font-family="Times,serif" font-size="14.00">zcash_proofs 0.16.0</text>
 </a>
 </g>
 </g>
-<!-- zcash/librustzcash#718&#45;&gt;zcash/librustzcash#720 -->
-<g id="edge20" class="edge">
-<title>zcash/librustzcash#718&#45;&gt;zcash/librustzcash#720</title>
-<path fill="none" stroke="black" d="M250.31,-12260C291.96,-12265 340.39,-12271 382.39,-12276"/>
-<polygon fill="black" stroke="black" points="382.06,-12279.48 392.36,-12277 382.76,-12272.52 382.06,-12279.48"/>
+<!-- zcash/librustzcash#1179&#45;&gt;zcash/librustzcash#1338 -->
+<g id="edge23" class="edge">
+<title>zcash/librustzcash#1179&#45;&gt;zcash/librustzcash#1338</title>
+<path fill="none" stroke="black" d="M1625.4,-445.5C1644.2,-445.5 1664,-445.5 1683.1,-445.5"/>
+<polygon fill="black" stroke="black" points="1683.3,-449 1693.3,-445.5 1683.3,-442 1683.3,-449"/>
 </g>
-<!-- zcash/librustzcash#776 -->
-<g id="node22" class="node open">
-<title>zcash/librustzcash#776</title>
-<g id="a_node22"><a xlink:href="https://github.com/zcash/librustzcash/issues/776" xlink:title="zcash/librustzcash#776&#10;DAG Sync: Use a&#10;downloaded nullifier set&#10;to allow instant&#10;spentness checks." target="_blank">
-<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="244,-12203.5 56,-12203.5 56,-12120.5 244,-12120.5 244,-12203.5"/>
-<text text-anchor="middle" x="150" y="-12188.3" font-family="Times,serif" font-size="14.00">zcash/librustzcash#776</text>
-<text text-anchor="middle" x="150" y="-12173.3" font-family="Times,serif" font-size="14.00">DAG Sync: Use a</text>
-<text text-anchor="middle" x="150" y="-12158.3" font-family="Times,serif" font-size="14.00">downloaded nullifier set</text>
-<text text-anchor="middle" x="150" y="-12143.3" font-family="Times,serif" font-size="14.00">to allow instant</text>
-<text text-anchor="middle" x="150" y="-12128.3" font-family="Times,serif" font-size="14.00">spentness checks.</text>
+<!-- zcash/librustzcash#1458 -->
+<g id="node248" class="node open">
+<title>zcash/librustzcash#1458</title>
+<g id="a_node248"><a xlink:href="https://github.com/zcash/librustzcash/issues/1458" xlink:title="zcash/librustzcash#1458&#10;zcash_primitives 0.17.0,&#10;zcash_proofs 0.17.0" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" points="2157,-2457 1961,-2457 1961,-2404 2157,-2404 2157,-2457"/>
+<text text-anchor="middle" x="2059" y="-2441.8" font-family="Times,serif" font-size="14.00">zcash/librustzcash#1458</text>
+<text text-anchor="middle" x="2059" y="-2426.8" font-family="Times,serif" font-size="14.00">zcash_primitives 0.17.0,</text>
+<text text-anchor="middle" x="2059" y="-2411.8" font-family="Times,serif" font-size="14.00">zcash_proofs 0.17.0</text>
 </a>
 </g>
 </g>
-<!-- zcash/librustzcash#776&#45;&gt;zcash/librustzcash#720 -->
-<g id="edge21" class="edge">
-<title>zcash/librustzcash#776&#45;&gt;zcash/librustzcash#720</title>
-<path fill="none" stroke="black" d="M244.25,-12194C262.78,-12200 282.06,-12207 300,-12214 343.92,-12230 393.13,-12250 429.75,-12265"/>
-<polygon fill="black" stroke="black" points="428.66,-12268.33 439.25,-12268 430.77,-12261.65 428.66,-12268.33"/>
+<!-- zcash/librustzcash#1179&#45;&gt;zcash/librustzcash#1458 -->
+<g id="edge258" class="edge">
+<title>zcash/librustzcash#1179&#45;&gt;zcash/librustzcash#1458</title>
+<path fill="none" stroke="black" d="M1527.9,-472.24C1527,-697.21 1526.5,-2269.5 1672,-2411.5 1710.2,-2448.8 1850.3,-2447.1 1950.7,-2440.4"/>
+<polygon fill="black" stroke="black" points="1951.16,-2443.88 1960.9,-2439.7 1950.68,-2436.89 1951.16,-2443.88"/>
+</g>
+<!-- zcash/librustzcash#1434 -->
+<g id="node26" class="node committed">
+<title>zcash/librustzcash#1434</title>
+<g id="a_node26"><a xlink:href="https://github.com/zcash/librustzcash/issues/1434" xlink:title="zcash/librustzcash#1434&#10;Ensure symmetry of&#10;transparent output&#10;handling between&#10;`put_blocks`,&#10;`store_decrypted_tx` and&#10;`store_sent_tx`" target="_blank">
+<polygon fill="#a6cfff" stroke="black" stroke-width="2" points="1890,-183 1693,-183 1693,-70 1890,-70 1890,-183"/>
+<text text-anchor="middle" x="1791.5" y="-167.8" font-family="Times,serif" font-size="14.00">zcash/librustzcash#1434</text>
+<text text-anchor="middle" x="1791.5" y="-152.8" font-family="Times,serif" font-size="14.00">Ensure symmetry of</text>
+<text text-anchor="middle" x="1791.5" y="-137.8" font-family="Times,serif" font-size="14.00">transparent output</text>
+<text text-anchor="middle" x="1791.5" y="-122.8" font-family="Times,serif" font-size="14.00">handling between</text>
+<text text-anchor="middle" x="1791.5" y="-107.8" font-family="Times,serif" font-size="14.00">`put_blocks`,</text>
+<text text-anchor="middle" x="1791.5" y="-92.8" font-family="Times,serif" font-size="14.00">`store_decrypted_tx` and</text>
+<text text-anchor="middle" x="1791.5" y="-77.8" font-family="Times,serif" font-size="14.00">`store_sent_tx`</text>
+</a>
+</g>
+</g>
+<!-- zcash/librustzcash#1434&#45;&gt;zcash/librustzcash#1231 -->
+<g id="edge24" class="edge">
+<title>zcash/librustzcash#1434&#45;&gt;zcash/librustzcash#1231</title>
+<path fill="none" stroke="black" d="M1890.2,-177.54C1897.4,-182.33 1904.4,-187.33 1911,-192.5 1958.3,-229.72 2004,-282.6 2031.5,-316.98"/>
+<polygon fill="black" stroke="black" points="2028.83,-319.24 2037.8,-324.87 2034.3,-314.87 2028.83,-319.24"/>
+</g>
+<!-- zcash/librustzcash#1413 -->
+<g id="node27" class="node open">
+<title>zcash/librustzcash#1413</title>
+<g id="a_node27"><a xlink:href="https://github.com/zcash/librustzcash/issues/1413" xlink:title="zcash/librustzcash#1413&#10;`zcash_client_*`: Fix bug&#10;where transparent funds&#10;can&#39;t be shielded before&#10;the normal confirmation&#10;depth" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="1889.5,-400.5 1693.5,-400.5 1693.5,-302.5 1889.5,-302.5 1889.5,-400.5"/>
+<text text-anchor="middle" x="1791.5" y="-385.3" font-family="Times,serif" font-size="14.00">zcash/librustzcash#1413</text>
+<text text-anchor="middle" x="1791.5" y="-370.3" font-family="Times,serif" font-size="14.00">`zcash_client_*`: Fix bug</text>
+<text text-anchor="middle" x="1791.5" y="-355.3" font-family="Times,serif" font-size="14.00">where transparent funds</text>
+<text text-anchor="middle" x="1791.5" y="-340.3" font-family="Times,serif" font-size="14.00">can&#39;t be shielded before</text>
+<text text-anchor="middle" x="1791.5" y="-325.3" font-family="Times,serif" font-size="14.00">the normal confirmation</text>
+<text text-anchor="middle" x="1791.5" y="-310.3" font-family="Times,serif" font-size="14.00">depth</text>
+</a>
+</g>
+</g>
+<!-- zcash/librustzcash#1413&#45;&gt;zcash/librustzcash#1231 -->
+<g id="edge25" class="edge">
+<title>zcash/librustzcash#1413&#45;&gt;zcash/librustzcash#1231</title>
+<path fill="none" stroke="black" d="M1889.9,-351.5C1909.6,-351.5 1930.5,-351.5 1950.6,-351.5"/>
+<polygon fill="black" stroke="black" points="1950.7,-355 1960.7,-351.5 1950.7,-348 1950.7,-355"/>
+</g>
+<!-- zcash/librustzcash#1330 -->
+<g id="node28" class="node committed">
+<title>zcash/librustzcash#1330</title>
+<g id="a_node28"><a xlink:href="https://github.com/zcash/librustzcash/issues/1330" xlink:title="zcash/librustzcash#1330&#10;zcash_client_sqlite:&#10;`v_tx_outputs` describes&#10;one of two tx outputs as&#10;not from the account" target="_blank">
+<polygon fill="#a6cfff" stroke="black" stroke-width="2" points="1889.5,-284 1693.5,-284 1693.5,-201 1889.5,-201 1889.5,-284"/>
+<text text-anchor="middle" x="1791.5" y="-268.8" font-family="Times,serif" font-size="14.00">zcash/librustzcash#1330</text>
+<text text-anchor="middle" x="1791.5" y="-253.8" font-family="Times,serif" font-size="14.00">zcash_client_sqlite:</text>
+<text text-anchor="middle" x="1791.5" y="-238.8" font-family="Times,serif" font-size="14.00">`v_tx_outputs` describes</text>
+<text text-anchor="middle" x="1791.5" y="-223.8" font-family="Times,serif" font-size="14.00">one of two tx outputs as</text>
+<text text-anchor="middle" x="1791.5" y="-208.8" font-family="Times,serif" font-size="14.00">not from the account</text>
+</a>
+</g>
+</g>
+<!-- zcash/librustzcash#1330&#45;&gt;zcash/librustzcash#1231 -->
+<g id="edge26" class="edge">
+<title>zcash/librustzcash#1330&#45;&gt;zcash/librustzcash#1231</title>
+<path fill="none" stroke="black" d="M1889.9,-282.47C1921,-295.24 1954.9,-309.17 1984.1,-321.14"/>
+<polygon fill="black" stroke="black" points="1982.72,-324.36 1993.3,-324.96 1985.41,-317.89 1982.72,-324.36"/>
+</g>
+<!-- zcash/librustzcash#1355 -->
+<g id="node29" class="node open">
+<title>zcash/librustzcash#1355</title>
+<g id="a_node29"><a xlink:href="https://github.com/zcash/librustzcash/issues/1355" xlink:title="zcash/librustzcash#1355&#10;Passive note management" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="251.5,-11789 48.5,-11789 48.5,-11751 251.5,-11751 251.5,-11789"/>
+<text text-anchor="middle" x="150" y="-11773.8" font-family="Times,serif" font-size="14.00">zcash/librustzcash#1355</text>
+<text text-anchor="middle" x="150" y="-11758.8" font-family="Times,serif" font-size="14.00">Passive note management</text>
+</a>
+</g>
+</g>
+<!-- zcash/zips#833 -->
+<g id="node30" class="node open">
+<title>zcash/zips#833</title>
+<g id="a_node30"><a xlink:href="https://github.com/zcash/zips/issues/833" xlink:title="zcash/zips#833&#10;Documentation Q4 2024" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" points="2648,-11677 2645,-11681 2624,-11681 2621,-11677 2457,-11677 2457,-11639 2648,-11639 2648,-11677"/>
+<text text-anchor="middle" x="2552.5" y="-11661.8" font-family="Times,serif" font-size="14.00">zcash/zips#833</text>
+<text text-anchor="middle" x="2552.5" y="-11646.8" font-family="Times,serif" font-size="14.00">Documentation Q4 2024</text>
+</a>
+</g>
 </g>
 <!-- zcash/zips#814 -->
-<g id="node23" class="node open">
+<g id="node31" class="node open">
 <title>zcash/zips#814</title>
-<g id="a_node23"><a xlink:href="https://github.com/zcash/zips/issues/814" xlink:title="zcash/zips#814&#10;Deploy NU7" target="_blank">
+<g id="a_node31"><a xlink:href="https://github.com/zcash/zips/issues/814" xlink:title="zcash/zips#814&#10;Deploy NU7" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" points="2616.5,-12273 2488.5,-12273 2488.5,-12235 2616.5,-12235 2616.5,-12273"/>
 <text text-anchor="middle" x="2552.5" y="-12257.8" font-family="Times,serif" font-size="14.00">zcash/zips#814</text>
 <text text-anchor="middle" x="2552.5" y="-12242.8" font-family="Times,serif" font-size="14.00">Deploy NU7</text>
@@ -573,9 +749,9 @@
 </g>
 </g>
 <!-- zcash/zips#819 -->
-<g id="node24" class="node open">
+<g id="node32" class="node open">
 <title>zcash/zips#819</title>
-<g id="a_node24"><a xlink:href="https://github.com/zcash/zips/issues/819" xlink:title="zcash/zips#819&#10;After NU7 has activated,&#10;document it as a settled&#10;network upgrade" target="_blank">
+<g id="a_node32"><a xlink:href="https://github.com/zcash/zips/issues/819" xlink:title="zcash/zips#819&#10;After NU7 has activated,&#10;document it as a settled&#10;network upgrade" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" points="2886,-12292 2692,-12292 2692,-12224 2886,-12224 2886,-12292"/>
 <text text-anchor="middle" x="2789" y="-12276.8" font-family="Times,serif" font-size="14.00">zcash/zips#819</text>
 <text text-anchor="middle" x="2789" y="-12261.8" font-family="Times,serif" font-size="14.00">After NU7 has activated,</text>
@@ -585,15 +761,15 @@
 </g>
 </g>
 <!-- zcash/zips#814&#45;&gt;zcash/zips#819 -->
-<g id="edge22" class="edge">
+<g id="edge27" class="edge">
 <title>zcash/zips#814&#45;&gt;zcash/zips#819</title>
 <path fill="none" stroke="black" d="M2616.7,-12255C2636.6,-12255 2659.3,-12255 2681.5,-12256"/>
 <polygon fill="black" stroke="black" points="2681.6,-12259.5 2691.6,-12256 2681.6,-12252.5 2681.6,-12259.5"/>
 </g>
 <!-- zcash/zips#818 -->
-<g id="node25" class="node open">
+<g id="node33" class="node open">
 <title>zcash/zips#818</title>
-<g id="a_node25"><a xlink:href="https://github.com/zcash/zips/issues/818" xlink:title="zcash/zips#818&#10;Protocol spec version&#10;2025.7.1" target="_blank">
+<g id="a_node33"><a xlink:href="https://github.com/zcash/zips/issues/818" xlink:title="zcash/zips#818&#10;Protocol spec version&#10;2025.7.1" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" points="3092,-12312.5 2922,-12312.5 2922,-12259.5 3092,-12259.5 3092,-12312.5"/>
 <text text-anchor="middle" x="3007" y="-12297.3" font-family="Times,serif" font-size="14.00">zcash/zips#818</text>
 <text text-anchor="middle" x="3007" y="-12282.3" font-family="Times,serif" font-size="14.00">Protocol spec version</text>
@@ -602,15 +778,15 @@
 </g>
 </g>
 <!-- zcash/zips#819&#45;&gt;zcash/zips#818 -->
-<g id="edge23" class="edge">
+<g id="edge28" class="edge">
 <title>zcash/zips#819&#45;&gt;zcash/zips#818</title>
 <path fill="none" stroke="black" d="M2886.3,-12270C2894.7,-12272 2903.2,-12273 2911.6,-12274"/>
 <polygon fill="black" stroke="black" points="2911.4,-12277.5 2921.7,-12275 2912.09,-12270.53 2911.4,-12277.5"/>
 </g>
 <!-- zcash/zips#825 -->
-<g id="node26" class="node open">
+<g id="node34" class="node open">
 <title>zcash/zips#825</title>
-<g id="a_node26"><a xlink:href="https://github.com/zcash/zips/issues/825" xlink:title="zcash/zips#825&#10;Proposal to disallow v4&#10;transactions and move all&#10;Sprout funds to the ZSF&#10;in NU7" target="_blank">
+<g id="a_node34"><a xlink:href="https://github.com/zcash/zips/issues/825" xlink:title="zcash/zips#825&#10;Proposal to disallow v4&#10;transactions and move all&#10;Sprout funds to the ZSF&#10;in NU7" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="1891.5,-12297.5 1691.5,-12297.5 1691.5,-12214.5 1891.5,-12214.5 1891.5,-12297.5"/>
 <text text-anchor="middle" x="1791.5" y="-12282.3" font-family="Times,serif" font-size="14.00">zcash/zips#825</text>
 <text text-anchor="middle" x="1791.5" y="-12267.3" font-family="Times,serif" font-size="14.00">Proposal to disallow v4</text>
@@ -621,9 +797,9 @@
 </g>
 </g>
 <!-- zcash/zips#811 -->
-<g id="node27" class="node open">
+<g id="node35" class="node open">
 <title>zcash/zips#811</title>
-<g id="a_node27"><a xlink:href="https://github.com/zcash/zips/issues/811" xlink:title="zcash/zips#811&#10;NU7 specification" target="_blank">
+<g id="a_node35"><a xlink:href="https://github.com/zcash/zips/issues/811" xlink:title="zcash/zips#811&#10;NU7 specification" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" points="2130.5,-12305 2127.5,-12309 2106.5,-12309 2103.5,-12305 1987.5,-12305 1987.5,-12267 2130.5,-12267 2130.5,-12305"/>
 <text text-anchor="middle" x="2059" y="-12289.8" font-family="Times,serif" font-size="14.00">zcash/zips#811</text>
 <text text-anchor="middle" x="2059" y="-12274.8" font-family="Times,serif" font-size="14.00">NU7 specification</text>
@@ -631,7 +807,7 @@
 </g>
 </g>
 <!-- zcash/zips#825&#45;&gt;zcash/zips#811 -->
-<g id="edge24" class="edge">
+<g id="edge29" class="edge">
 <title>zcash/zips#825&#45;&gt;zcash/zips#811</title>
 <path fill="none" stroke="black" d="M1891.7,-12268C1920,-12271 1950.3,-12274 1977.3,-12277"/>
 <polygon fill="black" stroke="black" points="1976.91,-12280.49 1987.4,-12279 1978.27,-12273.62 1976.91,-12280.49"/>
@@ -672,9 +848,9 @@
 <polygon fill="black" stroke="black" points="1953.9,-11307.45 1958.7,-11298 1949.06,-11302.39 1953.9,-11307.45"/>
 </g>
 <!-- zcash/zips#832 -->
-<g id="node28" class="node open">
+<g id="node36" class="node open">
 <title>zcash/zips#832</title>
-<g id="a_node28"><a xlink:href="https://github.com/zcash/zips/issues/832" xlink:title="zcash/zips#832&#10;NU7 specification audit" target="_blank">
+<g id="a_node36"><a xlink:href="https://github.com/zcash/zips/issues/832" xlink:title="zcash/zips#832&#10;NU7 specification audit" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" points="2402.5,-12305 2217.5,-12305 2217.5,-12267 2402.5,-12267 2402.5,-12305"/>
 <text text-anchor="middle" x="2310" y="-12289.8" font-family="Times,serif" font-size="14.00">zcash/zips#832</text>
 <text text-anchor="middle" x="2310" y="-12274.8" font-family="Times,serif" font-size="14.00">NU7 specification audit</text>
@@ -682,21 +858,21 @@
 </g>
 </g>
 <!-- zcash/zips#811&#45;&gt;zcash/zips#832 -->
-<g id="edge25" class="edge">
+<g id="edge30" class="edge">
 <title>zcash/zips#811&#45;&gt;zcash/zips#832</title>
 <path fill="none" stroke="black" d="M2130.7,-12286C2154.4,-12286 2181.4,-12286 2207,-12286"/>
 <polygon fill="black" stroke="black" points="2207.2,-12289.5 2217.2,-12286 2207.2,-12282.5 2207.2,-12289.5"/>
 </g>
 <!-- zcash/zips#832&#45;&gt;zcash/zips#814 -->
-<g id="edge26" class="edge">
+<g id="edge31" class="edge">
 <title>zcash/zips#832&#45;&gt;zcash/zips#814</title>
 <path fill="none" stroke="black" d="M2402.6,-12274C2427.7,-12270 2454.6,-12267 2478.5,-12264"/>
 <polygon fill="black" stroke="black" points="2479.38,-12267.39 2488.5,-12262 2478.01,-12260.53 2479.38,-12267.39"/>
 </g>
 <!-- zcash/zips#835 -->
-<g id="node29" class="node open">
+<g id="node37" class="node open">
 <title>zcash/zips#835</title>
-<g id="a_node29"><a xlink:href="https://github.com/zcash/zips/issues/835" xlink:title="zcash/zips#835&#10;Protocol spec version&#10;2025.7.0" target="_blank">
+<g id="a_node37"><a xlink:href="https://github.com/zcash/zips/issues/835" xlink:title="zcash/zips#835&#10;Protocol spec version&#10;2025.7.0" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" points="2637.5,-12344.5 2467.5,-12344.5 2467.5,-12291.5 2637.5,-12291.5 2637.5,-12344.5"/>
 <text text-anchor="middle" x="2552.5" y="-12329.3" font-family="Times,serif" font-size="14.00">zcash/zips#835</text>
 <text text-anchor="middle" x="2552.5" y="-12314.3" font-family="Times,serif" font-size="14.00">Protocol spec version</text>
@@ -705,21 +881,21 @@
 </g>
 </g>
 <!-- zcash/zips#832&#45;&gt;zcash/zips#835 -->
-<g id="edge27" class="edge">
+<g id="edge32" class="edge">
 <title>zcash/zips#832&#45;&gt;zcash/zips#835</title>
 <path fill="none" stroke="black" d="M2402.6,-12298C2420.4,-12301 2439.2,-12303 2457.1,-12305"/>
 <polygon fill="black" stroke="black" points="2456.81,-12308.51 2467.3,-12307 2458.16,-12301.64 2456.81,-12308.51"/>
 </g>
 <!-- zcash/zips#835&#45;&gt;zcash/zips#818 -->
-<g id="edge28" class="edge">
+<g id="edge33" class="edge">
 <title>zcash/zips#835&#45;&gt;zcash/zips#818</title>
 <path fill="none" stroke="black" d="M2637.6,-12315C2704.9,-12312 2801.6,-12308 2886,-12300 2894.3,-12300 2903,-12299 2911.7,-12298"/>
 <polygon fill="black" stroke="black" points="2912.19,-12301.47 2921.8,-12297 2911.5,-12294.5 2912.19,-12301.47"/>
 </g>
 <!-- zcash/zips#830 -->
-<g id="node30" class="node open">
+<g id="node38" class="node open">
 <title>zcash/zips#830</title>
-<g id="a_node30"><a xlink:href="https://github.com/zcash/zips/issues/830" xlink:title="zcash/zips#830&#10;Complete specifications&#10;for ZSAs" target="_blank">
+<g id="a_node38"><a xlink:href="https://github.com/zcash/zips/issues/830" xlink:title="zcash/zips#830&#10;Complete specifications&#10;for ZSAs" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" points="1620,-12468.5 1617,-12472.5 1596,-12472.5 1593,-12468.5 1434,-12468.5 1434,-12415.5 1620,-12415.5 1620,-12468.5"/>
 <text text-anchor="middle" x="1527" y="-12453.3" font-family="Times,serif" font-size="14.00">zcash/zips#830</text>
 <text text-anchor="middle" x="1527" y="-12438.3" font-family="Times,serif" font-size="14.00">Complete specifications</text>
@@ -728,9 +904,9 @@
 </g>
 </g>
 <!-- zcash/zips#813 -->
-<g id="node31" class="node open">
+<g id="node39" class="node open">
 <title>zcash/zips#813</title>
-<g id="a_node31"><a xlink:href="https://github.com/zcash/zips/issues/813" xlink:title="zcash/zips#813&#10;Protocol spec version&#10;2024.6.2" target="_blank">
+<g id="a_node39"><a xlink:href="https://github.com/zcash/zips/issues/813" xlink:title="zcash/zips#813&#10;Protocol spec version&#10;2024.6.2" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" points="1876.5,-12440.5 1706.5,-12440.5 1706.5,-12387.5 1876.5,-12387.5 1876.5,-12440.5"/>
 <text text-anchor="middle" x="1791.5" y="-12425.3" font-family="Times,serif" font-size="14.00">zcash/zips#813</text>
 <text text-anchor="middle" x="1791.5" y="-12410.3" font-family="Times,serif" font-size="14.00">Protocol spec version</text>
@@ -739,7 +915,7 @@
 </g>
 </g>
 <!-- zcash/zips#830&#45;&gt;zcash/zips#813 -->
-<g id="edge29" class="edge">
+<g id="edge34" class="edge">
 <title>zcash/zips#830&#45;&gt;zcash/zips#813</title>
 <path fill="none" stroke="black" d="M1620.2,-12432C1644.8,-12429 1671.5,-12426 1696.3,-12424"/>
 <polygon fill="black" stroke="black" points="1697.27,-12427.38 1706.4,-12422 1695.91,-12420.51 1697.27,-12427.38"/>
@@ -761,21 +937,21 @@
 <polygon fill="black" stroke="black" points="1780.84,-11888.55 1781.8,-11878 1774.47,-11885.65 1780.84,-11888.55"/>
 </g>
 <!-- zcash/zips#813&#45;&gt;zcash/zips#811 -->
-<g id="edge30" class="edge">
+<g id="edge35" class="edge">
 <title>zcash/zips#813&#45;&gt;zcash/zips#811</title>
 <path fill="none" stroke="black" d="M1876.7,-12392C1888.4,-12388 1900.1,-12383 1911,-12378 1951.9,-12360 1995,-12332 2023.9,-12312"/>
 <polygon fill="black" stroke="black" points="2026.25,-12314.63 2032.4,-12306 2022.21,-12308.91 2026.25,-12314.63"/>
 </g>
 <!-- zcash/zips#813&#45;&gt;zcash/zips#835 -->
-<g id="edge31" class="edge">
+<g id="edge36" class="edge">
 <title>zcash/zips#813&#45;&gt;zcash/zips#835</title>
 <path fill="none" stroke="black" d="M1876.6,-12403C2019.3,-12385 2307.9,-12348 2457.2,-12329"/>
 <polygon fill="black" stroke="black" points="2457.69,-12332.47 2467.3,-12328 2457,-12325.5 2457.69,-12332.47"/>
 </g>
 <!-- zcash/zips#755 -->
-<g id="node32" class="node open">
+<g id="node40" class="node open">
 <title>zcash/zips#755</title>
-<g id="a_node32"><a xlink:href="https://github.com/zcash/zips/issues/755" xlink:title="zcash/zips#755&#10;ZSA UX considerations for&#10;AssetId discovery and&#10;authentication" target="_blank">
+<g id="a_node40"><a xlink:href="https://github.com/zcash/zips/issues/755" xlink:title="zcash/zips#755&#10;ZSA UX considerations for&#10;AssetId discovery and&#10;authentication" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="1377.5,-12698 1171.5,-12698 1171.5,-12630 1377.5,-12630 1377.5,-12698"/>
 <text text-anchor="middle" x="1274.5" y="-12682.8" font-family="Times,serif" font-size="14.00">zcash/zips#755</text>
 <text text-anchor="middle" x="1274.5" y="-12667.8" font-family="Times,serif" font-size="14.00">ZSA UX considerations for</text>
@@ -785,15 +961,15 @@
 </g>
 </g>
 <!-- zcash/zips#755&#45;&gt;zcash/zips#830 -->
-<g id="edge32" class="edge">
+<g id="edge37" class="edge">
 <title>zcash/zips#755&#45;&gt;zcash/zips#830</title>
 <path fill="none" stroke="black" d="M1368.6,-12630C1373.3,-12628 1377.8,-12625 1382,-12622 1435.7,-12582 1480.7,-12517 1505.5,-12477"/>
 <polygon fill="black" stroke="black" points="1508.73,-12478.41 1510.7,-12468 1502.67,-12474.91 1508.73,-12478.41"/>
 </g>
 <!-- zcash/zips#751 -->
-<g id="node33" class="node open">
+<g id="node41" class="node open">
 <title>zcash/zips#751</title>
-<g id="a_node33"><a xlink:href="https://github.com/zcash/zips/issues/751" xlink:title="zcash/zips#751&#10;Update protocol spec&#10;references in ZSA ZIPs to&#10;point to a more recent&#10;version (at least&#10;2023.4.0)" target="_blank">
+<g id="a_node41"><a xlink:href="https://github.com/zcash/zips/issues/751" xlink:title="zcash/zips#751&#10;Update protocol spec&#10;references in ZSA ZIPs to&#10;point to a more recent&#10;version (at least&#10;2023.4.0)" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="1374,-12613 1175,-12613 1175,-12515 1374,-12515 1374,-12613"/>
 <text text-anchor="middle" x="1274.5" y="-12597.8" font-family="Times,serif" font-size="14.00">zcash/zips#751</text>
 <text text-anchor="middle" x="1274.5" y="-12582.8" font-family="Times,serif" font-size="14.00">Update protocol spec</text>
@@ -805,15 +981,15 @@
 </g>
 </g>
 <!-- zcash/zips#751&#45;&gt;zcash/zips#830 -->
-<g id="edge33" class="edge">
+<g id="edge38" class="edge">
 <title>zcash/zips#751&#45;&gt;zcash/zips#830</title>
 <path fill="none" stroke="black" d="M1374.1,-12515C1403.8,-12501 1435.5,-12486 1462.3,-12473"/>
 <polygon fill="black" stroke="black" points="1464.39,-12475.85 1471.5,-12468 1461.04,-12469.7 1464.39,-12475.85"/>
 </g>
 <!-- zcash/zips#736 -->
-<g id="node34" class="node open">
+<g id="node42" class="node open">
 <title>zcash/zips#736</title>
-<g id="a_node34"><a xlink:href="https://github.com/zcash/zips/issues/736" xlink:title="zcash/zips#736&#10;Call for comments: ZSA&#10;Swaps base proposal" target="_blank">
+<g id="a_node42"><a xlink:href="https://github.com/zcash/zips/issues/736" xlink:title="zcash/zips#736&#10;Call for comments: ZSA&#10;Swaps base proposal" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="1367,-12496.5 1182,-12496.5 1182,-12443.5 1367,-12443.5 1367,-12496.5"/>
 <text text-anchor="middle" x="1274.5" y="-12481.3" font-family="Times,serif" font-size="14.00">zcash/zips#736</text>
 <text text-anchor="middle" x="1274.5" y="-12466.3" font-family="Times,serif" font-size="14.00">Call for comments: ZSA</text>
@@ -822,15 +998,15 @@
 </g>
 </g>
 <!-- zcash/zips#736&#45;&gt;zcash/zips#830 -->
-<g id="edge34" class="edge">
+<g id="edge39" class="edge">
 <title>zcash/zips#736&#45;&gt;zcash/zips#830</title>
 <path fill="none" stroke="black" d="M1367.4,-12459C1385.7,-12457 1405.1,-12455 1423.7,-12453"/>
 <polygon fill="black" stroke="black" points="1424.1,-12456.48 1433.7,-12452 1423.4,-12449.51 1424.1,-12456.48"/>
 </g>
 <!-- zcash/zips#776 -->
-<g id="node35" class="node open">
+<g id="node43" class="node open">
 <title>zcash/zips#776</title>
-<g id="a_node35"><a xlink:href="https://github.com/zcash/zips/issues/776" xlink:title="zcash/zips#776&#10;[ZIP 228] Asset Swaps for&#10;Zcash Shielded Assets" target="_blank">
+<g id="a_node43"><a xlink:href="https://github.com/zcash/zips/issues/776" xlink:title="zcash/zips#776&#10;[ZIP 228] Asset Swaps for&#10;Zcash Shielded Assets" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="1376,-12424.5 1173,-12424.5 1173,-12371.5 1376,-12371.5 1376,-12424.5"/>
 <text text-anchor="middle" x="1274.5" y="-12409.3" font-family="Times,serif" font-size="14.00">zcash/zips#776</text>
 <text text-anchor="middle" x="1274.5" y="-12394.3" font-family="Times,serif" font-size="14.00">[ZIP 228] Asset Swaps for</text>
@@ -839,15 +1015,15 @@
 </g>
 </g>
 <!-- zcash/zips#776&#45;&gt;zcash/zips#830 -->
-<g id="edge35" class="edge">
+<g id="edge40" class="edge">
 <title>zcash/zips#776&#45;&gt;zcash/zips#830</title>
 <path fill="none" stroke="black" d="M1376.3,-12416C1391.9,-12418 1408.1,-12421 1423.7,-12424"/>
 <polygon fill="black" stroke="black" points="1423.41,-12427.51 1433.9,-12426 1424.76,-12420.64 1423.41,-12427.51"/>
 </g>
 <!-- zcash/zips#752 -->
-<g id="node36" class="node open">
+<g id="node44" class="node open">
 <title>zcash/zips#752</title>
-<g id="a_node36"><a xlink:href="https://github.com/zcash/zips/issues/752" xlink:title="zcash/zips#752&#10;Update psi&#39; to psi^nf in&#10;ZSA ZIPs" target="_blank">
+<g id="a_node44"><a xlink:href="https://github.com/zcash/zips/issues/752" xlink:title="zcash/zips#752&#10;Update psi&#39; to psi^nf in&#10;ZSA ZIPs" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="1368,-12354.5 1181,-12354.5 1181,-12301.5 1368,-12301.5 1368,-12354.5"/>
 <text text-anchor="middle" x="1274.5" y="-12339.3" font-family="Times,serif" font-size="14.00">zcash/zips#752</text>
 <text text-anchor="middle" x="1274.5" y="-12324.3" font-family="Times,serif" font-size="14.00">Update psi&#39; to psi^nf in</text>
@@ -856,15 +1032,15 @@
 </g>
 </g>
 <!-- zcash/zips#752&#45;&gt;zcash/zips#830 -->
-<g id="edge36" class="edge">
+<g id="edge41" class="edge">
 <title>zcash/zips#752&#45;&gt;zcash/zips#830</title>
 <path fill="none" stroke="black" d="M1358.6,-12354C1366.6,-12357 1374.5,-12360 1382,-12364 1412.9,-12377 1446.1,-12395 1472.8,-12410"/>
 <polygon fill="black" stroke="black" points="1471.18,-12413.1 1481.6,-12415 1474.63,-12407.02 1471.18,-12413.1"/>
 </g>
 <!-- zcash/zips#566 -->
-<g id="node37" class="node open">
+<g id="node45" class="node open">
 <title>zcash/zips#566</title>
-<g id="a_node37"><a xlink:href="https://github.com/zcash/zips/issues/566" xlink:title="zcash/zips#566&#10;Potential ZSA&#10;requirements to support&#10;RenVM" target="_blank">
+<g id="a_node45"><a xlink:href="https://github.com/zcash/zips/issues/566" xlink:title="zcash/zips#566&#10;Potential ZSA&#10;requirements to support&#10;RenVM" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="1370.5,-12282 1178.5,-12282 1178.5,-12214 1370.5,-12214 1370.5,-12282"/>
 <text text-anchor="middle" x="1274.5" y="-12266.8" font-family="Times,serif" font-size="14.00">zcash/zips#566</text>
 <text text-anchor="middle" x="1274.5" y="-12251.8" font-family="Times,serif" font-size="14.00">Potential ZSA</text>
@@ -874,15 +1050,15 @@
 </g>
 </g>
 <!-- zcash/zips#566&#45;&gt;zcash/zips#830 -->
-<g id="edge37" class="edge">
+<g id="edge42" class="edge">
 <title>zcash/zips#566&#45;&gt;zcash/zips#830</title>
 <path fill="none" stroke="black" d="M1365.8,-12283C1371.4,-12286 1376.9,-12289 1382,-12292 1429,-12324 1472.9,-12374 1499.6,-12407"/>
 <polygon fill="black" stroke="black" points="1497.02,-12409.38 1506,-12415 1502.49,-12405 1497.02,-12409.38"/>
 </g>
 <!-- zcash/zips#839 -->
-<g id="node38" class="node open">
+<g id="node46" class="node open">
 <title>zcash/zips#839</title>
-<g id="a_node38"><a xlink:href="https://github.com/zcash/zips/issues/839" xlink:title="zcash/zips#839&#10;ZIP ?: Deployment of the&#10;NU7 Network Upgrade" target="_blank">
+<g id="a_node46"><a xlink:href="https://github.com/zcash/zips/issues/839" xlink:title="zcash/zips#839&#10;ZIP ?: Deployment of the&#10;NU7 Network Upgrade" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="1888.5,-12368.5 1694.5,-12368.5 1694.5,-12315.5 1888.5,-12315.5 1888.5,-12368.5"/>
 <text text-anchor="middle" x="1791.5" y="-12353.3" font-family="Times,serif" font-size="14.00">zcash/zips#839</text>
 <text text-anchor="middle" x="1791.5" y="-12338.3" font-family="Times,serif" font-size="14.00">ZIP ?: Deployment of the</text>
@@ -891,186 +1067,10 @@
 </g>
 </g>
 <!-- zcash/zips#839&#45;&gt;zcash/zips#811 -->
-<g id="edge38" class="edge">
+<g id="edge43" class="edge">
 <title>zcash/zips#839&#45;&gt;zcash/zips#811</title>
 <path fill="none" stroke="black" d="M1888.7,-12322C1917.8,-12316 1949.4,-12309 1977.4,-12304"/>
 <polygon fill="black" stroke="black" points="1978.91,-12307.2 1987.5,-12301 1976.92,-12300.49 1978.91,-12307.2"/>
-</g>
-<!-- zcash/librustzcash#1338 -->
-<g id="node39" class="node open">
-<title>zcash/librustzcash#1338</title>
-<g id="a_node39"><a xlink:href="https://github.com/zcash/librustzcash/issues/1338" xlink:title="zcash/librustzcash#1338&#10;zcash_client_backend&#10;0.13.0" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" points="1889.5,-472 1693.5,-472 1693.5,-419 1889.5,-419 1889.5,-472"/>
-<text text-anchor="middle" x="1791.5" y="-456.8" font-family="Times,serif" font-size="14.00">zcash/librustzcash#1338</text>
-<text text-anchor="middle" x="1791.5" y="-441.8" font-family="Times,serif" font-size="14.00">zcash_client_backend</text>
-<text text-anchor="middle" x="1791.5" y="-426.8" font-family="Times,serif" font-size="14.00">0.13.0</text>
-</a>
-</g>
-</g>
-<!-- zcash/librustzcash#1231 -->
-<g id="node40" class="node open">
-<title>zcash/librustzcash#1231</title>
-<g id="a_node40"><a xlink:href="https://github.com/zcash/librustzcash/issues/1231" xlink:title="zcash/librustzcash#1231&#10;zcash_client_sqlite&#10;0.11.0" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" points="2157,-378 1961,-378 1961,-325 2157,-325 2157,-378"/>
-<text text-anchor="middle" x="2059" y="-362.8" font-family="Times,serif" font-size="14.00">zcash/librustzcash#1231</text>
-<text text-anchor="middle" x="2059" y="-347.8" font-family="Times,serif" font-size="14.00">zcash_client_sqlite</text>
-<text text-anchor="middle" x="2059" y="-332.8" font-family="Times,serif" font-size="14.00">0.11.0</text>
-</a>
-</g>
-</g>
-<!-- zcash/librustzcash#1338&#45;&gt;zcash/librustzcash#1231 -->
-<g id="edge39" class="edge">
-<title>zcash/librustzcash#1338&#45;&gt;zcash/librustzcash#1231</title>
-<path fill="none" stroke="black" d="M1882.7,-418.94C1892.3,-415.86 1901.9,-412.68 1911,-409.5 1935.1,-401.09 1961.2,-391.12 1984.5,-381.84"/>
-<polygon fill="black" stroke="black" points="1986.02,-385 1994,-378.04 1983.42,-378.5 1986.02,-385"/>
-</g>
-<!-- zcash/librustzcash#1178 -->
-<g id="node246" class="node open">
-<title>zcash/librustzcash#1178</title>
-<g id="a_node246"><a xlink:href="https://github.com/zcash/librustzcash/issues/1178" xlink:title="zcash/librustzcash#1178&#10;zcash_client_backend&#10;0.13.1" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" points="2157,-2111 1961,-2111 1961,-2058 2157,-2058 2157,-2111"/>
-<text text-anchor="middle" x="2059" y="-2095.8" font-family="Times,serif" font-size="14.00">zcash/librustzcash#1178</text>
-<text text-anchor="middle" x="2059" y="-2080.8" font-family="Times,serif" font-size="14.00">zcash_client_backend</text>
-<text text-anchor="middle" x="2059" y="-2065.8" font-family="Times,serif" font-size="14.00">0.13.1</text>
-</a>
-</g>
-</g>
-<!-- zcash/librustzcash#1338&#45;&gt;zcash/librustzcash#1178 -->
-<g id="edge256" class="edge">
-<title>zcash/librustzcash#1338&#45;&gt;zcash/librustzcash#1178</title>
-<path fill="none" stroke="black" d="M1803.2,-472.36C1827.8,-535.62 1887.9,-699.41 1911,-842.5 1921.7,-908.73 1906.5,-1996 1947,-2049.5 1948.8,-2051.9 1950.8,-2054.2 1953,-2056.3"/>
-<polygon fill="black" stroke="black" points="1950.8,-2059.02 1960.7,-2062.8 1955.32,-2053.67 1950.8,-2059.02"/>
-</g>
-<!-- zcash/librustzcash#1418 -->
-<g id="node247" class="node open">
-<title>zcash/librustzcash#1418</title>
-<g id="a_node247"><a xlink:href="https://github.com/zcash/librustzcash/issues/1418" xlink:title="zcash/librustzcash#1418&#10;zcash_client_sqlite&#10;0.12.0" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" points="2650.5,-1254 2454.5,-1254 2454.5,-1201 2650.5,-1201 2650.5,-1254"/>
-<text text-anchor="middle" x="2552.5" y="-1238.8" font-family="Times,serif" font-size="14.00">zcash/librustzcash#1418</text>
-<text text-anchor="middle" x="2552.5" y="-1223.8" font-family="Times,serif" font-size="14.00">zcash_client_sqlite</text>
-<text text-anchor="middle" x="2552.5" y="-1208.8" font-family="Times,serif" font-size="14.00">0.12.0</text>
-</a>
-</g>
-</g>
-<!-- zcash/librustzcash#1231&#45;&gt;zcash/librustzcash#1418 -->
-<g id="edge257" class="edge">
-<title>zcash/librustzcash#1231&#45;&gt;zcash/librustzcash#1418</title>
-<path fill="none" stroke="black" d="M2086.8,-378.07C2113.5,-406.38 2153,-453.9 2171,-503.5 2187.2,-547.98 2167.4,-893.29 2199,-928.5 2264.4,-1001.4 2337,-908.61 2416,-966.5 2492.1,-1022.3 2529,-1133.7 2543.6,-1191.2"/>
-<polygon fill="black" stroke="black" points="2540.22,-1192.12 2546,-1201 2547.02,-1190.45 2540.22,-1192.12"/>
-</g>
-<!-- zcash/librustzcash#1179 -->
-<g id="node41" class="node open">
-<title>zcash/librustzcash#1179</title>
-<g id="a_node41"><a xlink:href="https://github.com/zcash/librustzcash/issues/1179" xlink:title="zcash/librustzcash#1179&#10;zcash_primitives 0.16.0,&#10;zcash_proofs 0.16.0" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="1625,-472 1429,-472 1429,-419 1625,-419 1625,-472"/>
-<text text-anchor="middle" x="1527" y="-456.8" font-family="Times,serif" font-size="14.00">zcash/librustzcash#1179</text>
-<text text-anchor="middle" x="1527" y="-441.8" font-family="Times,serif" font-size="14.00">zcash_primitives 0.16.0,</text>
-<text text-anchor="middle" x="1527" y="-426.8" font-family="Times,serif" font-size="14.00">zcash_proofs 0.16.0</text>
-</a>
-</g>
-</g>
-<!-- zcash/librustzcash#1179&#45;&gt;zcash/librustzcash#1338 -->
-<g id="edge40" class="edge">
-<title>zcash/librustzcash#1179&#45;&gt;zcash/librustzcash#1338</title>
-<path fill="none" stroke="black" d="M1625.4,-445.5C1644.2,-445.5 1664,-445.5 1683.1,-445.5"/>
-<polygon fill="black" stroke="black" points="1683.3,-449 1693.3,-445.5 1683.3,-442 1683.3,-449"/>
-</g>
-<!-- zcash/librustzcash#1458 -->
-<g id="node248" class="node open">
-<title>zcash/librustzcash#1458</title>
-<g id="a_node248"><a xlink:href="https://github.com/zcash/librustzcash/issues/1458" xlink:title="zcash/librustzcash#1458&#10;zcash_primitives 0.17.0,&#10;zcash_proofs 0.17.0" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" points="2157,-2457 1961,-2457 1961,-2404 2157,-2404 2157,-2457"/>
-<text text-anchor="middle" x="2059" y="-2441.8" font-family="Times,serif" font-size="14.00">zcash/librustzcash#1458</text>
-<text text-anchor="middle" x="2059" y="-2426.8" font-family="Times,serif" font-size="14.00">zcash_primitives 0.17.0,</text>
-<text text-anchor="middle" x="2059" y="-2411.8" font-family="Times,serif" font-size="14.00">zcash_proofs 0.17.0</text>
-</a>
-</g>
-</g>
-<!-- zcash/librustzcash#1179&#45;&gt;zcash/librustzcash#1458 -->
-<g id="edge258" class="edge">
-<title>zcash/librustzcash#1179&#45;&gt;zcash/librustzcash#1458</title>
-<path fill="none" stroke="black" d="M1527.9,-472.24C1527,-697.21 1526.5,-2269.5 1672,-2411.5 1710.2,-2448.8 1850.3,-2447.1 1950.7,-2440.4"/>
-<polygon fill="black" stroke="black" points="1951.16,-2443.88 1960.9,-2439.7 1950.68,-2436.89 1951.16,-2443.88"/>
-</g>
-<!-- zcash/librustzcash#1434 -->
-<g id="node42" class="node committed">
-<title>zcash/librustzcash#1434</title>
-<g id="a_node42"><a xlink:href="https://github.com/zcash/librustzcash/issues/1434" xlink:title="zcash/librustzcash#1434&#10;Ensure symmetry of&#10;transparent output&#10;handling between&#10;`put_blocks`,&#10;`store_decrypted_tx` and&#10;`store_sent_tx`" target="_blank">
-<polygon fill="#a6cfff" stroke="black" stroke-width="2" points="1890,-183 1693,-183 1693,-70 1890,-70 1890,-183"/>
-<text text-anchor="middle" x="1791.5" y="-167.8" font-family="Times,serif" font-size="14.00">zcash/librustzcash#1434</text>
-<text text-anchor="middle" x="1791.5" y="-152.8" font-family="Times,serif" font-size="14.00">Ensure symmetry of</text>
-<text text-anchor="middle" x="1791.5" y="-137.8" font-family="Times,serif" font-size="14.00">transparent output</text>
-<text text-anchor="middle" x="1791.5" y="-122.8" font-family="Times,serif" font-size="14.00">handling between</text>
-<text text-anchor="middle" x="1791.5" y="-107.8" font-family="Times,serif" font-size="14.00">`put_blocks`,</text>
-<text text-anchor="middle" x="1791.5" y="-92.8" font-family="Times,serif" font-size="14.00">`store_decrypted_tx` and</text>
-<text text-anchor="middle" x="1791.5" y="-77.8" font-family="Times,serif" font-size="14.00">`store_sent_tx`</text>
-</a>
-</g>
-</g>
-<!-- zcash/librustzcash#1434&#45;&gt;zcash/librustzcash#1231 -->
-<g id="edge41" class="edge">
-<title>zcash/librustzcash#1434&#45;&gt;zcash/librustzcash#1231</title>
-<path fill="none" stroke="black" d="M1890.2,-177.54C1897.4,-182.33 1904.4,-187.33 1911,-192.5 1958.3,-229.72 2004,-282.6 2031.5,-316.98"/>
-<polygon fill="black" stroke="black" points="2028.83,-319.24 2037.8,-324.87 2034.3,-314.87 2028.83,-319.24"/>
-</g>
-<!-- zcash/librustzcash#1413 -->
-<g id="node43" class="node open">
-<title>zcash/librustzcash#1413</title>
-<g id="a_node43"><a xlink:href="https://github.com/zcash/librustzcash/issues/1413" xlink:title="zcash/librustzcash#1413&#10;`zcash_client_*`: Fix bug&#10;where transparent funds&#10;can&#39;t be shielded before&#10;the normal confirmation&#10;depth" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="1889.5,-400.5 1693.5,-400.5 1693.5,-302.5 1889.5,-302.5 1889.5,-400.5"/>
-<text text-anchor="middle" x="1791.5" y="-385.3" font-family="Times,serif" font-size="14.00">zcash/librustzcash#1413</text>
-<text text-anchor="middle" x="1791.5" y="-370.3" font-family="Times,serif" font-size="14.00">`zcash_client_*`: Fix bug</text>
-<text text-anchor="middle" x="1791.5" y="-355.3" font-family="Times,serif" font-size="14.00">where transparent funds</text>
-<text text-anchor="middle" x="1791.5" y="-340.3" font-family="Times,serif" font-size="14.00">can&#39;t be shielded before</text>
-<text text-anchor="middle" x="1791.5" y="-325.3" font-family="Times,serif" font-size="14.00">the normal confirmation</text>
-<text text-anchor="middle" x="1791.5" y="-310.3" font-family="Times,serif" font-size="14.00">depth</text>
-</a>
-</g>
-</g>
-<!-- zcash/librustzcash#1413&#45;&gt;zcash/librustzcash#1231 -->
-<g id="edge42" class="edge">
-<title>zcash/librustzcash#1413&#45;&gt;zcash/librustzcash#1231</title>
-<path fill="none" stroke="black" d="M1889.9,-351.5C1909.6,-351.5 1930.5,-351.5 1950.6,-351.5"/>
-<polygon fill="black" stroke="black" points="1950.7,-355 1960.7,-351.5 1950.7,-348 1950.7,-355"/>
-</g>
-<!-- zcash/librustzcash#1330 -->
-<g id="node44" class="node committed">
-<title>zcash/librustzcash#1330</title>
-<g id="a_node44"><a xlink:href="https://github.com/zcash/librustzcash/issues/1330" xlink:title="zcash/librustzcash#1330&#10;zcash_client_sqlite:&#10;`v_tx_outputs` describes&#10;one of two tx outputs as&#10;not from the account" target="_blank">
-<polygon fill="#a6cfff" stroke="black" stroke-width="2" points="1889.5,-284 1693.5,-284 1693.5,-201 1889.5,-201 1889.5,-284"/>
-<text text-anchor="middle" x="1791.5" y="-268.8" font-family="Times,serif" font-size="14.00">zcash/librustzcash#1330</text>
-<text text-anchor="middle" x="1791.5" y="-253.8" font-family="Times,serif" font-size="14.00">zcash_client_sqlite:</text>
-<text text-anchor="middle" x="1791.5" y="-238.8" font-family="Times,serif" font-size="14.00">`v_tx_outputs` describes</text>
-<text text-anchor="middle" x="1791.5" y="-223.8" font-family="Times,serif" font-size="14.00">one of two tx outputs as</text>
-<text text-anchor="middle" x="1791.5" y="-208.8" font-family="Times,serif" font-size="14.00">not from the account</text>
-</a>
-</g>
-</g>
-<!-- zcash/librustzcash#1330&#45;&gt;zcash/librustzcash#1231 -->
-<g id="edge43" class="edge">
-<title>zcash/librustzcash#1330&#45;&gt;zcash/librustzcash#1231</title>
-<path fill="none" stroke="black" d="M1889.9,-282.47C1921,-295.24 1954.9,-309.17 1984.1,-321.14"/>
-<polygon fill="black" stroke="black" points="1982.72,-324.36 1993.3,-324.96 1985.41,-317.89 1982.72,-324.36"/>
-</g>
-<!-- zcash/librustzcash#1355 -->
-<g id="node45" class="node open">
-<title>zcash/librustzcash#1355</title>
-<g id="a_node45"><a xlink:href="https://github.com/zcash/librustzcash/issues/1355" xlink:title="zcash/librustzcash#1355&#10;Passive note management" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="251.5,-11789 48.5,-11789 48.5,-11751 251.5,-11751 251.5,-11789"/>
-<text text-anchor="middle" x="150" y="-11773.8" font-family="Times,serif" font-size="14.00">zcash/librustzcash#1355</text>
-<text text-anchor="middle" x="150" y="-11758.8" font-family="Times,serif" font-size="14.00">Passive note management</text>
-</a>
-</g>
-</g>
-<!-- zcash/zips#833 -->
-<g id="node46" class="node open">
-<title>zcash/zips#833</title>
-<g id="a_node46"><a xlink:href="https://github.com/zcash/zips/issues/833" xlink:title="zcash/zips#833&#10;Documentation Q4 2024" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" points="2648,-11677 2645,-11681 2624,-11681 2621,-11677 2457,-11677 2457,-11639 2648,-11639 2648,-11677"/>
-<text text-anchor="middle" x="2552.5" y="-11661.8" font-family="Times,serif" font-size="14.00">zcash/zips#833</text>
-<text text-anchor="middle" x="2552.5" y="-11646.8" font-family="Times,serif" font-size="14.00">Documentation Q4 2024</text>
-</a>
-</g>
 </g>
 <!-- zcash/zcash#3828 -->
 <g id="node47" class="node open">
@@ -2710,17 +2710,17 @@
 <path fill="none" stroke="black" d="M2156.3,-11618C2175.5,-11623 2195.7,-11628 2214.8,-11634"/>
 <polygon fill="black" stroke="black" points="2214.2,-11637.45 2224.7,-11636 2215.59,-11630.59 2214.2,-11637.45"/>
 </g>
-<!-- zcash/zips#834&#45;&gt;zcash/zips#813 -->
-<g id="edge234" class="edge">
-<title>zcash/zips#834&#45;&gt;zcash/zips#813</title>
-<path fill="none" stroke="black" d="M2289.4,-11685C2230.3,-11767 2051.3,-12023 1947,-12258 1924.4,-12309 1950.5,-12339 1911,-12378 1903.8,-12386 1895.2,-12391 1886.1,-12396"/>
-<polygon fill="black" stroke="black" points="1884.53,-12392.86 1876.7,-12400 1887.27,-12399.3 1884.53,-12392.86"/>
-</g>
 <!-- zcash/zips#834&#45;&gt;zcash/zips#833 -->
 <g id="edge235" class="edge">
 <title>zcash/zips#834&#45;&gt;zcash/zips#833</title>
 <path fill="none" stroke="black" d="M2395.1,-11658C2411.8,-11658 2429.4,-11658 2446.7,-11658"/>
 <polygon fill="black" stroke="black" points="2446.7,-11661.5 2456.7,-11658 2446.7,-11654.5 2446.7,-11661.5"/>
+</g>
+<!-- zcash/zips#834&#45;&gt;zcash/zips#813 -->
+<g id="edge234" class="edge">
+<title>zcash/zips#834&#45;&gt;zcash/zips#813</title>
+<path fill="none" stroke="black" d="M2289.4,-11685C2230.3,-11767 2051.3,-12023 1947,-12258 1924.4,-12309 1950.5,-12339 1911,-12378 1903.8,-12386 1895.2,-12391 1886.1,-12396"/>
+<polygon fill="black" stroke="black" points="1884.53,-12392.86 1876.7,-12400 1887.27,-12399.3 1884.53,-12392.86"/>
 </g>
 <!-- zcash/zcash#6870 -->
 <g id="node118" class="node open">
