@@ -7,7 +7,7 @@
 import drest
 import networkx as nx
 
-from distutils.util import strtobool
+from str2bool import str2bool as strtobool
 import mimetypes
 import os
 from textwrap import wrap
