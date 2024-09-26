@@ -85,6 +85,7 @@ ZCASHD_DEPRECATION_REPOS = {
     26987049: ('zcash', 'zcash'),
     47279130: ('zcash', 'zips'),
     85334928: ('zcash', 'librustzcash'),
+    863610221: ('zcash', 'wallet'),
 }
 
 POOL_DEPRECATION_REPOS = {
