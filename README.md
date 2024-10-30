@@ -6,11 +6,11 @@ For now, this repo hosts the script used to generate ECC's development dependenc
 
 ## Setup
 
-This project uses `poetry` for dependency management: https://python-poetry.org/
+This project uses `uv` for dependency management: https://docs.astral.sh/uv/
 It also depends on the Graphviz library; for Debian-based distros, install the
 `libgraphviz-dev` package.
 
-After installing `poetry`, run `poetry install`.
+After installing `uv`, run `uv sync`.
 
 ### Authorization Tokens
 
@@ -46,5 +46,5 @@ supplied as environment variables:
 Example command:
 
 ```
-DAG_VIEW=core SHOW_MILESTONES=false poetry run python ./zcash-issue-dag.py
+DAG_VIEW=core SHOW_MILESTONES=false uv run ./zcash-issue-dag.py
 ```

@@ -11,5 +11,5 @@ do
     SHOW_EPICS=true \
     GITHUB_TOKEN="$(cat GITHUB_TOKEN)" \
     ZENHUB_TOKEN="$(cat ZENHUB_TOKEN)" \
-    poetry run python ./zcash-issue-dag.py
+    uv run ./zcash-issue-dag.py
 done
