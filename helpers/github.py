@@ -113,6 +113,7 @@ class GitHubIssue:
         if data is not None:
             labels = [label['name'] for label in data['labels']['nodes']]
             self.title = data['title']
+            self.labels = labels
             self.is_release = 'C-release' in labels
             self.is_target = 'C-target' in labels
             self.is_pr = 'merged' in data
@@ -126,6 +127,7 @@ class GitHubIssue:
         else:
             # If we can't fetch issue data, assume we don't care.
             self.title = ''
+            self.labels = []
             self.url = None
             self.is_release = False
             self.is_target = False
@@ -210,5 +212,97 @@ def download_issues(endpoint, nodes, REPOS):
             # repository in REPOS, GitHub returns an empty repo_data section.
             issue_data = repo_data[issue_key] if issue_key in repo_data else None
             ret[(repo, issue)] = GitHubIssue(repo, issue, issue_data, REPOS)
+
+    return ret
+
+
+def fetch_issues_with_labels(op, labels, repos):
+    for (repo_id, (repo, issue_cursor, pr_cursor)) in repos:
+        conn = op.repository(
+            owner=repo[0],
+            name=repo[1],
+            __alias__='repo%d' % repo_id,
+        )
+
+        if issue_cursor != -1:
+            issues = conn.issues(
+                labels=labels,
+                first=50,
+                after=issue_cursor,
+            )
+            issues.nodes.number()
+            issues.nodes.labels(first=50).nodes().name()
+            issues.nodes.state()
+            issues.nodes.milestone().title()
+            issues.nodes.title()
+            issues.nodes.url()
+            issues.page_info.has_next_page()
+            issues.page_info.end_cursor()
+
+        if pr_cursor != -1:
+            prs = conn.pull_requests(
+                labels=labels,
+                first=50,
+                after=pr_cursor,
+            )
+            prs.nodes.number()
+            prs.nodes.labels(first=50).nodes().name()
+            prs.nodes.state()
+            prs.nodes.milestone().title()
+            prs.nodes.title()
+            prs.nodes.url()
+            prs.nodes.merged()
+            prs.page_info.has_next_page()
+            prs.page_info.end_cursor()
+
+
+def download_issues_with_labels(endpoint, labels, REPOS):
+    ret = {}
+    repos = {repo_id: (repo, None, None) for (repo_id, repo) in REPOS.items()}
+
+    while True:
+        op = Operation(schema.Query)
+        fetch_issues_with_labels(op, labels, repos.items())
+
+        d = endpoint(op)
+        data = op + d
+
+        done = []
+        for (repo_id, (repo, _, _)) in repos.items():
+            repo_data = data['repo%d' % repo_id]
+
+            if hasattr(repo_data, 'issues'):
+                for issue in repo_data.issues.nodes:
+                    ret[(repo_id, issue.number)] = GitHubIssue(repo_id, issue.number, issue, REPOS)
+                if repo_data.issues.page_info.has_next_page:
+                    issue_cursor = repo_data.issues.page_info.end_cursor
+                else:
+                    issue_cursor = -1
+            else:
+                issue_cursor = -1
+
+            if hasattr(repo_data, 'pull_requests'):
+                for pr in repo_data.pull_requests.nodes:
+                    ret[(repo_id, pr.number)] = GitHubIssue(repo_id, pr.number, pr, REPOS)
+                if repo_data.pull_requests.page_info.has_next_page:
+                    pr_cursor = repo_data.pull_requests.page_info.end_cursor
+                else:
+                    pr_cursor = -1
+            else:
+                pr_cursor = -1
+
+            if issue_cursor == -1 and pr_cursor == -1:
+                done.append(repo_id)
+            else:
+                repos[repo_id] = (repo, issue_cursor, pr_cursor)
+
+        for repo_id in done:
+            del repos[repo_id]
+
+        if len(repos) > 0:
+            print('.', end='', flush=True)
+        else:
+            print()
+            break
 
     return ret
