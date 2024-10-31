@@ -25,11 +25,37 @@ REPOS = {
     **github.WALLET_REPOS,
 }
 
+RELEASE_MATRIX = {
+    RUST: [ANDROID_SDK, SWIFT_SDK],
+    ANDROID_SDK: [ZASHI_ANDROID],
+    SWIFT_SDK: [ZASHI_IOS],
+    ZASHI_ANDROID: [],
+    ZASHI_IOS: []
+}
 
 class TrackedIssue:
     def __init__(self, issue):
         self.issue = issue
 
+def build_release_matrix_from(dg, issue, repo_id):
+    acc = []
+    for child in dg.neighbors(issue):
+        if child.repo_id == repo_id and 'C-release' in child.labels:
+            child_releases = []
+            for dep_repo in RELEASE_MATRIX.get(repo_id):
+                child_releases.extend(build_release_matrix_from(dg, child, dep_repo))
+
+            if len(child_releases) > 0:
+                for rec in child_releases:
+                    rec[repo_id] = child
+            else:
+                child_releases = [{repo_id: child}]
+
+            acc.extend(child_releases)
+        else:
+            acc.extend(build_release_matrix_from(dg, child, repo_id))
+
+    return acc
 
 def main():
     gapi = github.api(GITHUB_TOKEN)
@@ -166,23 +192,27 @@ def main():
         f.write(html_header)
 
         for issue in tracked_issues.values():
-            f.write('<tr>')
+            rows = build_release_matrix_from(dg, issue, RUST);
+            for row in rows:
+                f.write('<tr>')
 
-            if 'C-tracked-bug' in issue.labels:
-                f.write('<td>🐞</td>')
-            else:
-                f.write('<td>💡</td>')
+                if 'C-tracked-bug' in issue.labels:
+                    f.write('<td>🐞</td>')
+                else:
+                    f.write('<td>💡</td>')
 
-            f.write('<td>{} <a href="{}">{}</a></td>'.format(
-                '✅' if issue.state == 'closed' else '🛑',
-                issue.url,
-                issue.title,
-            ))
+                f.write('<td>{} <a href="{}">{}</a></td>'.format(
+                    '✅' if issue.state == 'closed' else '🛑',
+                    issue.url,
+                    issue.title,
+                ))
 
-            children = nx.descendants(dg, issue)
-            def find_child_release(repo_id):
-                for child in children:
-                    if child.repo_id == repo_id and 'C-release' in child.labels:
+                for repo_id in [RUST, ANDROID_SDK, SWIFT_SDK, ZASHI_ANDROID, ZASHI_IOS]:
+                    child = row.get(repo_id)
+                    if child is None:
+                        # Release not found in this repo
+                        f.write('<td>📥</td>')
+                    else:
                         # Extract version number from title
                         if repo_id == RUST:
                             version = re.search(r'zcash_[^ ]+ \d+(\.\d+)+', child.title).group()
@@ -194,18 +224,7 @@ def main():
                             child.url,
                             version,
                         ))
-                        return
-
-                # Release not found in this repo
-                f.write('<td>📥</td>')
-
-            find_child_release(RUST)
-            find_child_release(ANDROID_SDK)
-            find_child_release(SWIFT_SDK)
-            find_child_release(ZASHI_ANDROID)
-            find_child_release(ZASHI_IOS)
-
-            f.write('</tr>')
+                f.write('</tr>')
 
         f.write(html_footer)
 
