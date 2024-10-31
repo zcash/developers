@@ -12,7 +12,7 @@ uv run sgqlc-codegen schema github_schema.json github_schema.py
 
 uv run python3 -m sgqlc.introspection \
   --exclude-description \
-  -H "Authorization: bearer $(cat ZENHUB_TOKEN)" \
+  -H "Authorization: Bearer $(cat ZENHUB_TOKEN)" \
   https://api.zenhub.com/public/graphql \
   zenhub_schema.json
 
