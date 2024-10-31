@@ -1,24 +1,28 @@
-[tool.poetry]
+[project]
 name = "zcash-developer-tools"
 version = "0.1.0"
-description = "Zcash Developer Tools"
+dependencies = [
+  "drest",
+  "networkx",
+  "pygraphviz",
+  "sgqlc",
+  "str2bool",
+]
+requires-python = ">= 3.8"
 authors = [
-    "Jack Grigg <jack@electriccoin.co>",
+  {name = "Jack Grigg", email = "jack@electriccoin.co"},
 ]
-license = "MIT OR Apache-2.0"
+description = "Zcash Developer Tools"
 readme = "README.md"
-homepage = "https://github.com/zcash/developers/"
-repository = "https://github.com/zcash/developers/"
-documentation = "https://github.com/zcash/developers/"
 classifiers = [
-    "Private :: Do Not Upload",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: Apache Software License",
+  "License :: OSI Approved :: MIT License",
+  "Private :: Do Not Upload",
 ]
-package-mode = false
 
-[tool.poetry.dependencies]
-python = "^3.8"
-drest = "0.9.12"
-networkx = "3.1"
-pygraphviz = "1.11"
-sgqlc = "16.3"
-str2bool = "1.1"
+[project.urls]
+Homepage = "https://github.com/zcash/developers"
+Documentation = "https://github.com/zcash/developers"
+Repository = "https://github.com/zcash/developers.git"
+
