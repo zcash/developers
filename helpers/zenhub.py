@@ -52,18 +52,22 @@ def get_dependency_graph(endpoint, workspace_id, repos):
         d = endpoint(op)
         data = op + d
 
-        dependencies = data.workspace.issue_dependencies
-        edges += [
-            (
-                (node.blocking_issue.repository.gh_id, node.blocking_issue.number),
-                (node.blocked_issue.repository.gh_id, node.blocked_issue.number),
-            )
-            for node in dependencies.nodes
-        ]
+        if hasattr(data.workspace, 'issue_dependencies'):
+            dependencies = data.workspace.issue_dependencies
+            edges += [
+                (
+                    (node.blocking_issue.repository.gh_id, node.blocking_issue.number),
+                    (node.blocked_issue.repository.gh_id, node.blocked_issue.number),
+                )
+                for node in dependencies.nodes
+            ]
 
-        if dependencies.page_info.has_next_page:
-            cursor = dependencies.page_info.end_cursor
-            print('.', end='', flush=True)
+            if dependencies.page_info.has_next_page:
+                cursor = dependencies.page_info.end_cursor
+                print('.', end='', flush=True)
+            else:
+                print()
+                break
         else:
             print()
             break
