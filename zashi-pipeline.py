@@ -202,19 +202,24 @@ def main():
 
         for issue in tracked_issues.values():
             rows = build_release_matrix_from(dg, issue, RUST);
-            for row in rows:
+            for i, row in enumerate(rows):
                 f.write('<tr>')
 
-                if 'C-tracked-bug' in issue.labels:
-                    f.write('<td>🐞</td>')
-                else:
-                    f.write('<td>💡</td>')
+                if i == 0:
+                    rowspan = ''
+                    if len(rows) > 1:
+                        rowspan = ' rowspan="{}"'.format(len(rows))
 
-                f.write('<td>{} <a href="{}">{}</a></td>'.format(
-                    '✅' if issue.state == 'closed' else '🛑',
-                    issue.url,
-                    issue.title,
-                ))
+                    f.write('<td{}>{}</td>'.format(
+                        rowspan,
+                        '🐞' if 'C-tracked-bug' in issue.labels else '💡',
+                    ))
+                    f.write('<td{}>{} <a href="{}">{}</a></td>'.format(
+                        rowspan,
+                        '✅' if issue.state == 'closed' else '🛑',
+                        issue.url,
+                        issue.title,
+                    ))
 
                 for repo_id in [RUST, ANDROID_SDK, SWIFT_SDK, ZASHI_ANDROID, ZASHI_IOS]:
                     child = row.get(repo_id)
