@@ -2,12 +2,12 @@ import networkx as nx
 from sgqlc.endpoint.http import HTTPEndpoint
 from sgqlc.operation import Operation
 
-from helpers.github import CORE_REPOS, WALLET_REPOS, ZF_REPOS, ZF_FROST_REPOS
+from helpers.github import CORE_REPOS, TFL_REPOS, WALLET_REPOS, ZF_REPOS, ZF_FROST_REPOS
 from zenhub_schema import zenhub_schema
 
 WORKSPACE_SETS = {
     # ecc-core
-    '5dc1fd615862290001229f21': CORE_REPOS.keys(),
+    '5dc1fd615862290001229f21': list(CORE_REPOS.keys()) + list(TFL_REPOS.keys()),
     # ecc-wallet
     '5db8aa0244512d0001e0968e': WALLET_REPOS.keys(),
     # zf
