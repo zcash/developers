@@ -21,8 +21,12 @@ DAG_VIEW = os.environ.get('DAG_VIEW', 'core')
 REPOS = github.REPO_SETS[DAG_VIEW]
 
 WORKSPACES = {
-    workspace_id: [repo_id for repo_id in repos if repo_id in REPOS]
-    for (workspace_id, repos) in zenhub.WORKSPACE_SETS.items()
+    workspace_id: repos
+    for (workspace_id, repos) in {
+        workspace_id: [repo_id for repo_id in repos if repo_id in REPOS]
+        for (workspace_id, repos) in zenhub.WORKSPACE_SETS.items()
+    }.items()
+    if len(repos) > 0
 }
 
 SUPPORTED_CATEGORIES = set(['releases', 'targets'])
@@ -57,12 +61,15 @@ def main():
     gapi = github.api(GITHUB_TOKEN)
     zapi = zenhub.api(ZENHUB_TOKEN)
 
+    if len(WORKSPACES) == 0:
+        print('Error: DAG_VIEW="{}" has no matching ZenHub workspaces'.format(DAG_VIEW))
+        return
+
     # Build the full dependency graph from ZenHub's per-workspace API.
     print('Fetching graph')
     dg = nx.compose_all([
         zenhub.get_dependency_graph(zapi, workspace_id, repos)
         for (workspace_id, repos) in WORKSPACES.items()
-        if len(repos) > 0
     ])
 
     print('Rendering DAG')
@@ -70,8 +77,7 @@ def main():
     if SHOW_EPICS:
         epics_issues = []
         for (workspace_id, repos) in WORKSPACES.items():
-            if len(repos) > 0:
-                epics_issues += zenhub.get_epics(zapi, workspace_id, repos)
+            epics_issues += zenhub.get_epics(zapi, workspace_id, repos)
         epics_issues = set(epics_issues)
 
         epics_mapping = github.download_issues(gapi, [gh_ref for (_, gh_ref) in epics_issues], REPOS)
