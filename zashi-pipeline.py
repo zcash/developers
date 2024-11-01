@@ -3,6 +3,7 @@
 import networkx as nx
 from str2bool import str2bool as strtobool
 
+import itertools
 import os
 import re
 from textwrap import wrap
@@ -41,9 +42,17 @@ def build_release_matrix_from(dg, issue, repo_id):
     acc = []
     for child in dg.neighbors(issue):
         if child.repo_id == repo_id and 'C-release' in child.labels:
-            child_releases = []
-            for dep_repo in RELEASE_MATRIX.get(repo_id):
-                child_releases.extend(build_release_matrix_from(dg, child, dep_repo))
+            # Fetch the rows that each child's downstreams need rendered.
+            child_deps = [
+                build_release_matrix_from(dg, child, dep_repo)
+                for dep_repo in RELEASE_MATRIX.get(repo_id)
+            ]
+
+            # Merge the rows from each downstream repo together.
+            child_releases = [
+                {k: v for d in prod for k, v in d.items()}
+                for prod in itertools.product(*child_deps)
+            ]
 
             if len(child_releases) > 0:
                 for rec in child_releases:
