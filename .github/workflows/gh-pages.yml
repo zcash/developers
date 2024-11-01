@@ -148,6 +148,12 @@ jobs:
           DAG_VIEW: transparent-deprecation
           TERMINATE_AT: "zcash/zcash#4203"
 
+      - name: Render Zashi pipeline
+        run: python3 ./zashi-pipeline.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ZENHUB_TOKEN: ${{ secrets.ZENHUB_TOKEN }}
+
       - name: Copy the index page
         run: cp ./index.html ./public
 
