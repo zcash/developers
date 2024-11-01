@@ -54,6 +54,17 @@ jobs:
       - name: Generate GitHub GraphQL schema module
         run: sgqlc-codegen schema github_schema.json github_schema.py
 
+      - name: Fetch ZenHub GraphQL schema
+        run: |
+          python3 -m sgqlc.introspection \
+            --exclude-description \
+            -H "Authorization: Bearer ${{ secrets.ZENHUB_TOKEN }}" \
+            https://api.zenhub.com/public/graphql \
+            zenhub_schema.json
+
+      - name: Generate ZenHub GraphQL schema module
+        run: sgqlc-codegen schema zenhub_schema.json zenhub_schema.py
+
       - name: Render ECC core DAG
         run: python3 ./zcash-issue-dag.py
         env:
@@ -136,6 +147,12 @@ jobs:
           ZENHUB_TOKEN: ${{ secrets.ZENHUB_TOKEN }}
           DAG_VIEW: transparent-deprecation
           TERMINATE_AT: "zcash/zcash#4203"
+
+      - name: Render Zashi pipeline
+        run: python3 ./zashi-pipeline.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ZENHUB_TOKEN: ${{ secrets.ZENHUB_TOKEN }}
 
       - name: Copy the index page
         run: cp ./index.html ./public

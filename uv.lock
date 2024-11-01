@@ -2,15 +2,6 @@ version = 1
 requires-python = ">=3.8"
 
 [[package]]
-name = "drest"
-version = "0.9.12"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "httplib2" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/7b/7f/86c8e61ab7573c2762b39d5b07de3997fbe0dbf56b41b3047165612c1b11/drest-0.9.12.tar.gz", hash = "sha256:5d88a53d19b99844baabebc080452dd0d83030e812a8994719e9723d5356542e", size = 29734 }
-
-[[package]]
 name = "graphql-core"
 version = "3.2.5"
 source = { registry = "https://pypi.org/simple" }
@@ -20,18 +11,6 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/2e/b5/ebc6fe3852e2d2fdaf682dddfc366934f3d2c9ef9b6d1b0e6ca348d936ba/graphql_core-3.2.5.tar.gz", hash = "sha256:e671b90ed653c808715645e3998b7ab67d382d55467b7e2978549111bbabf8d5", size = 504664 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/e3/dc/078bd6b304de790618ebb95e2aedaadb78f4527ac43a9ad8815f006636b6/graphql_core-3.2.5-py3-none-any.whl", hash = "sha256:2f150d5096448aa4f8ab26268567bbfeef823769893b39c1a2e1409590939c8a", size = 203189 },
-]
-
-[[package]]
-name = "httplib2"
-version = "0.22.0"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "pyparsing" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/3d/ad/2371116b22d616c194aa25ec410c9c6c37f23599dcd590502b74db197584/httplib2-0.22.0.tar.gz", hash = "sha256:d7a10bc5ef5ab08322488bde8c726eeee5c8618723fdb399597ec58f3d82df81", size = 351116 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/a8/6c/d2fbdaaa5959339d53ba38e94c123e4e84b8fbc4b84beb0e70d7c1608486/httplib2-0.22.0-py3-none-any.whl", hash = "sha256:14ae0a53c1ba8f3d37e9e27cf37eabb0fb9980f435ba405d546948b009dd64dc", size = 96854 },
 ]
 
 [[package]]
@@ -48,15 +27,6 @@ name = "pygraphviz"
 version = "1.11"
 source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/19/db/cc09516573e79a35ac73f437bdcf27893939923d1d06b439897ffc7f3217/pygraphviz-1.11.zip", hash = "sha256:a97eb5ced266f45053ebb1f2c6c6d29091690503e3a5c14be7f908b37b06f2d4", size = 120803 }
-
-[[package]]
-name = "pyparsing"
-version = "3.1.4"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/83/08/13f3bce01b2061f2bbd582c9df82723de943784cf719a35ac886c652043a/pyparsing-3.1.4.tar.gz", hash = "sha256:f86ec8d1a83f11977c9a6ea7598e8c27fc5cddfa5b07ea2241edbbde1d7bc032", size = 900231 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/e5/0c/0e3c05b1c87bb6a1c76d281b0f35e78d2d80ac91b5f8f524cebf77f51049/pyparsing-3.1.4-py3-none-any.whl", hash = "sha256:a6a7ee4235a3f944aa1fa2249307708f893fe5717dc603503c6c7969c070fb7c", size = 104100 },
-]
 
 [[package]]
 name = "sgqlc"
@@ -90,7 +60,6 @@ name = "zcash-developer-tools"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
-    { name = "drest" },
     { name = "networkx" },
     { name = "pygraphviz" },
     { name = "sgqlc" },
@@ -99,7 +68,6 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "drest" },
     { name = "networkx" },
     { name = "pygraphviz" },
     { name = "sgqlc" },

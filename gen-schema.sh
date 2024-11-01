@@ -9,3 +9,11 @@ uv run python3 -m sgqlc.introspection \
   github_schema.json
 
 uv run sgqlc-codegen schema github_schema.json github_schema.py
+
+uv run python3 -m sgqlc.introspection \
+  --exclude-description \
+  -H "Authorization: Bearer $(cat ZENHUB_TOKEN)" \
+  https://api.zenhub.com/public/graphql \
+  zenhub_schema.json
+
+uv run sgqlc-codegen schema zenhub_schema.json zenhub_schema.py
