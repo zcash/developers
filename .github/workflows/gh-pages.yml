@@ -130,7 +130,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ZENHUB_TOKEN: ${{ secrets.ZENHUB_TOKEN }}
           DAG_VIEW: zcashd-deprecation
-          TERMINATE_AT: "zcash/librustzcash#1349,zcash/zcash#5796,zcash/zcash#6453"
+          TERMINATE_AT: "zcash/wallet#5,zcash/wallet#6,zcash/zcash#5796"
 
       - name: Render Sprout pool deprecation DAG
         run: python3 ./zcash-issue-dag.py
