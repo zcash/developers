@@ -101,15 +101,19 @@ def get_epics(endpoint, workspace_id, repos):
         d = endpoint(op)
         data = op + d
 
-        epics_page = data.workspace.epics
-        epics += [
-            (node.id, (node.issue.repository.gh_id, node.issue.number))
-            for node in epics_page.nodes
-        ]
+        if hasattr(data.workspace, 'epics'):
+            epics_page = data.workspace.epics
+            epics += [
+                (node.id, (node.issue.repository.gh_id, node.issue.number))
+                for node in epics_page.nodes
+            ]
 
-        if epics_page.page_info.has_next_page:
-            cursor = epics_page.page_info.end_cursor
-            print('.', end='', flush=True)
+            if epics_page.page_info.has_next_page:
+                cursor = epics_page.page_info.end_cursor
+                print('.', end='', flush=True)
+            else:
+                print()
+                break
         else:
             print()
             break
