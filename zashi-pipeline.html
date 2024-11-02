@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Zashi Pipeline</title>
+
+    <style>
+      body {
+        color: #1f2328;
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+        font-size: 14px;
+        line-height: 1.5;
+        word-wrap: break-word;
+      }
+      a {
+        color: #0969da;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        width: max-content;
+        max-width: 100%;
+        overflow: auto;
+      }
+      table tr {
+        border-top: 1px solid #d1d9e0b3;
+      }
+      table th, table td {
+        border: 1px solid #d1d9e0b3;
+        padding: 6px 13px;
+        text-align: center;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: #121212;
+          color: #f0f6fc;
+        }
+        a {
+          color: #4493f8;
+        }
+        table tr {
+            border-top: 1px solid #3d444db3;
+        }
+        table th, table td {
+            border: 1px solid #3d444db3;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Zashi Pipeline</h1>
+    <p>🐞 = bug, 💡 = feature, ✅ = implemented / released, 🛑 = unfinished, 📥 = unassigned / DAG needs updating</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Issue</th>
+          <th>Rust crate</th>
+          <th>Android SDK</th>
+          <th>Swift SDK</th>
+          <th>Zashi Android</th>
+          <th>Zashi iOS</th>
+        </tr>
+      </thead>
+      <tbody>
+<tr><td>💡</td><td>✅ <a href="https://github.com/zcash/librustzcash/issues/1167">zcash_client_backend: Implement ZIP 320 transaction generation</a></td><td>✅ <a href="https://github.com/zcash/librustzcash/issues/1338">zcash_client_backend 0.13.0</a></td><td>✅ <a href="https://github.com/Electric-Coin-Company/zcash-android-wallet-sdk/issues/1394">2.2.0</a></td><td>✅ <a href="https://github.com/Electric-Coin-Company/zcash-swift-wallet-sdk/issues/1479">2.2.0</a></td><td>✅ <a href="https://github.com/Electric-Coin-Company/zashi-android/issues/1557">1.1.6</a></td><td>✅ <a href="https://github.com/Electric-Coin-Company/zashi-ios/issues/1333">1.1.4</a></td></tr><tr><td>💡</td><td>✅ <a href="https://github.com/zcash/librustzcash/issues/1559">zcash_client_backend: Replace `scan_progress` result with a struct that includes both scan and recovery progress.</a></td><td>🛑 <a href="https://github.com/zcash/librustzcash/issues/1588">zcash_client_backend 0.15.0</a></td><td>📥</td><td>📥</td><td>📥</td><td>📥</td></tr><tr><td>🐞</td><td>✅ <a href="https://github.com/zcash/librustzcash/issues/1571">Bug in is_shielding state going from TRUE to FALSE after the first confirmation</a></td><td>🛑 <a href="https://github.com/zcash/librustzcash/issues/1587">zcash_client_sqlite 0.13.0</a></td><td>📥</td><td>📥</td><td>📥</td><td>📥</td></tr><tr><td>💡</td><td>✅ <a href="https://github.com/zcash/librustzcash/pull/1579">zcash_client_backend: Implement note management via change splitting.</a></td><td>🛑 <a href="https://github.com/zcash/librustzcash/issues/1588">zcash_client_backend 0.15.0</a></td><td>📥</td><td>📥</td><td>📥</td><td>📥</td></tr><tr><td rowspan="2">🐞</td><td rowspan="2">✅ <a href="https://github.com/zcash/librustzcash/pull/1583">zcash_client_sqlite: Fix ambiguity in min checkpoint height query.</a></td><td>🛑 <a href="https://github.com/zcash/librustzcash/issues/1587">zcash_client_sqlite 0.13.0</a></td><td>📥</td><td>📥</td><td>📥</td><td>📥</td></tr><tr><td>✅ <a href="https://github.com/zcash/librustzcash/issues/1601">zcash_client_sqlite 0.12.2</a></td><td>✅ <a href="https://github.com/Electric-Coin-Company/zcash-android-wallet-sdk/issues/1614">2.2.5</a></td><td>✅ <a href="https://github.com/Electric-Coin-Company/zcash-swift-wallet-sdk/issues/1502">2.2.6</a></td><td>✅ <a href="https://github.com/Electric-Coin-Company/zashi-android/issues/1646">1.2.1</a></td><td>✅ <a href="https://github.com/Electric-Coin-Company/zashi-ios/issues/1394">1.2.2</a></td></tr><tr><td rowspan="2">🐞</td><td rowspan="2">✅ <a href="https://github.com/zcash/librustzcash/pull/1596">zcash_client_sqlite: Verify that the database is for the correct network before (most) migrations.</a></td><td>🛑 <a href="https://github.com/zcash/librustzcash/issues/1599">zcash_client_sqlite 0.12.3</a></td><td>📥</td><td>📥</td><td>📥</td><td>📥</td></tr><tr><td>🛑 <a href="https://github.com/zcash/librustzcash/issues/1587">zcash_client_sqlite 0.13.0</a></td><td>📥</td><td>📥</td><td>📥</td><td>📥</td></tr>
+      </tbody>
+    </table>
+  </body>
+</html>

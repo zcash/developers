@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Zcash zf DAG</title>
+
+    <!-- Pan/zoom SVGs -->
+    <script src="https://bumbu.me/svg-pan-zoom/dist/svg-pan-zoom.min.js"></script>
+
+    <link rel="stylesheet" href="zcash-dag.css">
+    <style>
+      @media (prefers-color-scheme: dark) {
+        body {
+          /* Material dark theme surface colour */
+          background-color: #121212;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="dag"><svg width="8pt" height="8pt"
+ viewBox="0.00 0.00 8.00 8.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 4)">
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-4 4,-4 4,4 -4,4"/>
+</g>
+</svg>
+</div>
+
+    <script>
+      svgPanZoom('#dag > svg', {
+        zoomScaleSensitivity: 0.4
+      });
+    </script>
+  </body>
+</html>
