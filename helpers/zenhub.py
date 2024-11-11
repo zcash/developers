@@ -2,7 +2,7 @@ import networkx as nx
 from sgqlc.endpoint.http import HTTPEndpoint
 from sgqlc.operation import Operation
 
-from helpers.github import CORE_REPOS, TFL_REPOS, WALLET_REPOS, ZF_REPOS, ZF_FROST_REPOS
+from helpers.repos import CORE_REPOS, TFL_REPOS, WALLET_REPOS, ZF_REPOS, ZF_FROST_REPOS
 from zenhub_schema import zenhub_schema
 
 WORKSPACE_SETS = {
