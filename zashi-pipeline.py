@@ -31,9 +31,57 @@ RELEASE_MATRIX = {
     ZASHI_IOS: []
 }
 
-class TrackedIssue:
-    def __init__(self, issue):
-        self.issue = issue
+
+class Release:
+    def __init__(self, repo_id, child):
+        self.repo_id = repo_id
+
+        # Extract version number from title
+        if repo_id == RUST:
+            self.version = re.search(r'zcash_[^ ]+ \d+(\.\d+)+', child.title).group()
+        else:
+            self.version = re.search(r'\d+(\.\d+)+', child.title).group()
+
+        self.is_closed = child.state == 'closed'
+        self.url = child.url
+
+    def __repr__(self):
+        return self.version
+
+    def __eq__(self, other):
+        return (self.repo_id, self.version) == (other.repo_id, other.version)
+
+    def __hash__(self):
+        return hash((self.repo_id, self.version))
+
+
+def build_release(row, repo_id):
+    child = row.get(repo_id)
+    if child is None:
+        return None
+    else:
+        return Release(repo_id, child)
+
+
+class ReleasePipeline:
+    def __init__(self, row):
+        self.rust = build_release(row, RUST)
+        self.android_sdk = build_release(row, ANDROID_SDK)
+        self.swift_sdk = build_release(row, SWIFT_SDK)
+        self.zashi_android = build_release(row, ZASHI_ANDROID)
+        self.zashi_ios = build_release(row, ZASHI_IOS)
+
+    def __repr__(self):
+        return '%s | %s | %s | %s | %s' % self.columns()
+
+    def columns(self):
+        return (
+            self.rust,
+            self.android_sdk,
+            self.swift_sdk,
+            self.zashi_android,
+            self.zashi_ios,
+        )
 
 def build_release_matrix_from(dg, issue, repo_id):
     acc = []
@@ -200,7 +248,8 @@ def main():
         f.write(html_header)
 
         for issue in tracked_issues.values():
-            rows = build_release_matrix_from(dg, issue, RUST);
+            rows = [ReleasePipeline(row) for row in build_release_matrix_from(dg, issue, RUST)]
+
             for i, row in enumerate(rows):
                 f.write('<tr>')
 
@@ -220,22 +269,15 @@ def main():
                         issue.title,
                     ))
 
-                for repo_id in [RUST, ANDROID_SDK, SWIFT_SDK, ZASHI_ANDROID, ZASHI_IOS]:
-                    child = row.get(repo_id)
-                    if child is None:
+                for release in row.columns():
+                    if release is None:
                         # Release not found in this repo
                         f.write('<td>📥</td>')
                     else:
-                        # Extract version number from title
-                        if repo_id == RUST:
-                            version = re.search(r'zcash_[^ ]+ \d+(\.\d+)+', child.title).group()
-                        else:
-                            version = re.search(r'\d+(\.\d+)+', child.title).group()
-
                         f.write('<td>{} <a href="{}">{}</a></td>'.format(
-                            '✅' if child.state == 'closed' else '🛑',
-                            child.url,
-                            version,
+                            '✅' if release.is_closed else '🛑',
+                            release.url,
+                            release.version,
                         ))
                 f.write('</tr>')
 
