@@ -41,6 +41,12 @@ def fetch_workspace_graph(op, workspace_id, repos, cursor):
     dependencies.page_info.end_cursor()
 
 
+# Fetches the dependency graph involving the given `repos` from the given `workspace_id`.
+#
+# `repos` is a list of GitHub repo IDs.
+#
+# Returns a list of `(blocking, blocked)` tuples corresponding to DAG edges.
+# `blocking` and `blocked` are both `(repo_github_id, issue_number)` tuples.
 def get_dependency_graph(endpoint, workspace_id, repos):
     edges = []
     cursor = None

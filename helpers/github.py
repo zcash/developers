@@ -122,6 +122,7 @@ def fetch_issues(op, issues, REPOS):
                     node.merged()
 
 
+# `nodes` is a list of `(repo_github_id, issue_number)` tuples.
 def download_issues(endpoint, nodes, REPOS):
     issues = [(repo, issue) for (repo, issue) in nodes if repo in REPOS]
 
