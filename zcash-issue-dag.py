@@ -23,7 +23,7 @@ REPOS = github.REPO_SETS[DAG_VIEW]
 WORKSPACES = {
     workspace_id: repos
     for (workspace_id, repos) in {
-        workspace_id: [repo_id for repo_id in repos if repo_id in REPOS]
+        workspace_id: [repo for repo in repos if repo in REPOS]
         for (workspace_id, repos) in zenhub.WORKSPACE_SETS.items()
     }.items()
     if len(repos) > 0
@@ -83,15 +83,15 @@ def main():
         epics_mapping = github.download_issues(gapi, [gh_ref for (_, gh_ref) in epics_issues], REPOS)
         epics_mapping = {k: v for (k, v) in epics_mapping.items() if v.state != 'closed'}
         issues_by_epic = {}
-        for (i, ((repo_id, epic_id), epic)) in enumerate(epics_mapping.items()):
+        for (i, ((repo, epic_id), epic)) in enumerate(epics_mapping.items()):
             workspace_id = [
                 workspace_id
                 for (workspace_id, repos) in WORKSPACES.items()
-                if repo_id in repos
+                if repo in repos
             ][0]
             epic_id = [
                 id for (id, gh_ref) in epics_issues
-                if gh_ref == (repo_id, epic_id)
+                if gh_ref == (repo, epic_id)
             ][0]
             issues = set(zenhub.get_epic_issues(zapi, workspace_id, epic_id))
             issues_by_epic[epic] = issues
@@ -103,7 +103,7 @@ def main():
 
     if len(TERMINATE_AT) > 0:
         # Look up the repo IDs for the given terminating issues.
-        reverse_repos = {v:k for k,v in REPOS.items()}
+        reverse_repos = {repo.name: repo for repo in REPOS}
         terminate_at = [x.split('#') for x in TERMINATE_AT]
         terminate_at = set([(reverse_repos[tuple(r.split('/', 1))], int(i)) for (r, i) in terminate_at])
 
@@ -119,7 +119,7 @@ def main():
     dg = nx.relabel_nodes(dg, mapping)
 
     # Filter out unknown issues
-    unknown = [n for n in dg if n.repo_id not in REPOS]
+    unknown = [n for n in dg if n.repo not in REPOS]
     if len(unknown) > 0:
         dg.remove_nodes_from(unknown)
 
@@ -221,7 +221,7 @@ def main():
 
     if SHOW_EPICS:
         for (epic, issues) in issues_by_epic.items():
-            issues = [n for n in dg if (n.repo_id, n.issue_number) in issues]
+            issues = [n for n in dg if (n.repo, n.issue_number) in issues]
             if issues:
                 ag.add_subgraph(issues, 'cluster_%d' % clusters, label=epic.title, color='blue')
                 clusters += 1
