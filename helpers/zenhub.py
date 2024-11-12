@@ -61,10 +61,14 @@ def get_workspace_repos(endpoint, workspaces):
 
 
 def fetch_workspace_graph(op, workspace_id, repos, cursor):
+    # If we know all repo ZenHub IDs, we can filter.
+    # Otherwise, we need to fetch all repos in the workspace.
+    repository_ids = [repo.zh_id for repo in repos]
+    if None in repository_ids:
+        repository_ids = None
+
     dependencies = op.workspace(id=workspace_id).issue_dependencies(
-        # TODO: This causes a 500 Internal Server Error. We need the ZenHub repo IDs here,
-        # not the GitHub repo IDs (which the previous REST API used).
-        # repository_ids=repos,
+        repository_ids=repository_ids,
         first=100,
         after=cursor,
     )
@@ -119,9 +123,7 @@ def get_dependency_graph(endpoint, workspace_id, repos):
 
 def fetch_epics(op, workspace_id, repos, cursor):
     epics = op.workspace(id=workspace_id).epics(
-        # TODO: This causes a 500 Internal Server Error. We need the ZenHub repo IDs here,
-        # not the GitHub repo IDs (which the previous REST API used).
-        # repository_ids=repos,
+        repository_gh_ids=[repo.gh_id for repo in repos],
         first=100,
         after=cursor,
     )
