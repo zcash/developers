@@ -27,7 +27,7 @@ REPO_SETS = {
     'ecc': ECC_REPOS,
     'zf': ZF_REPOS,
     'zf-frost': ZF_FROST_REPOS,
-    'zf-devops': {**ZF_REPOS, **ZF_FROST_REPOS},
+    'zf-devops': ZF_REPOS + ZF_FROST_REPOS,
     'zcashd-deprecation': ZCASHD_DEPRECATION_REPOS,
     'sprout-deprecation': POOL_DEPRECATION_REPOS,
     'transparent-deprecation': POOL_DEPRECATION_REPOS,
@@ -42,8 +42,8 @@ def api(token):
 
 
 class GitHubIssue:
-    def __init__(self, repo_id, issue_number, data, REPOS):
-        self.repo_id = repo_id
+    def __init__(self, repo, issue_number, data, REPOS):
+        self.repo = repo
         self.issue_number = issue_number
         self.milestone = None
         self._REPOS = REPOS
@@ -76,21 +76,16 @@ class GitHubIssue:
             self.state = 'closed'
 
     def __repr__(self):
-        if self.repo_id in self._REPOS:
-            repo = self._REPOS[self.repo_id]
-            # Shorten the representation of long repo names.
-            if repo[0] == 'Electric-Coin-Company':
-                repo = ('ECC', repo[1])
-            repo = '/'.join(repo)
-            return '%s#%d' % (repo, self.issue_number)
+        if self.repo in self._REPOS:
+            return '%s#%d' % (self.repo, self.issue_number)
         else:
             return 'Unknown'
 
     def __eq__(self, other):
-        return (self.repo_id, self.issue_number) == (other.repo_id, other.issue_number)
+        return (self.repo, self.issue_number) == (other.repo, other.issue_number)
 
     def __hash__(self):
-        return hash((self.repo_id, self.issue_number))
+        return hash((self.repo, self.issue_number))
 
     def any_cat(self, categories):
         release_cat = self.is_release if 'releases' in categories else False
@@ -98,15 +93,15 @@ class GitHubIssue:
         return release_cat or targets_cat
 
 
-def fetch_issues(op, issues, REPOS):
+def fetch_issues(op, issues):
     repos = set([repo for (repo, _) in issues])
     repos = {repo: [issue for (r, issue) in issues if r == repo] for repo in repos}
 
     for repo, issues in repos.items():
         conn = op.repository(
-            owner=REPOS[repo][0],
-            name=REPOS[repo][1],
-            __alias__='repo%d' % repo,
+            owner=repo.name[0],
+            name=repo.name[1],
+            __alias__='repo%d' % repo.gh_id,
         )
 
         for issue in issues:
@@ -122,7 +117,7 @@ def fetch_issues(op, issues, REPOS):
                     node.merged()
 
 
-# `nodes` is a list of `(repo_github_id, issue_number)` tuples.
+# `nodes` is a list of `(Repo, issue_number)` tuples.
 def download_issues(endpoint, nodes, REPOS):
     issues = [(repo, issue) for (repo, issue) in nodes if repo in REPOS]
 
@@ -139,13 +134,13 @@ def download_issues(endpoint, nodes, REPOS):
 
     for issues in chunks(issues, 50):
         op = Operation(schema.Query)
-        fetch_issues(op, issues, REPOS)
+        fetch_issues(op, issues)
 
         d = endpoint(op)
         data = op + d
 
         for repo, issue in issues:
-            repo_data = data['repo%d' % repo]
+            repo_data = data['repo%d' % repo.gh_id]
             issue_key = 'issue%d' % issue
             # If GITHUB_TOKEN doesn't have permission to read from a particular private
             # repository in REPOS, GitHub returns an empty repo_data section.
@@ -156,11 +151,11 @@ def download_issues(endpoint, nodes, REPOS):
 
 
 def fetch_issues_with_labels(op, labels, repos):
-    for (repo_id, (repo, issue_cursor, pr_cursor)) in repos:
+    for (repo, (issue_cursor, pr_cursor)) in repos:
         conn = op.repository(
-            owner=repo[0],
-            name=repo[1],
-            __alias__='repo%d' % repo_id,
+            owner=repo.name[0],
+            name=repo.name[1],
+            __alias__='repo%d' % repo.gh_id,
         )
 
         if issue_cursor != -1:
@@ -197,7 +192,7 @@ def fetch_issues_with_labels(op, labels, repos):
 
 def download_issues_with_labels(endpoint, labels, REPOS):
     ret = {}
-    repos = {repo_id: (repo, None, None) for (repo_id, repo) in REPOS.items()}
+    repos = {repo: (None, None) for repo in REPOS}
 
     while True:
         op = Operation(schema.Query)
@@ -207,12 +202,12 @@ def download_issues_with_labels(endpoint, labels, REPOS):
         data = op + d
 
         done = []
-        for (repo_id, (repo, _, _)) in repos.items():
-            repo_data = data['repo%d' % repo_id]
+        for (repo, (_, _)) in repos.items():
+            repo_data = data['repo%d' % repo.gh_id]
 
             if hasattr(repo_data, 'issues'):
                 for issue in repo_data.issues.nodes:
-                    ret[(repo_id, issue.number)] = GitHubIssue(repo_id, issue.number, issue, REPOS)
+                    ret[(repo, issue.number)] = GitHubIssue(repo, issue.number, issue, REPOS)
                 if repo_data.issues.page_info.has_next_page:
                     issue_cursor = repo_data.issues.page_info.end_cursor
                 else:
@@ -222,7 +217,7 @@ def download_issues_with_labels(endpoint, labels, REPOS):
 
             if hasattr(repo_data, 'pull_requests'):
                 for pr in repo_data.pull_requests.nodes:
-                    ret[(repo_id, pr.number)] = GitHubIssue(repo_id, pr.number, pr, REPOS)
+                    ret[(repo, pr.number)] = GitHubIssue(repo, pr.number, pr, REPOS)
                 if repo_data.pull_requests.page_info.has_next_page:
                     pr_cursor = repo_data.pull_requests.page_info.end_cursor
                 else:
@@ -231,12 +226,12 @@ def download_issues_with_labels(endpoint, labels, REPOS):
                 pr_cursor = -1
 
             if issue_cursor == -1 and pr_cursor == -1:
-                done.append(repo_id)
+                done.append(repo)
             else:
-                repos[repo_id] = (repo, issue_cursor, pr_cursor)
+                repos[repo] = (issue_cursor, pr_cursor)
 
-        for repo_id in done:
-            del repos[repo_id]
+        for repo in done:
+            del repos[repo]
 
         if len(repos) > 0:
             print('.', end='', flush=True)

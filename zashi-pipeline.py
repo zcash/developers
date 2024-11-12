@@ -21,10 +21,7 @@ SWIFT_SDK = 185480114
 ZASHI_ANDROID = 390808594
 ZASHI_IOS = 387551125
 
-REPOS = {
-    **github.CORE_REPOS,
-    **github.WALLET_REPOS,
-}
+REPOS = github.CORE_REPOS + github.WALLET_REPOS
 
 RELEASE_MATRIX = {
     RUST: [ANDROID_SDK, SWIFT_SDK],
@@ -41,7 +38,7 @@ class TrackedIssue:
 def build_release_matrix_from(dg, issue, repo_id):
     acc = []
     for child in dg.neighbors(issue):
-        if child.repo_id == repo_id and 'C-release' in child.labels:
+        if child.repo.gh_id == repo_id and 'C-release' in child.labels:
             # Fetch the rows that each child's downstreams need rendered.
             child_deps = [
                 build_release_matrix_from(dg, child, dep_repo)
@@ -76,15 +73,10 @@ def main():
     # The repos we care about are now:
     # - Any repo containing a tracked issue.
     # - The wallet repos where releases occur.
-    tracked_repos = set([repo_id for (repo_id, _) in tracked_issues])
-    repos = {
-        **github.WALLET_REPOS,
-    }
-    for repo_id in tracked_repos:
-        repos[repo_id] = REPOS[repo_id]
+    repos = set([repo for (repo, _) in tracked_issues] + github.WALLET_REPOS)
     workspaces = {
-        workspace_id: [repo_id for repo_id in repos if repo_id in repos]
-        for (workspace_id, repos) in zenhub.WORKSPACE_SETS.items()
+        workspace_id: [repo for repo in repos if repo in repos]
+        for (workspace_id, _) in zenhub.WORKSPACE_SETS.items()
     }
 
     # Build the full dependency graph from ZenHub's per-workspace API.
@@ -115,7 +107,7 @@ def main():
     dg = nx.relabel_nodes(dg, mapping)
 
     # Filter out unknown issues
-    unknown = [n for n in dg if n.repo_id not in repos]
+    unknown = [n for n in dg if n.repo not in repos]
     if len(unknown) > 0:
         dg.remove_nodes_from(unknown)
 
