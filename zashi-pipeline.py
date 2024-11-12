@@ -9,7 +9,7 @@ import re
 from textwrap import wrap
 from urllib.parse import urlparse
 
-from helpers import github, zenhub
+from helpers import github, repos as repositories, zenhub
 
 GITHUB_TOKEN = os.environ.get('GITHUB_TOKEN')
 ZENHUB_TOKEN = os.environ.get('ZENHUB_TOKEN')
@@ -73,7 +73,14 @@ def main():
     # The repos we care about are now:
     # - Any repo containing a tracked issue.
     # - The wallet repos where releases occur.
-    repos = set([repo for (repo, _) in tracked_issues] + github.WALLET_REPOS)
+    repos = set([repo for (repo, _) in tracked_issues] + [
+        repositories.LIBRUSTZCASH,
+        repositories.ZCASH_ANDROID_WALLET_SDK,
+        repositories.ZCASH_LIGHT_CLIENT_FFI,
+        repositories.ZCASH_SWIFT_WALLET_SDK,
+        repositories.ZASHI_ANDROID,
+        repositories.ZASHI_IOS,
+    ])
     workspaces = {
         workspace_id: [repo for repo in repos if repo in repos]
         for (workspace_id, _) in zenhub.WORKSPACE_SETS.items()
