@@ -1,7 +1,8 @@
 class Repo(object):
-    def __init__(self, name, gh_id):
+    def __init__(self, name, gh_id, zh_id):
         self.name = name
         self.gh_id = gh_id
+        self.zh_id = zh_id
 
     def __repr__(self):
         if self.name:
@@ -23,66 +24,67 @@ class Repo(object):
 # To get the GitHub ID of a repo, see <https://stackoverflow.com/a/47223479/393146>.
 
 HALO2_REPOS = [
-    Repo(('zcash', 'halo2'), 290019239),
-    Repo(('zcash', 'pasta_curves'), 344239327),
+    Repo(('zcash', 'halo2'), 290019239, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMTMyNzg1NDUx'),
+    Repo(('zcash', 'pasta_curves'), 344239327, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMTMyOTI3Njg2'),
 ]
 
 CORE_REPOS = [
-    Repo(('zcash', 'zcash'), 26987049),
-    Repo(('zcash', 'zips'), 47279130),
-    Repo(('zcash', 'incrementalmerkletree'), 48303644),
-    Repo(('zcash', 'librustzcash'), 85334928),
-    Repo(('zcash-hackworks', 'zcash-test-vectors'), 133857578),
-    Repo(('zcash', 'sapling-crypto'), 111058300),
-    Repo(('zcash', 'orchard'), 305835578),
+    Repo(('zcash', 'zcash'), 26987049, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvOTc3ODc2NQ'),
+    Repo(('zcash', 'zips'), 47279130, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMjIwMzQwMDY'),
+    Repo(('zcash', 'incrementalmerkletree'), 48303644, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMTMzMDcwMDc5'),
+    Repo(('zcash', 'librustzcash'), 85334928, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMTg5MDU1NTE'),
+    Repo(('zcash', 'zcash-test-vectors'), 133857578, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMTMyOTMxNTEx'),
+    Repo(('zcash', 'sapling-crypto'), 111058300, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMTMzOTY3ODY4'),
+    Repo(('zcash', 'orchard'), 305835578, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMTMyODU2MzA2'),
+    Repo(('zcash', 'zip32'), 141066493, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMTMzOTY2MzAy'),
 ] + HALO2_REPOS
 
 TFL_REPOS = [
-    Repo(('Electric-Coin-Company', 'tfl-book'), 642135348),
-    Repo(('Electric-Coin-Company', 'zebra-tfl'), 725179873),
-    Repo(('zcash', 'simtfl'), 695805989),
+    Repo(('Electric-Coin-Company', 'tfl-book'), 642135348, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMTMzOTE2NDQz'),
+    Repo(('Electric-Coin-Company', 'zebra-tfl'), 725179873, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMTMzOTY0OTEy'),
+    Repo(('Electric-Coin-Company', 'simtfl'), 695805989, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMTMzOTQ0MTk5'),
 ]
 
 ANDROID_REPOS = [
-    Repo(('Electric-Coin-Company', 'zashi-android'), 390808594),
-    Repo(('Electric-Coin-Company', 'zcash-android-wallet-sdk'), 151763639),
-    Repo(('Electric-Coin-Company', 'zashi'), 719178328),
+    Repo(('Electric-Coin-Company', 'zashi-android'), 390808594, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMTMzMDEwMTMw'),
+    Repo(('Electric-Coin-Company', 'zcash-android-wallet-sdk'), 151763639, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMTg5MDI4MjE'),
+    Repo(('Electric-Coin-Company', 'zashi'), 719178328, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMTMzOTYwOTgw'),
 ]
 
 IOS_REPOS = [
-    Repo(('Electric-Coin-Company', 'zashi-ios'), 387551125),
-    Repo(('Electric-Coin-Company', 'zcash-swift-wallet-sdk'), 185480114),
-    Repo(('Electric-Coin-Company', 'MnemonicSwift'), 270825987),
-    Repo(('Electric-Coin-Company', 'zcash-light-client-ffi'), 439137887),
-    Repo(('Electric-Coin-Company', 'zashi'), 719178328),
+    Repo(('Electric-Coin-Company', 'zashi-ios'), 387551125, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMTMzMDEwMTI5'),
+    Repo(('Electric-Coin-Company', 'zcash-swift-wallet-sdk'), 185480114, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMTg5MDU1NjE'),
+    Repo(('Electric-Coin-Company', 'MnemonicSwift'), 270825987, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMTMyNzk3Mzg0'),
+    Repo(('Electric-Coin-Company', 'zcash-light-client-ffi'), 439137887, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMTMzMTMwNjcy'),
+    Repo(('Electric-Coin-Company', 'zashi'), 719178328, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMTMzOTYwOTgw'),
 ]
 
 WALLET_REPOS = [
-    Repo(('zcash', 'librustzcash'), 85334928),
-    Repo(('zcash', 'lightwalletd'), 159714694),
+    Repo(('zcash', 'librustzcash'), 85334928, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMTg5MDU1NTE'),
+    Repo(('zcash', 'lightwalletd'), 159714694, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMTg5MDU1NzE'),
 ] + ANDROID_REPOS + IOS_REPOS
 
 ECC_REPOS = CORE_REPOS + TFL_REPOS + WALLET_REPOS + [
-    Repo(('Electric-Coin-Company', 'infrastructure'), 65419597),
+    Repo(('Electric-Coin-Company', 'infrastructure'), 65419597, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMjIwNTA1NjY'),
 ]
 
 ZF_REPOS = [
-    Repo(('ZcashFoundation', 'zebra'), 205255683),
-    Repo(('ZcashFoundation', 'redjubjub'), 225479018),
-    Repo(('ZcashFoundation', 'ed25519-zebra'), 235651437),
-    Repo(('ZcashFoundation', 'zcash_script'), 279422254),
+    Repo(('ZcashFoundation', 'zebra'), 205255683, None),
+    Repo(('ZcashFoundation', 'redjubjub'), 225479018, None),
+    Repo(('ZcashFoundation', 'ed25519-zebra'), 235651437, None),
+    Repo(('ZcashFoundation', 'zcash_script'), 279422254, None),
 ]
 
 ZF_FROST_REPOS = [
-    Repo(('ZcashFoundation', 'frost'), 437862440),
+    Repo(('ZcashFoundation', 'frost'), 437862440, None),
 ]
 
 ZCASHD_DEPRECATION_REPOS = [
-    Repo(('zcash', 'zcash'), 26987049),
-    Repo(('zcash', 'zips'), 47279130),
-    Repo(('zcash', 'librustzcash'), 85334928),
-    Repo(('zcash', 'wallet'), 863610221),
-    Repo(('zcash', 'lightwalletd'), 159714694),
+    Repo(('zcash', 'zcash'), 26987049, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvOTc3ODc2NQ'),
+    Repo(('zcash', 'zips'), 47279130, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMjIwMzQwMDY'),
+    Repo(('zcash', 'librustzcash'), 85334928, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMTg5MDU1NTE'),
+    Repo(('zcash', 'wallet'), 863610221, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMTM0MzU3MjQ0'),
+    Repo(('zcash', 'lightwalletd'), 159714694, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMTg5MDU1NzE'),
 ]
 
 POOL_DEPRECATION_REPOS = CORE_REPOS + WALLET_REPOS

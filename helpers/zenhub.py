@@ -23,7 +23,7 @@ def repo_lookup(repo_id):
     try:
         return REPO_MAP[repo_id]
     except KeyError:
-        return Repo(None, repo_id)
+        return Repo(None, repo_id, None)
 
 
 def api(token):
@@ -31,6 +31,33 @@ def api(token):
         'https://api.zenhub.com/public/graphql',
         {'Authorization': 'Bearer %s' % token},
     )
+
+
+def fetch_workspace_repos(op, workspace_id):
+    repos = op.workspace(id=workspace_id).repositories()
+    repos.id()
+    repos.gh_id()
+    repos.name()
+    repos.owner.login()
+
+
+def get_workspace_repos(endpoint, workspaces):
+    repos = []
+
+    for workspace_id in workspaces:
+        op = Operation(zenhub_schema.Query)
+        fetch_workspace_repos(op, workspace_id)
+
+        d = endpoint(op)
+        data = op + d
+
+        if hasattr(data.workspace, 'repositories'):
+            repos += [
+                ((repo.owner.login, repo.name), repo.gh_id, repo.id)
+                for repo in data.workspace.repositories
+            ]
+
+    return repos
 
 
 def fetch_workspace_graph(op, workspace_id, repos, cursor):
