@@ -74,6 +74,12 @@ class ReleasePipeline:
     def __repr__(self):
         return '%s | %s | %s | %s | %s' % self.columns()
 
+    def __eq__(self, other):
+        return self.columns() == other.columns()
+
+    def __hash__(self):
+        return hash(self.columns())
+
     def columns(self):
         return (
             self.rust,
@@ -249,6 +255,9 @@ def main():
 
         for issue in tracked_issues.values():
             rows = [ReleasePipeline(row) for row in build_release_matrix_from(dg, issue, RUST)]
+
+            # Deduplicate rows
+            rows = list(dict.fromkeys(rows))
 
             for i, row in enumerate(rows):
                 f.write('<tr>')
