@@ -39,8 +39,10 @@ class Release:
         # Extract version number from title
         if repo_id == RUST:
             self.version = re.search(r'zcash_[^ ]+ \d+(\.\d+)+', child.title).group()
+            self.version_ints = tuple(int(x) for x in self.version.split(' ')[1].split('.'))
         else:
             self.version = re.search(r'\d+(\.\d+)+', child.title).group()
+            self.version_ints = tuple(int(x) for x in self.version.split('.'))
 
         self.is_closed = child.state == 'closed'
         self.url = child.url
@@ -53,6 +55,9 @@ class Release:
 
     def __hash__(self):
         return hash((self.repo_id, self.version))
+
+    def __lt__(self, other):
+        return self.version_ints < other.version_ints
 
 
 def build_release(row, repo_id):
@@ -79,6 +84,9 @@ class ReleasePipeline:
 
     def __hash__(self):
         return hash(self.columns())
+
+    def __lt__(self, other):
+        return self.columns() < other.columns()
 
     def columns(self):
         return (
@@ -255,9 +263,66 @@ def main():
 
         for issue in tracked_issues.values():
             rows = [ReleasePipeline(row) for row in build_release_matrix_from(dg, issue, RUST)]
+            if len(rows) == 0:
+                continue
 
             # Deduplicate rows
             rows = list(dict.fromkeys(rows))
+
+            # At this point we have a row for each path through the DAG from a tracked bug
+            # or feature through a unique set of releases. However, as individual releases
+            # within a repo have graph edges between them (e.g. Zashi Android 1.2.3 blocks
+            # on Zashi Android 1.2.2), this produces additional rows that we don't care
+            # about:
+            #
+            # - The Zashi repos don't follow SemVer, and are also the ends of the paths;
+            #   all we care about here is the earliest Zashi Android and Zashi iOS release
+            #   that includes the bug or feature.
+            # - The Android and Swift SDKs don't appear to follow SemVer (even though e.g.
+            #   Swift Package Manager assumes it), so we also don't care about tracking
+            #   whether a bug or feature makes it into both a point release and the next
+            #   non-point release.
+            # - The Rust crates do follow SemVer; if a bug or feature is deployed in a
+            #   point release as a backwards-compatible change, we want to ensure that it
+            #   also gets merged back into `main` so that we don't accidentally omit it
+            #   from the next breaking crate release. However, we don't need to track
+            #   subsequent breaking crate releases after that, because we develop breaking
+            #   releases in `main`.
+
+            # Create a map from Rust releases to lists of rows involving that release.
+            rust_map = {}
+            for row in rows:
+                if row.rust in rust_map:
+                    rust_map[row.rust].append(row)
+                else:
+                    rust_map[row.rust] = [row]
+
+            # Remove the Rust releases that we don't need to track.
+            rust_releases = list(rust_map.keys())
+            rust_releases.sort(reverse=True)
+            next_rust_release = rust_releases.pop()
+            while len(rust_releases) > 0:
+                rust_release = rust_releases.pop()
+                if next_rust_release.version_ints[:-1] == rust_release.version_ints[:-1]:
+                    # This is a subsequent point release; ignore.
+                    del rust_map[rust_release]
+                else:
+                    # This is the subsequent non-point release.
+                    if next_rust_release.version_ints[-1] == 0:
+                        # The next release is also a non-point release; ignore this one.
+                        del rust_map[rust_release]
+
+                    # Ignore all subsequent releases.
+                    for rust_release in rust_releases:
+                        del rust_map[rust_release]
+                    break
+
+            # For the tracked Rust releases, select the row that has the earliest version
+            # number across each of the SDKs and Zashi apps.
+            rows = []
+            for rust_release in rust_map.values():
+                rust_release.sort()
+                rows.append(rust_release[0])
 
             for i, row in enumerate(rows):
                 f.write('<tr>')
