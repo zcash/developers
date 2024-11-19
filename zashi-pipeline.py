@@ -263,8 +263,11 @@ def main():
 
         for issue in tracked_issues.values():
             rows = [ReleasePipeline(row) for row in build_release_matrix_from(dg, issue, RUST)]
+
+            # If we traversed the entire graph and there are no releases downstream of the
+            # issue, show this as an empty row.
             if len(rows) == 0:
-                continue
+                rows = [ReleasePipeline({})]
 
             # Deduplicate rows
             rows = list(dict.fromkeys(rows))
