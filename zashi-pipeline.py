@@ -14,12 +14,17 @@ from helpers import github, repos as repositories, zenhub
 GITHUB_TOKEN = os.environ.get('GITHUB_TOKEN')
 ZENHUB_TOKEN = os.environ.get('ZENHUB_TOKEN')
 
-# IDs of repos we look for releases in.
-RUST = 85334928
-ANDROID_SDK = 151763639
-SWIFT_SDK = 185480114
-ZASHI_ANDROID = 390808594
-ZASHI_IOS = 387551125
+# Repository groups we look for releases in. Each of these groups corresponds to
+# a column in the pipeline table; in some cases the releases for that column may
+# be spread across several repositories.
+RUST = (
+    repositories.LIBRUSTZCASH,
+    repositories.ZIP32,
+)
+ANDROID_SDK = (repositories.ZCASH_ANDROID_WALLET_SDK,)
+SWIFT_SDK = (repositories.ZCASH_SWIFT_WALLET_SDK,)
+ZASHI_ANDROID = (repositories.ZASHI_ANDROID,)
+ZASHI_IOS = (repositories.ZASHI_IOS,)
 
 REPOS = github.CORE_REPOS + github.WALLET_REPOS
 
@@ -33,14 +38,17 @@ RELEASE_MATRIX = {
 
 
 class Release:
-    def __init__(self, repo_id, child):
-        self.repo_id = repo_id
+    def __init__(self, repo_group, child):
+        self.repo_group = repo_group
 
         # Extract version number from title
-        if repo_id == RUST:
-            self.version = re.search(r'zcash_[^ ]+ \d+(\.\d+)+', child.title).group()
-            self.version_ints = tuple(int(x) for x in self.version.split(' ')[1].split('.'))
-        else:
+        self.version = None
+        if repo_group == RUST:
+            version = re.search(r'zcash_[^ ]+ \d+(\.\d+)+', child.title)
+            if version:
+                self.version = version.group()
+                self.version_ints = tuple(int(x) for x in self.version.split(' ')[1].split('.'))
+        if self.version is None:
             self.version = re.search(r'\d+(\.\d+)+', child.title).group()
             self.version_ints = tuple(int(x) for x in self.version.split('.'))
 
@@ -51,21 +59,21 @@ class Release:
         return self.version
 
     def __eq__(self, other):
-        return (self.repo_id, self.version) == (other.repo_id, other.version)
+        return (self.repo_group, self.version) == (other.repo_group, other.version)
 
     def __hash__(self):
-        return hash((self.repo_id, self.version))
+        return hash((self.repo_group, self.version))
 
     def __lt__(self, other):
         return self.version_ints < other.version_ints
 
 
-def build_release(row, repo_id):
-    child = row.get(repo_id)
+def build_release(row, repo_group):
+    child = row.get(repo_group)
     if child is None:
         return None
     else:
-        return Release(repo_id, child)
+        return Release(repo_group, child)
 
 
 class ReleasePipeline:
@@ -97,14 +105,14 @@ class ReleasePipeline:
             self.zashi_ios,
         )
 
-def build_release_matrix_from(dg, issue, repo_id):
+def build_release_matrix_from(dg, issue, repo_group):
     acc = []
     for child in dg.neighbors(issue):
-        if child.repo.gh_id == repo_id and 'C-release' in child.labels:
+        if child.repo in repo_group and 'C-release' in child.labels:
             # Fetch the rows that each child's downstreams need rendered.
             child_deps = [
                 build_release_matrix_from(dg, child, dep_repo)
-                for dep_repo in RELEASE_MATRIX.get(repo_id)
+                for dep_repo in RELEASE_MATRIX.get(repo_group)
             ]
 
             # Merge the rows from each downstream repo together.
@@ -115,13 +123,13 @@ def build_release_matrix_from(dg, issue, repo_id):
 
             if len(child_releases) > 0:
                 for rec in child_releases:
-                    rec[repo_id] = child
+                    rec[repo_group] = child
             else:
-                child_releases = [{repo_id: child}]
+                child_releases = [{repo_group: child}]
 
             acc.extend(child_releases)
         else:
-            acc.extend(build_release_matrix_from(dg, child, repo_id))
+            acc.extend(build_release_matrix_from(dg, child, repo_group))
 
     return acc
 
@@ -263,8 +271,11 @@ def main():
 
         for issue in tracked_issues.values():
             rows = [ReleasePipeline(row) for row in build_release_matrix_from(dg, issue, RUST)]
+
+            # If we traversed the entire graph and there are no releases downstream of the
+            # issue, show this as an empty row.
             if len(rows) == 0:
-                continue
+                rows = [ReleasePipeline({})]
 
             # Deduplicate rows
             rows = list(dict.fromkeys(rows))
