@@ -23,6 +23,7 @@ class Repo(object):
 
 # To get the GitHub ID of a repo, see <https://stackoverflow.com/a/47223479/393146>.
 
+ZIP32 = Repo(('zcash', 'zip32'), 141066493, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMTMzOTY2MzAy')
 LIBRUSTZCASH = Repo(('zcash', 'librustzcash'), 85334928, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMTg5MDU1NTE')
 ZCASH_ANDROID_WALLET_SDK = Repo(('Electric-Coin-Company', 'zcash-android-wallet-sdk'), 151763639, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMTg5MDI4MjE')
 ZCASH_LIGHT_CLIENT_FFI = Repo(('Electric-Coin-Company', 'zcash-light-client-ffi'), 439137887, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMTMzMTMwNjcy')
@@ -43,7 +44,7 @@ CORE_REPOS = [
     Repo(('zcash', 'zcash-test-vectors'), 133857578, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMTMyOTMxNTEx'),
     Repo(('zcash', 'sapling-crypto'), 111058300, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMTMzOTY3ODY4'),
     Repo(('zcash', 'orchard'), 305835578, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMTMyODU2MzA2'),
-    Repo(('zcash', 'zip32'), 141066493, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMTMzOTY2MzAy'),
+    ZIP32,
 ] + HALO2_REPOS
 
 TFL_REPOS = [
