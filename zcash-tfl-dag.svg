@@ -30,14 +30,14 @@
 <text text-anchor="middle" x="1307.5" y="-1222.8" font-family="Times,serif" font-size="14.00">Design and Implementation Phase 3</text>
 </g>
 <g id="clust5" class="cluster">
-<title>cluster_4</title>
-<polygon fill="none" stroke="blue" points="527,0 527,-133 942.5,-133 942.5,0 527,0"/>
-<text text-anchor="middle" x="734.75" y="-117.8" font-family="Times,serif" font-size="14.00">Prototype Phase 1</text>
-</g>
-<g id="clust6" class="cluster">
 <title>cluster_5</title>
 <polygon fill="none" stroke="blue" points="756,-141 756,-248 1177,-248 1177,-141 756,-141"/>
 <text text-anchor="middle" x="966.5" y="-232.8" font-family="Times,serif" font-size="14.00">Prototype Phase 2</text>
+</g>
+<g id="clust6" class="cluster">
+<title>cluster_4</title>
+<polygon fill="none" stroke="blue" points="527,0 527,-133 942.5,-133 942.5,0 527,0"/>
+<text text-anchor="middle" x="734.75" y="-117.8" font-family="Times,serif" font-size="14.00">Prototype Phase 1</text>
 </g>
 <!-- ECC/tfl&#45;book#42 -->
 <g id="node1" class="node open">
@@ -598,9 +598,9 @@
 <polygon fill="black" stroke="black" points="982.41,-1001.7 991.64,-1006.9 987.67,-997.08 982.41,-1001.7"/>
 </g>
 <!-- ECC/zebra&#45;tfl#4 -->
-<g id="node42" class="node open">
+<g id="node39" class="node open">
 <title>ECC/zebra&#45;tfl#4</title>
-<g id="a_node42"><a xlink:href="https://github.com/Electric-Coin-Company/zebra-tfl/issues/4" xlink:title="ECC/zebra&#45;tfl#4&#10;Prototype release 0.x&#10;(for phase 2)" target="_blank">
+<g id="a_node39"><a xlink:href="https://github.com/Electric-Coin-Company/zebra-tfl/issues/4" xlink:title="ECC/zebra&#45;tfl#4&#10;Prototype release 0.x&#10;(for phase 2)" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" points="1169,-212.5 999,-212.5 999,-159.5 1169,-159.5 1169,-212.5"/>
 <text text-anchor="middle" x="1084" y="-197.3" font-family="Times,serif" font-size="14.00">ECC/zebra&#45;tfl#4</text>
 <text text-anchor="middle" x="1084" y="-182.3" font-family="Times,serif" font-size="14.00">Prototype release 0.x</text>
@@ -838,10 +838,34 @@
 <path fill="none" stroke="black" d="M948.09,-1041C956.58,-1041 965.2,-1041 973.77,-1041"/>
 <polygon fill="black" stroke="black" points="973.79,-1044.5 983.79,-1041 973.79,-1037.5 973.79,-1044.5"/>
 </g>
+<!-- ECC/zebra&#45;tfl#4&#45;&gt;ECC/tfl&#45;book#70 -->
+<g id="edge57" class="edge">
+<title>ECC/zebra&#45;tfl#4&#45;&gt;ECC/tfl&#45;book#70</title>
+<path fill="none" stroke="black" d="M1111.1,-212.65C1176.8,-276.88 1357.3,-435 1541.5,-435 1541.5,-435 1541.5,-435 2010,-435 2204.2,-435 2375.4,-627.96 2443.1,-715.6"/>
+<polygon fill="black" stroke="black" points="2440.51,-717.97 2449.4,-723.74 2446.05,-713.69 2440.51,-717.97"/>
+</g>
+<!-- ECC/zebra&#45;tfl#11 -->
+<g id="node40" class="node open">
+<title>ECC/zebra&#45;tfl#11</title>
+<g id="a_node40"><a xlink:href="https://github.com/Electric-Coin-Company/zebra-tfl/issues/11" xlink:title="ECC/zebra&#45;tfl#11&#10;Consider putting bft&#45;&#10;proposals in bc&#45;block&#45;&#10;headers" target="_blank">
+<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="935,-217 764,-217 764,-149 935,-149 935,-217"/>
+<text text-anchor="middle" x="849.5" y="-201.8" font-family="Times,serif" font-size="14.00">ECC/zebra&#45;tfl#11</text>
+<text text-anchor="middle" x="849.5" y="-186.8" font-family="Times,serif" font-size="14.00">Consider putting bft&#45;</text>
+<text text-anchor="middle" x="849.5" y="-171.8" font-family="Times,serif" font-size="14.00">proposals in bc&#45;block&#45;</text>
+<text text-anchor="middle" x="849.5" y="-156.8" font-family="Times,serif" font-size="14.00">headers</text>
+</a>
+</g>
+</g>
+<!-- ECC/zebra&#45;tfl#11&#45;&gt;ECC/zebra&#45;tfl#4 -->
+<g id="edge43" class="edge">
+<title>ECC/zebra&#45;tfl#11&#45;&gt;ECC/zebra&#45;tfl#4</title>
+<path fill="none" stroke="black" d="M935.1,-184.09C952.46,-184.32 970.85,-184.55 988.54,-184.78"/>
+<polygon fill="black" stroke="black" points="988.86,-188.28 998.9,-184.91 988.94,-181.28 988.86,-188.28"/>
+</g>
 <!-- ECC/zebra&#45;tfl#3 -->
-<g id="node39" class="node open">
+<g id="node41" class="node open">
 <title>ECC/zebra&#45;tfl#3</title>
-<g id="a_node39"><a xlink:href="https://github.com/Electric-Coin-Company/zebra-tfl/issues/3" xlink:title="ECC/zebra&#45;tfl#3&#10;Add test harness" target="_blank">
+<g id="a_node41"><a xlink:href="https://github.com/Electric-Coin-Company/zebra-tfl/issues/3" xlink:title="ECC/zebra&#45;tfl#3&#10;Add test harness" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="672,-102 535,-102 535,-64 672,-64 672,-102"/>
 <text text-anchor="middle" x="603.5" y="-86.8" font-family="Times,serif" font-size="14.00">ECC/zebra&#45;tfl#3</text>
 <text text-anchor="middle" x="603.5" y="-71.8" font-family="Times,serif" font-size="14.00">Add test harness</text>
@@ -849,9 +873,9 @@
 </g>
 </g>
 <!-- ECC/zebra&#45;tfl#1 -->
-<g id="node40" class="node open">
+<g id="node42" class="node open">
 <title>ECC/zebra&#45;tfl#1</title>
-<g id="a_node40"><a xlink:href="https://github.com/Electric-Coin-Company/zebra-tfl/issues/1" xlink:title="ECC/zebra&#45;tfl#1&#10;Prototype release 0.1" target="_blank">
+<g id="a_node42"><a xlink:href="https://github.com/Electric-Coin-Company/zebra-tfl/issues/1" xlink:title="ECC/zebra&#45;tfl#1&#10;Prototype release 0.1" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" points="934.5,-102 764.5,-102 764.5,-64 934.5,-64 934.5,-102"/>
 <text text-anchor="middle" x="849.5" y="-86.8" font-family="Times,serif" font-size="14.00">ECC/zebra&#45;tfl#1</text>
 <text text-anchor="middle" x="849.5" y="-71.8" font-family="Times,serif" font-size="14.00">Prototype release 0.1</text>
@@ -859,7 +883,7 @@
 </g>
 </g>
 <!-- ECC/zebra&#45;tfl#3&#45;&gt;ECC/zebra&#45;tfl#1 -->
-<g id="edge43" class="edge">
+<g id="edge44" class="edge">
 <title>ECC/zebra&#45;tfl#3&#45;&gt;ECC/zebra&#45;tfl#1</title>
 <path fill="none" stroke="black" d="M672.14,-83C697.41,-83 726.58,-83 753.83,-83"/>
 <polygon fill="black" stroke="black" points="754.17,-86.5 764.17,-83 754.17,-79.5 754.17,-86.5"/>
@@ -871,9 +895,9 @@
 <polygon fill="black" stroke="black" points="1012.24,-158.49 1022.8,-159.34 1015.08,-152.09 1012.24,-158.49"/>
 </g>
 <!-- ECC/zebra&#45;tfl#6 -->
-<g id="node41" class="node open">
+<g id="node43" class="node open">
 <title>ECC/zebra&#45;tfl#6</title>
-<g id="a_node41"><a xlink:href="https://github.com/Electric-Coin-Company/zebra-tfl/issues/6" xlink:title="ECC/zebra&#45;tfl#6&#10;Create a testnet" target="_blank">
+<g id="a_node43"><a xlink:href="https://github.com/Electric-Coin-Company/zebra-tfl/issues/6" xlink:title="ECC/zebra&#45;tfl#6&#10;Create a testnet" target="_blank">
 <polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="670,-46 537,-46 537,-8 670,-8 670,-46"/>
 <text text-anchor="middle" x="603.5" y="-30.8" font-family="Times,serif" font-size="14.00">ECC/zebra&#45;tfl#6</text>
 <text text-anchor="middle" x="603.5" y="-15.8" font-family="Times,serif" font-size="14.00">Create a testnet</text>
@@ -881,34 +905,10 @@
 </g>
 </g>
 <!-- ECC/zebra&#45;tfl#6&#45;&gt;ECC/zebra&#45;tfl#1 -->
-<g id="edge44" class="edge">
+<g id="edge45" class="edge">
 <title>ECC/zebra&#45;tfl#6&#45;&gt;ECC/zebra&#45;tfl#1</title>
 <path fill="none" stroke="black" d="M670.21,-42.08C696.47,-48.11 727.19,-55.16 755.66,-61.69"/>
 <polygon fill="black" stroke="black" points="755.1,-65.16 765.63,-63.98 756.67,-58.33 755.1,-65.16"/>
-</g>
-<!-- ECC/zebra&#45;tfl#4&#45;&gt;ECC/tfl&#45;book#70 -->
-<g id="edge57" class="edge">
-<title>ECC/zebra&#45;tfl#4&#45;&gt;ECC/tfl&#45;book#70</title>
-<path fill="none" stroke="black" d="M1111.1,-212.65C1176.8,-276.88 1357.3,-435 1541.5,-435 1541.5,-435 1541.5,-435 2010,-435 2204.2,-435 2375.4,-627.96 2443.1,-715.6"/>
-<polygon fill="black" stroke="black" points="2440.51,-717.97 2449.4,-723.74 2446.05,-713.69 2440.51,-717.97"/>
-</g>
-<!-- ECC/zebra&#45;tfl#11 -->
-<g id="node43" class="node open">
-<title>ECC/zebra&#45;tfl#11</title>
-<g id="a_node43"><a xlink:href="https://github.com/Electric-Coin-Company/zebra-tfl/issues/11" xlink:title="ECC/zebra&#45;tfl#11&#10;Consider putting bft&#45;&#10;proposals in bc&#45;block&#45;&#10;headers" target="_blank">
-<polygon fill="#c2e0c6" stroke="black" stroke-width="2" points="935,-217 764,-217 764,-149 935,-149 935,-217"/>
-<text text-anchor="middle" x="849.5" y="-201.8" font-family="Times,serif" font-size="14.00">ECC/zebra&#45;tfl#11</text>
-<text text-anchor="middle" x="849.5" y="-186.8" font-family="Times,serif" font-size="14.00">Consider putting bft&#45;</text>
-<text text-anchor="middle" x="849.5" y="-171.8" font-family="Times,serif" font-size="14.00">proposals in bc&#45;block&#45;</text>
-<text text-anchor="middle" x="849.5" y="-156.8" font-family="Times,serif" font-size="14.00">headers</text>
-</a>
-</g>
-</g>
-<!-- ECC/zebra&#45;tfl#11&#45;&gt;ECC/zebra&#45;tfl#4 -->
-<g id="edge45" class="edge">
-<title>ECC/zebra&#45;tfl#11&#45;&gt;ECC/zebra&#45;tfl#4</title>
-<path fill="none" stroke="black" d="M935.1,-184.09C952.46,-184.32 970.85,-184.55 988.54,-184.78"/>
-<polygon fill="black" stroke="black" points="988.86,-188.28 998.9,-184.91 988.94,-181.28 988.86,-188.28"/>
 </g>
 <!-- ECC/tfl&#45;book#150 -->
 <g id="node45" class="node open">
