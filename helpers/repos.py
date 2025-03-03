@@ -44,6 +44,7 @@ CORE_REPOS = [
     Repo(('zcash', 'zcash-test-vectors'), 133857578, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMTMyOTMxNTEx'),
     Repo(('zcash', 'sapling-crypto'), 111058300, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMTMzOTY3ODY4'),
     Repo(('zcash', 'orchard'), 305835578, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMTMyODU2MzA2'),
+    Repo(('zcash', 'wallet'), 863610221, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMTM0MzU3MjQ0'),
     ZIP32,
 ] + HALO2_REPOS
 
@@ -94,6 +95,18 @@ ZCASHD_DEPRECATION_REPOS = [
     Repo(('zcash', 'wallet'), 863610221, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMTM0MzU3MjQ0'),
     Repo(('zcash', 'lightwalletd'), 159714694, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMTg5MDU1NzE'),
 ]
+
+ZALLET_REPOS = [
+    Repo(('zcash', 'zips'), 47279130, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMjIwMzQwMDY'),
+    Repo(('zcash', 'incrementalmerkletree'), 48303644, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMTMzMDcwMDc5'),
+    LIBRUSTZCASH,
+    Repo(('zcash', 'zcash-test-vectors'), 133857578, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMTMyOTMxNTEx'),
+    Repo(('zcash', 'sapling-crypto'), 111058300, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMTMzOTY3ODY4'),
+    Repo(('zcash', 'orchard'), 305835578, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMTMyODU2MzA2'),
+    Repo(('ZcashFoundation', 'zcash_script'), 279422254, None),
+    Repo(('zcash', 'wallet'), 863610221, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMTM0MzU3MjQ0'),
+    ZIP32,
+] + HALO2_REPOS
 
 POOL_DEPRECATION_REPOS = CORE_REPOS + WALLET_REPOS
 
