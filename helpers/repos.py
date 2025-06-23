@@ -94,6 +94,7 @@ ZCASHD_DEPRECATION_REPOS = [
     LIBRUSTZCASH,
     Repo(('zcash', 'wallet'), 863610221, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMTM0MzU3MjQ0'),
     Repo(('zcash', 'lightwalletd'), 159714694, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMTg5MDU1NzE'),
+    Repo(('ZcashFoundation', 'zcash_script'), 279422254, None),
 ]
 
 ZALLET_REPOS = [
