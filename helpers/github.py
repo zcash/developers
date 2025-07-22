@@ -1,3 +1,4 @@
+import networkx as nx
 from sgqlc.endpoint.http import HTTPEndpoint
 from sgqlc.operation import Operation
 
@@ -242,3 +243,109 @@ def download_issues_with_labels(endpoint, labels, REPOS):
             break
 
     return ret
+
+
+class GitHubCommit:
+    def __init__(self, commit, branch):
+        self.oid = commit.oid
+        self.branch = branch
+        self.message_headline = commit.message_headline
+        self.url = commit.url
+        self.is_merge = len(commit.parents.nodes) > 1
+        if 'signature' in commit:
+            if 'is_valid' in commit.signature:
+                self.signature_is_valid = commit.signature.is_valid
+            else:
+                self.signature_is_valid = None
+            if 'signer' in commit.signature:
+                self.signer = commit.signature.signer.login
+            else:
+                self.signer = None
+
+    def __repr__(self):
+        if self.branch is None:
+            return '{:.7}'.format(self.oid)
+        else:
+            return '{:.7} ({})'.format(self.oid, self.branch)
+
+    def __eq__(self, other):
+        return self.oid == other.oid
+
+    def __hash__(self):
+        return hash(self.oid)
+
+    def is_merge_from_webui(self):
+        return self.is_merge and self.signer == 'web-flow' and self.signature_is_valid is True
+
+    def is_unreviewed(self):
+        return not self.is_merge_from_webui()
+
+
+def fetch_commit_graph(op, repo):
+    conn = op.repository(
+        owner=repo.name[0],
+        name=repo.name[1],
+        __alias__='repo%d' % repo.gh_id,
+    )
+
+    branch = (
+        conn.refs(
+            ref_prefix='refs/heads/',
+            order_by={'direction': 'DESC', 'field': 'TAG_COMMIT_DATE'},
+            first=100,
+        )
+        .nodes()
+        .__as__(schema.Ref)
+    )
+    branch.name()
+    pr = branch.associated_pull_requests(first=10).nodes()
+    pr.number()
+    pr.state()
+
+    target = branch.target().__as__(schema.Commit)
+    commit = target.history(first=100).nodes().__as__(schema.Commit)
+
+    commit.message_headline()
+    commit.oid()
+    commit.url()
+    parent = commit.parents(first=2).nodes().__as__(schema.Commit)
+    parent.oid()
+
+    sig = commit.signature()
+    sig.is_valid()
+    sig.signer().login()
+
+
+# Fetches the commit graph for the given `repo`.
+def get_commit_graph(endpoint, repo):
+    nodes = {}
+    edges = []
+
+    op = Operation(schema.Query)
+    fetch_commit_graph(op, repo)
+
+    d = endpoint(op)
+    data = op + d
+
+    repo_data = data['repo%d' % repo.gh_id]
+
+    if hasattr(repo_data, 'refs') and hasattr(repo_data.refs, 'nodes'):
+        for branch in repo_data.refs.nodes:
+            if hasattr(branch.associated_pull_requests, 'nodes'):
+                # Don't include undeleted branches in the DAG for closed PRs.
+                if all([pr.state == 'CLOSED' for pr in branch.associated_pull_requests.nodes]):
+                    continue
+
+            if hasattr(branch.target.history, 'nodes'):
+                for i, commit in enumerate(branch.target.history.nodes):
+                    nodes[commit.oid] = GitHubCommit(commit, branch.name if i == 0 else None)
+                    edges += [
+                        (parent.oid, commit.oid)
+                        for parent in commit.parents.nodes
+                    ]
+
+    dg = nx.relabel_nodes(nx.DiGraph(edges), nodes)
+
+    dg.remove_nodes_from([n for n in dg.nodes if type(n) == str])
+
+    return dg
