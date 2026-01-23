@@ -16,6 +16,13 @@ WORKSPACE_SETS = {
     '607d75e0169bd50011d5410f': ZF_FROST_REPOS,
 }
 
+WORKSPACE_NAMES = {
+    'ecc-core': '5dc1fd615862290001229f21',
+    'ecc-wallet': '5db8aa0244512d0001e0968e',
+    'zf': '5fb24d9264a3e8000e666a9e',
+    'zf-frost': '607d75e0169bd50011d5410f',
+}
+
 REPO_MAP = {repo.gh_id: repo for repo in ALL_REPOS}
 
 
