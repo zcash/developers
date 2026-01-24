@@ -1,3 +1,4 @@
+import networkx as nx
 from sgqlc.endpoint.http import HTTPEndpoint
 from sgqlc.operation import Operation
 
@@ -242,3 +243,179 @@ def download_issues_with_labels(endpoint, labels, REPOS):
             break
 
     return ret
+
+
+def _extract_blocker_edges(issue, repo, repo_lookup, Repo):
+    """Extract edges from an issue's blockedBy connection."""
+    edges = []
+    for blocker in issue.blocked_by.nodes:
+        blocker_owner = blocker.repository.owner
+        # Owner can be User or Organization, both have login
+        owner_login = getattr(blocker_owner, 'login', None)
+        if owner_login is None:
+            continue
+        blocker_name = blocker.repository.name
+        blocker_key = (owner_login, blocker_name)
+
+        if blocker_key in repo_lookup:
+            blocker_repo = repo_lookup[blocker_key]
+        else:
+            # Create a temporary Repo for repos not in our list
+            blocker_repo = Repo(blocker_key, None, None)
+
+        # Edge: (blocking_issue) -> (blocked_issue)
+        edges.append((
+            (blocker_repo, blocker.number),
+            (repo, issue.number),
+        ))
+    return edges
+
+
+def _fetch_remaining_blockers(endpoint, repo, issue_number, cursor, repo_lookup, Repo):
+    """Fetch remaining blockers for an issue that has more than 100."""
+    edges = []
+    owner, name = repo.name
+
+    while cursor is not None:
+        op = Operation(schema.Query)
+        repo_query = op.repository(owner=owner, name=name)
+        issue_query = repo_query.issue(number=issue_number)
+
+        blocked_by = issue_query.blocked_by(first=100, after=cursor)
+        blocked_by.page_info.has_next_page()
+        blocked_by.page_info.end_cursor()
+        blocked_by.nodes.number()
+        blocked_by.nodes.repository.owner.__as__(schema.User).login()
+        blocked_by.nodes.repository.owner.__as__(schema.Organization).login()
+        blocked_by.nodes.repository.name()
+
+        result = endpoint(op)
+        data = op + result
+
+        if data.repository is None or data.repository.issue is None:
+            break
+
+        issue_data = data.repository.issue
+        for blocker in issue_data.blocked_by.nodes:
+            blocker_owner = blocker.repository.owner
+            owner_login = getattr(blocker_owner, 'login', None)
+            if owner_login is None:
+                continue
+            blocker_name = blocker.repository.name
+            blocker_key = (owner_login, blocker_name)
+
+            if blocker_key in repo_lookup:
+                blocker_repo = repo_lookup[blocker_key]
+            else:
+                blocker_repo = Repo(blocker_key, None, None)
+
+            edges.append((
+                (blocker_repo, blocker.number),
+                (repo, issue_number),
+            ))
+
+        if issue_data.blocked_by.page_info.has_next_page:
+            cursor = issue_data.blocked_by.page_info.end_cursor
+        else:
+            cursor = None
+
+    return edges
+
+
+def get_dependency_graph(token, repos):
+    """
+    Fetch the dependency graph from GitHub's GraphQL API.
+
+    Uses the blockedBy connection on issues to efficiently fetch
+    all blocking relationships in batched queries.
+
+    Args:
+        token: GitHub personal access token
+        repos: List of Repo objects
+
+    Returns:
+        NetworkX DiGraph with edges as ((blocking_repo, blocking_issue), (blocked_repo, blocked_issue))
+    """
+    from helpers.repos import Repo
+
+    endpoint = api(token)
+
+    # Build a lookup from (owner, name) to Repo object
+    repo_lookup = {repo.name: repo for repo in repos}
+
+    edges = []
+    # Track issues that need additional blocker fetching
+    issues_needing_more_blockers = []
+
+    print("Fetching issues and dependencies from repositories...", flush=True)
+    total_issues = 0
+
+    for repo in repos:
+        owner, name = repo.name
+        print(f"  {owner}/{name}", end='', flush=True)
+
+        issue_count = 0
+        cursor = None
+
+        while True:
+            op = Operation(schema.Query)
+            repo_query = op.repository(owner=owner, name=name)
+
+            # Fetch issues with pagination
+            issues = repo_query.issues(
+                first=100,
+                after=cursor,
+            )
+            issues.page_info.has_next_page()
+            issues.page_info.end_cursor()
+
+            # For each issue, get its number and blockedBy connections
+            issues.nodes.number()
+            blocked_by = issues.nodes.blocked_by(first=100)
+            blocked_by.page_info.has_next_page()
+            blocked_by.page_info.end_cursor()
+            blocked_by.nodes.number()
+            blocked_by.nodes.repository.owner.__as__(schema.User).login()
+            blocked_by.nodes.repository.owner.__as__(schema.Organization).login()
+            blocked_by.nodes.repository.name()
+
+            result = endpoint(op)
+            data = op + result
+
+            repo_data = data.repository
+            if repo_data is None:
+                print(f" (no access)", flush=True)
+                break
+
+            for issue in repo_data.issues.nodes:
+                issue_count += 1
+                edges.extend(_extract_blocker_edges(issue, repo, repo_lookup, Repo))
+
+                # Check if this issue has more blockers to fetch
+                if issue.blocked_by.page_info.has_next_page:
+                    issues_needing_more_blockers.append(
+                        (repo, issue.number, issue.blocked_by.page_info.end_cursor)
+                    )
+
+            if repo_data.issues.page_info.has_next_page:
+                cursor = repo_data.issues.page_info.end_cursor
+                print('.', end='', flush=True)
+            else:
+                break
+
+        print(f" ({issue_count} issues)", flush=True)
+        total_issues += issue_count
+
+    # Fetch remaining blockers for issues with >100 blockers
+    if issues_needing_more_blockers:
+        print(f"Fetching additional blockers for {len(issues_needing_more_blockers)} issues...", flush=True)
+        for repo, issue_number, blocker_cursor in issues_needing_more_blockers:
+            additional_edges = _fetch_remaining_blockers(
+                endpoint, repo, issue_number, blocker_cursor, repo_lookup, Repo
+            )
+            edges.extend(additional_edges)
+            print('.', end='', flush=True)
+        print()
+
+    print(f"Processed {total_issues} issues, found {len(edges)} dependencies")
+    return nx.DiGraph(edges)
