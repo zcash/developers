@@ -61,6 +61,13 @@ def main():
         terminate_at = [x.split('#') for x in TERMINATE_AT]
         terminate_at = set([(reverse_repos[tuple(r.split('/', 1))], int(i)) for (r, i) in terminate_at])
 
+        # Ensure all terminate_at nodes exist in the graph. Issues with no
+        # blocking relationships won't appear as edge endpoints, but we still
+        # want to render them.
+        for n in terminate_at:
+            if n not in dg:
+                dg.add_node(n)
+
         # Replace the graph with the subgraph that only includes the terminating
         # issues and their ancestors.
         ancestors = [nx.ancestors(dg, n) for n in terminate_at]
