@@ -30,6 +30,8 @@ ZCASH_LIGHT_CLIENT_FFI = Repo(('Electric-Coin-Company', 'zcash-light-client-ffi'
 ZCASH_SWIFT_WALLET_SDK = Repo(('Electric-Coin-Company', 'zcash-swift-wallet-sdk'), 185480114, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMTg5MDU1NjE')
 ZASHI_ANDROID = Repo(('Electric-Coin-Company', 'zashi-android'), 390808594, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMTMzMDEwMTMw')
 ZASHI_IOS = Repo(('Electric-Coin-Company', 'zashi-ios'), 387551125, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMTMzMDEwMTI5')
+ZAINO = Repo(('zingolabs', 'zaino'), 745682405, None)
+
 
 HALO2_REPOS = [
     Repo(('zcash', 'halo2'), 290019239, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMTMyNzg1NDUx'),
@@ -107,6 +109,7 @@ ZALLET_REPOS = [
     Repo(('ZcashFoundation', 'zcash_script'), 279422254, None),
     Repo(('zcash', 'wallet'), 863610221, 'Z2lkOi8vcmFwdG9yL1JlcG9zaXRvcnkvMTM0MzU3MjQ0'),
     ZIP32,
+    ZAINO
 ] + HALO2_REPOS
 
 POOL_DEPRECATION_REPOS = CORE_REPOS + WALLET_REPOS
