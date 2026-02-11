@@ -9,10 +9,9 @@ import re
 from textwrap import wrap
 from urllib.parse import urlparse
 
-from helpers import github, repos as repositories, zenhub
+from helpers import github, repos as repositories
 
 GITHUB_TOKEN = os.environ.get('GITHUB_TOKEN')
-ZENHUB_TOKEN = os.environ.get('ZENHUB_TOKEN')
 
 # Repository groups we look for releases in. Each of these groups corresponds to
 # a column in the pipeline table; in some cases the releases for that column may
@@ -135,7 +134,6 @@ def build_release_matrix_from(dg, issue, repo_group):
 
 def main():
     gapi = github.api(GITHUB_TOKEN)
-    zapi = zenhub.api(ZENHUB_TOKEN)
 
     print('Fetching tracked issues')
     tracked_issues = github.download_issues_with_labels(gapi, ['C-tracked-bug', 'C-tracked-feature'], REPOS)
@@ -143,26 +141,18 @@ def main():
     # The repos we care about are now:
     # - Any repo containing a tracked issue.
     # - The wallet repos where releases occur.
-    repos = set([repo for (repo, _) in tracked_issues] + [
+    repos = list(set([repo for (repo, _) in tracked_issues] + [
         repositories.LIBRUSTZCASH,
         repositories.ZCASH_ANDROID_WALLET_SDK,
         repositories.ZCASH_LIGHT_CLIENT_FFI,
         repositories.ZCASH_SWIFT_WALLET_SDK,
         repositories.ZASHI_ANDROID,
         repositories.ZASHI_IOS,
-    ])
-    workspaces = {
-        workspace_id: [repo for repo in repos if repo in repos]
-        for (workspace_id, _) in zenhub.WORKSPACE_SETS.items()
-    }
+    ]))
 
-    # Build the full dependency graph from ZenHub's per-workspace API.
+    # Build the full dependency graph from GitHub.
     print('Fetching graph')
-    dg = nx.compose_all([
-        zenhub.get_dependency_graph(zapi, workspace_id, repos)
-        for (workspace_id, repos) in workspaces.items()
-        if len(repos) > 0
-    ])
+    dg = github.get_dependency_graph(GITHUB_TOKEN, repos)
 
     print('Rendering deployment pipeline')
 
@@ -370,7 +360,7 @@ def main():
 
 
 if __name__ == '__main__':
-    if GITHUB_TOKEN and ZENHUB_TOKEN:
+    if GITHUB_TOKEN:
         main()
     else:
-        print('Please set the GITHUB_TOKEN and ZENHUB_TOKEN environment variables.')
+        print('Please set the GITHUB_TOKEN environment variable.')

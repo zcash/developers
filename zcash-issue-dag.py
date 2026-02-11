@@ -10,30 +10,16 @@ from dotenv import load_dotenv
 from str2bool import str2bool as strtobool
 import os
 from textwrap import wrap
-from urllib.parse import urlparse
 
-from helpers import github, zenhub
+from helpers import github
 
 load_dotenv()
 
 GITHUB_TOKEN = os.environ.get('GITHUB_TOKEN')
-ZENHUB_TOKEN = os.environ.get('ZENHUB_TOKEN')
-
-# Dependency source: 'github' (default) or 'zenhub'
-DEPENDENCY_SOURCE = os.environ.get('DEPENDENCY_SOURCE', 'github')
 
 DAG_VIEW = os.environ.get('DAG_VIEW', 'core')
 
 REPOS = github.REPO_SETS[DAG_VIEW]
-
-WORKSPACES = {
-    workspace_id: repos
-    for (workspace_id, repos) in {
-        workspace_id: [repo for repo in repos if repo in REPOS]
-        for (workspace_id, repos) in zenhub.WORKSPACE_SETS.items()
-    }.items()
-    if len(repos) > 0
-}
 
 SUPPORTED_CATEGORIES = set(['releases', 'targets'])
 def cats(s):
@@ -59,71 +45,28 @@ PRUNE_FINISHED = os.environ.get('PRUNE_FINISHED', 'true')
 # Whether to group issues and PRs by milestone.
 SHOW_MILESTONES = strtobool(os.environ.get('SHOW_MILESTONES', 'false'))
 
-# Whether to group issues and PRs by ZenHub epics.
-SHOW_EPICS = strtobool(os.environ.get('SHOW_EPICS', 'false'))
-
 
 def main():
     gapi = github.api(GITHUB_TOKEN)
 
     # Build the full dependency graph
-    print('Fetching graph from', DEPENDENCY_SOURCE)
-    if DEPENDENCY_SOURCE == 'github':
-        dg = github.get_dependency_graph(GITHUB_TOKEN, REPOS)
-    else:
-        # Use ZenHub
-        if not ZENHUB_TOKEN:
-            print('Error: ZENHUB_TOKEN required when DEPENDENCY_SOURCE=zenhub')
-            return
-
-        zapi = zenhub.api(ZENHUB_TOKEN)
-
-        if len(WORKSPACES) == 0:
-            print('Error: DAG_VIEW="{}" has no matching ZenHub workspaces'.format(DAG_VIEW))
-            return
-
-        dg = nx.compose_all([
-            zenhub.get_dependency_graph(zapi, workspace_id, repos)
-            for (workspace_id, repos) in WORKSPACES.items()
-        ])
+    print('Fetching graph')
+    dg = github.get_dependency_graph(GITHUB_TOKEN, REPOS)
 
     print('Rendering DAG')
-
-    issues_by_epic = {}
-    if SHOW_EPICS:
-        if DEPENDENCY_SOURCE == 'github':
-            print('Warning: SHOW_EPICS is not supported with DEPENDENCY_SOURCE=github (epics are ZenHub-specific)')
-        else:
-            epics_issues = []
-            for (workspace_id, repos) in WORKSPACES.items():
-                epics_issues += zenhub.get_epics(zapi, workspace_id, repos)
-            epics_issues = set(epics_issues)
-
-            epics_mapping = github.download_issues(gapi, [gh_ref for (_, gh_ref) in epics_issues], REPOS)
-            epics_mapping = {k: v for (k, v) in epics_mapping.items() if v.state != 'closed'}
-            for (i, ((repo, epic_id), epic)) in enumerate(epics_mapping.items()):
-                workspace_id = [
-                    workspace_id
-                    for (workspace_id, repos) in WORKSPACES.items()
-                    if repo in repos
-                ][0]
-                epic_id = [
-                    id for (id, gh_ref) in epics_issues
-                    if gh_ref == (repo, epic_id)
-                ][0]
-                issues = set(zenhub.get_epic_issues(zapi, workspace_id, epic_id))
-                issues_by_epic[epic] = issues
-                for i in issues:
-                    # zapi.dependencies only returns nodes that have some connection,
-                    # but we'd like to show all issues from epics even if they are
-                    # disconnected.
-                    dg.add_node(i)
 
     if len(TERMINATE_AT) > 0:
         # Look up the repo IDs for the given terminating issues.
         reverse_repos = {repo.name: repo for repo in REPOS}
         terminate_at = [x.split('#') for x in TERMINATE_AT]
         terminate_at = set([(reverse_repos[tuple(r.split('/', 1))], int(i)) for (r, i) in terminate_at])
+
+        # Ensure all terminate_at nodes exist in the graph. Issues with no
+        # blocking relationships won't appear as edge endpoints, but we still
+        # want to render them.
+        for n in terminate_at:
+            if n not in dg:
+                dg.add_node(n)
 
         # Replace the graph with the subgraph that only includes the terminating
         # issues and their ancestors.
@@ -237,13 +180,6 @@ def main():
             ag.add_subgraph(nodes, 'cluster_%d' % clusters, label=milestone, color='blue')
             clusters += 1
 
-    if SHOW_EPICS:
-        for (epic, issues) in issues_by_epic.items():
-            issues = [n for n in dg if (n.repo, n.issue_number) in issues]
-            if issues:
-                ag.add_subgraph(issues, 'cluster_%d' % clusters, label=epic.title, color='blue')
-                clusters += 1
-
     # Draw the result!
     ag.graph_attr['rankdir'] = 'LR'
     ag.graph_attr['stylesheet'] = 'zcash-dag.css'
@@ -291,7 +227,5 @@ def main():
 if __name__ == '__main__':
     if not GITHUB_TOKEN:
         print('Please set the GITHUB_TOKEN environment variable.')
-    elif DEPENDENCY_SOURCE == 'zenhub' and not ZENHUB_TOKEN:
-        print('Please set the ZENHUB_TOKEN environment variable (required when DEPENDENCY_SOURCE=zenhub).')
     else:
         main()
