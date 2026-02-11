@@ -261,7 +261,7 @@ def _extract_blocker_edges(issue, repo, repo_lookup, Repo):
             blocker_repo = repo_lookup[blocker_key]
         else:
             # Create a temporary Repo for repos not in our list
-            blocker_repo = Repo(blocker_key, None, None)
+            blocker_repo = Repo(blocker_key, None)
 
         # Edge: (blocking_issue) -> (blocked_issue)
         edges.append((
@@ -307,7 +307,7 @@ def _fetch_remaining_blockers(endpoint, repo, issue_number, cursor, repo_lookup,
             if blocker_key in repo_lookup:
                 blocker_repo = repo_lookup[blocker_key]
             else:
-                blocker_repo = Repo(blocker_key, None, None)
+                blocker_repo = Repo(blocker_key, None)
 
             edges.append((
                 (blocker_repo, blocker.number),
