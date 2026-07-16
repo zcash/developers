@@ -126,7 +126,7 @@ def download_issues(endpoint, nodes, REPOS):
 
     ret = {}
 
-    # Ensure that any graph nodes from ZenHub that are not in the repos we care about have
+    # Ensure that any graph nodes that are not in the repos we care about have
     # default entries, to simplify subsequent graph manipulation code.
     for repo, issue in [(repo, issue) for (repo, issue) in nodes if repo not in REPOS]:
         ret[(repo, issue)] = GitHubIssue(repo, issue, None, REPOS)

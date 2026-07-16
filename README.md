@@ -12,16 +12,15 @@ It also depends on the Graphviz library; for Debian-based distros, install the
 
 After installing `uv`, run `uv sync`.
 
-### Authorization Tokens
+### Authorization Token
 
-The scripts provided by this project require two files:
+The scripts provided by this project require one file:
 
 - `GITHUB_TOKEN`: a GitHub API token with permission to read the necessary repositories.
-- `ZENHUB_TOKEN`: a ZenHub REST API token. (Not a GraphQL token.)
 
-After generating each token, paste the literal contents into the associated file. There is a
-`.gitignore` which ignores these files to ensure they are not committed. Be careful to avoid
-that editor temporary files or any copies or renames of these files aren't committed.
+After generating the token, paste the literal contents into the associated file. There is a
+`.gitignore` which ignores this file to ensure it is not committed. Be careful to avoid
+that editor temporary files or any copies or renames of this file aren't committed.
 
 You can generate a GitHub token with [this url](https://github.com/settings/tokens/new). This
 token should not have any excess authority; it only needs public read access! Make sure all of
@@ -40,7 +39,6 @@ supplied as environment variables:
 
 - `DAG_VIEW=[core|halo2|tfl|wallet|wallet-ios|wallet-android|zf]`: The DAG to render (default: `core`).
 - `SHOW_MILESTONES=[true|false]`: Whether or not to render GitHub milestones as boxes (default: `false`).
-- `SHOW_EPICS=[true|false]`: Whether or not to render ZenHub epics as boxes (default: `false`).
 - `INCLUDE_FINISHED=[true|false]`: Whether or not to include closed issues with no open blockers (default: `false`).
 
 Example command:
